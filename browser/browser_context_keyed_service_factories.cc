@@ -34,6 +34,7 @@
 #include "brave/components/greaselion/browser/buildflags/buildflags.h"
 #include "brave/components/ipfs/buildflags/buildflags.h"
 #include "brave/components/playlist/common/buildflags/buildflags.h"
+#include "brave/components/request_otr/common/buildflags/buildflags.h"
 #include "brave/components/tor/buildflags/buildflags.h"
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
@@ -75,6 +76,10 @@
 #if BUILDFLAG(ENABLE_PLAYLIST)
 #include "brave/browser/playlist/playlist_service_factory.h"
 #include "brave/components/playlist/common/features.h"
+#endif
+
+#if BUILDFLAG(ENABLE_REQUEST_OTR)
+#include "brave/browser/request_otr/request_otr_service_factory.h"
 #endif
 
 namespace brave {
@@ -146,6 +151,9 @@ void EnsureBrowserContextKeyedServiceFactoriesBuilt() {
   if (base::FeatureList::IsEnabled(playlist::features::kPlaylist)) {
     playlist::PlaylistServiceFactory::GetInstance();
   }
+#endif
+#if BUILDFLAG(ENABLE_REQUEST_OTR)
+  request_otr::RequestOTRServiceFactory::GetInstance();
 #endif
 
   BraveSyncAlertsServiceFactory::GetInstance();

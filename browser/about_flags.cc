@@ -28,6 +28,7 @@
 #include "brave/components/ipfs/buildflags/buildflags.h"
 #include "brave/components/ntp_background_images/browser/features.h"
 #include "brave/components/playlist/common/buildflags/buildflags.h"
+#include "brave/components/request_otr/common/buildflags/buildflags.h"
 #include "brave/components/skus/common/features.h"
 #include "brave/components/speedreader/common/buildflags/buildflags.h"
 #include "build/build_config.h"
@@ -54,6 +55,10 @@
 
 #if BUILDFLAG(ENABLE_PLAYLIST)
 #include "brave/components/playlist/common/features.h"
+#endif
+
+#if BUILDFLAG(ENABLE_REQUEST_OTR)
+#include "brave/components/request_otr/common/features.h"
 #endif
 
 #if BUILDFLAG(IS_ANDROID)
@@ -114,6 +119,18 @@
           "Enables faster loading of simplified article-style web pages.", \
           kOsDesktop | kOsAndroid,                                         \
           FEATURE_VALUE_TYPE(speedreader::kSpeedreaderFeature),            \
+      }))
+
+#define REQUEST_OTR_FEATURE_ENTRIES                                           \
+  IF_BUILDFLAG(                                                               \
+      ENABLE_REQUEST_OTR,                                                     \
+      EXPAND_FEATURE_ENTRIES({                                                \
+          "brave-request-otr",                                                \
+          "Enable Request-OTR",                                               \
+          "Suggest going off-the-record when visiting potentially sensitive " \
+          "URLs",                                                             \
+          kOsDesktop,                                                         \
+          FEATURE_VALUE_TYPE(request_otr::features::kBraveRequestOTR),        \
       }))
 
 #define BRAVE_MODULE_FILENAME_PATCH                                           \
@@ -754,6 +771,7 @@
   BRAVE_VPN_DNS_FEATURE_ENTRIES                                                \
   BRAVE_SKU_SDK_FEATURE_ENTRIES                                                \
   SPEEDREADER_FEATURE_ENTRIES                                                  \
+  REQUEST_OTR_FEATURE_ENTRIES                                                  \
   BRAVE_MODULE_FILENAME_PATCH                                                  \
   BRAVE_FEDERATED_FEATURE_ENTRIES                                              \
   PLAYLIST_FEATURE_ENTRIES                                                     \

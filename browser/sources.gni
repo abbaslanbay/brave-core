@@ -31,6 +31,7 @@ import("//brave/browser/ntp_background/sources.gni")
 import("//brave/browser/perf/sources.gni")
 import("//brave/browser/permissions/sources.gni")
 import("//brave/browser/playlist/sources.gni")
+import("//brave/browser/request_otr/sources.gni")
 import("//brave/browser/search_engines/sources.gni")
 import("//brave/browser/skus/sources.gni")
 import("//brave/browser/speedreader/sources.gni")
@@ -179,6 +180,7 @@ brave_chrome_browser_deps = [
   "//brave/components/p3a:buildflags",
   "//brave/components/playlist/common/buildflags",
   "//brave/components/privacy_sandbox",
+  "//brave/components/request_otr/common/buildflags",
   "//brave/components/resources",
   "//brave/components/skus/browser",
   "//brave/components/skus/common",
@@ -265,6 +267,10 @@ if (enable_speedreader) {
     "//brave/components/speedreader/common",
     "//brave/components/speedreader/common:mojom",
   ]
+}
+
+if (enable_request_otr) {
+  brave_chrome_browser_deps += [ "//brave/components/request_otr/common" ]
 }
 
 if (enable_brave_vpn) {
@@ -428,6 +434,7 @@ brave_chrome_browser_sources += brave_browser_ntp_background_sources
 brave_chrome_browser_sources += brave_browser_perf_sources
 brave_chrome_browser_sources += brave_browser_permissions_sources
 brave_chrome_browser_sources += brave_browser_playlist_sources
+brave_chrome_browser_sources += brave_browser_request_otr_sources
 brave_chrome_browser_sources += brave_browser_search_engines_sources
 brave_chrome_browser_sources += brave_browser_speedreader_sources
 brave_chrome_browser_sources += brave_browser_sync_sources
@@ -462,6 +469,7 @@ brave_chrome_browser_deps += brave_browser_ntp_background_deps
 brave_chrome_browser_deps += brave_browser_perf_deps
 brave_chrome_browser_deps += brave_browser_permissions_deps
 brave_chrome_browser_deps += brave_browser_playlist_deps
+brave_chrome_browser_deps += brave_browser_request_otr_deps
 brave_chrome_browser_deps += brave_browser_search_engines_deps
 brave_chrome_browser_deps += brave_browser_speedreader_deps
 brave_chrome_browser_deps += brave_browser_sync_deps
