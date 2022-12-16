@@ -105,7 +105,8 @@ Polymer({
 
   /** @private */
   onMenuTap_: function() {
-    console.debug('[br_toolbar] Not Implemented: onMenuTap_')
+    this.dispatchEvent(new CustomEvent(
+      'cr-toolbar-menu-tap', {bubbles: true, composed: true}))
   },
 
   focusMenuButton() {

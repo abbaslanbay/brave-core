@@ -60,7 +60,7 @@ RegisterStyleOverride(
         border-radius: 6px;
         background-color: #fff;
         overflow-y: auto;
-        padding: 30px !important;
+        padding: var(--brave-settings-menu-padding) !important;
       }
 
       .cr-nav-menu-item {
@@ -215,6 +215,7 @@ RegisterPolymerTemplateModifications({
     const titleEl = document.createElement('h1')
     titleEl.id = 'settingsHeader'
     titleEl.textContent = loadTimeData.getString('settings')
+    titleEl.setAttribute('part', 'header')
     const menuEl = templateContent.querySelector('#menu')
     if (!menuEl) {
       console.error('[Brave Settings Overrides] Could not find menu element to add title after')
