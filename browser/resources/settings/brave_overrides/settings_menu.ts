@@ -10,6 +10,7 @@ import { RegisterStyleOverride, RegisterPolymerTemplateModifications } from 'chr
 import { loadTimeData } from '../i18n_setup.js'
 import '../brave_icons.html.js'
 
+const parser = new DOMParser()
 function createMenuElement(title, href, iconName, pageVisibilitySection) {
   const menuEl = document.createElement('a')
   if (pageVisibilitySection) {
@@ -25,7 +26,12 @@ function createMenuElement(title, href, iconName, pageVisibilitySection) {
   menuEl.appendChild(text)
   const paperRippleChild = document.createElement('paper-ripple')
   menuEl.appendChild(paperRippleChild)
-  return menuEl
+
+  // Polymer 3.4 introduced a bug which results in hanging iron-icon content
+  // if the icon is rendered inside a dom-if and instantiated via
+  // document.createElement('iron-icon'), resulting in a double icon.
+  // I'm not really sure why this fixes it.
+  return parser.parseFromString(menuEl.outerHTML, 'text/html').querySelector('a')
 }
 
 function getMenuElement(templateContent, href) {
