@@ -11,6 +11,8 @@ import { loadTimeData } from '../i18n_setup.js'
 import '../brave_icons.html.js'
 
 const parser = new DOMParser()
+const clone = (el: HTMLElement) => parser.parseFromString(el.outerHTML, 'text/html').querySelector(el.tagName);
+
 function createMenuElement(title, href, iconName, pageVisibilitySection) {
   const menuEl = document.createElement('a')
   if (pageVisibilitySection) {
@@ -31,7 +33,7 @@ function createMenuElement(title, href, iconName, pageVisibilitySection) {
   // if the icon is rendered inside a dom-if and instantiated via
   // document.createElement('iron-icon'), resulting in a double icon.
   // I'm not really sure why this fixes it.
-  return parser.parseFromString(menuEl.outerHTML, 'text/html').querySelector('a')
+  return clone(menuEl)
 }
 
 function getMenuElement(templateContent, href) {
@@ -366,11 +368,11 @@ RegisterPolymerTemplateModifications({
     versionEl.setAttribute('class', 'brave-about-item brave-about-menu-version')
     versionEl.textContent = `v ${loadTimeData.getString('braveProductVersion')}`
 
-    parent.appendChild(newAboutEl)
     newAboutEl.appendChild(graphicsEl)
     graphicsEl.appendChild(icon)
     newAboutEl.appendChild(metaEl)
     metaEl.appendChild(menuLink)
     metaEl.appendChild(versionEl)
+    parent.appendChild(clone(newAboutEl))
   }
 })
