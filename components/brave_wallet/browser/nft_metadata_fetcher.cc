@@ -169,6 +169,7 @@ void NftMetadataFetcher::OnGetEthTokenUri(GetEthTokenMetadataCallback callback,
 void NftMetadataFetcher::FetchMetadata(
     GURL url,
     GetTokenMetadataIntermediateCallback callback) {
+  LOG(ERROR) << "NftMetadataFetcher::FetchMetadata url: " << url.spec();
   // Obtain JSON from the URL depending on the scheme.
   // IPFS, HTTPS, and data URIs are supported.
   // IPFS and HTTPS URIs require an additional request to fetch the metadata.
