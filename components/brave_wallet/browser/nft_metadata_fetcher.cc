@@ -242,6 +242,9 @@ void NftMetadataFetcher::OnSanitizeTokenMetadata(
 void NftMetadataFetcher::OnGetTokenMetadataPayload(
     GetTokenMetadataIntermediateCallback callback,
     APIRequestResult api_request_result) {
+  LOG(ERROR) << "NftMetadataFetcher::OnGetTokenMetadataPayload "
+             << " response code " << api_request_result.response_code()
+             << " response body " << api_request_result.value_body();
   mojom::ProviderErrorUnionPtr error;
   if (!api_request_result.Is2XXResponseCode()) {
     std::move(callback).Run(

@@ -2666,6 +2666,10 @@ void JsonRpcService::GetSolanaAccountInfo(
 void JsonRpcService::OnGetSolanaAccountInfo(
     GetSolanaAccountInfoCallback callback,
     APIRequestResult api_request_result) {
+  LOG(ERROR) << "JsonRpcService::OnGetSolanaAccountInfo response status "
+             << api_request_result.response_code() << " response body "
+             << api_request_result.value_body();
+
   if (!api_request_result.Is2XXResponseCode()) {
     std::move(callback).Run(
         absl::nullopt, mojom::SolanaProviderError::kInternalError,
