@@ -21,17 +21,11 @@ constexpr char kShouldShowToolbarButton[] =
     "brave.today.should_show_toolbar_button";
 constexpr char kBraveTodayWeeklySessionCount[] =
     "brave.today.p3a_weekly_session_count";
-constexpr char kBraveTodayWeeklyCardViewsCount[] =
-    "brave.today.p3a_weekly_card_views_count";
-constexpr char kBraveTodayWeeklyCardVisitsCount[] =
-    "brave.today.p3a_weekly_card_visits_count";
 constexpr char kBraveTodayWeeklyDisplayAdViewedCount[] =
     "brave.today.p3a_weekly_display_ad_viewed_count";
 constexpr char kBraveTodayWeeklyAddedDirectFeedsCount[] =
     "brave.today.p3a_weekly_added_direct_feeds_count";
 constexpr char kBraveTodayTotalCardViews[] = "brave.today.p3a_total_card_views";
-constexpr char kBraveTodayCurrSessionCardViews[] =
-    "brave.today.p3a_curr_session_card_views";
 constexpr char kBraveTodayFirstSessionTime[] =
     "brave.today.p3a_first_session_time";
 constexpr char kBraveTodayUsedSecondDay[] = "brave.today.p3a_used_second_day";
