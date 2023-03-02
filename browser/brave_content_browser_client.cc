@@ -33,6 +33,7 @@
 #include "brave/browser/profiles/brave_renderer_updater_factory.h"
 #include "brave/browser/profiles/profile_util.h"
 #include "brave/browser/skus/skus_service_factory.h"
+#include "brave/browser/ui/webui/brave_settings_ui.h"
 #include "brave/components/brave_ads/common/features.h"
 #include "brave/components/brave_federated/features.h"
 #include "brave/components/brave_rewards/browser/rewards_protocol_handler.h"
@@ -190,7 +191,6 @@ using extensions::ChromeContentBrowserClientExtensionsPart;
 #include "brave/browser/ui/webui/brave_shields/shields_panel_ui.h"
 #include "brave/browser/ui/webui/brave_wallet/wallet_page_ui.h"
 #include "brave/browser/ui/webui/brave_wallet/wallet_panel_ui.h"
-#include "brave/browser/ui/webui/commands_ui.h"
 #include "brave/browser/ui/webui/new_tab_page/brave_new_tab_ui.h"
 #include "brave/browser/ui/webui/private_new_tab_page/brave_private_new_tab_ui.h"
 #include "brave/components/brave_new_tab_ui/brave_new_tab_page.mojom.h"
@@ -498,13 +498,6 @@ void BraveContentBrowserClient::RegisterWebUIInterfaceBrokers(
         .Add<playlist::mojom::PageHandlerFactory>();
   }
 #endif
-
-#if !BUILDFLAG(IS_ANDROID) && !BUILDFLAG(IS_IOS)
-  if (base::FeatureList::IsEnabled(commands::features::kBraveCommands)) {
-    registry.ForWebUI<commands::CommandsUI>()
-        .Add<commands::mojom::CommandsService>();
-  }
-#endif
 }
 
 bool BraveContentBrowserClient::AllowWorkerFingerprinting(
@@ -631,6 +624,11 @@ void BraveContentBrowserClient::RegisterBrowserInterfaceBindersForFrame(
   }
   content::RegisterWebUIControllerInterfaceBinder<
       brave_rewards::mojom::PanelHandlerFactory, RewardsPanelUI>(map);
+
+  if (base::FeatureList::IsEnabled(commands::features::kBraveCommands)) {
+    content::RegisterWebUIControllerInterfaceBinder<
+        commands::mojom::CommandsService, BraveSettingsUI>(map);
+  }
 #endif
 
 // Brave News

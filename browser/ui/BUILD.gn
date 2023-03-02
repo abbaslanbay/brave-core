@@ -49,14 +49,6 @@ source_set("ui") {
     "webui/webcompat_reporter_ui.h",
   ]
 
-  # It doesn't make sense to view accelerators on iOS & Android.
-  if (!is_android && !is_ios) {
-    sources += [
-      "webui/commands_ui.cc",
-      "webui/commands_ui.h",
-    ]
-  }
-
   if (enable_ipfs) {
     sources += [
       "webui/ipfs_ui.cc",
