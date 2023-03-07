@@ -1,0 +1,156 @@
+/* Copyright (c) 2023 The Brave Authors. All rights reserved.
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+// Dummy comments to make the linter happy.
+namespace simulation_responses {
+  dictionary Price {
+    DOMString source;
+
+    // FIXME: The fields below should be in camelCase. Needs an upstream fix.
+    DOMString last_updated_at;
+    DOMString dollar_value_per_token;
+  };
+
+  dictionary Warning {
+    DOMString severity;
+    DOMString kind;
+    DOMString message;
+  };
+
+  dictionary EVMError {
+    DOMString kind;
+    DOMString humanReadableError;
+
+    // FIXME: Should be camelCase. Needs an upstream fix.
+    DOMString error_type;
+  };
+
+  dictionary EVMContract {
+    DOMString address;
+    DOMString kind;
+  };
+
+  dictionary EVMAmount {
+    DOMString after;
+    DOMString before;
+  };
+
+  dictionary EVMAsset {
+    DOMString address;
+    DOMString symbol;
+    DOMString name;
+    long decimals;
+    boolean verified;
+    DOMString[] lists;
+    DOMString imageUrl;
+    Price price;
+  };
+
+  dictionary ERC20TransferData {
+    EVMContract contract;
+    EVMAmount amount;
+    EVMAsset asset;
+  };
+
+  dictionary ERC20ApprovalData {
+    EVMContract contract;
+    EVMContract owner;
+    EVMContract spender;
+    EVMAmount amount;
+    EVMAsset asset;
+  };
+
+  dictionary NativeAssetTransferData {
+    EVMContract contract;
+    long decimals;
+    EVMAmount amount;
+    DOMString symbol;
+    DOMString name;
+  };
+
+  dictionary NFTMetadata {
+    DOMString rawImageUrl;
+  };
+
+  dictionary ERC721TransferData {
+    EVMAmount amount;
+    EVMContract contract;
+    NFTMetadata metadata;
+    DOMString name;
+    DOMString symbol;
+    DOMString tokenId;
+    Price assetPrice;
+  };
+
+  dictionary ERC721ApprovalData {
+    EVMAmount amount;
+    EVMContract contract;
+    NFTMetadata metadata;
+    DOMString name;
+    EVMContract owner;
+    EVMContract spender;
+    DOMString tokenId;
+    Price assetPrice;
+  };
+
+  dictionary ERC721ApprovalForAllData {
+    EVMAmount amount;
+    EVMContract contract;
+    DOMString name;
+    EVMContract owner;
+    EVMContract spender;
+    DOMString symbol;
+    Price assetPrice;
+  };
+
+  dictionary ERC1155TransferData {
+    EVMAmount amount;
+    EVMContract contract;
+    NFTMetadata metadata;
+    DOMString tokenId;
+    Price assetPrice;
+  };
+
+  dictionary ERC1155ApprovalForAllData {
+    EVMAmount amount;
+    EVMContract contract;
+    EVMContract owner;
+    EVMContract spender;
+    Price assetPrice;
+  };
+
+  dictionary EVMStateChangeRawInfo {
+    DOMString kind;
+
+    // data is a non-nullable union of the following types:
+    //   - ERC20TransferData
+    //   - ERC20ApprovalData
+    //   - NativeAssetTransferData
+    //   - ERC721TransferData
+    //   - ERC721ApprovalData
+    //   - ERC721ApprovalForAllData
+    //   - ERC1155TransferData
+    //   - ERC1155ApprovalForAllData
+    any data;
+  };
+
+  dictionary EVMStateChange {
+    DOMString humanReadableDiff;
+    EVMStateChangeRawInfo rawInfo;
+  };
+
+  dictionary EVMSimulationResults {
+    EVMStateChange[] expectedStateChanges;
+
+    // nullable field
+    any error;
+  };
+
+  dictionary EVMSimulationResponse {
+    DOMString action;
+    Warning[] warnings;
+    EVMSimulationResults simulationResults;
+  };
+};

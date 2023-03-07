@@ -1217,6 +1217,9 @@ constexpr char kSolanaBuyTokenFeeBps[] = "85";
 constexpr char kSolanaFeeRecipient[] =
     "3NUW8hWoCnLgJwWCVnwdFo2Dsz8bKwLac9A3VgS2jLUQ";
 
+// Blowfish simulations constants
+constexpr char kBlowfishBaseAPIURL[] = "https://blowfish.wallet.brave.com";
+
 constexpr int64_t kBlockTrackerDefaultTimeInSeconds = 20;
 constexpr int64_t kLogTrackerDefaultTimeInSeconds = 20;
 
