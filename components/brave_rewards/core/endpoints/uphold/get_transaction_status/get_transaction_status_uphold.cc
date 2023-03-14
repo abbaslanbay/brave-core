@@ -32,7 +32,15 @@ Result ParseBody(const std::string& body) {
     return base::unexpected(Error::kFailedToParseBody);
   }
 
-  return *status == "completed";
+  if (*status == "processing") {
+    return base::unexpected(Error::kTransactionPending);
+  }
+
+  if (*status != "completed") {
+    return base::unexpected(Error::kUnexpectedError);
+  }
+
+  return {};
 }
 
 }  // namespace

@@ -109,6 +109,7 @@ void UpholdTransfer::OnCommitTransaction(
 
   switch (result.error()) {
     case PostCommitTransactionUphold::Error::kTransactionNotFound:
+    case PostCommitTransactionUphold::Error::kTransactionPending:
       break;
     case PostCommitTransactionUphold::Error::kAccessTokenExpired:
       if (!ledger_->uphold()->LogOutWallet()) {
@@ -133,19 +134,22 @@ void UpholdTransfer::OnGetTransactionStatus(
     return std::move(callback).Run(mojom::Result::LEDGER_ERROR);
   }
 
-  if (!result.has_value()) {
-    if (result.error() ==
-        GetTransactionStatusUphold::Error::kAccessTokenExpired) {
+  if (result.has_value()) {
+    return std::move(callback).Run(mojom::Result::LEDGER_OK);
+  }
+
+  switch (result.error()) {
+    case GetTransactionStatusUphold::Error::kTransactionPending:
+      return std::move(callback).Run(mojom::Result::RETRY_SHORT);
+    case GetTransactionStatusUphold::Error::kAccessTokenExpired:
       if (!ledger_->uphold()->LogOutWallet()) {
         BLOG(0,
              "Failed to disconnect " << constant::kWalletUphold << " wallet!");
       }
-    }
-
-    return std::move(callback).Run(mojom::Result::LEDGER_ERROR);
+      ABSL_FALLTHROUGH_INTENDED;
+    default:
+      return std::move(callback).Run(mojom::Result::LEDGER_ERROR);
   }
-
-  std::move(callback).Run(mojom::Result::LEDGER_OK);
 }
 
 }  // namespace ledger::uphold

@@ -109,7 +109,7 @@ class GetTransactionStatusUphold;
 
 template <>
 struct ResultFor<GetTransactionStatusUphold> {
-  using Value = bool;  // transaction completed
+  using Value = void;  // transaction completed
   using Error = mojom::GetTransactionStatusUpholdError;
 };
 
