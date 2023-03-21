@@ -611,8 +611,7 @@ class RewardsServiceImpl : public RewardsService,
 #endif
   mojo::AssociatedReceiver<bat_ledger::mojom::BatLedgerClient>
       bat_ledger_client_receiver_;
-  mojo::AssociatedRemote<bat_ledger::mojom::BatLedger> bat_ledger_;
-  mojo::Remote<bat_ledger::mojom::BatLedgerService> bat_ledger_service_;
+  mojo::Remote<bat_ledger::mojom::BatLedger> bat_ledger_;
   const scoped_refptr<base::SequencedTaskRunner> file_task_runner_;
   const scoped_refptr<base::SequencedTaskRunner> json_sanitizer_task_runner_;
 

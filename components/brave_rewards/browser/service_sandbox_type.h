@@ -11,13 +11,13 @@
 
 namespace bat_ledger {
 namespace mojom {
-class BatLedgerService;
+class BatLedger;
 }  // namespace mojom
 }  // namespace bat_ledger
 
 template <>
 inline sandbox::mojom::Sandbox
-content::GetServiceSandboxType<bat_ledger::mojom::BatLedgerService>() {
+content::GetServiceSandboxType<bat_ledger::mojom::BatLedger>() {
 #if !BUILDFLAG(IS_ANDROID)
   return sandbox::mojom::Sandbox::kNoSandbox;
 #else

@@ -19,17 +19,78 @@ using std::placeholders::_1;
 using std::placeholders::_2;
 using std::placeholders::_3;
 
+namespace {
+
+bool testing() {
+  return ledger::is_testing;
+}
+
+}  // namespace
+
 namespace bat_ledger {
 
 BatLedgerImpl::BatLedgerImpl(
-    mojo::PendingAssociatedRemote<mojom::BatLedgerClient> client_info)
-  : bat_ledger_client_mojo_bridge_(
-      new BatLedgerClientMojoBridge(std::move(client_info))),
-    ledger_(
-      ledger::Ledger::CreateInstance(bat_ledger_client_mojo_bridge_.get())) {
-}
+    mojo::PendingReceiver<mojom::BatLedger> pending_receiver)
+    : bat_ledger_receiver_(this, std::move(pending_receiver)) {}
 
 BatLedgerImpl::~BatLedgerImpl() = default;
+
+void BatLedgerImpl::Create(
+    mojo::PendingAssociatedRemote<mojom::BatLedgerClient> client_info,
+    CreateCallback callback) {
+  bat_ledger_client_mojo_bridge_ = std::make_unique<BatLedgerClientMojoBridge>(std::move(client_info));
+  ledger_ = std::unique_ptr<ledger::Ledger>(
+      ledger::Ledger::CreateInstance(bat_ledger_client_mojo_bridge_.get()));
+
+  std::move(callback).Run();
+}
+
+void BatLedgerImpl::SetEnvironment(
+    ledger::mojom::Environment environment) {
+  DCHECK(!ledger_ || testing());
+  ledger::_environment = environment;
+}
+
+void BatLedgerImpl::SetDebug(bool is_debug) {
+  DCHECK(!ledger_ || testing());
+  ledger::is_debug = is_debug;
+}
+
+void BatLedgerImpl::SetReconcileInterval(const int32_t interval) {
+  DCHECK(!ledger_ || testing());
+  ledger::reconcile_interval = interval;
+}
+
+void BatLedgerImpl::SetRetryInterval(int32_t interval) {
+  DCHECK(!ledger_ || testing());
+  ledger::retry_interval = interval;
+}
+
+void BatLedgerImpl::SetTesting() {
+  ledger::is_testing = true;
+}
+
+void BatLedgerImpl::SetStateMigrationTargetVersionForTesting(
+    int32_t version) {
+  ledger::state_migration_target_version_for_testing = version;
+}
+
+void BatLedgerImpl::GetEnvironment(GetEnvironmentCallback callback) {
+  std::move(callback).Run(ledger::_environment);
+}
+
+void BatLedgerImpl::GetDebug(GetDebugCallback callback) {
+  std::move(callback).Run(ledger::is_debug);
+}
+
+void BatLedgerImpl::GetReconcileInterval(
+    GetReconcileIntervalCallback callback) {
+  std::move(callback).Run(ledger::reconcile_interval);
+}
+
+void BatLedgerImpl::GetRetryInterval(GetRetryIntervalCallback callback) {
+  std::move(callback).Run(ledger::retry_interval);
+}
 
 void BatLedgerImpl::OnInitialize(CallbackHolder<InitializeCallback>* holder,
                                  ledger::mojom::Result result) {

@@ -17,6 +17,10 @@
 #include "base/memory/weak_ptr.h"
 #include "brave/components/brave_rewards/core/ledger.h"
 #include "brave/components/services/bat_ledger/public/interfaces/bat_ledger.mojom.h"
+#include "mojo/public/cpp/bindings/associated_receiver.h"
+#include "mojo/public/cpp/bindings/pending_associated_remote.h"
+#include "mojo/public/cpp/bindings/pending_receiver.h"
+#include "mojo/public/cpp/bindings/receiver.h"
 
 namespace bat_ledger {
 
@@ -27,11 +31,25 @@ class BatLedgerImpl :
     public base::SupportsWeakPtr<BatLedgerImpl> {
  public:
   explicit BatLedgerImpl(
-      mojo::PendingAssociatedRemote<mojom::BatLedgerClient> client_info);
+      mojo::PendingReceiver<mojom::BatLedger> bat_ledger_pending_receiver);
   ~BatLedgerImpl() override;
 
   BatLedgerImpl(const BatLedgerImpl&) = delete;
   BatLedgerImpl& operator=(const BatLedgerImpl&) = delete;
+
+  void Create(mojo::PendingAssociatedRemote<mojom::BatLedgerClient> client_info,
+              CreateCallback callback) override;
+  void SetEnvironment(ledger::mojom::Environment environment) override;
+  void SetDebug(bool isDebug) override;
+  void SetReconcileInterval(const int32_t interval) override;
+  void SetRetryInterval(int32_t interval) override;
+  void SetTesting() override;
+  void SetStateMigrationTargetVersionForTesting(int32_t version) override;
+  void GetEnvironment(GetEnvironmentCallback callback) override;
+  void GetDebug(GetDebugCallback callback) override;
+  void GetReconcileInterval(GetReconcileIntervalCallback callback) override;
+  void GetRetryInterval(GetRetryIntervalCallback callback) override;
+
 
   // bat_ledger::mojom::BatLedger
   void Initialize(
@@ -361,6 +379,7 @@ class BatLedgerImpl :
       CallbackHolder<GetRewardsWalletCallback>* holder,
       ledger::mojom::RewardsWalletPtr wallet);
 
+  mojo::Receiver<mojom::BatLedger> bat_ledger_receiver_;
   std::unique_ptr<BatLedgerClientMojoBridge> bat_ledger_client_mojo_bridge_;
   std::unique_ptr<ledger::Ledger> ledger_;
 };

@@ -10,9 +10,8 @@ import "brave/components/brave_rewards/common/mojom/ledger_types.mojom";
 import "mojo/public/mojom/base/time.mojom";
 import "mojo/public/mojom/base/values.mojom";
 
-interface BatLedgerService {
-  Create(pending_associated_remote<BatLedgerClient> bat_ledger_client,
-         pending_associated_receiver<BatLedger> database) => ();
+interface BatLedger {
+  Create(pending_associated_remote<BatLedgerClient> bat_ledger_client) => ();
   SetEnvironment(ledger.mojom.Environment environment);
   SetDebug(bool isDebug);
   SetReconcileInterval(int32 interval);
@@ -24,9 +23,7 @@ interface BatLedgerService {
   GetDebug() => (bool debug);
   GetReconcileInterval() => (int32 interval);
   GetRetryInterval() => (int32 retry_interval);
-};
 
-interface BatLedger {
   Initialize(bool execute_create_script) => (ledger.mojom.Result result);
 
   CreateRewardsWallet(string country) =>
