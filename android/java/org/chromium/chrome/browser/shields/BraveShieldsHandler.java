@@ -12,6 +12,7 @@ import android.animation.AnimatorSet;
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -81,6 +82,8 @@ import org.chromium.chrome.browser.night_mode.GlobalNightModeStateProviderHolder
 import org.chromium.chrome.browser.onboarding.OnboardingPrefManager;
 import org.chromium.chrome.browser.preferences.website.BraveShieldsContentSettings;
 import org.chromium.chrome.browser.profiles.Profile;
+import org.chromium.chrome.browser.rewards.tipping.PopupWindowTippingTabletUI;
+import org.chromium.chrome.browser.rewards.tipping.RewardsTippingBannerActivity;
 import org.chromium.chrome.browser.shields.BraveShieldsMenuObserver;
 import org.chromium.chrome.browser.shields.BraveShieldsUtils;
 import org.chromium.chrome.browser.tab.Tab;
@@ -309,12 +312,33 @@ public class BraveShieldsHandler implements BraveRewardsHelper.LargeIconReadyCal
 
         mBraveRewardsNativeWorker = BraveRewardsNativeWorker.getInstance();
         mIconFetcher = new BraveRewardsHelper(tab);
-        mPopupWindow = showPopupMenu(anchorView);
+        boolean isTablet = ConfigurationUtils.isTablet(mContext);
+        if (isTablet)
+            showTippingUI(anchorView);
+        else
+            showMobileTippingUI();
 
         updateValues(mTabId);
     }
 
-    private PopupWindow showPopupMenu(View anchorView) {
+    private void showMobileTippingUI() {
+        Intent i = new Intent(mContext, RewardsTippingBannerActivity.class);
+        mContext.startActivity(i);
+    }
+
+    public void showTippingUI(View view) {
+        // BraveRewardsTippingPanel.showTippingPanelBottomSheet(this);
+        //        Intent i = new Intent(this, TippingBannerActivity.class);
+        //        startActivity(i);
+        // toolTip1(view);
+        PopupWindowTippingTabletUI popupWindowTippingTabletUI =
+                new PopupWindowTippingTabletUI(mContext);
+        popupWindowTippingTabletUI.show(view, 147, 133);
+        // return popupWindowTippingTabletUI;
+    }
+
+    private void showPopupMenu(View anchorView) {
+        showTippingUI(anchorView);
         assert (mContext != null);
         assert (mHardwareButtonMenuAnchor != null);
 
@@ -401,7 +425,7 @@ public class BraveShieldsHandler implements BraveRewardsHelper.LargeIconReadyCal
                          + bgPadding.left + bgPadding.right;
         popupWindow.setWidth(popupWidth);
 
-        return popupWindow;
+        // return popupWindow;
     }
 
     public void updateHost(String host) {

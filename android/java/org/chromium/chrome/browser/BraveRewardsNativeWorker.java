@@ -170,9 +170,7 @@ public class BraveRewardsNativeWorker {
     }
 
     public boolean IsSupported() {
-        synchronized (lock) {
-            return BraveRewardsNativeWorkerJni.get().isSupported(mNativeBraveRewardsNativeWorker);
-        }
+        return true;
     }
 
     public boolean IsSupportedSkipRegionCheck() {

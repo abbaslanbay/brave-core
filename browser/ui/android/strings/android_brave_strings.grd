@@ -143,6 +143,108 @@ This file contains all "about" strings.  It is set to NOT be translated, in tran
   </translations>
   <release seq="1" allow_pseudo="false">
     <messages fallback_to_english="true">
+
+    
+   
+    
+
+
+
+
+<message name="IDS_LOGGED_OUT_OF_CUSTODIAN"  desc="Text for logged out message">
+        Logged out of Uphold
+      </message>
+
+      <message name="IDS_LOGGED_OUT_OF_CUSTODIAN_DESCRIPTION"  desc="Text for logged out message description">
+        It looks like you're logged out of Uphold for Brave Rewards. Log in again to continue.
+      </message>
+
+      
+
+<message name="IDS_INFO_CREATOR_NOT_VERIFIED"  desc="Text for Send contribution">
+        This Creator is not yet verified with Brave Creators. You'll be able to send them contributions once they're verified. \nLearn more
+      </message>
+
+<message name="IDS_SEND_CONTRIBUTION"  desc="Text for Send contribution">
+        Send contribution
+      </message>
+
+
+
+
+
+<message name="IDS_USE_BRAVE_REWARDS"  desc="Text for Use Brave Rewards">
+        Use Brave Rewards
+      </message>
+
+
+
+<message name="IDS_ANN_BOTHMAN"  desc="Text for Ann Bothman">
+        Ann Bothman
+      </message>
+
+
+<message name="IDS_TEMP_TEXT_TESTING"  desc="Text for Ann Bothman">
+        Hi there! My name is Ann and I am a travel blogger and photographer. I have always had a passion for exploring new places and immersing myself in different cultures.\n\n After traveling to over 24 countries, I started my blog to share my experiences and inspire others to see the world. I believe that travel has the power to change perspectives and open minds, and I hope to encourage others to take the leap and discover all that the world has to offer.Hi there! My name is Ann and I am a travel blogger and photographer. I have always had a passion for exploring new places and immersing myself in different cultures.\n\n After traveling to over 24 countries, I started my blog to share my experiences and inspire others to see the world. I believe that travel has the power to change perspectives and open minds, and I hope to encourage others to take the leap and discover all that the world has to offer.Hi there! My name is Ann and I am a travel blogger and photographer. I have always had a passion for exploring new places and immersing myself in different cultures.\n\n After traveling to over 24 countries, I started my blog to share my experiences and inspire others to see the world. I believe that travel has the power to change perspectives and open minds, and I hope to encourage others to take the leap and discover all that the world has to offer.Hi there! My name is Ann and I am a travel blogger and photographer. I have always had a passion for exploring new places and immersing myself in different cultures.\n\n After traveling to over 24 countries, I started my blog to share my experiences and inspire others to see the world. I believe that travel has the power to change perspectives and open minds, and I hope to encourage others to take the leap and discover all that the world has to offer.Hi there! My name is Ann and I am a travel blogger and photographer. I have always had a passion for exploring new places and immersing myself in different cultures.\n\n After traveling to over 24 countries, I started my blog to share my experiences and inspire others to see the world. I believe that travel has the power to change perspectives and open minds, and I hope to encourage others to take the leap and discover all that the world has to offer.\n\n\n
+      </message>
+
+
+<!-- <message name="IDS_SUPPORT_THIS_CREATOR"  desc="Text for Support this creator">
+        Support this creator
+      </message>
+ -->
+
+      <message name="IDS_USE_WEB3_WALLET"  desc="Text for Use Web3 wallet">
+        Use Web3 wallet
+      </message>
+
+        <message name="IDS_TERMS_OF_SERVICE_AND_PRIVACY_POLICY"  desc="Text for Use Web3 wallet">
+        Brave collects 5% of the sent amount as a processing fee. By proceeding, you agree to the Terms of service and Privacy policy.
+      </message>
+      <message name="IDS_BRAVE_REWARDS_BALANCE"  desc="Text for Brave Rewards balance">
+       Brave Rewards balance
+      </message>
+      <message name="IDS_SET_AS_MONTHLY_CONTRIBUTION"  desc="Text for Set as monthly contribution">
+       Set as monthly contribution
+      </message>
+
+<message name="IDS__1_15_USD"  desc="Text for 1.15 USD">
+       1.15 USD
+      </message>
+
+
+     <!--   <message name="IDS_SEND"  desc="Text Send">
+       Send
+      </message> -->
+
+
+<message name="IDS__10"  desc="Text _10">
+       10
+      </message>
+      <message name="IDS__5"  desc="Text _5">
+       5
+      </message>
+      <message name="IDS__1"  desc="Text _1">
+       1
+      </message>
+      <message name="IDS_CUSTOM"  desc="Text _1">
+       Custom
+      </message>
+      <message name="IDS_THERE_WAS_A_PROBLEM_SENDING_YOUR_CONTRIBUTION"  desc="Text for There was a problem sending your contribution">
+       There was a problem sending your contribution
+      </message>
+ <message name="IDS_PLEASE_TRY_AGAIN"  desc="Text _1">
+       Please try again.
+      </message>
+
+
+      <message name="IDS_TIPPING_TOOLTIP_DESCRIPTION"  desc="Text for tipping tooltip description">
+       This Creator has registered with Brave and can receive contributions from Brave Rewards users. Learn more
+      </message>
+
+
+
+
       <message name="IDS_NOTIFICATIONS_ARE_DISABLED"  desc="Text for Notifications are disabled">
         Notifications are disabled
       </message>

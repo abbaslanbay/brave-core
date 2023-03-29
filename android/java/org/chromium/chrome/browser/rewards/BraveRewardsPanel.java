@@ -98,6 +98,7 @@ import org.chromium.chrome.browser.preferences.BravePref;
 import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
 import org.chromium.chrome.browser.profiles.Profile;
 import org.chromium.chrome.browser.rewards.CountrySelectionSpinnerAdapter;
+import org.chromium.chrome.browser.rewards.tipping.RewardsTippingBannerActivity;
 import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.util.BraveConstants;
 import org.chromium.chrome.browser.util.ConfigurationUtils;
@@ -409,8 +410,8 @@ public class BraveRewardsPanel
         TextView btnSendTip = mPopupView.findViewById(R.id.btn_send_tip);
         btnSendTip.setOnClickListener(view -> {
             Intent intent = new Intent(
-                    ContextUtils.getApplicationContext(), BraveRewardsSiteBannerActivity.class);
-            intent.putExtra(BraveRewardsSiteBannerActivity.TAB_ID_EXTRA, mCurrentTabId);
+                    ContextUtils.getApplicationContext(), RewardsTippingBannerActivity.class);
+            intent.putExtra(RewardsTippingBannerActivity.TAB_ID_EXTRA, mCurrentTabId);
             mActivity.startActivityForResult(intent, BraveConstants.SITE_BANNER_REQUEST_CODE);
         });
 
@@ -2164,9 +2165,9 @@ public class BraveRewardsPanel
 
     private void openBannerActivity() {
         Intent intent = new Intent(
-                ContextUtils.getApplicationContext(), BraveRewardsSiteBannerActivity.class);
-        intent.putExtra(BraveRewardsSiteBannerActivity.TAB_ID_EXTRA, mCurrentTabId);
-        intent.putExtra(BraveRewardsSiteBannerActivity.IS_MONTHLY_CONTRIBUTION, true);
+                ContextUtils.getApplicationContext(), RewardsTippingBannerActivity.class);
+        intent.putExtra(RewardsTippingBannerActivity.TAB_ID_EXTRA, mCurrentTabId);
+        // intent.putExtra(BraveRewardsSiteBannerActivity.IS_MONTHLY_CONTRIBUTION, true);
         mActivity.startActivityForResult(intent, BraveConstants.MONTHLY_CONTRIBUTION_REQUEST_CODE);
     }
 
@@ -2199,6 +2200,20 @@ public class BraveRewardsPanel
                     mPopupView.getResources().getString(R.string.brave_ui_not_verified_publisher);
             publisherVerified.setCompoundDrawablesWithIntrinsicBounds(
                     R.drawable.bat_unverified, 0, 0, 0);
+            TextView btnSendTip = mPopupView.findViewById(R.id.btn_send_tip);
+            btnSendTip.setText(R.string.send_contribution);
+            btnSendTip.setEnabled(false);
+            btnSendTip.setBackgroundDrawable(
+                    ResourcesCompat.getDrawable(ContextUtils.getApplicationContext().getResources(),
+                            R.drawable.send_contribution_button_background, /* theme= */ null));
+            mPopupView.findViewById(R.id.attention_layout).setVisibility(View.GONE);
+            mPopupView.findViewById(R.id.auto_contribution_layout).setVisibility(View.GONE);
+            mPopupView.findViewById(R.id.divider_line).setVisibility(View.GONE);
+            mPopupView.findViewById(R.id.monthly_contribution_layout).setVisibility(View.GONE);
+            mPopupView.findViewById(R.id.auto_contribute_summary_seperator)
+                    .setVisibility(View.GONE);
+            mPopupView.findViewById(R.id.auto_contribute_summary_layout).setVisibility(View.GONE);
+            mPopupView.findViewById(R.id.info_creator_not_verified).setVisibility(View.VISIBLE);
         }
         publisherVerified.setText(verifiedText);
         publisherVerified.setVisibility(View.VISIBLE);

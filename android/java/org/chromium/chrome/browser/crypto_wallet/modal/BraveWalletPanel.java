@@ -53,6 +53,7 @@ import org.chromium.chrome.browser.crypto_wallet.util.AssetUtils;
 import org.chromium.chrome.browser.crypto_wallet.util.AssetsPricesHelper;
 import org.chromium.chrome.browser.crypto_wallet.util.BalanceHelper;
 import org.chromium.chrome.browser.crypto_wallet.util.Utils;
+import org.chromium.chrome.browser.rewards.tipping.PopupWindowTippingTabletUI;
 import org.chromium.chrome.browser.util.ConfigurationUtils;
 import org.chromium.ui.base.DeviceFormFactor;
 
@@ -402,7 +403,10 @@ public class BraveWalletPanel implements DialogInterface {
             }
         });
         mOptionsImage = mPopupView.findViewById(R.id.iv_dapp_panel_menu);
-        mOptionsImage.setOnClickListener(v -> { showPopupMenu(); });
+        mOptionsImage.setOnClickListener(v -> {
+            // showPopupMenu();
+            showTippingUI(v);
+        });
 
         mBtnSelectedNetwork = mPopupView.findViewById(R.id.btn_dapps_panel_networks);
         mBtnSelectedNetwork.setOnClickListener(v -> {
@@ -438,6 +442,16 @@ public class BraveWalletPanel implements DialogInterface {
             return true;
         });
         setUpObservers();
+    }
+
+    public void showTippingUI(View view) {
+        // BraveRewardsTippingPanel.showTippingPanelBottomSheet(this);
+        //        Intent i = new Intent(this, TippingBannerActivity.class);
+        //        startActivity(i);
+        // toolTip1(view);
+        PopupWindowTippingTabletUI popupWindowTippingTabletUI =
+                new PopupWindowTippingTabletUI(mActivity);
+        popupWindowTippingTabletUI.show(view, 147, 133);
     }
 
     private final View.OnClickListener onConnectedAccountClick = v -> {
