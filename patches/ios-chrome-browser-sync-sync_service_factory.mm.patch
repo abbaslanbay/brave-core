@@ -1,8 +1,8 @@
 diff --git a/ios/chrome/browser/sync/sync_service_factory.mm b/ios/chrome/browser/sync/sync_service_factory.mm
-index c160bc7ccc0ba26d2cb904e9914efb2a58d55a43..58e959379ac28e59b37baaa616ab48f87e369585 100644
+index dcf84002b7109abe78a2cdb967de650fb6b0654a..c8d5511a52921cabdb547e188aa0f203939a805e 100644
 --- a/ios/chrome/browser/sync/sync_service_factory.mm
 +++ b/ios/chrome/browser/sync/sync_service_factory.mm
-@@ -154,7 +154,7 @@ std::unique_ptr<KeyedService> SyncServiceFactory::BuildServiceInstanceFor(
+@@ -157,7 +157,7 @@ std::unique_ptr<KeyedService> SyncServiceFactory::BuildServiceInstanceFor(
    init_params.debug_identifier = browser_state->GetDebugName();
  
    auto sync_service =
@@ -10,4 +10,4 @@ index c160bc7ccc0ba26d2cb904e9914efb2a58d55a43..58e959379ac28e59b37baaa616ab48f8
 +      BRAVE_BUILD_SERVICE_INSTANCE_FOR
    sync_service->Initialize();
  
-   // Hook `sync_service` into PersonalDataManager (a circular dependency).
+   // TODO(crbug.com/1400663): Remove the workaround below once

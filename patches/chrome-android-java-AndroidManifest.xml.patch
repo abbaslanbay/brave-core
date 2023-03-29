@@ -10,7 +10,7 @@ index de76ef16789868141feb1d6d0fe9bf33202a0291..00faa18f0ee971ea36c06d5767dee0ce
  
      <!--
        Enable runtime permissions as uses-permission in tip of tree builds
-@@ -61,7 +62,9 @@ by a child template that "extends" this file.
+@@ -62,7 +63,9 @@ by a child template that "extends" this file.
      <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH_SCAN"
                              android:usesPermissionFlags="neverForLocation"/>
  

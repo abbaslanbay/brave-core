@@ -1,5 +1,5 @@
 diff --git a/ios/chrome/browser/prefs/browser_prefs.mm b/ios/chrome/browser/prefs/browser_prefs.mm
-index 1c2e3c3cd4ad867bb08746907088ba8aba0335f2..33b165c07a8ceeb58ea27db0584aa1c283ce54f4 100644
+index 8292526472bb44b55fcfa09f90b4f9fe93c330e6..acc1e5ea92abc18a4bb47f813f5c7442f59eb45f 100644
 --- a/ios/chrome/browser/prefs/browser_prefs.mm
 +++ b/ios/chrome/browser/prefs/browser_prefs.mm
 @@ -278,6 +278,7 @@ void RegisterLocalStatePrefs(PrefRegistrySimple* registry) {
@@ -10,15 +10,15 @@ index 1c2e3c3cd4ad867bb08746907088ba8aba0335f2..33b165c07a8ceeb58ea27db0584aa1c2
  }
  
  void RegisterBrowserStatePrefs(user_prefs::PrefRegistrySyncable* registry) {
-@@ -424,6 +425,7 @@ void RegisterBrowserStatePrefs(user_prefs::PrefRegistrySyncable* registry) {
-   // shown.
-   registry->RegisterBooleanPref(prefs::kIosBringAndroidTabsPromptDisplayed,
-                                 false);
+@@ -422,6 +423,7 @@ void RegisterBrowserStatePrefs(user_prefs::PrefRegistrySyncable* registry) {
+ 
+   // Register pref used to determine if Browser Lockdown Mode is enabled.
+   registry->RegisterBooleanPref(prefs::kBrowserLockdownModeEnabled, false);
 +  BRAVE_REGISTER_BROWSER_STATE_PREFS
  }
  
  // This method should be periodically pruned of year+ old migrations.
-@@ -569,4 +571,5 @@ void MigrateObsoleteBrowserStatePrefs(PrefService* prefs) {
+@@ -567,4 +569,5 @@ void MigrateObsoleteBrowserStatePrefs(PrefService* prefs) {
    if (prefs->FindPreference(kUserClassifierLastTimeToUseSuggestions)) {
      prefs->ClearPref(kUserClassifierLastTimeToUseSuggestions);
    }
