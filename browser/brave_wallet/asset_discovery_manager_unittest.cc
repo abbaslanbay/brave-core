@@ -63,6 +63,63 @@ const char eth_error_fetching_balance_response[] = R"({
       "id":1,
       "result":"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000"
   })";
+const char eth_allowance_detected_response[] = R"({
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": [
+        {
+            "address": "0x3333333333333333333333333333333333333333",
+            "blockHash": "0xaff41c269d9f87f9d71e826ccc612bec9eff33fe5f01a0c9b6f54bfaa8178686",
+            "blockNumber": "0x101a7f1",
+            "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+            "logIndex": "0x92",
+            "removed": false,
+            "topics": [
+                "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+                "0x000000000000000000000000BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "0x000000000000000000000000dac308312e195710467ce36effe51ac7a4ecbf01"
+            ],
+            "transactionHash": "0x32132b285e95d82a9b81e3f25ea8290756f36c9fedd92af8290d4ee8cd1d7f98",
+            "transactionIndex": "0x38"
+        }
+    ]
+})";
+
+const char eth_all_allowances_revoked_response[] = R"({
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": [
+    {
+        "address": "0x3333333333333333333333333333333333333333",
+        "blockHash": "0xaff41c269d9f87f9d71e826ccc612bec9eff33fe5f01a0c9b6f54bfaa8178686",
+        "blockNumber": "0x101a7f1",
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "logIndex": "0x92",
+        "removed": false,
+        "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x0000000000000000000000004444444444444444444444444444444444444444",
+            "0x000000000000000000000000dac308312e195710467ce36effe51ac7a4ecbf01"
+        ],
+        "transactionHash": "0x32132b285e95d82a9b81e3f25ea8290756f36c9fedd92af8290d4ee8cd1d7f98",
+        "transactionIndex": "0x38"
+    },
+    {
+        "address": "0x3333333333333333333333333333333333333333",
+        "blockHash": "0x12a48c50f513be08dd7b2b1514f79ee01e4c59c83852d6e9c4966d5dc283181e",
+        "blockNumber": "0x10277f5",
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "logIndex": "0x144",
+        "removed": false,
+        "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x0000000000000000000000004444444444444444444444444444444444444444",
+            "0x000000000000000000000000dac308312e195710467ce36effe51ac7a4ecbf01"
+        ],
+        "transactionHash": "0xf40f833ced52120baeb3c505e444f73a130ed054e7b7ea453d3c207a773212c9",
+        "transactionIndex": "0xb0"
+    }]
+})";
 
 const char kMnemonic1[] =
     "divide cruise upon flag harsh carbon filter merit once advice bright "
@@ -94,6 +151,27 @@ class TestBraveWalletServiceObserverForAssetDiscovery
     on_discover_assets_completed_fired_ = true;
     run_loop_asset_discovery_->Quit();
   }
+  void OnDiscoverAllowancesCompleted(
+      std::vector<mojom::AllowanceInfoPtr> allowances) override {
+    for (auto& allowance : allowances) {
+      ASSERT_TRUE(std::find(expected_contract_addresses_.begin(),
+                            expected_contract_addresses_.end(),
+                            allowance->contract_address) !=
+                  expected_contract_addresses_.end());
+    }
+
+    ASSERT_EQ(expected_allowances_count, allowances.size());
+
+    on_allowance_changed_fired_ = true;
+
+    if (run_loop_asset_discovery_) {
+      run_loop_asset_discovery_->Quit();
+    }
+  }
+
+  bool OnDiscoverAllowancesCompletedFired() {
+    return on_allowance_changed_fired_;
+  }
 
   void WaitForOnDiscoverAssetsCompleted(
       const std::vector<std::string>& addresses) {
@@ -106,6 +184,15 @@ class TestBraveWalletServiceObserverForAssetDiscovery
     return on_discover_assets_completed_fired_;
   }
 
+  void WaitForOnDiscoverAllowancesCompleted(
+      const std::vector<std::string>& addresses,
+      const std::size_t& expected_allowances_count_val) {
+    expected_allowances_count = expected_allowances_count_val;
+    expected_contract_addresses_ = addresses;
+    run_loop_asset_discovery_ = std::make_unique<base::RunLoop>();
+    run_loop_asset_discovery_->Run();
+  }
+
   mojo::PendingRemote<brave_wallet::mojom::BraveWalletServiceObserver>
   GetReceiver() {
     return observer_receiver_.BindNewPipeAndPassRemote();
@@ -113,12 +200,16 @@ class TestBraveWalletServiceObserverForAssetDiscovery
   void Reset() {
     expected_contract_addresses_.clear();
     on_discover_assets_completed_fired_ = false;
+    on_allowance_changed_fired_ = false;
   }
 
  private:
   std::unique_ptr<base::RunLoop> run_loop_asset_discovery_;
   std::vector<std::string> expected_contract_addresses_;
+  std::size_t expected_allowances_count{0};
   bool on_discover_assets_completed_fired_ = false;
+
+  bool on_allowance_changed_fired_ = false;
   mojo::Receiver<brave_wallet::mojom::BraveWalletServiceObserver>
       observer_receiver_{this};
 };
@@ -404,6 +495,66 @@ class AssetDiscoveryManagerUnitTest : public testing::Test {
         expected_token_contract_addresses);
   }
 
+  void TestAllowancesLoading(
+      const std::string& token_list_json,
+      const std::map<GURL, std::map<std::string, std::string>>& requests,
+      const int& expected_allowances_count) {
+    auto* blockchain_registry = BlockchainRegistry::GetInstance();
+    TokenListMap token_list_map;
+
+    // Ethereum
+    asset_discovery_manager_->SetSupportedChainsForTesting(
+        {mojom::kMainnetChainId, mojom::kPolygonMainnetChainId});
+
+    ASSERT_TRUE(
+        ParseTokenList(token_list_json, &token_list_map, mojom::CoinType::ETH));
+
+    std::vector<std::string> contract_addresses;
+    for (auto const& [contract_addr, token_info] : token_list_map) {
+      for (auto const& tkn : token_info) {
+        contract_addresses.push_back(tkn->contract_address);
+      }
+    }
+    blockchain_registry->UpdateTokenList(std::move(token_list_map));
+    keyring_service_->RestoreWallet(kMnemonic1, kPasswordBrave, false,
+                                    base::DoNothing());
+
+    url_loader_factory_.SetInterceptor(base::BindLambdaForTesting(
+        [&, requests](const network::ResourceRequest& request) {
+          for (auto const& [url, address_response_map] : requests) {
+            if (request.url.spec().find("nfts") != std::string::npos) {
+              continue;
+            }
+            std::string header_value;
+            EXPECT_TRUE(
+                request.headers.GetHeader("X-Eth-Method", &header_value));
+
+            if (request.url.spec() == url.spec() &&
+                header_value == "eth_getLogs") {
+              base::StringPiece request_string(
+                  request.request_body->elements()
+                      ->at(0)
+                      .As<network::DataElementBytes>()
+                      .AsStringPiece());
+              std::string response;
+              for (auto const& [address, potential_response] :
+                   address_response_map) {
+                if (request_string.find(address.substr(2)) !=
+                    std::string::npos) {
+                  response = potential_response;
+                  break;
+                }
+              }
+              ASSERT_FALSE(response.empty());
+              url_loader_factory_.ClearResponses();
+              url_loader_factory_.AddResponse(request.url.spec(), response);
+            }
+          }
+        }));
+    wallet_service_observer_->WaitForOnDiscoverAllowancesCompleted(
+        contract_addresses, expected_allowances_count);
+  }
+
   PrefService* GetPrefs() { return profile_->GetPrefs(); }
   TestingPrefServiceSimple* GetLocalState() { return local_state_->Get(); }
   GURL GetNetwork(const std::string& chain_id, mojom::CoinType coin) {
@@ -425,6 +576,52 @@ class AssetDiscoveryManagerUnitTest : public testing::Test {
   base::test::ScopedFeatureList scoped_feature_list_;
   data_decoder::test::InProcessDataDecoder in_process_data_decoder_;
 };
+
+TEST_F(AssetDiscoveryManagerUnitTest, AllowancesLoading) {
+  const std::string token_list_json = R"({
+        "0x3333333333333333333333333333333333333333": {
+          "name": "3333",
+          "logo": "333.svg",
+          "erc20": true,
+          "symbol": "333",
+          "decimals": 18,
+          "chainId": "0x1"
+        }
+      })";
+
+  std::map<GURL, std::map<std::string, std::string>> requests = {
+      {GetNetwork(mojom::kMainnetChainId, mojom::CoinType::ETH),
+       {{"0x3333333333333333333333333333333333333333",
+         eth_allowance_detected_response}}},
+  };
+
+  TestAllowancesLoading(token_list_json, requests, 1);
+
+  EXPECT_TRUE(wallet_service_observer_->OnDiscoverAllowancesCompletedFired());
+}
+
+TEST_F(AssetDiscoveryManagerUnitTest, NoAllowancesLoaded) {
+  const std::string token_list_json = R"({
+        "0x3333333333333333333333333333333333333333": {
+          "name": "3333",
+          "logo": "333.svg",
+          "erc20": true,
+          "symbol": "333",
+          "decimals": 18,
+          "chainId": "0x1"
+        }
+      })";
+
+  std::map<GURL, std::map<std::string, std::string>> requests = {
+      {GetNetwork(mojom::kMainnetChainId, mojom::CoinType::ETH),
+       {{"0x3333333333333333333333333333333333333333",
+         eth_all_allowances_revoked_response}}},
+  };
+
+  TestAllowancesLoading(token_list_json, requests, 0);
+
+  EXPECT_TRUE(wallet_service_observer_->OnDiscoverAllowancesCompletedFired());
+}
 
 TEST_F(AssetDiscoveryManagerUnitTest,
        DiscoverAssetsOnAllSupportedChainsAccountsAdded) {

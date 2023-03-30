@@ -2426,6 +2426,7 @@ void JsonRpcService::EthGetLogs(const std::string& chain_id,
   auto internal_callback =
       base::BindOnce(&JsonRpcService::OnEthGetLogs,
                      weak_ptr_factory_.GetWeakPtr(), std::move(callback));
+
   RequestInternal(eth::eth_getLogs(std::move(filter_options)), true,
                   network_url, std::move(internal_callback));
 }
@@ -2439,7 +2440,6 @@ void JsonRpcService::OnEthGetLogs(EthGetLogsCallback callback,
         l10n_util::GetStringUTF8(IDS_WALLET_INTERNAL_ERROR));
     return;
   }
-
   if (!eth::ParseEthGetLogs(api_request_result.value_body(), &logs)) {
     std::move(callback).Run(logs, {}, mojom::ProviderError::kParsingError,
                             l10n_util::GetStringUTF8(IDS_WALLET_PARSING_ERROR));

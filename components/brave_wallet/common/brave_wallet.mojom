@@ -634,6 +634,13 @@ struct BlockchainToken {
   CoinType coin;
 };
 
+struct AllowanceInfo {
+  string contract_address;
+  string approver_address;
+  string spender_address;
+  string amount;
+};
+
 // WebUI-side handler for requests from the browser.
 interface Page {
 };
@@ -1377,6 +1384,10 @@ interface BraveWalletServiceObserver {
 
   // Fired when wallet service is being reset
   OnResetWallet();
+
+  //Fired when allowances changed
+  OnDiscoverAllowancesCompleted(array<AllowanceInfo> allowances);
+
 };
 
 interface BraveWalletServiceTokenObserver {

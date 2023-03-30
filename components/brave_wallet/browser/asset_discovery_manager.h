@@ -179,6 +179,18 @@ class AssetDiscoveryManager : public mojom::KeyringServiceObserver {
       mojom::CoinType coin,
       const std::vector<std::string>& account_addresses);
 
+  void DiscoverAllowanceOnAllSupportedChains();
+  void OnGetAllowances(
+      base::OnceCallback<void(std::vector<mojom::AllowanceInfoPtr>)>
+          barrier_callback,
+      [[maybe_unused]] const std::vector<Log>& logs,
+      base::Value rawlogs,
+      mojom::ProviderError error,
+      const std::string& error_message);
+  void MergeEthAllowances(
+      const std::vector<std::vector<mojom::AllowanceInfoPtr>>&
+          discovered_allowance_results);
+
   static absl::optional<SolanaAddress> DecodeMintAddress(
       const std::vector<uint8_t>& data);
   static GURL GetSimpleHashNftsByWalletUrl(

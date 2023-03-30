@@ -1243,6 +1243,17 @@ void BraveWalletService::OnDiscoverAssetsCompleted(
   }
 }
 
+void BraveWalletService::OnDiscoverAllowancesCompleted(
+    const std::vector<mojom::AllowanceInfoPtr>& allowances) {
+  for (const auto& observer : observers_) {
+    std::vector<mojom::AllowanceInfoPtr> allowances_copy;
+    for (auto& allowance : allowances) {
+      allowances_copy.push_back(allowance.Clone());
+    }
+    observer->OnDiscoverAllowancesCompleted(std::move(allowances_copy));
+  }
+}
+
 void BraveWalletService::OnGetImportInfo(
     const std::string& new_password,
     base::OnceCallback<void(bool, const absl::optional<std::string>&)> callback,

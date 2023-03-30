@@ -5,6 +5,7 @@
 
 #include "brave/components/brave_wallet/browser/asset_discovery_manager.h"
 
+#include <algorithm>
 #include <map>
 #include <utility>
 
@@ -22,6 +23,7 @@
 #include "brave/components/brave_wallet/browser/keyring_service.h"
 #include "brave/components/brave_wallet/browser/pref_names.h"
 #include "brave/components/brave_wallet/common/eth_address.h"
+#include "brave/components/brave_wallet/common/hash_utils.h"
 #include "brave/components/brave_wallet/common/hex_utils.h"
 #include "brave/components/brave_wallet/common/solana_utils.h"
 #include "brave/components/brave_wallet/common/string_utils.h"
@@ -309,7 +311,6 @@ void AssetDiscoveryManager::DiscoverEthAssets(
       }
     }
   }
-
   // Use a barrier callback to wait for all GetERC20TokenBalances calls to
   // complete (one for each account address).
   const auto barrier_callback =
@@ -333,6 +334,7 @@ void AssetDiscoveryManager::DiscoverEthAssets(
                                                std::move(internal_callback));
     }
   }
+  DiscoverAllowanceOnAllSupportedChains();
 }
 
 void AssetDiscoveryManager::OnGetERC20TokenBalances(
@@ -1017,6 +1019,163 @@ GURL AssetDiscoveryManager::GetSimpleHashNftsByWalletUrl(
   url = net::AppendQueryParameter(url, "chains", chain_ids_param);
   url = net::AppendQueryParameter(url, "wallet_addresses", account_address);
   return url;
+}
+
+void AssetDiscoveryManager::DiscoverAllowanceOnAllSupportedChains() {
+  const auto keyring_info = keyring_service_->GetKeyringInfoSync(
+      brave_wallet::mojom::kDefaultKeyringId);
+  std::vector<std::string> account_addresses;
+  for (const auto& account_info : keyring_info->account_infos) {
+    account_addresses.push_back(account_info->address);
+  }
+
+  if (account_addresses.empty()) {
+    return;
+  }
+
+  auto user_assets = BraveWalletService::GetUserAssets(prefs_);
+  std::vector<std::string> user_assets_chain_ids;
+  std::transform(
+      user_assets.begin(), user_assets.end(),
+      std::back_inserter(user_assets_chain_ids),
+      [](const mojom::BlockchainTokenPtr& token) { return token->chain_id; });
+
+  const auto token_list_map =
+      BlockchainRegistry::GetInstance()->GetEthTokenListMap(
+          user_assets_chain_ids);
+
+  base::flat_map<std::string, std::vector<std::string>>
+      chain_id_to_contract_addresses;
+
+  for (const auto& [chain_id, token_list] : token_list_map) {
+    // Skip the next few networks, until requests across all blocks will not
+    // be allowed for the RPC method "eth_getLogs"
+    if (chain_id == mojom::kFantomMainnetChainId ||
+        chain_id == mojom::kBinanceSmartChainMainnetChainId ||
+        chain_id == mojom::kAuroraMainnetChainId) {
+      continue;
+    }
+
+    for (const auto& token : token_list) {
+      if (token->coin != mojom::CoinType::ETH) {
+        continue;
+      }
+      chain_id_to_contract_addresses[chain_id].push_back(
+          token->contract_address);
+    }
+  }
+
+  if (chain_id_to_contract_addresses.empty()) {
+    return;
+  }
+  // Use a barrier callback to wait for all EthGetLogs calls to
+  const auto barrier_callback =
+      base::BarrierCallback<std::vector<mojom::AllowanceInfoPtr>>(
+          account_addresses.size() * chain_id_to_contract_addresses.size(),
+          base::BindOnce(&AssetDiscoveryManager::MergeEthAllowances,
+                         weak_ptr_factory_.GetWeakPtr()));
+
+  const auto approvalTopicHash =
+      KeccakHash("Approval(address,address,uint256)");
+  for (const auto& account_address : account_addresses) {
+    for (const auto& [chain_id, contract_addresses] :
+         chain_id_to_contract_addresses) {
+      base::Value::List contracts;
+      for (const auto& contract_address : contract_addresses) {
+        contracts.Append(contract_address);
+      }
+
+      auto internal_callback =
+          base::BindOnce(&AssetDiscoveryManager::OnGetAllowances,
+                         weak_ptr_factory_.GetWeakPtr(), barrier_callback);
+
+      base::Value::Dict filter_options;
+      base::Value::List topics;
+      topics.Append(approvalTopicHash);
+      std::string hexZeroPadAccAddr;
+      if (!PadHexEncodedParameter(account_address, &hexZeroPadAccAddr)) {
+        continue;
+      }
+      topics.Append(std::move(hexZeroPadAccAddr));
+
+      filter_options.Set("address", std::move(contracts));
+      filter_options.Set("topics", std::move(topics));
+      filter_options.Set("fromBlock", "earliest");
+      filter_options.Set("toBlock", "latest");
+
+      json_rpc_service_->EthGetLogs(chain_id, std::move(filter_options),
+                                    std::move(internal_callback));
+    }
+  }
+}
+
+void AssetDiscoveryManager::OnGetAllowances(
+    base::OnceCallback<void(std::vector<mojom::AllowanceInfoPtr>)>
+        barrier_callback,
+    [[maybe_unused]] const std::vector<Log>& logs,
+    base::Value rawlogs,
+    mojom::ProviderError error,
+    const std::string& error_message) {
+  std::vector<mojom::AllowanceInfoPtr> allowances;
+
+  if (error != mojom::ProviderError::kSuccess) {
+    std::move(barrier_callback).Run(std::move(allowances));
+    return;
+  }
+
+  std::vector<Log> logs_tmp{logs};
+
+  std::sort(logs_tmp.begin(), logs_tmp.end(),
+            [](const Log& first, const Log& second) -> bool {
+              if (first.block_number < second.block_number) {
+                return true;
+              }
+              if (first.block_number == second.block_number) {
+                return first.log_index < second.log_index;
+              }
+              return false;
+            });
+
+  // collection of the latest allowances per contract & spender
+  base::flat_map<std::string, mojom::AllowanceInfoPtr> allowances_map;
+  for (const auto& log_item : logs_tmp) {
+    // skip pending logs
+    if (log_item.block_number == 0) {
+      continue;
+    }
+
+    if (log_item.topics.size() < 3) {
+      continue;
+    }
+
+    allowances_map.insert_or_assign(
+        base::JoinString(
+            {log_item.address, log_item.topics[1], log_item.topics[2]}, "_"),
+        mojom::AllowanceInfo::New(log_item.address, log_item.topics[1],
+                                  log_item.topics[2], log_item.data));
+  }
+
+  for (auto& [contract_address, allowance] : allowances_map) {
+    uint256_t parsed_amount{0};
+    if (HexValueToUint256(allowance->amount, &parsed_amount) &&
+        parsed_amount > 0) {
+      allowances.push_back(std::move(allowance));
+    }
+  }
+  std::move(barrier_callback).Run(std::move(allowances));
+}
+
+void AssetDiscoveryManager::MergeEthAllowances(
+    const std::vector<std::vector<mojom::AllowanceInfoPtr>>&
+        discovered_allowance_results) {
+  std::vector<mojom::AllowanceInfoPtr> result;
+  for (const auto& allowances : discovered_allowance_results) {
+    for (const auto& allovance : allowances) {
+      result.push_back(allovance.Clone());
+    }
+  }
+
+  wallet_service_->OnDiscoverAllowancesCompleted(std::move(result));
 }
 
 }  // namespace brave_wallet

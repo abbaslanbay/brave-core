@@ -244,38 +244,43 @@ absl::optional<std::string> ParseEthGasPrice(const base::Value& json_value) {
 bool ParseEthGetLogs(const base::Value& json_value, std::vector<Log>* logs) {
   DCHECK(logs);
   auto result = ParseResultList(json_value);
-  if (!result)
+  if (!result) {
     return false;
+  }
 
   DCHECK(result);
 
   for (const auto& logs_list_it : *result) {
     auto log_item_value =
         json_rpc_responses::EthGetLogsResult::FromValue(logs_list_it.Clone());
-    if (!log_item_value)
+    if (!log_item_value) {
       return false;
+    }
 
     Log log;
     log.address = log_item_value->address;
     log.block_hash = log_item_value->block_hash;
 
     uint256_t block_number_int = 0;
-    if (!HexValueToUint256(log_item_value->block_number, &block_number_int))
+    if (!HexValueToUint256(log_item_value->block_number, &block_number_int)) {
       return false;
+    }
     log.block_number = block_number_int;
     log.data = log_item_value->data;
 
     uint32_t log_index_int = 0;
-    if (!base::HexStringToUInt(log_item_value->log_index, &log_index_int))
+    if (!base::HexStringToUInt(log_item_value->log_index, &log_index_int)) {
       return false;
+    }
     log.log_index = log_index_int;
     log.removed = log_item_value->removed;
     log.transaction_hash = log_item_value->transaction_hash;
 
     uint32_t transaction_index_int = 0;
     if (!base::HexStringToUInt(log_item_value->transaction_index,
-                               &transaction_index_int))
+                               &transaction_index_int)) {
       return false;
+    }
     log.transaction_index = transaction_index_int;
     log.topics = log_item_value->topics;
     logs->push_back(log);
