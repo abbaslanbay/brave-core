@@ -164,6 +164,7 @@
       "browser/notifications/android/java/src/org/chromium/chrome/browser/notifications/BraveNotificationManagerProxyImpl\\.java",
     ],
     "/#include <random>": [
+      "components/brave_federated/util/synthetic_dataset\\.cc",
       "components/brave_rewards/core/common/security_util\\.cc",
       "components/brave_rewards/core/legacy/bat_helper\\.cc",
     ],
