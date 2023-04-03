@@ -71,6 +71,10 @@
 #include "brave/browser/web_discovery/web_discovery_tab_helper.h"
 #endif
 
+#if defined(TOOLKIT_VIEWS)
+#include "brave/browser/sidebar/sidebar_tab_helper.h"
+#endif
+
 namespace brave {
 
 void AttachTabHelpers(content::WebContents* web_contents) {
@@ -121,6 +125,10 @@ void AttachTabHelpers(content::WebContents* web_contents) {
 
 #if BUILDFLAG(ENABLE_IPFS)
   ipfs::IPFSTabHelper::MaybeCreateForWebContents(web_contents);
+#endif
+
+#if defined(TOOLKIT_VIEWS)
+  SidebarTabHelper::CreateForWebContents(web_contents);
 #endif
 
   if (!web_contents->GetBrowserContext()->IsOffTheRecord()) {

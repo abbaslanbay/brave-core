@@ -7,11 +7,14 @@
 
 #include <vector>
 
+#include "base/containers/contains.h"
+#include "brave/browser/sidebar/sidebar_tab_helper.h"
 #include "brave/browser/ui/brave_browser.h"
 #include "brave/browser/ui/sidebar/sidebar.h"
 #include "brave/browser/ui/sidebar/sidebar_model.h"
 #include "brave/browser/ui/sidebar/sidebar_service_factory.h"
 #include "brave/browser/ui/sidebar/sidebar_utils.h"
+#include "brave/components/sidebar/sidebar_item.h"
 #include "brave/components/sidebar/sidebar_service.h"
 #include "chrome/browser/history/history_service_factory.h"
 #include "chrome/browser/ui/browser_finder.h"
@@ -21,10 +24,14 @@
 #include "chrome/browser/ui/browser_window.h"
 #include "chrome/browser/ui/singleton_tabs.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
+#include "third_party/abseil-cpp/absl/types/optional.h"
 
 namespace sidebar {
 
 namespace {
+
+static constexpr SidebarItem::BuiltInItemType kTabSpecificPanelTypes[] = {
+    SidebarItem::BuiltInItemType::kReadingList};
 
 SidebarService* GetSidebarService(Browser* browser) {
   return SidebarServiceFactory::GetForProfile(browser->profile());
@@ -48,6 +55,7 @@ std::vector<int> GetAllExistingTabIndexForHost(Browser* browser,
 SidebarController::SidebarController(BraveBrowser* browser, Profile* profile)
     : browser_(browser), sidebar_model_(new SidebarModel(profile)) {
   sidebar_service_observed_.Observe(GetSidebarService(browser_));
+  browser->tab_strip_model()->AddObserver(this);
 }
 
 SidebarController::~SidebarController() = default;
@@ -76,9 +84,18 @@ bool SidebarController::DoesBrowserHaveOpenedTabForItem(
 
 void SidebarController::ActivateItemAt(absl::optional<size_t> index,
                                        WindowOpenDisposition disposition) {
+  SidebarTabHelper* helper;
+  if (auto* active_tab = browser_->tab_strip_model()->GetActiveWebContents()) {
+    helper = SidebarTabHelper::FromWebContents(active_tab);
+  }
   // disengaged means there is no active item.
   if (!index) {
     sidebar_model_->SetActiveIndex(index);
+    browser_active_panel_type_ = absl::nullopt;
+    if (helper) {
+      // This tab doesn't have a tab-specific panel now
+      helper->RegisterPanelInactive();
+    }
     UpdateSidebarVisibility();
     return;
   }
@@ -87,6 +104,17 @@ void SidebarController::ActivateItemAt(absl::optional<size_t> index,
   // Only an item for panel can get activated.
   if (item.open_in_panel) {
     sidebar_model_->SetActiveIndex(index);
+    if (!base::Contains(kTabSpecificPanelTypes, item.built_in_item_type)) {
+      // Remember to restore this item if a Tab opens a tab-specific panel.
+      browser_active_panel_type_ = item.built_in_item_type;
+      // This tab doesn't have a tab-specific panel now.
+      if (helper) {
+        helper->RegisterPanelInactive();
+      }
+    } else {
+      // This tab does have a tab-specific panel now.
+      helper->RegisterPanelActive(item.built_in_item_type);
+    }
     UpdateSidebarVisibility();
     return;
   }
@@ -174,6 +202,43 @@ void SidebarController::LoadAtTab(const GURL& url) {
 void SidebarController::OnShowSidebarOptionChanged(
     SidebarService::ShowSidebarOption option) {
   UpdateSidebarVisibility();
+}
+
+void SidebarController::OnTabStripModelChanged(
+    TabStripModel* tab_strip_model,
+    const TabStripModelChange& change,
+    const TabStripSelectionChange& selection) {
+  // When the active tab changes, make sure to restore either any tab-specific
+  // panel, or the browser-wide panel if the tab doesn't have a tab-specific
+  // panel.
+  if (selection.active_tab_changed()) {
+    // Is there a tab-specific panel for the new active tab?
+    absl::optional<SidebarItem::BuiltInItemType> wanted_panel =
+      selection.new_contents
+        ? SidebarTabHelper::FromWebContents(selection.new_contents)
+              ->active_panel()
+        : absl::nullopt;
+    if (wanted_panel.has_value()) {
+      auto wanted_index = sidebar_model_->GetIndexOf(wanted_panel.value());
+      // built-in items can be removed in-between tab activations, so we might
+      // not get a valid index for this type.
+      if (wanted_index.has_value() &&
+          sidebar_model_->active_index() != wanted_index.value()) {
+        // Don't pass through null values, as we don't want to close existing
+        // panels if we're not opening a tab-specific panel.
+        ActivateItemAt(wanted_index.value());
+      }
+    } else {
+      // There is no tab-specific panel for the new active tab
+      // - close any tab-specific panel from the previous tab
+      // - restore previous active index
+      absl::optional<size_t> new_index =
+          browser_active_panel_type_.has_value()
+              ? sidebar_model_->GetIndexOf(browser_active_panel_type_.value())
+              : absl::nullopt;
+      ActivateItemAt(new_index);
+    }
+  }
 }
 
 void SidebarController::AddItemWithCurrentTab() {
