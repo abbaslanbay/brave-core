@@ -1048,11 +1048,15 @@ void AssetDiscoveryManager::DiscoverAllowanceOnAllSupportedChains() {
       chain_id_to_contract_addresses;
 
   for (const auto& [chain_id, token_list] : token_list_map) {
-    // Skip the next few networks, until requests across all blocks will not
+    // Skip all except only next allowed networks,
+    // until requests across all blocks will not
     // be allowed for the RPC method "eth_getLogs"
-    if (chain_id == mojom::kFantomMainnetChainId ||
-        chain_id == mojom::kBinanceSmartChainMainnetChainId ||
-        chain_id == mojom::kAuroraMainnetChainId) {
+    if (chain_id != mojom::kMainnetChainId &&
+        chain_id != mojom::kPolygonMainnetChainId &&
+        chain_id != mojom::kAvalancheMainnetChainId &&
+        chain_id != mojom::kCeloMainnetChainId &&
+        chain_id != mojom::kArbitrumMainnetChainId &&
+        chain_id != mojom::kOptimismMainnetChainId) {
       continue;
     }
 

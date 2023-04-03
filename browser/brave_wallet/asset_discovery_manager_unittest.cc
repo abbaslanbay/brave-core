@@ -623,6 +623,36 @@ TEST_F(AssetDiscoveryManagerUnitTest, NoAllowancesLoaded) {
   EXPECT_TRUE(wallet_service_observer_->OnDiscoverAllowancesCompletedFired());
 }
 
+TEST_F(AssetDiscoveryManagerUnitTest, NoAllowancesLoadedForSkippedNetwork) {
+  const std::string token_list_json = R"({
+        "0x3333333333333333333333333333333333333333": {
+          "name": "3333",
+          "logo": "333.svg",
+          "erc20": true,
+          "symbol": "333",
+          "decimals": 18,
+          "chainId": "0x1"
+        }
+      })";
+
+  std::map<GURL, std::map<std::string, std::string>> requests = {
+      {GetNetwork(mojom::kMainnetChainId, mojom::CoinType::ETH),
+       {{"0x3333333333333333333333333333333333333333",
+         R"({
+   "error": {
+      "code": -32000,
+      "message": "requested too many blocks from 0 to 27842567,
+      maximum is set to 2048"
+   },
+   "id": 1,
+   "jsonrpc": "2.0"
+})"}}},
+  };
+
+  TestAllowancesLoading(token_list_json, requests, 0);
+
+  EXPECT_TRUE(wallet_service_observer_->OnDiscoverAllowancesCompletedFired());
+}
 TEST_F(AssetDiscoveryManagerUnitTest,
        DiscoverAssetsOnAllSupportedChainsAccountsAdded) {
   auto* blockchain_registry = BlockchainRegistry::GetInstance();
