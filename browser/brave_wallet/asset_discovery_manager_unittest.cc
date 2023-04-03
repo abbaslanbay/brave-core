@@ -551,6 +551,9 @@ class AssetDiscoveryManagerUnitTest : public testing::Test {
             }
           }
         }));
+    asset_discovery_manager_->remaining_buckets_ = 1;
+    asset_discovery_manager_->DiscoverAllowanceOnAllSupportedChains();
+
     wallet_service_observer_->WaitForOnDiscoverAllowancesCompleted(
         contract_addresses, expected_allowances_count);
   }

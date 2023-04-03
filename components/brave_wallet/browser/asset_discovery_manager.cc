@@ -334,7 +334,6 @@ void AssetDiscoveryManager::DiscoverEthAssets(
                                                std::move(internal_callback));
     }
   }
-  DiscoverAllowanceOnAllSupportedChains();
 }
 
 void AssetDiscoveryManager::OnGetERC20TokenBalances(
@@ -904,6 +903,7 @@ void AssetDiscoveryManager::CompleteDiscoverAssets(
   if (remaining_buckets_ == 0) {
     wallet_service_->OnDiscoverAssetsCompleted(std::move(discovered_assets_));
     discovered_assets_.clear();
+    DiscoverAllowanceOnAllSupportedChains();
   }
 }
 
