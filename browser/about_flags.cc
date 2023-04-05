@@ -12,7 +12,6 @@
 #include "brave/browser/ethereum_remote_client/buildflags/buildflags.h"
 #include "brave/browser/ethereum_remote_client/features.h"
 #include "brave/browser/ui/tabs/features.h"
-#include "brave/components/ai_chat/features.h"
 #include "brave/components/brave_ads/common/features.h"
 #include "brave/components/brave_component_updater/browser/features.h"
 #include "brave/components/brave_federated/features.h"
@@ -40,6 +39,10 @@
 #include "components/translate/core/browser/translate_prefs.h"
 #include "net/base/features.h"
 #include "third_party/blink/public/common/features.h"
+
+#if !BUILDFLAG(IS_ANDROID)
+#include "brave/components/ai_chat/features.h"
+#endif
 
 #if BUILDFLAG(ENABLE_BRAVE_VPN)
 #include "brave/components/brave_vpn/common/features.h"

@@ -658,6 +658,10 @@ source_set("ui") {
     ]
   }
 
+  if (!toolkit_views && !is_android) {
+    sources += [ "side_panel/ai_chat/ai_chat_side_panel_utils.cc" ]
+  }
+
   if (!is_android) {
     deps += [
       "//brave/app:brave_generated_resources_grit",
