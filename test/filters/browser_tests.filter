@@ -656,7 +656,6 @@
 -CaptivePortalBlockingPageTest.*
 -CaptivePortalBrowserTest.*
 -CertificateReportingServiceBrowserTest.*
--CertificateTransparencyPolicyTest.CertificateTransparencyEnforcementDisabledForUrls
 -ChromeAcceptHeaderTest.Check
 -ChromeBackForwardCacheBrowserTest.*
 -ChromeBrowsingDataLifetimeManagerShutdownTest.*
