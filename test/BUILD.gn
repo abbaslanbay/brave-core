@@ -1089,7 +1089,10 @@ test("brave_browser_tests") {
   }
 
   if (!is_android) {
-    sources += [ "//brave/browser/ui/views/toolbar/wallet_button_notification_source_browsertest.cc" ]
+    sources += [
+      "//brave/browser/ssl/certificate_transparency_browsertest.cc",
+      "//brave/browser/ui/views/toolbar/wallet_button_notification_source_browsertest.cc",
+    ]
     deps += [
       "//brave/browser/sharing_hub:browser_tests",
       "//brave/browser/ui/commander:browser_tests",
