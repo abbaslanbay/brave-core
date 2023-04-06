@@ -1,12 +1,12 @@
 diff --git a/content/browser/webui/web_ui_impl.cc b/content/browser/webui/web_ui_impl.cc
-index 441b6017a182c5e6f6e32db6ef44e6a639905172..3872b9f8d48e50e3b6fea43816ecfebae6d031bf 100644
+index b1c20e8748fde3b4e0b9cdb015a376e5b551564f..c145b092cfb4a19ec4e3ea46227b552a887c9eb7 100644
 --- a/content/browser/webui/web_ui_impl.cc
 +++ b/content/browser/webui/web_ui_impl.cc
-@@ -76,6 +76,7 @@ WebUIImpl::WebUIImpl(RenderFrameHostImpl* frame_host)
-              RenderFrameHostImpl::LifecycleStateImpl::kActive ||
-          frame_host->lifecycle_state() ==
-              RenderFrameHostImpl::LifecycleStateImpl::kSpeculative);
+@@ -70,6 +70,7 @@ WebUIImpl::WebUIImpl(WebContents* web_contents)
+       web_contents_(web_contents),
+       web_contents_observer_(new WebUIMainFrameObserver(this, web_contents_)) {
+   DCHECK(web_contents_);
 +  BRAVE_WEB_UI_IMPL
  }
  
- WebUIImpl::~WebUIImpl() {
+ WebUIImpl::WebUIImpl(NavigationRequest* request)
