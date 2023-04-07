@@ -206,6 +206,9 @@
   <message name="IDS_AUTOFILL_ENABLE_PROFILES_TOGGLE_SUBLABEL" desc="Sublabel for a toggle that allows users to control whether addresses should be saved and forms should be autofilled with them." formatter_data="android_java">
     Includes information like phone numbers, email addresses, and shipping addresses
   </message>
+  <message name="IDS_AUTOFILL_LOCAL_PROFILE_ACCESSIBILITY_LABEL" desc="Accessibility label for icon used to identify user's local address profile" formatter_data="android_java">
+    Local address
+  </message>
   <message name="IDS_AUTOFILL_ENABLE_CREDIT_CARDS_TOGGLE_SUBLABEL" desc="Sublabel for a toggle that allows users to control whether credit cards should be saved and forms should be autofilled with it." formatter_data="android_java">
     Fills in payment forms with your saved payment methods
   </message>
@@ -400,11 +403,17 @@
     <message name="IDS_IOS_AUTOFILL_SAVE_ADDRESS_PROMPT_TITLE" desc="In Title Case: Title shown at the top of modal dialog that offers the user to save a new address." meaning="In Title Case for iOS">
       Save Address
     </message>
+   <message name="IDS_IOS_AUTOFILL_SAVE_ADDRESS_IN_ACCOUNT_PROMPT_TITLE" desc="In Title Case: Title shown at the top of modal dialog that offers the user to save a new address in Brave sync chain." meaning="In Title Case for iOS">
+      Save in Account
+    </message>
     <message name="IDS_IOS_AUTOFILL_UPDATE_ADDRESS_PROMPT_TITLE" desc="In Title Case: Title shown at the top of modal dialog that offers the user to update an existing address." meaning="In Title Case for iOS">
       Update Address
     </message>
     <message name="IDS_IOS_AUTOFILL_SAVE_ADDRESS_IN_ACCOUNT_MESSAGE_SUBTITLE" desc="Subtitle shown in the messages UI view when a new profile is asked to be saved in the Brave sync chain">
        In your Brave sync chain, <ph name="USER_EMAIL">$1<ex>janedoe@google.com</ex></ph>
+    </message>
+    <message name="IDS_IOS_AUTOFILL_SAVE_ADDRESS_IN_ACCOUNT_FOOTER" desc="Footer text shown in the save modal for saving a new address profile or migrating it in the Brave sync chain">
+      You can use saved addresses across Brave products. This address will be saved in your Brave sync chain, <ph name="USER_EMAIL">$1<ex>janedoe@google.com</ex></ph>.
     </message>
   </if>
   <!-- Used on Desktop: -->

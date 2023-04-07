@@ -618,7 +618,7 @@ are declared in tools/grit/grit_rule.gni.
             Open link in new <ph name="APP">$1<ex>Gmail App</ex> window</ph>
           </message>
           <message name="IDS_CONTENT_CONTEXT_OPENLINKWEBAPP_NEWTAB" desc="The name of the command to open a link in a new tab of the same app the user is currently in">
-            Open link in new <ph name="APP">$1<ex>Gmail App</ex> tab</ph>
+            Open link in new <ph name="APP">$1<ex>Gmail App</ex></ph> tab
           </message>
 
           <message name="IDS_CONTENT_CONTEXT_SAVELINKAS" desc="The name of the Save Link As command in the content area context menu">
@@ -887,7 +887,7 @@ are declared in tools/grit/grit_rule.gni.
             Open Link in new <ph name="APP">$1<ex>Gmail App</ex></ph> Window
           </message>
           <message name="IDS_CONTENT_CONTEXT_OPENLINKWEBAPP_NEWTAB" desc="In Title Case: The name of the command to open a link in a new tab of the same app the user is currently in">
-            Open Link in new <ph name="APP">$1<ex>Gmail App</ex> Tab</ph>
+            Open Link in new <ph name="APP">$1<ex>Gmail App</ex></ph> Tab
           </message>
 
           <message name="IDS_CONTENT_CONTEXT_SAVELINKAS" desc="In Title Case: The name of the Save Link As command in the content area context menu">
@@ -1485,6 +1485,9 @@ are declared in tools/grit/grit_rule.gni.
         <message name="IDS_SHOW_DOWNLOADS" desc="The show downloads menu in the app menu">
           &amp;Downloads
         </message>
+        <message name="IDS_VIEW_PASSWORDS" desc="The show Password Manager menu in the app menu">
+          Password Manager
+        </message>
         <message name="IDS_SHOW_EXTENSIONS" desc="The show extensions menu in the app menu">
           &amp;Extensions
         </message>
@@ -1534,6 +1537,9 @@ are declared in tools/grit/grit_rule.gni.
         </message>
         <message name="IDS_SHOW_DOWNLOADS" desc="In Title Case: The show downloads menu in the app menu">
           &amp;Downloads
+        </message>
+        <message name="IDS_VIEW_PASSWORDS" desc="In Title Case: The show Password Manager menu in the app menu">
+          Password Manager
         </message>
         <message name="IDS_SHOW_EXTENSIONS" desc="In Title Case: The show extensions menu in the app menu">
           &amp;Extensions
@@ -4449,13 +4455,10 @@ are declared in tools/grit/grit_rule.gni.
         <message name="IDS_EXTENSION_PROMPT_WARNING_HISTORY_READ" desc="Permission string for access to browsing history.">
           Read your browsing history
         </message>
-        <message name="IDS_EXTENSION_PROMPT_WARNING_HISTORY_READ_AND_SESSIONS" desc="Permission string for access to both browsing history and signed in sessions.">
+        <message name="IDS_EXTENSION_PROMPT_WARNING_HISTORY_READ_ON_ALL_DEVICES" desc="Permission string for access to browsing history on all signed-in devices.">
           Read your browsing history on all your signed-in devices
         </message>
-        <message name="IDS_EXTENSION_PROMPT_WARNING_HISTORY_WRITE" desc="Permission string for access to modify browsing history.">
-          Read and change your browsing history
-        </message>
-        <message name="IDS_EXTENSION_PROMPT_WARNING_HISTORY_WRITE_AND_SESSIONS" desc="Permission string for access to modify both browsing history and signed in sessions.">
+        <message name="IDS_EXTENSION_PROMPT_WARNING_HISTORY_WRITE_ON_ALL_DEVICES" desc="Permission string for access to modify browsing history on all signed-in devices.">
           Read and change your browsing history on all your signed-in devices
         </message>
         <message name="IDS_EXTENSION_PROMPT_WARNING_HOME_PAGE_SETTING_OVERRIDE" desc="Permission string for home page override.">
@@ -4701,6 +4704,9 @@ are declared in tools/grit/grit_rule.gni.
           <message name="IDS_EXTENSION_PROMPT_WARNING_CHROMEOS_DIAGNOSTICS" desc="Permission string for chrome.os.diagnostcs API.">
             Run ChromeOS Flex diagnostic tests
           </message>
+          <message name="IDS_EXTENSION_PROMPT_WARNING_CHROMEOS_EVENTS" desc="Permission string for chrome.os.events API.">
+            Subscribe to ChromeOS Flex system events
+          </message>
           <message name="IDS_EXTENSION_PROMPT_WARNING_CHROMEOS_TELEMETRY" desc="Permission string for chrome.os.telemetry API.">
             Read ChromeOS Flex device information and device data
           </message>
@@ -4714,6 +4720,9 @@ are declared in tools/grit/grit_rule.gni.
         <if expr="not reven">
           <message name="IDS_EXTENSION_PROMPT_WARNING_CHROMEOS_DIAGNOSTICS" desc="Permission string for chrome.os.diagnostcs API.">
             Run ChromeOS diagnostic tests
+          </message>
+          <message name="IDS_EXTENSION_PROMPT_WARNING_CHROMEOS_EVENTS" desc="Permission string for chrome.os.events API.">
+            Subscribe to ChromeOS system events
           </message>
           <message name="IDS_EXTENSION_PROMPT_WARNING_CHROMEOS_TELEMETRY" desc="Permission string for chrome.os.telemetry API.">
             Read ChromeOS device information and device data
@@ -7173,9 +7182,12 @@ Keep your key file in a safe place. You will need it to create new versions of y
       <message name="IDS_SIDE_PANEL_CUSTOMIZE_CHROME_TITLE" desc="The name of the Customize Brave feature in the side panel combo box.">
         Customize Brave
       </message>
-        <message name="IDS_SIDE_PANEL_TOOLBAR_BUTTON_CXMENU_UNPIN" desc="The label of the context menu item for unpinning a side panel toolbar button.">
-          Unpin
-        </message>
+      <message name="IDS_SIDE_PANEL_TOOLBAR_BUTTON_CXMENU_UNPIN" desc="The label of the context menu item for unpinning a side panel toolbar button.">
+        Unpin
+      </message>
+      <message name="IDS_SIDE_PANEL_TOOLBAR_BUTTON_CXMENU_PIN" desc="The label of the context menu item for pinning a side panel toolbar button.">
+        Pin
+      </message>
 
       <!-- Bookmarks strings -->
       <message name="IDS_BOOKMARKS_SORT_BY_TYPE" desc="Menu item label for selecting the bookmarks sort type.">
@@ -7225,6 +7237,12 @@ Keep your key file in a safe place. You will need it to create new versions of y
       </message>
       <message name="IDS_BOOKMARKS_EMPTY_STATE_BODY_GUEST" desc="Body text for the bookmarks side panel empty state in guest mode">
         Bookmarks are unavailable in guest mode
+      </message>
+      <message name="IDS_BOOKMARKS_EMPTY_STATE_TITLE_SEARCH" desc="Title for the bookmarks side panel empty state in search mode">
+        No results found
+      </message>
+      <message name="IDS_BOOKMARKS_EMPTY_STATE_BODY_SEARCH" desc="Body text for the bookmarks side panel empty state in search mode">
+        There are no bookmarks that match your search.
       </message>
       <message name="IDS_BOOKMARK_FOLDER_CHILD_COUNT" desc="Text description for the number of children of a bookmark folder">
         {NUM_BOOKMARKS, plural, =1 {1 bookmark} other {# bookmarks}}
@@ -12115,6 +12133,9 @@ Please help our engineers fix this problem. Tell us what happened right before y
       <message name="IDS_DESKTOP_MEDIA_PICKER_TITLE" desc="Title for the window picker dialog shown when desktop capture is requested by an app.">
         Choose what to share
       </message>
+      <message name="IDS_DISPLAY_MEDIA_PICKER_TITLE" desc="Title for the window picker dialog shown when a getDisplayMedia capture is requested by an app.">
+        Choose what to share with <ph name="APP_NAME">$1</ph>
+      </message>
       <message name="IDS_DESKTOP_MEDIA_PICKER_TITLE_SCREEN_ONLY" desc="Title for the window picker dialog shown when desktop capture of the entire screen is requested by an app.">
         Share your entire screen
       </message>
@@ -12123,6 +12144,9 @@ Please help our engineers fix this problem. Tell us what happened right before y
       </message>
       <message name="IDS_DESKTOP_MEDIA_PICKER_TEXT" desc="Text for the window picker dialog shown when desktop capture is requested by an app to be used by the app itself.">
         <ph name="APP_NAME">$1<ex>Brave Hangouts</ex></ph> wants to share the contents of your screen.
+      </message>
+      <message name="IDS_DISPLAY_MEDIA_PICKER_TEXT" desc="Text for the window picker dialog shown when a getDisplayMedia capture is requested by an app to be used by the app itself.">
+        The site will be able to see the contents of your screen
       </message>
       <message name="IDS_DESKTOP_MEDIA_PICKER_TEXT_DELEGATED" desc="Text for the window picker dialog shown when desktop capture is requested by an app to be used by a tab.">
         <ph name="APP_NAME">$1<ex>Brave Hangouts</ex></ph> wants to share the contents of your screen with <ph name="TARGET_NAME">$2<ex>https://google.com</ex></ph>.
@@ -12543,9 +12567,6 @@ Please help our engineers fix this problem. Tell us what happened right before y
 
     <if expr="not is_android">
       <!-- Device Chooser Prompt -->
-      <message name="IDS_BLUETOOTH_DEVICE_CHOOSER_PROMPT_EXTENSION_NAME" desc="The label that is used to introduce Bluetooth chooser details to the user in a popup when it is from a Brave extension.">
-        "<ph name="CHROME_EXTENSION_NAME">$1<ex>Brave Extension Name</ex></ph>" wants to pair
-      </message>
       <message name="IDS_BLUETOOTH_DEVICE_CHOOSER_TURN_ADAPTER_OFF" desc="Text of a link the user can click to get help information when Bluetooth adapter is turned off.">
         <ph name="TURN_ON_BLUETOOTH_LINK">$1<ex>Turn on Bluetooth</ex></ph> to allow pairing
       </message>
@@ -12574,9 +12595,6 @@ Please help our engineers fix this problem. Tell us what happened right before y
         <ph name="DEVICE_NAME">$1<ex>device name</ex></ph> - Paired
       </message>
     </if>
-    <message name="IDS_USB_DEVICE_CHOOSER_PROMPT_EXTENSION_NAME" desc="The label that is used to introduce USB chooser details to the user in a popup when it is from a Brave extension.">
-      "<ph name="CHROME_EXTENSION_NAME">$1<ex>Brave Extension Name</ex></ph>" wants to connect
-    </message>
     <message name="IDS_DEVICE_CHOOSER_ACCNAME_COMPATIBLE_DEVICES_LIST" desc="The accessible name for the list of compatible devices, read to screen reader users when navigating to the container.">
       Compatible devices
     </message>
@@ -12608,11 +12626,8 @@ Please help our engineers fix this problem. Tell us what happened right before y
 
     <!-- Serial port chooser -->
     <if expr="not is_android">
-      <message name="IDS_SERIAL_PORT_CHOOSER_PROMPT_ORIGIN" desc="The label that is used to introduce serial port chooser details to the user in a popup when it is from a website.">
+      <message name="IDS_SERIAL_PORT_CHOOSER_PROMPT" desc="The label that is used to introduce serial port chooser details to the user in a popup.">
         <ph name="Origin">$1<ex>www.google.com</ex></ph> wants to connect to a serial port
-      </message>
-      <message name="IDS_SERIAL_PORT_CHOOSER_PROMPT_EXTENSION_NAME" desc="The label that is used to introduce serial port chooser details to the user in a popup when it is from a Brave extension.">
-        "<ph name="CHROME_EXTENSION_NAME">$1<ex>Brave Extension Name</ex></ph>" wants to connect to a serial port
       </message>
       <message name="IDS_SERIAL_PORT_CHOOSER_NAME_WITH_PATH" desc="User option displaying a human-readable name for a serial port with the device path in parenthesis">
         <ph name="FRIENDLY_NAME">$1<ex>Virtual COM Port</ex></ph> (<ph name="DEVICE_PATH">$2<ex>COM1</ex></ph>)
@@ -12648,11 +12663,8 @@ Please help our engineers fix this problem. Tell us what happened right before y
 
     <!-- HID (Human Interface Device) chooser -->
     <if expr="not is_android">
-      <message name="IDS_HID_CHOOSER_PROMPT_ORIGIN" desc="The label that is used to introduce the Human Interface Device (HID) chooser details to the user in a popup when it is from a website.">
+      <message name="IDS_HID_CHOOSER_PROMPT" desc="The label that is used to introduce the Human Interface Device (HID) chooser details to the user in a popup.">
         <ph name="Origin">$1<ex>www.google.com</ex></ph> wants to connect to a HID device
-      </message>
-      <message name="IDS_HID_CHOOSER_PROMPT_EXTENSION_NAME" desc="The label that is used to introduce Human Interface Device (HID) chooser details to the user in a popup when it is from a Brave extension.">
-        "<ph name="CHROME_EXTENSION_NAME">$1<ex>Brave Extension Name</ex></ph>" wants to connect to a HID device
       </message>
       <message name="IDS_HID_CHOOSER_ITEM_WITHOUT_NAME" desc="User option displaying the device IDs for a Human Interface Device (HID) without a device name.">
         Unknown Device (<ph name="DEVICE_ID">$1<ex>1234:abcd</ex></ph>)
