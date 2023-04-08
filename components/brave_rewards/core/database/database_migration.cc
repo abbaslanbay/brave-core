@@ -51,7 +51,6 @@
 #include "brave/components/brave_rewards/core/database/migration/migration_v9.h"
 #include "brave/components/brave_rewards/core/ledger_impl.h"
 #include "brave/components/brave_rewards/core/logging/event_log_keys.h"
-#include "brave/components/brave_rewards/core/option_keys.h"
 #include "third_party/re2/src/re2/re2.h"
 
 // NOTICE!!
@@ -95,7 +94,7 @@ void DatabaseMigration::Start(uint32_t table_version,
   // order to prevent display of BAP historical information in monthly reports.
   std::string migration_v30 = "";
   std::string migration_v32 = "";
-  if (ledger_->GetOption<bool>(option::kIsBitflyerRegion)) {
+  if (ledger_->GetIsBitFlyerRegion()) {
     migration_v30 = migration::v30;
     migration_v32 = migration::v32;
   }

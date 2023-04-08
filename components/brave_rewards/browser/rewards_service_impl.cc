@@ -1550,69 +1550,10 @@ void RewardsServiceImpl::ClearState(const std::string& name,
   std::move(callback).Run();
 }
 
-void RewardsServiceImpl::GetBooleanOption(const std::string& name,
-                                          GetBooleanOptionCallback callback) {
-  DCHECK(!name.empty());
-
-  if (name == ledger::option::kIsBitflyerRegion) {
-    return std::move(callback).Run(GetExternalWalletType() ==
-                                   ledger::constant::kWalletBitflyer);
-  }
-
-  const auto it = kBoolOptions.find(name);
-  DCHECK(it != kBoolOptions.end());
-
-  std::move(callback).Run(kBoolOptions.at(name));
-}
-
-void RewardsServiceImpl::GetIntegerOption(const std::string& name,
-                                          GetIntegerOptionCallback callback) {
-  DCHECK(!name.empty());
-
-  const auto it = kIntegerOptions.find(name);
-  DCHECK(it != kIntegerOptions.end());
-
-  std::move(callback).Run(kIntegerOptions.at(name));
-}
-
-void RewardsServiceImpl::GetDoubleOption(const std::string& name,
-                                         GetDoubleOptionCallback callback) {
-  DCHECK(!name.empty());
-
-  const auto it = kDoubleOptions.find(name);
-  DCHECK(it != kDoubleOptions.end());
-
-  std::move(callback).Run(kDoubleOptions.at(name));
-}
-
-void RewardsServiceImpl::GetStringOption(const std::string& name,
-                                         GetStringOptionCallback callback) {
-  DCHECK(!name.empty());
-
-  const auto it = kStringOptions.find(name);
-  DCHECK(it != kStringOptions.end());
-
-  std::move(callback).Run(kStringOptions.at(name));
-}
-
-void RewardsServiceImpl::GetInt64Option(const std::string& name,
-                                        GetInt64OptionCallback callback) {
-  DCHECK(!name.empty());
-
-  const auto it = kInt64Options.find(name);
-  DCHECK(it != kInt64Options.end());
-
-  std::move(callback).Run(kInt64Options.at(name));
-}
-
-void RewardsServiceImpl::GetUint64Option(const std::string& name,
-                                         GetUint64OptionCallback callback) {
-  DCHECK(!name.empty());
-
-  const auto it = kUInt64Options.find(name);
-  DCHECK(it != kUInt64Options.end());
-
-  std::move(callback).Run(kUInt64Options.at(name));
+void RewardsServiceImpl::GetIsBitFlyerRegion(
+    GetIsBitFlyerRegionCallback callback) {
+  return std::move(callback).Run(GetExternalWalletType() ==
+                                 ledger::constant::kWalletBitflyer);
 }
 
 void RewardsServiceImpl::GetPublisherMinVisitTime(
