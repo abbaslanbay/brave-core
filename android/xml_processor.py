@@ -14,6 +14,7 @@ import argparse
 import importlib.util
 import os
 import sys
+import zip_helpers
 
 sys.path.append(os.path.join(os.path.dirname(__file__),
                              os.pardir, os.pardir,
@@ -100,7 +101,7 @@ def _XMLTransform(source_pairs, outputs_zip):
       path_info.AddMapping(relpath, source)
 
     path_info.Write(outputs_zip + '.info')
-    build_utils.ZipDir(outputs_zip, temp_dir)
+    zip_helpers.zip_directory(outputs_zip, temp_dir)
 
 
 def main(args):
