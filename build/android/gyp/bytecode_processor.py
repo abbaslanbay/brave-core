@@ -5,6 +5,7 @@
 
 """Wraps bin/helper/java_bytecode_rewriter and expands @FileArgs."""
 
+import action_helpers
 import argparse
 import subprocess
 import sys
@@ -37,16 +38,16 @@ def main(argv):
     _AddSwitch(parser, '--enable-check-class-path')
     args = parser.parse_args(argv)
 
-    sdk_jars = build_utils.ParseGnList(args.sdk_classpath_jars)
+    sdk_jars = action_helpers.parse_gn_list(args.sdk_classpath_jars)
     assert len(sdk_jars) > 0
 
-    direct_jars = build_utils.ParseGnList(args.direct_classpath_jars)
+    direct_jars = action_helpers.parse_gn_list(args.direct_classpath_jars)
     assert len(direct_jars) > 0
 
     extra_classpath_jars = []
     for a in args.extra_jars:
-        extra_classpath_jars.extend(build_utils.ParseGnList(a))
-    args.missing_classes_allowlist = build_utils.ParseGnList(
+        extra_classpath_jars.extend(action_helpers.parse_gn_list(a))
+    args.missing_classes_allowlist = action_helpers.parse_gn_list(
         args.missing_classes_allowlist)
 
     if args.verbose:
