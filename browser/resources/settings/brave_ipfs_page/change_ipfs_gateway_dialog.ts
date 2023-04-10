@@ -20,8 +20,7 @@ import {PrefsMixin} from 'chrome://resources/cr_components/settings_prefs/prefs_
 import '../settings_shared.css.js';
 import {BraveIPFSBrowserProxyImpl} from './brave_ipfs_browser_proxy.js';
 import {getTemplate} from './change_ipfs_gateway_dialog.html.js'
-import { prefToString } from '../prefs/pref_util.js';
-
+import { prefToString } from 'chrome://resources/cr_components/settings_prefs/pref_util.js';
 const ChangeIpfsGatewayDialogBase = I18nMixin(PrefsMixin(PolymerElement))
 
 class ChangeIpfsGatewayDialog extends ChangeIpfsGatewayDialogBase {
