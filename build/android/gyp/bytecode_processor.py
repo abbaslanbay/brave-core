@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-# Copyright 2020 The Brave Authors. All rights reserved.
-# Use of this source code is governed by a BSD-style license that can be
-# found in the LICENSE file.
+# Copyright (c) 2020 The Brave Authors. All rights reserved.
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this file,
+# You can obtain one at https://mozilla.org/MPL/2.0/.
 
 """Wraps bin/helper/java_bytecode_rewriter and expands @FileArgs."""
 
@@ -11,7 +12,7 @@ import subprocess
 import sys
 
 sys.path.append('../../build/android/gyp/util')
-import build_utils
+import build_utils  # pylint: wrong-import-position
 
 
 def _AddSwitch(parser, val):
