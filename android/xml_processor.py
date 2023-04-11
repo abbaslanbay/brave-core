@@ -30,7 +30,7 @@ def  _UnderJavaRes(source):
   """
     source_path = Path(source)
     source_path_parts = source_path.parts
-    for  i in range(1, len(source_path_parts)):
+    for i in range(1, len(source_path_parts)):
         if source_path_parts[i - 1] == 'java' and source_path_parts[i] == 'res':
             parent_path = source_path.parents[len(source_path_parts) - i - 2]
             try:
@@ -106,16 +106,19 @@ def _XMLTransform(source_pairs, outputs_zip):
 
 def main(args):
     parser = argparse.ArgumentParser()
-    parser.add_argument('--xml-sources-path',
-                        required=True,
-                        help='Path to a list of input xml sources for this target.')
-    parser.add_argument('--module-sources-path',
-                        required=True,
-                        help='Path to a list of input python sources for this target. '
-                        'Each python file shall have a function named _ProcessXML.')
-    parser.add_argument('--outputs-zip',
-                        required=True,
-                        help='Path to a list of expected outputs for this target.')
+    parser.add_argument(
+        '--xml-sources-path',
+        required=True,
+        help='Path to a list of input xml sources for this target.')
+    parser.add_argument(
+        '--module-sources-path',
+        required=True,
+        help='Path to a list of input python sources for this target. '
+        'Each python file shall have a function named _ProcessXML.')
+    parser.add_argument(
+        '--outputs-zip',
+        required=True,
+        help='Path to a list of expected outputs for this target.')
 
     options = parser.parse_args(args)
 
@@ -126,7 +129,8 @@ def main(args):
 
     assert len(options.sources) == len(options.modules)
 
-    _XMLTransform(list(zip(options.sources, options.modules)), options.outputs_zip)
+    _XMLTransform(list(zip(options.sources, options.modules)),
+                  options.outputs_zip)
 
 
 if __name__ == '__main__':
