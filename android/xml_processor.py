@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-# Copyright 2021 The Brave Authors. All rights reserved.
-# Use of this source code is governed by a BSD-style license that can be
-# found in the LICENSE file.
+# Copyright (c) 2021 The Brave Authors. All rights reserved.
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this file,
+# You can obtain one at https://mozilla.org/MPL/2.0/.
 
 """XML processor"""
 
@@ -14,19 +15,22 @@ import argparse
 import importlib.util
 import os
 import sys
-import zip_helpers
+
+sys.path.append(
+    os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, 'build'))
+import zip_helpers  # pylint: disable=wrong-import-position
 
 sys.path.append(os.path.join(os.path.dirname(__file__),
                              os.pardir, os.pardir,
                              'build', 'android', 'gyp'))
-from util import build_utils
-from util import resource_utils
+from util import build_utils  # pylint: disable=no-name-in-module,wrong-import-position
+from util import resource_utils  # pylint: disable=no-name-in-module,wrong-import-position
 
 
 def  _UnderJavaRes(source):
     """
-  Check from left whether java/res is part of input path, returns relative path to java/res.
-  Input path shall be absolute.
+  Check from left whether java/res is part of input path, returns relative
+  path to java/res. Input path shall be absolute.
   """
     source_path = Path(source)
     source_path_parts = source_path.parts
@@ -39,6 +43,7 @@ def  _UnderJavaRes(source):
             except ValueError as e:
                 print(e)
                 return None
+    return None
 
 
 def _AddBravePrefix(relpath):
@@ -84,15 +89,17 @@ def _XMLTransform(source_pairs, outputs_zip):
                 continue
 
             root = ET.XML(xml_content)
-            result = loaded_module._ProcessXML(root)
+            result = loaded_module._ProcessXML(root)  # pylint: disable=line-too-long,protected-access
             output = ET.tostring(result, encoding='utf-8', xml_declaration=True)
 
             # Parse output path
-            # For simplicity, we assume input path will always has java/res in it
+            # For simplicity, we assume input path will always has java/res in
+            # it
             if not (relpath := _UnderJavaRes(os.path.abspath(source))):
                 raise Exception('input file %s is not under java/res' % source)
 
-            # resource_overlay doesn't seem to work from android_generated_resources
+            # resource_overlay doesn't seem to work from
+            # android_generated_resources
             relpath = _AddBravePrefix(relpath)
             output_filename = os.path.join(temp_dir, relpath)
             parent_dir = os.path.dirname(output_filename)
