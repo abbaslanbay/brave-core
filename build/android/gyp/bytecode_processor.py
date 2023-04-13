@@ -6,13 +6,20 @@
 
 """Wraps bin/helper/java_bytecode_rewriter and expands @FileArgs."""
 
-import action_helpers
 import argparse
+import os
 import subprocess
 import sys
 
-sys.path.append('../../build/android/gyp/util')
-import build_utils  # pylint: wrong-import-position
+sys.path.append(
+    os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, os.pardir,
+                 os.pardir, 'build'))
+import action_helpers  # pylint: disable=wrong-import-position
+
+sys.path.append(
+    os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, os.pardir,
+                 os.pardir, 'build', 'android', 'gyp'))
+from util import build_utils  # pylint: disable=no-name-in-module,wrong-import-position
 
 
 def _AddSwitch(parser, val):
