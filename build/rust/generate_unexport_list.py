@@ -14,7 +14,7 @@ import sys
 sys.path.append(
     os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir,
                  os.pardir, 'build'))
-import action_helpers  # pylint: wrong-import-position
+import action_helpers  # pylint: disable=wrong-import-position
 
 
 def run(exe, input_file, output_file):
