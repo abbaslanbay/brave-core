@@ -8,6 +8,7 @@
 #include "brave/components/sidebar/sidebar_service.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/views/side_panel/side_panel_entry.h"
+#include "chrome/grit/generated_resources.h"
 #include "third_party/abseil-cpp/absl/types/optional.h"
 
 namespace {
@@ -22,6 +23,13 @@ absl::optional<SidePanelEntry::Id> GetDefaultEntryId(Profile* profile) {
 }
 
 }  // namespace
+
+// Undef upstream's to avoid redefined error.
+#undef IDS_TOOLTIP_SIDE_PANEL_HIDE
+#undef IDS_TOOLTIP_SIDE_PANEL_SHOW
+
+#define IDS_TOOLTIP_SIDE_PANEL_HIDE IDS_TOOLTIP_SIDEBAR_HIDE
+#define IDS_TOOLTIP_SIDE_PANEL_SHOW IDS_TOOLTIP_SIDEBAR_SHOW
 
 // Brave has its own side panel navigation in the form of the SideBar, so
 // hide the Chromium combobox-style header.
@@ -40,5 +48,8 @@ absl::optional<SidePanelEntry::Id> GetDefaultEntryId(Profile* profile) {
   }
 
 #include "src/chrome/browser/ui/views/side_panel/side_panel_coordinator.cc"
+
+#undef IDS_TOOLTIP_SIDE_PANEL_HIDE
+#undef IDS_TOOLTIP_SIDE_PANEL_SHOW
 #undef BRAVE_SIDE_PANEL_COORDINATOR_CREATE_HEADER
 #undef BRAVE_SIDE_PANEL_COORDINATOR_SHOW
