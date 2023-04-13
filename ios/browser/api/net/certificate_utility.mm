@@ -145,37 +145,21 @@ namespace {
 
     std::vector<base::ScopedCFTypeRef<SecCertificateRef>> intermediates;
 
-    if (@available(iOS 15.0, *)) {
-      base::ScopedCFTypeRef<CFArrayRef> certificateChain(
-          SecTrustCopyCertificateChain(trust));
-      for (CFIndex i = 1; i < cert_count; i++) {
-        SecCertificateRef secCertificate =
-            base::mac::CFCastStrict<SecCertificateRef>(
-                CFArrayGetValueAtIndex(certificateChain, i));
-        intermediates.emplace_back(secCertificate, base::scoped_policy::RETAIN);
-      }
+    base::ScopedCFTypeRef<CFArrayRef> certificateChain(
+        SecTrustCopyCertificateChain(trust));
+    for (CFIndex i = 1; i < cert_count; i++) {
       SecCertificateRef secCertificate =
           base::mac::CFCastStrict<SecCertificateRef>(
-              CFArrayGetValueAtIndex(certificateChain, 0));
-      return net::x509_util::CreateX509CertificateFromSecCertificate(
-          base::ScopedCFTypeRef<SecCertificateRef>(secCertificate,
-                                                   base::scoped_policy::RETAIN),
-          intermediates);
+              CFArrayGetValueAtIndex(certificateChain, i));
+      intermediates.emplace_back(secCertificate, base::scoped_policy::RETAIN);
     }
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_15_0
-    else {
-      for (CFIndex i = 1; i < cert_count; i++) {
-        intermediates.emplace_back(SecTrustGetCertificateAtIndex(trust, i),
-                                   base::scoped_policy::RETAIN);
-      }
-      return net::x509_util::CreateX509CertificateFromSecCertificate(
-          /*root_cert=*/base::ScopedCFTypeRef<SecCertificateRef>(
-              SecTrustGetCertificateAtIndex(trust, 0),
-              base::scoped_policy::RETAIN),
-          intermediates);
-    }
-#endif  // __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_15_0
-    NOTREACHED_NORETURN();
+    SecCertificateRef secCertificate =
+        base::mac::CFCastStrict<SecCertificateRef>(
+            CFArrayGetValueAtIndex(certificateChain, 0));
+    return net::x509_util::CreateX509CertificateFromSecCertificate(
+        base::ScopedCFTypeRef<SecCertificateRef>(secCertificate,
+                                                 base::scoped_policy::RETAIN),
+        intermediates);
   };
 
   auto cert = create_cert_from_trust(trust);
