@@ -1398,11 +1398,14 @@ Your Brave account may have other forms of browsing history like searches and ac
       </message>
 
       <!-- Privacy Guide -->
-      <message name="IDS_PREFS_PRIVACY_GUIDE_TITLE" desc="The title of the privacy guide menu item.">
-        Privacy guide
+      <message name="IDS_PRIVACY_GUIDE_PREF_TITLE" desc="The title of the privacy guide menu item. The text between the BEGIN_NEW and END_NEW tokens is a chip shown on the menu item, informing users that this is a new feature.">
+        Privacy guide <ph name="BEGIN_NEW">&lt;new&gt;</ph>New<ph name="END_NEW">&lt;/new&gt;</ph>
       </message>
-      <message name="IDS_PREFS_PRIVACY_GUIDE_SUMMARY" desc="The summary of the privacy menu item.">
+      <message name="IDS_PRIVACY_GUIDE_PREF_SUMMARY" desc="The summary of the privacy menu item.">
         Review key privacy and security controls
+      </message>
+      <message name="IDS_PRIVACY_GUIDE_FRAGMENT_TITLE" desc="The title of all privacy guide fragments.">
+        Privacy guide
       </message>
       <message name="IDS_PRIVACY_GUIDE_WELCOME_TITLE" desc="Title on the welcome page of the privacy guide.">
         A guide of your privacy choices
@@ -3039,6 +3042,24 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Add account to device
       </message>
 
+      <!-- Strings for the Device Lock. -->
+      <!-- TODO(crbug.com/1431577): Finalize strings and set to translateable -->
+      <message name="IDS_DEVICE_LOCK_TITLE" translateable="false" desc="">
+        Keep your data secure with profile lock
+      </message>
+      <message name="IDS_DEVICE_LOCK_DESCRIPTION" translateable="false" desc="">
+        For your data security in the car, profile lock is required to sync and save your passwords, payments, and more.
+      </message>
+      <message name="IDS_DEVICE_LOCK_HIGHLIGHTED_NOTICE" translateable="false" desc="">
+        Your saved data will be erased if profile lock is removed later
+      </message>
+      <message name="IDS_DEVICE_LOCK_CREATE_LOCK_BUTTON" translateable="false" desc="">
+        Set up a profile lock
+      </message>
+      <message name="IDS_DEVICE_LOCK_USER_UNDERSTANDS_BUTTON" translateable="false" desc="">
+        I understand
+      </message>
+
       <!-- Strings for Streamlined Signin and Unified Consent. -->
       <message name="IDS_SIGNIN_TITLE" desc="Title for the screen that asks users to sign-in and turn on Sync. [CHAR_LIMIT=27]">
         Turn on sync?
@@ -3513,6 +3534,15 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
       <message name="IDS_CUSTOM_TAB_AMP_PUBLISHER_URL" desc="Text shown in a Custom Tab toolbar for a web page that is hosted by the Brave content delivery network but was originally published by someone else.">
         From <ph name="PUBLISHER_ORIGIN">&lt;pub&gt;%1$s&lt;/pub&gt;<ex>example.com</ex></ph> – <ph name="BEGIN_DEEMPHASIZED">&lt;bg&gt;</ph>delivered by Brave<ph name="END_DEEMPHASIZED">&lt;/bg&gt;</ph>
       </message>
+      <message name="IDS_ACCESSIBILITY_CUSTOM_TAB_DRAG_HANDLE" desc="The accesibility text for drag handle in the toolbar of the partial custom tab.">
+        Drag handle
+      </message>
+      <message name="IDS_ACCESSIBILITY_CUSTOM_TAB_EXPANDED" desc="The accesibility text informing the custom tab is expanded.">
+        Tab is expanded
+      </message>
+      <message name="IDS_ACCESSIBILITY_CUSTOM_TAB_COLLAPSED" desc="The accesibility text informing the custom tab is collapsed back to initial height.">
+        Tab is back to initial height
+      </message>
       <message name="IDS_CUSTOM_TAB_SIDE_SHEET_MAXIMIZE" desc="The accesibility text for maximize button in side-sheet custom tab.">
         Expand to full screen
       </message>
@@ -3685,9 +3715,6 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
       </message>
       <message name="IDS_MENU_CLOSE_ALL_INCOGNITO_TABS" desc="Menu item for closing all open Private tabs. [CHAR_LIMIT=27]">
         Close Private tabs
-      </message>
-      <message name="IDS_MENU_GROUP_TABS" desc="Menu item for grouping tabs. [CHAR_LIMIT=27]">
-        Group tabs
       </message>
       <message name="IDS_MENU_SELECT_TABS" desc="Menu item for bulk editing tabs. [CHAR_LIMIT=27]">
         Select tabs
@@ -5702,6 +5729,9 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
       </message>
       <message name="IDS_QUICK_DELETE_DIALOG_DESCRIPTION" desc="Description of the dialog when asking users to confirm deleting the last 15 minutes of browsing data.">
         Following data from the last 15 minutes will be deleted
+      </message>
+      <message name="IDS_QUICK_DELETE_DIALOG_SEARCH_HISTORY_DISAMBIGUATION_TEXT" desc="Text for signed in users only in the Quick Delete dialog, that is shown when the user clicks on 'Delete last 15 minutes' option in the three dots menu, informing signed in users that search history and other forms of Activity saved in their Brave account will not be deleted.">
+        <ph name="BEGIN_LINK1">&lt;link1&gt;</ph>Search history<ph name="END_LINK1">&lt;/link1&gt;</ph> and <ph name="BEGIN_LINK2">&lt;link2&gt;</ph>other forms of activity<ph name="END_LINK2">&lt;/link2&gt;</ph> may be saved in your Brave sync chain
       </message>
       <message name="IDS_QUICK_DELETE_SNACKBAR_MESSAGE" desc="Text inside the snackbar which is shown once the user confirms deletion via the 'Delete last 15 minutes' option present inside the three dots menu.">
         Deleted history, cookies, and other data
