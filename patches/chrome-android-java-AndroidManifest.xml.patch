@@ -1,5 +1,5 @@
 diff --git a/chrome/android/java/AndroidManifest.xml b/chrome/android/java/AndroidManifest.xml
-index d2fd7a36869ebee6ca27a4a0a9ad779568a22470..056a2ce19871349ce86a2fd8639f1c4857a9f807 100644
+index 58d4d0203d3ffd23b2779ad9d0a930dad80546ab..12f9a71a3665a7ba263bc681eac49e803474e38f 100644
 --- a/chrome/android/java/AndroidManifest.xml
 +++ b/chrome/android/java/AndroidManifest.xml
 @@ -28,6 +28,7 @@ by a child template that "extends" this file.
@@ -79,7 +79,7 @@ index d2fd7a36869ebee6ca27a4a0a9ad779568a22470..056a2ce19871349ce86a2fd8639f1c48
              <meta-data android:name="android.app.searchable"
                  android:resource="@xml/searchable" />
          </activity-alias>
-@@ -1223,6 +1238,7 @@ by a child template that "extends" this file.
+@@ -1232,6 +1247,7 @@ by a child template that "extends" this file.
              android:configChanges="orientation|keyboardHidden|keyboard|screenSize|mcc|mnc|screenLayout|smallestScreenSize" >
          </activity>
  
@@ -87,7 +87,7 @@ index d2fd7a36869ebee6ca27a4a0a9ad779568a22470..056a2ce19871349ce86a2fd8639f1c48
          {% block extra_application_definitions %}
          {% endblock %}
        {% endmacro %}
-@@ -1300,6 +1316,7 @@ by a child template that "extends" this file.
+@@ -1309,6 +1325,7 @@ by a child template that "extends" this file.
            android:value="allow_front_facing_motion_tracking_6dof," />
        {% endblock base_application_extra_arcore_definitions %}
  

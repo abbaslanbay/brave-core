@@ -1,8 +1,8 @@
 diff --git a/chrome/browser/prefs/browser_prefs.cc b/chrome/browser/prefs/browser_prefs.cc
-index ea6e974a5889aebd4fc208be903274c81574c154..abc812cd7d81076306dcd8099880b7f2fbb37e47 100644
+index 03e03d8aa50aca10e7c7d5a9fa88b23c135fc684..95fba5a7a5ddb7736320320c2a6a19019402e31a 100644
 --- a/chrome/browser/prefs/browser_prefs.cc
 +++ b/chrome/browser/prefs/browser_prefs.cc
-@@ -1329,6 +1329,8 @@ void RegisterLocalState(PrefRegistrySimple* registry) {
+@@ -1397,6 +1397,8 @@ void RegisterLocalState(PrefRegistrySimple* registry) {
    DeviceOAuth2TokenStoreDesktop::RegisterPrefs(registry);
  #endif
  
@@ -11,7 +11,7 @@ index ea6e974a5889aebd4fc208be903274c81574c154..abc812cd7d81076306dcd8099880b7f2
  #if BUILDFLAG(ENABLE_SCREEN_AI_SERVICE)
    screen_ai::RegisterLocalStatePrefs(registry);
  #endif  // BUILDFLAG(ENABLE_SCREEN_AI_SERVICE)
-@@ -1724,6 +1726,7 @@ void RegisterProfilePrefs(user_prefs::PrefRegistrySyncable* registry,
+@@ -1791,6 +1793,7 @@ void RegisterProfilePrefs(user_prefs::PrefRegistrySyncable* registry,
        prefs::kAccessibilityPdfOcrAlwaysActive, false,
        user_prefs::PrefRegistrySyncable::SYNCABLE_PREF);
  #endif  // BUILDFLAG(ENABLE_SCREEN_AI_SERVICE)
