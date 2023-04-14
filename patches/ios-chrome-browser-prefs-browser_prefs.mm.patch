@@ -1,8 +1,8 @@
 diff --git a/ios/chrome/browser/prefs/browser_prefs.mm b/ios/chrome/browser/prefs/browser_prefs.mm
-index 8292526472bb44b55fcfa09f90b4f9fe93c330e6..acc1e5ea92abc18a4bb47f813f5c7442f59eb45f 100644
+index 0269032de9425fe25dbe81ab5ae41d91d8faa7ea..4fe86b7a5b43f77e02b94641aa23bb83ec9bc12a 100644
 --- a/ios/chrome/browser/prefs/browser_prefs.mm
 +++ b/ios/chrome/browser/prefs/browser_prefs.mm
-@@ -278,6 +278,7 @@ void RegisterLocalStatePrefs(PrefRegistrySimple* registry) {
+@@ -230,6 +230,7 @@ void RegisterLocalStatePrefs(PrefRegistrySimple* registry) {
    // Preferences related to tab grid.
    // Default to 0 which is the unassigned value.
    registry->RegisterIntegerPref(prefs::kInactiveTabsTimeThreshold, 0);
@@ -10,17 +10,17 @@ index 8292526472bb44b55fcfa09f90b4f9fe93c330e6..acc1e5ea92abc18a4bb47f813f5c7442
  }
  
  void RegisterBrowserStatePrefs(user_prefs::PrefRegistrySyncable* registry) {
-@@ -422,6 +423,7 @@ void RegisterBrowserStatePrefs(user_prefs::PrefRegistrySyncable* registry) {
- 
-   // Register pref used to determine if Browser Lockdown Mode is enabled.
+@@ -376,6 +377,7 @@ void RegisterBrowserStatePrefs(user_prefs::PrefRegistrySyncable* registry) {
    registry->RegisterBooleanPref(prefs::kBrowserLockdownModeEnabled, false);
+ 
+   ntp_snippets::prefs::RegisterProfilePrefsForMigrationApril2023(registry);
 +  BRAVE_REGISTER_BROWSER_STATE_PREFS
  }
  
  // This method should be periodically pruned of year+ old migrations.
-@@ -567,4 +569,5 @@ void MigrateObsoleteBrowserStatePrefs(PrefService* prefs) {
-   if (prefs->FindPreference(kUserClassifierLastTimeToUseSuggestions)) {
-     prefs->ClearPref(kUserClassifierLastTimeToUseSuggestions);
-   }
+@@ -447,4 +449,5 @@ void MigrateObsoleteBrowserStatePrefs(PrefService* prefs) {
+ 
+   // Added 04/2023.
+   ntp_snippets::prefs::MigrateObsoleteProfilePrefsApril2023(prefs);
 +  BRAVE_MIGRATE_OBSOLETE_BROWSER_STATE_PREFS
  }
