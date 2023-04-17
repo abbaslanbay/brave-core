@@ -1,22 +1,60 @@
 diff --git a/chrome/installer/mini_installer/BUILD.gn b/chrome/installer/mini_installer/BUILD.gn
-index 4e6af9a522de53d458664afe714961f3f246d9b7..ec52e00e7d08ded7368e9f5a92a88eca4d786922 100644
+index 4e6af9a522de53d458664afe714961f3f246d9b7..76a983b6b50af61219a61255f4c305eba77bfc8b 100644
 --- a/chrome/installer/mini_installer/BUILD.gn
 +++ b/chrome/installer/mini_installer/BUILD.gn
-@@ -13,6 +13,7 @@ import("//third_party/icu/config.gni")
- import("//tools/v8_context_snapshot/v8_context_snapshot.gni")
- import("//ui/base/ui_features.gni")
- import("//v8/gni/v8.gni")
-+import("//brave/build/config.gni")
+@@ -2,6 +2,7 @@
+ # Use of this source code is governed by a BSD-style license that can be
+ # found in the LICENSE file.
  
- declare_args() {
-   # The Chrome archive is maximally compressed in official builds to reduce the
-@@ -171,6 +172,9 @@ action("mini_installer_archive") {
-     "//mojo/core:shared_library",
-     "//third_party/icu:icudata",
++import("//brave/chromium_src/chrome/installer/mini_installer/BUILD.gn")
+ import("//build/config/compiler/compiler.gni")
+ import("//build/config/features.gni")
+ import("//build/config/python.gni")
+@@ -113,7 +114,7 @@ group("setup_runtime_deps") {
+ 
+ packed_files_rc_file = "$target_gen_dir/mini_installer/packed_files.rc"
+ 
+-action("mini_installer_archive") {
++modified_action("mini_installer_archive") {
+   script = "//chrome/tools/build/win/create_installer_archive.py"
+ 
+   release_file = "chrome.release"
+@@ -223,10 +224,10 @@ action("mini_installer_archive") {
    ]
-+  if (skip_signing) { args += [ "--skip_signing" ] }
-+  if (build_delta_installer) { args += [ "--setup_exe_format=DIFF", "--diff_algorithm=COURGETTE", "--last_chrome_installer",rebase_path("$root_out_dir/$last_chrome_installer", root_build_dir) ] }
-+  deps += [ "//brave:mini_installer_dependencies" ]
+ }
  
-   if (enable_hidpi) {
-     args += [ "--enable_hidpi=1" ]
+-executable("mini_installer") {
++template("mini_installer") { executable(target_name) {
+   sources = [
+     "mini_installer_exe_main.cc",
+-    packed_files_rc_file,
++    invoker.packed_files_rc_file,
+   ]
+ 
+   # This target is special so we manually override most linker flags and
+@@ -261,6 +262,9 @@ executable("mini_installer") {
+     "//base:clang_profiling_buildflags",
+     "//build/win:default_exe_manifest",
+   ]
++  if (defined(invoker.extra_deps)) {
++    deps += invoker.extra_deps
++  }
+ 
+   # In general, mini_installer tries to avoid depending on the C++ standard
+   # library for size reasons. This is achieved by:
+@@ -280,6 +284,15 @@ executable("mini_installer") {
+     no_default_deps = true
+     ldflags += [ "/ENTRY:MainEntryPoint" ]
+   }
++}}
++
++mini_installer("mini_installer") {
++  packed_files_rc_file = packed_files_rc_file
++}
++
++mini_installer("delta_installer") {
++  packed_files_rc_file = "$target_gen_dir/packed_delta_files.rc"
++  extra_deps = [ "//brave:delta_installer_archive" ]
+ }
+ 
+ # previous_version_mini_installer.exe can't be generated in an x86 Debug
