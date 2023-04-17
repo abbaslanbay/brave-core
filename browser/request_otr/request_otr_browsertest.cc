@@ -16,6 +16,7 @@
 #include "brave/components/brave_shields/common/features.h"
 #include "brave/components/constants/brave_paths.h"
 #include "brave/components/request_otr/browser/request_otr_component_installer.h"
+#include "brave/components/request_otr/browser/request_otr_service.h"
 #include "brave/components/request_otr/common/features.h"
 #include "brave/components/request_otr/common/pref_names.h"
 #include "chrome/browser/extensions/extension_browsertest.h"
@@ -59,33 +60,32 @@ using request_otr::features::kBraveRequestOTR;
 
 namespace request_otr {
 
-class RequestOTRComponentInstallerWaiter
-    : public RequestOTRComponentInstaller::Observer {
+class RequestOTRComponentInstallerPolicyWaiter
+    : public RequestOTRComponentInstallerPolicy::Observer {
  public:
-  explicit RequestOTRComponentInstallerWaiter(
-      RequestOTRComponentInstaller* component_installer)
+  explicit RequestOTRComponentInstallerPolicyWaiter(
+      RequestOTRComponentInstallerPolicy* component_installer)
       : component_installer_(component_installer), scoped_observer_(this) {
     scoped_observer_.Observe(component_installer_);
   }
-  RequestOTRComponentInstallerWaiter(
-      const RequestOTRComponentInstallerWaiter&) = delete;
-  RequestOTRComponentInstallerWaiter& operator=(
-      const RequestOTRComponentInstallerWaiter&) = delete;
-  ~RequestOTRComponentInstallerWaiter() override = default;
+  RequestOTRComponentInstallerPolicyWaiter(
+      const RequestOTRComponentInstallerPolicyWaiter&) = delete;
+  RequestOTRComponentInstallerPolicyWaiter& operator=(
+      const RequestOTRComponentInstallerPolicyWaiter&) = delete;
+  ~RequestOTRComponentInstallerPolicyWaiter() override = default;
 
   void Wait() { run_loop_.Run(); }
 
  private:
-  // RequestOTRComponentInstaller::Observer:
-  void OnRulesReady(
-      RequestOTRComponentInstaller* component_installer) override {
+  // RequestOTRComponentInstallerPolicy::Observer:
+  void OnRulesReady(const std::string& json_content) override {
     run_loop_.QuitWhenIdle();
   }
 
-  RequestOTRComponentInstaller* const component_installer_;
+  RequestOTRComponentInstallerPolicy* const component_installer_;
   base::RunLoop run_loop_;
-  base::ScopedObservation<RequestOTRComponentInstaller,
-                          RequestOTRComponentInstaller::Observer>
+  base::ScopedObservation<RequestOTRComponentInstallerPolicy,
+                          RequestOTRComponentInstallerPolicy::Observer>
       scoped_observer_{this};
 };
 
@@ -101,9 +101,9 @@ class RequestOTRBrowserTestBase : public BaseLocalDataFilesBrowserTest {
   void WaitForService() override {
     // Wait for request-otr component installer to load and parse its
     // configuration file.
-    request_otr::RequestOTRComponentInstaller* component_installer =
+    request_otr::RequestOTRComponentInstallerPolicy* component_installer =
         g_brave_browser_process->request_otr_component_installer();
-    RequestOTRComponentInstallerWaiter(component_installer).Wait();
+    RequestOTRComponentInstallerPolicyWaiter(component_installer).Wait();
   }
 
   content::WebContents* web_contents() {
