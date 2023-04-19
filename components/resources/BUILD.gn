@@ -74,6 +74,7 @@ repack("resources") {
       "//brave/components/brave_welcome_ui:generated_resources",
       "//brave/components/speedreader/resources/panel:generated_resources",
       "//brave/components/webcompat_reporter/ui:generated_resources",
+      "//brave/components/leo/browser/resources:generated_resources",
     ]
 
     sources += [
@@ -84,6 +85,7 @@ repack("resources") {
       "$root_gen_dir/brave/components/brave_welcome/resources/brave_welcome_generated.pak",
       "$root_gen_dir/brave/components/speedreader/resources/panel/brave_speedreader_panel_generated.pak",
       "$root_gen_dir/brave/components/webcompat_reporter/resources/webcompat_reporter_generated.pak",
+      "$root_gen_dir/brave/components/leo/browser/resources/leo_components_generated.pak",
     ]
   }
 
