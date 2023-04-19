@@ -3173,7 +3173,7 @@ If you don't accept this request, VPN will not reconnect and your internet conne
     <message name="IDS_WALLET_ACTION_NO" desc="Action text for general negative actions">
       No
     </message>
-    <message name="IDS_WALLET_ETH_NAME" desc="Name of ETH cointype">
+    <message name="IDS_WALLET_ETH_NAME" desc="Name of ETH cointype" translateable="false">
       Ethereum
     </message>
     <message name="IDS_WALLET_SOL_NAME" desc="Name of SOL cointype" translateable="false">
