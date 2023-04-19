@@ -3,6 +3,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+#include "components/embedder_support/user_agent_utils.h"
+
+#include "base/notreached.h"
+#include "base/strings/stringprintf.h"
+#include "base/version.h"
+
 namespace {
 
 constexpr char kBraveBrandNameForCHUA[] = "Brave";
@@ -20,3 +26,27 @@ constexpr char kBraveBrandNameForCHUA[] = "Brave";
 
 #include "src/components/embedder_support/user_agent_utils.cc"
 #undef BRAVE_GET_USER_AGENT_BRAND_LIST
+
+namespace embedder_support {
+
+blink::UserAgentMetadata BraveGetUserAgentMetadata(
+    const PrefService* pref_service) {
+  blink::UserAgentMetadata metadata = GetUserAgentMetadata(pref_service);
+  // Clamp platform version
+  base::Version platform_version(metadata.platform_version);
+  metadata.platform_version =
+      base::StringPrintf("%d.%d.%c", platform_version.components()[0],
+                         platform_version.components()[1], 'x');
+  return metadata;
+}
+
+// This is added because of the redefinition of GetUserAgentMetadata in 
+// brave/chromium_src/components/client_hints/browser/client_hints.cc which
+// causes ClientHints::GetUserAgentMetadata() in there to call
+// embedder_support::GetUserAgentMetadata_ChromiumImpl(pref_service_);
+blink::UserAgentMetadata GetUserAgentMetadata_ChromiumImpl(
+    const PrefService* pref_service) {
+  NOTREACHED_NORETURN();
+}
+
+}  // namespace embedder_support
