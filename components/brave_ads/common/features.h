@@ -38,6 +38,8 @@ bool IsAllowedToFallbackToCustomNotificationAdsEnabled();
 
 BASE_DECLARE_FEATURE(kShouldTriggerSearchResultAdEvents);
 
+BASE_DECLARE_FEATURE(kInProcessBraveAds);
+
 }  // namespace brave_ads::features
 
 #endif  // BRAVE_COMPONENTS_BRAVE_ADS_COMMON_FEATURES_H_

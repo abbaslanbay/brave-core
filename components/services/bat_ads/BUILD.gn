@@ -18,6 +18,8 @@ static_library("lib") {
     "bat_ads_impl.h",
     "bat_ads_service_impl.cc",
     "bat_ads_service_impl.h",
+    "in_process_bat_ads_service.cc",
+    "in_process_bat_ads_service.h",
   ]
 
   public_deps = [

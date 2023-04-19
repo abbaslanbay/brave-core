@@ -26,6 +26,10 @@ BASE_FEATURE(kShouldTriggerSearchResultAdEvents,
              "ShouldTriggerSearchResultAdEvents",
              base::FEATURE_DISABLED_BY_DEFAULT);
 
+BASE_FEATURE(kInProcessBraveAds,
+             "InProcessBraveAds",
+             base::FEATURE_DISABLED_BY_DEFAULT);
+
 namespace {
 
 // Set to true to fallback to custom notification ads if native notifications

@@ -59,6 +59,7 @@
 #include "brave/components/brave_rewards/common/mojom/ledger.mojom.h"
 #include "brave/components/brave_rewards/common/pref_names.h"
 #include "brave/components/l10n/common/locale_util.h"
+#include "brave/components/services/bat_ads/in_process_bat_ads_service.h"
 #include "brave/grit/brave_generated_resources.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
@@ -408,11 +409,16 @@ void AdsServiceImpl::StartBatAdsService() {
   DCHECK_CURRENTLY_ON(content::BrowserThread::UI);
   DCHECK(!bat_ads_service_.is_bound());
 
-  content::ServiceProcessHost::Launch(
-      bat_ads_service_.BindNewPipeAndPassReceiver(),
-      content::ServiceProcessHost::Options()
-          .WithDisplayName(IDS_SERVICE_BAT_ADS)
-          .Pass());
+  if (base::FeatureList::IsEnabled(features::kInProcessBraveAds)) {
+    bat_ads::LaunchInProcessBatAdsService(
+        bat_ads_service_.BindNewPipeAndPassReceiver());
+  } else {
+    content::ServiceProcessHost::Launch(
+        bat_ads_service_.BindNewPipeAndPassReceiver(),
+        content::ServiceProcessHost::Options()
+            .WithDisplayName(IDS_SERVICE_BAT_ADS)
+            .Pass());
+  }
 
   bat_ads_service_.set_disconnect_handler(base::BindOnce(
       &AdsServiceImpl::RestartBatAdsServiceAfterDelay, AsWeakPtr()));
