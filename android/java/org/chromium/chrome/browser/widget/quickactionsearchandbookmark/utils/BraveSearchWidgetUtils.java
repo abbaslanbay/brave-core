@@ -15,17 +15,50 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
+import com.google.android.apps.chrome.appwidget.bookmarks.BookmarkThumbnailWidgetProvider;
+
 import org.chromium.base.ContextUtils;
 import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
+import org.chromium.chrome.browser.quickactionsearchwidget.QuickActionSearchWidgetProvider.QuickActionSearchWidgetProviderDino;
+import org.chromium.chrome.browser.quickactionsearchwidget.QuickActionSearchWidgetProvider.QuickActionSearchWidgetProviderSearch;
+import org.chromium.chrome.browser.searchwidget.SearchWidgetProvider;
 import org.chromium.chrome.browser.widget.quickactionsearchandbookmark.QuickActionSearchAndBookmarkWidgetProvider;
 
 public class BraveSearchWidgetUtils {
     private static final String SHOW_WIDGET =
             "org.chromium.chrome.browser.widget.quickactionsearchandbookmark.utils.SHOW_WIDGET";
 
-    public static boolean getShouldShowWidgetPromo() {
-        return SharedPreferencesManager.getInstance().readBoolean(
-                SHOW_WIDGET, isRequestPinAppWidgetSupported());
+    public static boolean getShouldShowWidgetPromo(Context context) {
+        AppWidgetManager manager = AppWidgetManager.getInstance(context);
+        boolean hasQuickActionSearchBookmarkWidget =
+                manager.getAppWidgetIds(new ComponentName(context,
+                                                QuickActionSearchAndBookmarkWidgetProvider.class))
+                        .length
+                > 0;
+        boolean hasQuickActionSearchWidget =
+                manager.getAppWidgetIds(new ComponentName(context,
+                                                QuickActionSearchWidgetProviderSearch.class))
+                        .length
+                > 0;
+        boolean hasQuickActionSearchWidgetDino =
+                manager.getAppWidgetIds(new ComponentName(
+                                                context, QuickActionSearchWidgetProviderDino.class))
+                        .length
+                > 0;
+        boolean hasSearchWidget =
+                manager.getAppWidgetIds(new ComponentName(context, SearchWidgetProvider.class))
+                        .length
+                > 0;
+        boolean hasBookmarkThumbnailWidget =
+                manager.getAppWidgetIds(
+                               new ComponentName(context, BookmarkThumbnailWidgetProvider.class))
+                        .length
+                > 0;
+        return !hasQuickActionSearchBookmarkWidget && !hasQuickActionSearchWidget
+                && !hasQuickActionSearchWidgetDino && !hasSearchWidget
+                && !hasBookmarkThumbnailWidget
+                && SharedPreferencesManager.getInstance().readBoolean(
+                        SHOW_WIDGET, isRequestPinAppWidgetSupported());
     }
 
     public static void setShouldShowWidgetPromo(boolean shouldShow) {
