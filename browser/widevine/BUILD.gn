@@ -5,6 +5,10 @@
 
 import("//third_party/widevine/cdm/widevine.gni")
 
+if (is_win) {
+  import("//brave/build/win/sign.gni")
+}
+
 assert(enable_widevine)
 
 source_set("widevine") {
@@ -83,4 +87,66 @@ source_set("browser_tests") {
     "//ui/views",
     "//url",
   ]
+}
+
+if (is_win) {
+  sign("signed_brave_exe") {
+    sources = [ "$root_out_dir/brave.exe" ]
+    outputs = [ "$root_out_dir/signed_binaries/brave.exe" ]
+    deps = [ "//brave/build/win:copy_exe" ]
+  }
+
+  sign("signed_chrome_dll") {
+    sources = [ "$root_out_dir/chrome.dll" ]
+    outputs = [ "$root_out_dir/signed_binaries/chrome.dll" ]
+    deps = [ "//chrome:chrome_dll" ]
+  }
+
+  template("sig_file") {
+    assert(defined(invoker.flags), "Need flags in $target_name.")
+    action(target_name) {
+      forward_variables_from(invoker,
+                             [
+                               "sources",
+                               "outputs",
+                               "deps",
+                             ])
+      script = "//third_party/widevine/scripts/signature_generator.py"
+      args = [
+        "--input_file",
+        rebase_path(sources[0], root_build_dir),
+        "--flags",
+        invoker.flags,
+        "--certificate",
+        getenv("SIGN_WIDEVINE_CERT"),
+        "--private_key",
+        getenv("SIGN_WIDEVINE_KEY"),
+        "--private_key_passphrase",
+        getenv("SIGN_WIDEVINE_PASSPHRASE"),
+        "--out_file",
+        rebase_path(outputs[0], root_build_dir),
+      ]
+    }
+  }
+
+  sig_file("brave_exe_sig") {
+    flags = "1"
+    sources = [ "$root_out_dir/signed_binaries/brave.exe" ]
+    outputs = [ "$root_out_dir/brave.exe.sig" ]
+    deps = [ ":signed_brave_exe" ]
+  }
+
+  sig_file("chrome_dll_sig") {
+    flags = "0"
+    sources = [ "$root_out_dir/signed_binaries/chrome.dll" ]
+    outputs = [ "$root_out_dir/chrome.dll.sig" ]
+    deps = [ ":signed_chrome_dll" ]
+  }
+
+  group("sig_files") {
+    deps = [
+      ":brave_exe_sig",
+      ":chrome_dll_sig",
+    ]
+  }
 }
