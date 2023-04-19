@@ -3,8 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-import {RegisterStyleOverride} from 'chrome://resources/brave/polymer_overriding.js'
+import {RegisterStyleOverride, RegisterPolymerTemplateModifications} from 'chrome://resources/brave/polymer_overriding.js'
 import {html} from 'chrome://resources/polymer/v3_0/polymer/polymer_bundled.min.js'
+
+import '@brave/leo/web-components/button.js'
 
 RegisterStyleOverride(
   'downloads-item',
@@ -16,3 +18,11 @@ RegisterStyleOverride(
     </style>
   `
 )
+
+RegisterPolymerTemplateModifications({
+  'downloads-item': templateContent => {
+    const button = document.createElement('leo-button')
+    button.textContent = "Click Me!";
+    templateContent.appendChild(button)
+  }
+})
