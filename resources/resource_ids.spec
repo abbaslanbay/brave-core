@@ -217,9 +217,5 @@
   "<(SHARED_INTERMEDIATE_DIR)/brave/web-ui-tip_panel/tip_panel.grd": {
     "META": {"sizes": {"includes": [100]}},
     "includes": [60400]
-  },
-  "<(SHARED_INTERMEDIATE_DIR)/brave/web-ui-leo_components/leo_components.grd": {
-    "META": {"sizes": {"includes": [200]}},
-    "includes": [60500]
   }
 }
