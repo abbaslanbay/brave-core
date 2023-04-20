@@ -5,6 +5,7 @@
 
 #include "chrome/browser/media/router/media_router_feature.h"
 
+#include "base/feature_override.h"
 #include "build/build_config.h"
 #include "content/public/browser/browser_context.h"
 
@@ -16,6 +17,10 @@
 #undef MediaRouterEnabled
 
 namespace media_router {
+
+OVERRIDE_FEATURE_DEFAULT_STATES({{
+    {kFallbackToAudioTabMirroring, base::FEATURE_DISABLED_BY_DEFAULT},
+}});
 
 bool MediaRouterEnabled(content::BrowserContext* context) {
 #if BUILDFLAG(IS_ANDROID)
