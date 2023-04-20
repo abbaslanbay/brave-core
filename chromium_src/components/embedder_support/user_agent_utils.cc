@@ -8,6 +8,7 @@
 #include "base/notreached.h"
 #include "base/strings/stringprintf.h"
 #include "base/version.h"
+#include "third_party/blink/public/common/features.h"
 
 namespace {
 
@@ -32,11 +33,16 @@ namespace embedder_support {
 blink::UserAgentMetadata BraveGetUserAgentMetadata(
     const PrefService* pref_service) {
   blink::UserAgentMetadata metadata = GetUserAgentMetadata(pref_service);
-  // Clamp platform version
-  base::Version platform_version(metadata.platform_version);
-  metadata.platform_version =
-      base::StringPrintf("%d.%d.%c", platform_version.components()[0],
-                         platform_version.components()[1], 'x');
+  if (base::FeatureList::IsEnabled(
+          blink::features::kClampPlatformVersionClientHint)) {
+    // Clamp platform version
+    base::Version platform_version(metadata.platform_version);
+    metadata.platform_version = base::StringPrintf(
+        "%d.%d.%s", platform_version.components()[0],
+        platform_version.components()[1],
+        blink::features::kClampPlatformVersionClientHintPatchValue.Get()
+            .c_str());
+  }
   return metadata;
 }
 
