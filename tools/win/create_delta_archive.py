@@ -29,7 +29,7 @@ def main():
     create_patch(args.zucchini, args.old_setup_exe, args.new_setup_exe,
                  args.setup_exe_patch, args.setup_exe_patch_packed)
     write_rc_file(args.chrome_7z_patch_packed, args.setup_exe_patch_packed,
-                  args.rc_file)
+                  args.rc_file, args.is_component_build)
 
 
 def parse_args():
@@ -64,6 +64,7 @@ def parse_args():
                         help=('output path for the .rc file that makes the '
                               'packed patch files accessible to '
                               'mini_installer.'))
+    parser.add_argument('--is_component_build', action='store_true')
     return parser.parse_args()
 
 
@@ -72,12 +73,13 @@ def create_patch(zucchini, old_file, new_file, patch_file, packed_patch_file):
     compress_with_7z(patch_file, packed_patch_file)
 
 
-def write_rc_file(chrome_7z_patch, setup_exe_patch, rc_file):
+def write_rc_file(chrome_7z_patch, setup_exe_patch, rc_file,
+                  is_component_build):
+    if is_component_build:
+        raise NotImplementedError(
+            "This Python script doesn't yet suport component builds.")
     output_dir = dirname(chrome_7z_patch)
     assert dirname(setup_exe_patch) == output_dir
-    # The call below assumes that we're not doing a component build. The reason
-    # is that that the upstream function requires more input information, which
-    # we do not have.
     # pylint: disable=no-member
     upstream_impl.CreateResourceInputFile(output_dir, 'DIFF',
                                           basename(chrome_7z_patch),

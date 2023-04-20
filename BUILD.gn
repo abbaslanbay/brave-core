@@ -106,6 +106,9 @@ if (is_win) {
       "setup_patch.packed.7z",
       rebase_path(packed_files_rc_file, root_build_dir),
     ]
+    if (is_component_build) {
+      args += [ "--is_component_build" ]
+    }
   }
 
   group("mini_installer_dependencies") {
