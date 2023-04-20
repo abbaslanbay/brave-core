@@ -11,6 +11,10 @@ import {RegisterPolymerTemplateModifications, RegisterStyleOverride} from 'chrom
 import {html} from 'chrome://resources/polymer/v3_0/polymer/polymer_bundled.min.js'
 
 import {loadTimeData} from '../i18n_setup.js'
+const secretPath = 'chrome://' + 'resources/brave/leo/web-components/icon.js';
+import(secretPath).then(i => {
+  i.setIconBasePath('chrome://resources/brave-icons')
+})
 
 function createMenuElement(title, href, iconName, pageVisibilitySection) {
   const menuEl = document.createElement('a')
@@ -20,9 +24,13 @@ function createMenuElement(title, href, iconName, pageVisibilitySection) {
   menuEl.href = href
   menuEl.setAttribute('role', 'menuitem')
   menuEl.setAttribute('class', 'cr-nav-menu-item')
-  const iconChild = document.createElement('iron-icon')
-  iconChild.setAttribute('icon', iconName)
-  menuEl.appendChild(iconChild)
+  // const iconChild = document.createElement('iron-icon')
+  // iconChild.setAttribute('icon', iconName)
+  // menuEl.appendChild(iconChild)
+  const icon = document.createElement('leo-icon')
+  icon.setAttribute('name', iconName)
+  menuEl.appendChild(icon)
+
   const text = document.createTextNode(title)
   menuEl.appendChild(text)
   const paperRippleChild = document.createElement('paper-ripple')
@@ -124,7 +132,7 @@ RegisterStyleOverride(
         color: #444DD0 !important;
       }
 
-      iron-icon {
+      iron-icon, leo-icon {
         margin-inline-end: 14px !important;
         width: 24px;
         height: 24px;
@@ -235,7 +243,7 @@ RegisterPolymerTemplateModifications({
     const getStartedEl = createMenuElement(
       loadTimeData.getString('braveGetStartedTitle'),
       '/getStarted',
-      'brave_settings:get-started',
+      'rocket',
       'getStarted'
     )
     peopleEl.insertAdjacentElement('afterend', getStartedEl)
