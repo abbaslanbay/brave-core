@@ -16,6 +16,17 @@ import(secretPath).then(i => {
   i.setIconBasePath('chrome://resources/brave-icons')
 })
 
+const iconConversions = {
+  'cr:security': 'lock',
+  'cr:search': 'search',
+  'settings:palette': 'appearance',
+  'settings:assignment': 'list-4',
+  'settings:language': 'product-translate',
+  'settings:build': 'settings',
+  'settings:restore': 'backward',
+  'cr:file-download': 'download'
+}
+
 function createMenuElement(title, href, iconName, pageVisibilitySection) {
   const menuEl = document.createElement('a')
   if (pageVisibilitySection) {
@@ -24,9 +35,7 @@ function createMenuElement(title, href, iconName, pageVisibilitySection) {
   menuEl.href = href
   menuEl.setAttribute('role', 'menuitem')
   menuEl.setAttribute('class', 'cr-nav-menu-item')
-  // const iconChild = document.createElement('iron-icon')
-  // iconChild.setAttribute('icon', iconName)
-  // menuEl.appendChild(iconChild)
+
   const icon = document.createElement('leo-icon')
   icon.setAttribute('name', iconName)
   menuEl.appendChild(icon)
@@ -360,8 +369,8 @@ RegisterPolymerTemplateModifications({
     const graphicsEl = document.createElement('div')
     graphicsEl.setAttribute('class', 'brave-about-graphic')
 
-    const icon = document.createElement('iron-icon')
-    icon.setAttribute('icon', 'brave_settings:full-color-brave-lion')
+    const icon = document.createElement('leo-icon')
+    icon.setAttribute('name', 'product-brave-color')
 
     const metaEl = document.createElement('div')
     metaEl.setAttribute('class', 'brave-about-meta')
@@ -373,6 +382,21 @@ RegisterPolymerTemplateModifications({
     const versionEl = document.createElement('span')
     versionEl.setAttribute('class', 'brave-about-item brave-about-menu-version')
     versionEl.textContent = `v ${loadTimeData.getString('braveProductVersion')}`
+
+    console.log(templateContent.querySelectorAll('iron-icon'))
+    for (const icon of templateContent.querySelectorAll('iron-icon')) {
+      const name = icon.getAttribute('icon')
+      const converted = iconConversions[name]
+      if (!icon) {
+        console.error("Couldn't find leo icon for", name)
+        continue
+      }
+
+      const leoIcon = document.createElement('leo-icon')
+      leoIcon.setAttribute('name', converted)
+      icon.insertAdjacentElement('beforebegin', leoIcon)
+      icon.remove()
+    }
 
     parent.appendChild(newAboutEl)
     newAboutEl.appendChild(graphicsEl)

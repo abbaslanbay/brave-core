@@ -178,6 +178,15 @@ leo_icons = [
   "product-bat-outline.svg",
   "shield-done.svg",
   "window-tab-new.svg",
+  "product-brave-color.svg",
+  "lock.svg",
+  "search.svg",
+  "appearance.svg",
+  "list-4.svg",
+  "product-translate.svg",
+  "settings.svg",
+  "backward.svg",
+  "download.svg"
 ]
 
 generate_grd("icons_grdp") {
