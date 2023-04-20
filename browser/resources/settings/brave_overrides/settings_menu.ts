@@ -86,9 +86,7 @@ RegisterStyleOverride(
       }
 
       .cr-nav-menu-item[selected] {
-        --selected-gradient-color1: #FA7250;
-        --selected-gradient-color2: #FF1893;
-        --selected-gradient-color3: #A78AFF;
+        --leo-icon-color: var(--leo-gradient-icons-active);
 
         color: var(--cr-link-color) !important;
         background: transparent !important;
@@ -255,7 +253,7 @@ RegisterPolymerTemplateModifications({
     const newTabEl = createMenuElement(
       loadTimeData.getString('braveNewTab'),
       '/newTab',
-      'brave_settings:new-tab',
+      'window-tab-new',
       'newTab'
     )
     appearanceBrowserEl.insertAdjacentElement('afterend', newTabEl)
@@ -263,7 +261,7 @@ RegisterPolymerTemplateModifications({
     const shieldsEl = createMenuElement(
       loadTimeData.getString('braveShieldsTitle'),
       '/shields',
-      'brave_settings:shields',
+      'shield-done',
       'shields',
     )
     newTabEl.insertAdjacentElement('afterend', shieldsEl)
@@ -274,7 +272,7 @@ RegisterPolymerTemplateModifications({
       rewardsEl = createMenuElement(
         loadTimeData.getString('braveRewards'),
         '/rewards',
-        'brave_settings:rewards',
+        'product-bat-outline',
         'rewards',
       )
       shieldsEl.insertAdjacentElement('afterend', rewardsEl)
@@ -283,7 +281,7 @@ RegisterPolymerTemplateModifications({
     const embedEl = createMenuElement(
       loadTimeData.getString('socialBlocking'),
       '/socialBlocking',
-      'brave_settings:social-permissions',
+      'thumb-down',
       'socialBlocking',
     )
     if (isBraveRewardsSupported) {
@@ -298,7 +296,7 @@ RegisterPolymerTemplateModifications({
     const syncEl = createMenuElement(
       loadTimeData.getString('braveSync'),
       '/braveSync',
-      'brave_settings:sync',
+      'product-sync',
       'braveSync',
     )
     privacyEl.insertAdjacentElement('afterend', syncEl)
@@ -309,7 +307,7 @@ RegisterPolymerTemplateModifications({
     const extensionEl = createMenuElement(
       loadTimeData.getString('braveDefaultExtensions'),
       '/extensions',
-      'brave_settings:extensions',
+      'browser-extensions',
       'extensions',
     )
     searchEl.insertAdjacentElement('afterend', extensionEl)
@@ -318,7 +316,7 @@ RegisterPolymerTemplateModifications({
     const web3El = createMenuElement(
       loadTimeData.getString('braveWeb3'),
       '/web3',
-      'brave_settings:wallet',
+      'product-brave-wallet',
       'wallet',
     )
 
@@ -332,7 +330,7 @@ RegisterPolymerTemplateModifications({
     const helpTipsEl = createMenuElement(
       loadTimeData.getString('braveHelpTips'),
       '/braveHelpTips',
-      'brave_settings:help',
+      'help-outline',
       'braveHelpTips',
     )
     const downloadsEl = getMenuElement(templateContent, '/downloads')

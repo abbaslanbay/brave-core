@@ -170,6 +170,14 @@ leo_icons = [
   "coins.svg",
   "more-horizontal.svg",
   "coins-alt1.svg",
+  "help-outline.svg",
+  "product-brave-wallet.svg",
+  "browser-extensions.svg",
+  "product-sync.svg",
+  "thumb-down.svg",
+  "product-bat-outline.svg",
+  "shield-done.svg",
+  "window-tab-new.svg",
 ]
 
 generate_grd("icons_grdp") {
