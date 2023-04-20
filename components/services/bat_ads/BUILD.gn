@@ -5,6 +5,7 @@
 
 static_library("lib") {
   visibility = [
+    "//brave/browser/brave_ads/services",
     "//brave/test:*",
     "//chrome/utility:*",
   ]
@@ -18,8 +19,6 @@ static_library("lib") {
     "bat_ads_impl.h",
     "bat_ads_service_impl.cc",
     "bat_ads_service_impl.h",
-    "in_process_bat_ads_service.cc",
-    "in_process_bat_ads_service.h",
   ]
 
   public_deps = [
@@ -28,6 +27,7 @@ static_library("lib") {
   ]
 
   deps = [
+    "//brave/app:brave_generated_resources_grit",
     "//brave/components/brave_ads/core",
     "//mojo/public/cpp/bindings",
     "//mojo/public/cpp/system",
