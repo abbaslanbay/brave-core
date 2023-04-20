@@ -67,7 +67,7 @@ TEST_F(BraveAdsRedeemUnblindedPaymentTokensTest, RedeemUnblindedPaymentTokens) {
 
   const privacy::UnblindedPaymentTokenList unblinded_payment_tokens =
       privacy::GetUnblindedPaymentTokens(/*count*/ 1);
-  privacy::GetUnblindedPaymentTokens()->SetTokens(unblinded_payment_tokens);
+  privacy::GetUnblindedPaymentTokens().SetTokens(unblinded_payment_tokens);
 
   // Act
   EXPECT_CALL(redeem_unblinded_payment_tokens_delegate_mock_,
@@ -137,7 +137,7 @@ TEST_F(BraveAdsRedeemUnblindedPaymentTokensTest,
 
   const privacy::UnblindedPaymentTokenList unblinded_payment_tokens =
       privacy::GetUnblindedPaymentTokens(/*count*/ 1);
-  privacy::GetUnblindedPaymentTokens()->SetTokens(unblinded_payment_tokens);
+  privacy::GetUnblindedPaymentTokens().SetTokens(unblinded_payment_tokens);
 
   // Act
   EXPECT_CALL(redeem_unblinded_payment_tokens_delegate_mock_,
@@ -193,7 +193,7 @@ TEST_F(BraveAdsRedeemUnblindedPaymentTokensTest, ScheduleNextTokenRedemption) {
 
   const privacy::UnblindedPaymentTokenList unblinded_payment_tokens =
       privacy::GetUnblindedPaymentTokens(/*count*/ 1);
-  privacy::GetUnblindedPaymentTokens()->SetTokens(unblinded_payment_tokens);
+  privacy::GetUnblindedPaymentTokens().SetTokens(unblinded_payment_tokens);
 
   // Act
   EXPECT_CALL(redeem_unblinded_payment_tokens_delegate_mock_,
@@ -248,7 +248,7 @@ TEST_F(BraveAdsRedeemUnblindedPaymentTokensTest, InvalidWallet) {
 
   const privacy::UnblindedPaymentTokenList unblinded_payment_tokens =
       privacy::GetUnblindedPaymentTokens(/*count*/ 1);
-  privacy::GetUnblindedPaymentTokens()->SetTokens(unblinded_payment_tokens);
+  privacy::GetUnblindedPaymentTokens().SetTokens(unblinded_payment_tokens);
 
   // Act
   const InSequence seq;
@@ -275,7 +275,7 @@ TEST_F(BraveAdsRedeemUnblindedPaymentTokensTest, InvalidWallet) {
   redeem_unblinded_payment_tokens_->MaybeRedeemAfterDelay(/*wallet*/ {});
 
   // Assert
-  EXPECT_EQ(1, privacy::GetUnblindedPaymentTokens()->Count());
+  EXPECT_EQ(1, privacy::GetUnblindedPaymentTokens().Count());
 }
 
 TEST_F(BraveAdsRedeemUnblindedPaymentTokensTest, NoUnblindedPaymentTokens) {
@@ -356,7 +356,7 @@ TEST_F(BraveAdsRedeemUnblindedPaymentTokensTest, Retry) {
 
   const privacy::UnblindedPaymentTokenList unblinded_payment_tokens =
       privacy::GetUnblindedPaymentTokens(/*count*/ 1);
-  privacy::GetUnblindedPaymentTokens()->SetTokens(unblinded_payment_tokens);
+  privacy::GetUnblindedPaymentTokens().SetTokens(unblinded_payment_tokens);
 
   // Act
   const InSequence seq;

@@ -25,6 +25,7 @@ using ::testing::Return;
 
 void MockBuildChannel(const BuildChannelType type) {
   CHECK(GlobalState::HasInstance());
+
   auto& build_channel = GlobalState::GetInstance()->BuildChannel();
   switch (type) {
     case BuildChannelType::kNightly: {

@@ -31,20 +31,20 @@ void AddHistory(const size_t count) {
       BuildCreativeNotificationAd(/*should_use_random_guids*/ false));
 
   for (size_t i = 0; i < count; i++) {
-    HistoryManager::GetInstance()->Add(ad, ConfirmationType::kClicked);
+    HistoryManager::GetInstance().Add(ad, ConfirmationType::kClicked);
   }
 }
 
 }  // namespace
 
 class BraveAdsReminderTest : public UnitTestBase {
+ protected:
   void SetUp() override {
     UnitTestBase::SetUp();
 
     reminder_ = std::make_unique<Reminder>();
   }
 
- protected:
   std::unique_ptr<Reminder> reminder_;
 };
 

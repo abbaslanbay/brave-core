@@ -198,14 +198,14 @@ void UnitTestBase::Initialize() {
 
   global_state_->Flags() = *BuildFlags();
 
-  global_state_->GetClientStateManager()->Initialize(
+  global_state_->GetClientStateManager().Initialize(
       base::BindOnce([](const bool success) { ASSERT_TRUE(success); }));
 
-  global_state_->GetConfirmationStateManager()->Initialize(
+  global_state_->GetConfirmationStateManager().Initialize(
       GetWalletForTesting(),  // IN-TEST
       base::BindOnce([](const bool success) { ASSERT_TRUE(success); }));
 
-  global_state_->GetDatabaseManager()->CreateOrOpen(
+  global_state_->GetDatabaseManager().CreateOrOpen(
       base::BindOnce([](const bool success) { ASSERT_TRUE(success); }));
 
   // Fast forward until no tasks remain to ensure

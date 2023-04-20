@@ -58,7 +58,7 @@ TEST_F(BraveAdsNotificationAdIntegrationTest, Serve) {
   EXPECT_CALL(*ads_client_mock_, ShowNotificationAd)
       .WillOnce(Invoke([](const NotificationAdInfo& ad) {
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
       }));
 
   // Act
@@ -85,7 +85,7 @@ TEST_F(BraveAdsNotificationAdIntegrationTest, TriggerServedEvent) {
   EXPECT_CALL(*ads_client_mock_, ShowNotificationAd)
       .WillOnce(Invoke([=](const NotificationAdInfo& ad) {
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
 
         // Act
         GetAds()->TriggerNotificationAdEvent(
@@ -93,7 +93,7 @@ TEST_F(BraveAdsNotificationAdIntegrationTest, TriggerServedEvent) {
 
         // Assert
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
         EXPECT_EQ(1, GetAdEventCount(AdType::kNotificationAd,
                                      ConfirmationType::kServed));
         EXPECT_EQ(0, GetHistoryItemCount());
@@ -108,7 +108,7 @@ TEST_F(BraveAdsNotificationAdIntegrationTest, TriggerViewedEvent) {
   EXPECT_CALL(*ads_client_mock_, ShowNotificationAd)
       .WillOnce(Invoke([=](const NotificationAdInfo& ad) {
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
 
         // Act
         GetAds()->TriggerNotificationAdEvent(
@@ -116,7 +116,7 @@ TEST_F(BraveAdsNotificationAdIntegrationTest, TriggerViewedEvent) {
 
         // Assert
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
         EXPECT_EQ(1, GetAdEventCount(AdType::kNotificationAd,
                                      ConfirmationType::kViewed));
         EXPECT_EQ(1, GetHistoryItemCount());
@@ -135,7 +135,7 @@ TEST_F(BraveAdsNotificationAdIntegrationTest, TriggerClickedEvent) {
   EXPECT_CALL(*ads_client_mock_, ShowNotificationAd)
       .WillOnce(Invoke([=](const NotificationAdInfo& ad) {
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
         EXPECT_CALL(*ads_client_mock_, CloseNotificationAd(ad.placement_id));
 
         // Act
@@ -159,7 +159,7 @@ TEST_F(BraveAdsNotificationAdIntegrationTest, TriggerDismissedEvent) {
   EXPECT_CALL(*ads_client_mock_, ShowNotificationAd)
       .WillOnce(Invoke([=](const NotificationAdInfo& ad) {
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
 
         // Act
         GetAds()->TriggerNotificationAdEvent(
@@ -167,7 +167,7 @@ TEST_F(BraveAdsNotificationAdIntegrationTest, TriggerDismissedEvent) {
 
         // Assert
         EXPECT_FALSE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
         EXPECT_EQ(1, GetAdEventCount(AdType::kNotificationAd,
                                      ConfirmationType::kDismissed));
         EXPECT_EQ(1, GetHistoryItemCount());
@@ -184,7 +184,7 @@ TEST_F(BraveAdsNotificationAdIntegrationTest, TriggerTimedOutEvent) {
   EXPECT_CALL(*ads_client_mock_, ShowNotificationAd)
       .WillOnce(Invoke([=](const NotificationAdInfo& ad) {
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
 
         // Act
         GetAds()->TriggerNotificationAdEvent(
@@ -192,7 +192,7 @@ TEST_F(BraveAdsNotificationAdIntegrationTest, TriggerTimedOutEvent) {
 
         // Assert
         EXPECT_FALSE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
         EXPECT_EQ(0, GetHistoryItemCount());
         EXPECT_EQ(0, GetTransactionCount());
       }));

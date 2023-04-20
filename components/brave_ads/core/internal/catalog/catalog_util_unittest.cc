@@ -18,7 +18,7 @@ class BraveAdsCatalogUtilTest : public UnitTestBase {};
 
 TEST_F(BraveAdsCatalogUtilTest, ResetCatalog) {
   // Arrange
-  SetCatalogId("150a9518-4db8-4fba-b104-0c420a1d9c0c");
+  SetCatalogId(kCatalogId);
   SetCatalogVersion(1);
   SetCatalogPing(base::Hours(2));
   SetCatalogLastUpdated(Now());
@@ -38,10 +38,9 @@ TEST_F(BraveAdsCatalogUtilTest, CatalogExists) {
   SetCatalogVersion(1);
 
   // Act
-  const bool does_exist = DoesCatalogExist();
 
   // Assert
-  EXPECT_TRUE(does_exist);
+  EXPECT_TRUE(DoesCatalogExist());
 }
 
 TEST_F(BraveAdsCatalogUtilTest, CatalogDoesNotExist) {
@@ -49,10 +48,9 @@ TEST_F(BraveAdsCatalogUtilTest, CatalogDoesNotExist) {
   SetCatalogVersion(0);
 
   // Act
-  const bool does_exist = DoesCatalogExist();
 
   // Assert
-  EXPECT_FALSE(does_exist);
+  EXPECT_FALSE(DoesCatalogExist());
 }
 
 TEST_F(BraveAdsCatalogUtilTest, CatalogHasChanged) {
@@ -62,9 +60,7 @@ TEST_F(BraveAdsCatalogUtilTest, CatalogHasChanged) {
   // Act
 
   // Assert
-  const bool has_changed =
-      HasCatalogChanged("150a9518-4db8-4fba-b104-0c420a1d9c0c");
-  EXPECT_TRUE(has_changed);
+  EXPECT_TRUE(HasCatalogChanged(kAnotherCatalogId));
 }
 
 TEST_F(BraveAdsCatalogUtilTest, CatalogHasNotChanged) {
@@ -74,8 +70,7 @@ TEST_F(BraveAdsCatalogUtilTest, CatalogHasNotChanged) {
   // Act
 
   // Assert
-  const bool has_changed = HasCatalogChanged(kCatalogId);
-  EXPECT_FALSE(has_changed);
+  EXPECT_FALSE(HasCatalogChanged(kCatalogId));
 }
 
 TEST_F(BraveAdsCatalogUtilTest, CatalogHasExpired) {
@@ -86,8 +81,7 @@ TEST_F(BraveAdsCatalogUtilTest, CatalogHasExpired) {
   AdvanceClockBy(base::Days(1));
 
   // Assert
-  const bool has_expired = HasCatalogExpired();
-  EXPECT_TRUE(has_expired);
+  EXPECT_TRUE(HasCatalogExpired());
 }
 
 TEST_F(BraveAdsCatalogUtilTest, CatalogHasNotExpired) {
@@ -98,8 +92,7 @@ TEST_F(BraveAdsCatalogUtilTest, CatalogHasNotExpired) {
   AdvanceClockBy(base::Days(1) - base::Milliseconds(1));
 
   // Assert
-  const bool has_expired = HasCatalogExpired();
-  EXPECT_FALSE(has_expired);
+  EXPECT_FALSE(HasCatalogExpired());
 }
 
 }  // namespace brave_ads

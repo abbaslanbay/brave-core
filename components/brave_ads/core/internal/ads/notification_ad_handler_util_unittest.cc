@@ -99,7 +99,7 @@ TEST_F(BraveAdsNotificationAdUtilTest, ShowNotificationAd) {
 
         // Assert
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
       }));
 
   BuildAndShowNotificationAd();
@@ -110,14 +110,14 @@ TEST_F(BraveAdsNotificationAdUtilTest, DismissNotificationAd) {
   EXPECT_CALL(*ads_client_mock_, ShowNotificationAd)
       .WillOnce(Invoke([](const NotificationAdInfo& ad) {
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
 
         // Act
         DismissNotificationAd(ad.placement_id);
 
         // Assert
         ASSERT_FALSE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
       }));
 
   BuildAndShowNotificationAd();
@@ -130,21 +130,20 @@ TEST_F(BraveAdsNotificationAdUtilTest, CloseNotificationAd) {
         // Act
 
         // Assert
-        ASSERT_FALSE(
-            NotificationAdManager::GetInstance()->Exists(placement_id));
+        ASSERT_FALSE(NotificationAdManager::GetInstance().Exists(placement_id));
       }));
 
   EXPECT_CALL(*ads_client_mock_, ShowNotificationAd)
       .WillOnce(Invoke([](const NotificationAdInfo& ad) {
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
 
         // Act
         CloseNotificationAd(ad.placement_id);
 
         // Assert
         ASSERT_FALSE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
       }));
 
   BuildAndShowNotificationAd();
@@ -155,14 +154,14 @@ TEST_F(BraveAdsNotificationAdUtilTest, NotificationAdTimedOut) {
   EXPECT_CALL(*ads_client_mock_, ShowNotificationAd)
       .WillOnce(Invoke([](const NotificationAdInfo& ad) {
         ASSERT_TRUE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
 
         // Act
         NotificationAdTimedOut(ad.placement_id);
 
         // Assert
         ASSERT_FALSE(
-            NotificationAdManager::GetInstance()->Exists(ad.placement_id));
+            NotificationAdManager::GetInstance().Exists(ad.placement_id));
       }));
 
   BuildAndShowNotificationAd();
