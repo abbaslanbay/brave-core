@@ -77,6 +77,8 @@ class EthereumProviderBrowserTest : public InProcessBrowserTest {
 
     keyring_service_ =
         KeyringServiceFactory::GetServiceForContext(browser()->profile());
+    // Create wallet since native wallet should not be injected otherwise
+    keyring_service_->CreateWallet("password", base::DoNothing());
   }
 
   content::WebContents* web_contents() {

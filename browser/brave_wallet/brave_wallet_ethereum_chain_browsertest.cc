@@ -11,8 +11,12 @@
 #include "base/test/thread_test_helper.h"
 #include "brave/browser/brave_wallet/brave_wallet_tab_helper.h"
 #include "brave/browser/brave_wallet/json_rpc_service_factory.h"
+#include "brave/browser/brave_wallet/keyring_service_factory.h"
+#include "brave/browser/profiles/brave_renderer_updater.h"
+#include "brave/browser/profiles/brave_renderer_updater_factory.h"
 #include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
 #include "brave/components/brave_wallet/browser/json_rpc_service.h"
+#include "brave/components/brave_wallet/browser/keyring_service.h"
 #include "brave/components/brave_wallet/common/brave_wallet.mojom.h"
 #include "brave/components/brave_wallet/common/features.h"
 #include "brave/components/constants/brave_paths.h"
@@ -190,6 +194,13 @@ class BraveWalletEthereumChainTest : public InProcessBrowserTest {
                             base::Unretained(this)));
 
     ASSERT_TRUE(https_server_->Start());
+    auto* keyring_service =
+        brave_wallet::KeyringServiceFactory::GetServiceForContext(
+            browser()->profile());
+    // Create wallet since native wallet should not be injected otherwise
+    keyring_service->CreateWallet("password", base::DoNothing());
+    BraveRendererUpdaterFactory::GetForProfile(browser()->profile())
+        ->UpdateAllRenderersForTesting();
   }
 
   void SetUpCommandLine(base::CommandLine* command_line) override {
