@@ -8,6 +8,8 @@
 #include "base/path_service.h"
 #include "base/test/bind.h"
 #include "brave/browser/brave_wallet/keyring_service_factory.h"
+#include "brave/browser/profiles/brave_renderer_updater.h"
+#include "brave/browser/profiles/brave_renderer_updater_factory.h"
 #include "brave/components/brave_wallet/browser/keyring_service.h"
 #include "brave/components/constants/brave_paths.h"
 #include "chrome/browser/profiles/profile.h"
@@ -79,6 +81,8 @@ class EthereumProviderBrowserTest : public InProcessBrowserTest {
         KeyringServiceFactory::GetServiceForContext(browser()->profile());
     // Create wallet since native wallet should not be injected otherwise
     keyring_service_->CreateWallet("password", base::DoNothing());
+    BraveRendererUpdaterFactory::GetForProfile(browser()->profile())
+        ->UpdateAllRenderersForTesting();
   }
 
   content::WebContents* web_contents() {

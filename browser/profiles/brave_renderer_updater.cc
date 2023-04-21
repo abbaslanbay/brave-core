@@ -23,9 +23,13 @@
 #include "components/prefs/pref_service.h"
 #include "content/public/browser/browser_thread.h"
 #include "content/public/browser/render_process_host.h"
-#include "extensions/browser/extension_registry.h"
+#include "extensions/buildflags/buildflags.h"
 #include "ipc/ipc_channel_proxy.h"
 #include "mojo/public/cpp/bindings/pending_receiver.h"
+
+#if BUILDFLAG(ENABLE_EXTENSIONS)
+#include "extensions/browser/extension_registry.h"
+#endif
 
 BraveRendererUpdater::BraveRendererUpdater(Profile* profile)
     : profile_(profile), is_wallet_allowed_for_context_(false) {
@@ -107,11 +111,16 @@ void BraveRendererUpdater::UpdateAllRenderers() {
 void BraveRendererUpdater::UpdateRenderer(
     mojo::AssociatedRemote<brave::mojom::BraveRendererConfiguration>*
         renderer_configuration) {
+#if BUILDFLAG(ENABLE_EXTENSIONS)
   extensions::ExtensionRegistry* registry =
       extensions::ExtensionRegistry::Get(profile_);
   bool has_installed_metamask =
       registry &&
       registry->enabled_extensions().Contains(metamask_extension_id);
+#else
+  bool has_installed_metamask = false;
+#endif
+
   brave_wallet::KeyringService* keyring_service =
       brave_wallet::KeyringServiceFactory::GetServiceForContext(profile_);
   bool wallet_created =

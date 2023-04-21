@@ -10,6 +10,8 @@
 #include "brave/browser/brave_wallet/brave_wallet_service_factory.h"
 #include "brave/browser/brave_wallet/brave_wallet_tab_helper.h"
 #include "brave/browser/brave_wallet/keyring_service_factory.h"
+#include "brave/browser/profiles/brave_renderer_updater.h"
+#include "brave/browser/profiles/brave_renderer_updater_factory.h"
 #include "brave/components/brave_wallet/browser/brave_wallet_service.h"
 #include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
 #include "brave/components/brave_wallet/browser/keyring_service.h"
@@ -136,6 +138,9 @@ class WalletWatchAssetBrowserTest : public InProcessBrowserTest {
 
 IN_PROC_BROWSER_TEST_F(WalletWatchAssetBrowserTest, UserApprovedRequest) {
   RestoreWallet();
+  BraveRendererUpdaterFactory::GetForProfile(browser()->profile())
+      ->UpdateAllRenderersForTesting();
+
   GURL url = https_server()->GetURL("a.com", "/wallet_watch_asset.html");
 
   ASSERT_TRUE(ui_test_utils::NavigateToURL(browser(), url));
@@ -166,6 +171,9 @@ IN_PROC_BROWSER_TEST_F(WalletWatchAssetBrowserTest, UserApprovedRequest) {
 
 IN_PROC_BROWSER_TEST_F(WalletWatchAssetBrowserTest, UserRejectedRequest) {
   RestoreWallet();
+  BraveRendererUpdaterFactory::GetForProfile(browser()->profile())
+      ->UpdateAllRenderersForTesting();
+
   GURL url = https_server()->GetURL("a.com", "/wallet_watch_asset.html");
 
   ASSERT_TRUE(ui_test_utils::NavigateToURL(browser(), url));
@@ -196,6 +204,9 @@ IN_PROC_BROWSER_TEST_F(WalletWatchAssetBrowserTest, UserRejectedRequest) {
 
 IN_PROC_BROWSER_TEST_F(WalletWatchAssetBrowserTest, InvalidTypeParam) {
   RestoreWallet();
+  BraveRendererUpdaterFactory::GetForProfile(browser()->profile())
+      ->UpdateAllRenderersForTesting();
+
   GURL url = https_server()->GetURL("a.com", "/wallet_watch_asset.html");
 
   ASSERT_TRUE(ui_test_utils::NavigateToURL(browser(), url));

@@ -15,6 +15,8 @@
 #include "brave/browser/brave_wallet/json_rpc_service_factory.h"
 #include "brave/browser/brave_wallet/keyring_service_factory.h"
 #include "brave/browser/brave_wallet/tx_service_factory.h"
+#include "brave/browser/profiles/brave_renderer_updater.h"
+#include "brave/browser/profiles/brave_renderer_updater_factory.h"
 #include "brave/components/brave_wallet/browser/brave_wallet_service.h"
 #include "brave/components/brave_wallet/browser/brave_wallet_utils.h"
 #include "brave/components/brave_wallet/browser/json_rpc_service.h"
@@ -343,6 +345,10 @@ class SolanaProviderTest : public InProcessBrowserTest {
             browser()->profile());
     keyring_service_ =
         KeyringServiceFactory::GetServiceForContext(browser()->profile());
+    // Create wallet since native wallet should not be injected otherwise
+    keyring_service_->CreateWallet("password", base::DoNothing());
+    BraveRendererUpdaterFactory::GetForProfile(browser()->profile())
+        ->UpdateAllRenderersForTesting();
     json_rpc_service_ =
         JsonRpcServiceFactory::GetServiceForContext(browser()->profile());
     tx_service_ = TxServiceFactory::GetServiceForContext(browser()->profile());
