@@ -117,7 +117,9 @@ void EnsureBrowserContextKeyedServiceFactoriesBuilt() {
   brave_wallet::SwapServiceFactory::GetInstance();
   brave_wallet::TxServiceFactory::GetInstance();
   brave_wallet::BraveWalletServiceFactory::GetInstance();
+#if !BUILDFLAG(IS_ANDROID)
   brave_wallet::WalletNotificationServiceFactory::GetInstance();
+#endif
 
 #if !BUILDFLAG(IS_ANDROID)
   if (base::FeatureList::IsEnabled(commands::features::kBraveCommands)) {
@@ -163,7 +165,9 @@ void EnsureBrowserContextKeyedServiceFactoriesBuilt() {
 
   brave_perf_predictor::NamedThirdPartyRegistryFactory::GetInstance();
   misc_metrics::PageMetricsServiceFactory::GetInstance();
+#if !BUILDFLAG(IS_ANDROID)
   sidebar::SidebarServiceFactory::GetInstance();
+#endif
 }
 
 }  // namespace brave
