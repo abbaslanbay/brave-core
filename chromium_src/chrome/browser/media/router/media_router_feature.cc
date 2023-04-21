@@ -19,7 +19,9 @@
 namespace media_router {
 
 OVERRIDE_FEATURE_DEFAULT_STATES({{
+#if !BUILDFLAG(IS_ANDROID)
     {kFallbackToAudioTabMirroring, base::FEATURE_DISABLED_BY_DEFAULT},
+#endif
 }});
 
 bool MediaRouterEnabled(content::BrowserContext* context) {
