@@ -23,7 +23,7 @@
 // {
 //   "application": {
 //     "clientId": "4c2b665ca060d912fec5c735c734859a06118cc8",
-//     "name": "Brave Browser"
+//     "name": "Minego Browser"
 //   },
 //   "createdAt": "2022-12-19T13:25:32.430Z",
 //   "denomination": {

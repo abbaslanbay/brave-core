@@ -225,7 +225,7 @@
 <translation id="2807328214759298515">Up to</translation>
 <translation id="7483857210736407752">Show tip buttons on sites</translation>
 <translation id="7583327070390027131">Next monthly tips date</translation>
-<translation id="6231182869178328516">I just tipped <ph name="NAME"/> using the Brave Browser. Check it out at https://brave.com/tips.</translation>
+<translation id="6231182869178328516">I just tipped <ph name="NAME"/> using the Minego Browser. Check it out at https://brave.com/tips.</translation>
 <translation id="5916536234616514390">Love that <ph name="HASHTAG"/>Brave lets me support creators! Just tipped <ph name="NAME"/> with <ph name="HASHTAG2"/>BAT. If they verify at https://creators.brave.com before <ph name="DATE"/>, the BAT is theirs!</translation>
 <translation id="8404935570206006581">TipWithBrave</translation>
 <translation id="3082557070674409251">Clicked</translation>
@@ -1095,7 +1095,7 @@
 <translation id="2018472018751735678">View the addresses of your permitted accounts (required)</translation>
 <translation id="7029403458170657879">Connect with Brave Wallet</translation>
 <translation id="2770851145415891830">Existing crypto wallets detected</translation>
-<translation id="2237759620789871865">If you'd rather skip the import and keep the old Crypto Wallets experience, just navigate to the Brave Browser <ph name="LINK_BEFORE"/>Settings<ph name="LINK_AFTER"/> and change the default back to Crypto Wallets. You can also import, try the new Brave Wallet and change back at any time.</translation>
+<translation id="2237759620789871865">If you'd rather skip the import and keep the old Crypto Wallets experience, just navigate to the Minego Browser <ph name="LINK_BEFORE"/>Settings<ph name="LINK_AFTER"/> and change the default back to Crypto Wallets. You can also import, try the new Brave Wallet and change back at any time.</translation>
 <translation id="5590175005414413980">Enter your existing crypto wallets password to import to Brave Wallet. Enjoy a faster and more secure way to manage crypto assets and interact with Web3 DApps.</translation>
 <translation id="880619123281809987">Type Crypto wallets password</translation>
 <translation id="6344138931392227467"><ph name="DEVICE_NAME"/> connected</translation>
@@ -1377,7 +1377,7 @@
 <translation id="7992766987062040279">rd</translation>
 <translation id="2295726992010694229">th</translation>
 <translation id="8241405611628876973">Congratulations! Your Brave Wallet is ready to go!</translation>
-<translation id="6828327990705355767">To access your wallet, just click the wallet icon at the top right of any Brave browser window.</translation>
+<translation id="6828327990705355767">To access your wallet, just click the wallet icon at the top right of any Minego Browser window.</translation>
 <translation id="396152018598329740">How to use a crypto wallet?</translation>
 <translation id="7512061585041489067">What’s the best crypto wallet?</translation>
 <translation id="1342755158522323177">What’s a crypto browser?</translation>
@@ -1569,7 +1569,7 @@
 <translation id="254100925533869330">No content</translation>
 <translation id="7172792761509429092">Brave News has no content to show.</translation>
 <translation id="1771307734839364850">Choose content sources</translation>
-<translation id="939305735877869636">Brave</translation>
+<translation id="939305735877869636">Minego</translation>
 <translation id="6261915643960475695">Business</translation>
 <translation id="8265589281845759879">Cars</translation>
 <translation id="7577010593836079522">Culture</translation>

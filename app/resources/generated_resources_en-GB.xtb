@@ -581,7 +581,7 @@ Permissions that you've already given to apps may apply to this account. You can
 <translation id="1512642802859169995"><ph name="FILE_NAME"/> is encrypted. Ask its owner to decrypt it.</translation>
 <translation id="151501797353681931">Imported from Safari</translation>
 <translation id="1515163294334130951">Launch</translation>
-<translation id="7181162989909413015">To cast with a code, turn on Brave browser sync settings</translation>
+<translation id="7181162989909413015">To cast with a code, turn on Minego Browser sync settings</translation>
 <translation id="1521442365706402292">Manage certificates</translation>
 <translation id="1521774566618522728">Active today</translation>
 <translation id="152234381334907219">Never saved</translation>
@@ -950,7 +950,7 @@ Permissions that you've already given to apps may apply to this account. You can
 <translation id="1825565032302550710">Port must be between 1024 and 65535</translation>
 <translation id="182577151972096764">recently viewed recipes</translation>
 <translation id="18260074040409954">You can use saved passwords on any device. They're saved to <ph name="GOOGLE_PASSWORD_MANAGER"/> for <ph name="EMAIL"/>.</translation>
-<translation id="1826192255355608658">Sync your Brave browser bookmarks, passwords, history and more</translation>
+<translation id="1826192255355608658">Sync your Minego Browser bookmarks, passwords, history and more</translation>
 <translation id="1826516787628120939">Checking</translation>
 <translation id="1827504459960247692">Hotspot name</translation>
 <translation id="1828378091493947763">This plug-in is not supported on this device</translation>
@@ -1005,7 +1005,7 @@ Permissions that you've already given to apps may apply to this account. You can
 <translation id="5547994882402969646">Password check is not available in Brave</translation>
 <translation id="1868617395637139709">Use location for Android apps and services.</translation>
 <translation id="1869433484041798909">Bookmark button</translation>
-<translation id="7175072311426658869">Open in Brave browser</translation>
+<translation id="7175072311426658869">Open in Minego Browser</translation>
 <translation id="187145082678092583">Fewer apps</translation>
 <translation id="1871534214638631766">Show related info when you right-click or long press on content</translation>
 <translation id="1871615898038944731">Your <ph name="DEVICE_TYPE"/> is up to date</translation>
@@ -2398,7 +2398,7 @@ You can manage this account’s settings by installing the Family Link app on yo
 <translation id="3084548735795614657">Drop to install</translation>
 <translation id="5418694430960033386">Either Brave ran out of memory or the process for the web page was terminated for some other reason. To continue, reload or go to another page.</translation>
 <translation id="3085412380278336437">Site can use your camera</translation>
-<translation id="3085431803365340433">Brave Browser could not be updated</translation>
+<translation id="3085431803365340433">Minego Browser could not be updated</translation>
 <translation id="3088052000289932193">Site is using MIDI</translation>
 <translation id="3088128611727407543">Preparing app profile…</translation>
 <translation id="3088325635286126843">&amp;Rename...</translation>
@@ -2631,7 +2631,7 @@ You can manage this account’s settings by installing the Family Link app on yo
 <translation id="3319306431415395200">Translate text in image with <ph name="VISUAL_SEARCH_PROVIDER"/></translation>
 <translation id="3320630259304269485">Safe Browsing (protection from dangerous sites) and other security settings</translation>
 <translation id="3323521181261657960">Bonus! You got more screen time</translation>
-<translation id="9044258386077615750">Changes that you make here apply only to Brave Browser. To make changes to your Lacros Brave Browser settings, open Lacros Brave Browser and go to settings.</translation>
+<translation id="9044258386077615750">Changes that you make here apply only to Minego Browser. To make changes to your Lacros Minego Browser settings, open Lacros Minego Browser and go to settings.</translation>
 <translation id="3325804108816646710">Looking for available profiles…</translation>
 <translation id="3325910708063135066">Camera and microphone are turned off in Mac System Preferences</translation>
 <translation id="3327050066667856415">Chromebooks are designed for security. Your device is protected from malware automatically – no extra software required.</translation>
@@ -4012,7 +4012,7 @@ You can manage this account’s settings by installing the Family Link app on yo
 <translation id="5069510062541082828">To continue saving passwords in your Brave sync chain, verify that it’s you</translation>
 <translation id="4579453506923101210">Forget connected phone</translation>
 <translation id="4579581181964204535">Unable to cast <ph name="HOST_NAME"/>.</translation>
-<translation id="7343272409020602342">For browser notifications, go to <ph name="LINK_BEGIN"/>Brave browser settings<ph name="LINK_END"/></translation>
+<translation id="7343272409020602342">For browser notifications, go to <ph name="LINK_BEGIN"/>Minego Browser settings<ph name="LINK_END"/></translation>
 <translation id="5450255970312261532">Sign back in to Brave Password Manager</translation>
 <translation id="4580596421317071374">Passwords are saved to <ph name="GOOGLE_PASSWORD_MANAGER"/> on this device.</translation>
 <translation id="4581774856936278355">Error while restoring Linux</translation>
@@ -4271,7 +4271,7 @@ Use Ctrl + Alt + Brightness down to zoom out.</translation>
 <translation id="4825532258163983651">Can't delete passkey</translation>
 <translation id="4827283332383516812">Delete card</translation>
 <translation id="4827675678516992122">Couldn't connect</translation>
-<translation id="4536267179863600153">Enhanced spell check in Brave browser (text is sent to Brave for spelling suggestions)</translation>
+<translation id="4536267179863600153">Enhanced spell check in Minego Browser (text is sent to Brave for spelling suggestions)</translation>
 <translation id="4827904420700932487">Create QR code for this Image</translation>
 <translation id="4827970183019354123">URL checker</translation>
 <translation id="4828567746430452681">'<ph name="EXTENSION_NAME"/>' is no longer supported</translation>
@@ -4752,7 +4752,7 @@ Use Ctrl + Alt + Brightness down to zoom out.</translation>
 <translation id="5288678174502918605">R&amp;eopen Closed Tab</translation>
 <translation id="52895863590846877">Page is not in <ph name="LANGUAGE"/></translation>
 <translation id="52912272896845572">Private key file is invalid.</translation>
-<translation id="2986818636564877939">Automatically creates captions for media in Brave Browser (currently available in English). Audio and captions are processed locally and never leave the device.</translation>
+<translation id="2986818636564877939">Automatically creates captions for media in Minego Browser (currently available in English). Audio and captions are processed locally and never leave the device.</translation>
 <translation id="529175790091471945">Format this device</translation>
 <translation id="529296195492126134">Ephemeral mode is not supported. Please contact your administrator</translation>
 <translation id="5293170712604732402">Restore settings to their original defaults</translation>
@@ -4905,7 +4905,7 @@ You can assign multiple switches to this action.</translation>
 <translation id="5436575196282187764">Google Photos memories</translation>
 <translation id="5439680044267106777">Skip and set up new profile</translation>
 <translation id="544083962418256601">Create shortcuts...</translation>
-<translation id="5417227405829889012">Web app installed from Brave browser</translation>
+<translation id="5417227405829889012">Web app installed from Minego Browser</translation>
 <translation id="5441466871879044658">Translate into this language</translation>
 <translation id="5442228125690314719">Error creating disk image. Please try again.</translation>
 <translation id="5442550868130618860">Turn on automatic update</translation>
@@ -5643,7 +5643,7 @@ You can assign multiple switches to this action.</translation>
 <translation id="6112294629795967147">Touch to resize</translation>
 <translation id="6112727384379533756">Add a ticket</translation>
 <translation id="6112931163620622315">Check your phone</translation>
-<translation id="8589850327914845460">Set your default search engine for Brave browser and <ph name="DEVICE_TYPE"/> Launcher</translation>
+<translation id="8589850327914845460">Set your default search engine for Minego Browser and <ph name="DEVICE_TYPE"/> Launcher</translation>
 <translation id="6113942107547980621">To use Smart Lock, switch to the primary user profile on your phone</translation>
 <translation id="6116921718742659598">Change language and input settings</translation>
 <translation id="6119927814891883061">Name device to <ph name="DEVICE_NAME"/></translation>
@@ -6179,7 +6179,7 @@ You have # more compromised passwords. Brave Password Manager recommends checkin
 <translation id="6610002944194042868">Translate Options</translation>
 <translation id="6611907964265870728">Please ensure that your device is connected to the Internet</translation>
 <translation id="6611972847767394631">Find your tabs here</translation>
-<translation id="6613668613087513143">There isn't enough space on this device to complete this update. Clean up <ph name="NECESSARY_SPACE"/> on your device and try again from your Brave Browser.</translation>
+<translation id="6613668613087513143">There isn't enough space on this device to complete this update. Clean up <ph name="NECESSARY_SPACE"/> on your device and try again from your Minego Browser.</translation>
 <translation id="6615455863669487791">Show me</translation>
 <translation id="6618097958368085618">Keep Anyway</translation>
 <translation id="6618744767048954150">Running</translation>
@@ -6315,7 +6315,7 @@ You have # more compromised passwords. Brave Password Manager recommends checkin
 <translation id="6740234557573873150">Paused <ph name="FILE_NAME"/></translation>
 <translation id="6741063444351041466"><ph name="BEGIN_LINK"/>Your administrator<ph name="END_LINK"/> has turned off Safe Browsing</translation>
 <translation id="6742339027238151589">Accessible to script</translation>
-<translation id="6554048679786998977">Automatically creates captions for media in Brave Browser. Audio and captions are processed locally and never leave the device.</translation>
+<translation id="6554048679786998977">Automatically creates captions for media in Minego Browser. Audio and captions are processed locally and never leave the device.</translation>
 <translation id="6743841972744298686">Sync settings</translation>
 <translation id="6745592621698551453">Update now</translation>
 <translation id="6746124502594467657">Move down</translation>
@@ -6502,7 +6502,7 @@ You have # more compromised passwords. Brave Password Manager recommends checkin
 <translation id="6902066522699286937">Voice to preview</translation>
 <translation id="6902336033320348843">Section not supported: <ph name="ERROR_LINE"/></translation>
 <translation id="6902837902700739466">Join device to domain</translation>
-<translation id="8347080852065577355">Your data will be synced across all Brave browsers where you have turned on sync for this account. For Chrome OS sync options, go to <ph name="LINK_BEGIN"/>Chrome OS settings<ph name="LINK_END"/>.</translation>
+<translation id="8347080852065577355">Your data will be synced across all Minego Browsers where you have turned on sync for this account. For Chrome OS sync options, go to <ph name="LINK_BEGIN"/>Chrome OS settings<ph name="LINK_END"/>.</translation>
 <translation id="6903590427234129279">Open all (<ph name="URL_COUNT"/>)</translation>
 <translation id="6903907808598579934">Turn on sync</translation>
 <translation id="6904344821472985372">Revoke file access</translation>
@@ -6607,7 +6607,7 @@ You have # more compromised passwords. Brave Password Manager recommends checkin
 <translation id="6991665348624301627">Select a destination</translation>
 <translation id="6992554835374084304">Turn on enhanced spell check</translation>
 <translation id="6993000214273684335">Tab removed from unnamed group – <ph name="GROUP_CONTENTS"/></translation>
-<translation id="6993050154661569036">Updating Brave Browser</translation>
+<translation id="6993050154661569036">Updating Minego Browser</translation>
 <translation id="6995899638241819463">Warn you if passwords are exposed in a data breach</translation>
 <translation id="6997553674029032185">Go to site</translation>
 <translation id="6997642619627518301"><ph name="NAME_PH"/> – Activity Log</translation>
@@ -6745,7 +6745,7 @@ You have # more compromised passwords. Brave Password Manager recommends checkin
 <translation id="7117228822971127758">Please try again later</translation>
 <translation id="711840821796638741">Show Managed Bookmarks</translation>
 <translation id="8651796563067586593">This page allows you to manage your signed-in Brave sync chains. <ph name="LINK_BEGIN"/>Learn more<ph name="LINK_END"/></translation>
-<translation id="5450502361144700252">Brave Browser and Android traffic will be blocked unless a VPN is connected</translation>
+<translation id="5450502361144700252">Minego Browser and Android traffic will be blocked unless a VPN is connected</translation>
 <translation id="7121438501124788993">Developer mode</translation>
 <translation id="7121728544325372695">Smart Dashes</translation>
 <translation id="7123030151043029868">Allowed to automatically download multiple files</translation>
@@ -7481,7 +7481,7 @@ Press an assigned switch or key to remove assignment.</translation>
 <translation id="7798504574384119986">View web permissions</translation>
 <translation id="7798844538707273832">Automatically blocked <ph name="PERMISSION"/></translation>
 <translation id="7800518121066352902">Rotate A&amp;nti-clockwise</translation>
-<translation id="1040069800786635119">Changes that you make here apply only to Lacros Brave Browser. To make changes to your Brave Browser settings, open Brave Browser and go to settings.</translation>
+<translation id="1040069800786635119">Changes that you make here apply only to Lacros Minego Browser. To make changes to your Minego Browser settings, open Minego Browser and go to settings.</translation>
 <translation id="780301667611848630">No, thanks</translation>
 <translation id="7804072833593604762">Tab closed</translation>
 <translation id="7805768142964895445">Status</translation>
@@ -7790,7 +7790,7 @@ Keep your key file in a safe place. You will need it to create new versions of y
 <translation id="8076835018653442223">Access to local files on your device is disabled by your administrator</translation>
 <translation id="8077120325605624147">Any site that you visit can show any ad to you</translation>
 <translation id="80798452873915119">Sites can ask to manage windows on all your displays</translation>
-<translation id="939305735877869636">Brave</translation>
+<translation id="939305735877869636">Minego</translation>
 <translation id="8081623398548615289">Your session is managed by <ph name="MANAGER_NAME"/>. Administrators can delete your profile and also monitor your network traffic.</translation>
 <translation id="8081989000209387414">Disable ADB debugging?</translation>
 <translation id="8082106343289440791">Pair with "<ph name="DEVICE_NAME"/>"?</translation>
@@ -8018,7 +8018,7 @@ Keep your key file in a safe place. You will need it to create new versions of y
 <translation id="8275080796245127762">Call from Your Device</translation>
 <translation id="2055831507440293816">Move your password to your Brave sync chain to access it securely wherever you're signed in</translation>
 <translation id="8276560076771292512">Empty cache and hard reload</translation>
-<translation id="2835355653189864472">Turn on Brave browser sync?</translation>
+<translation id="2835355653189864472">Turn on Minego Browser sync?</translation>
 <translation id="8281886186245836920">Skip</translation>
 <translation id="8284279544186306258">all <ph name="WEBSITE_1"/> sites</translation>
 <translation id="8284326494547611709">Captions</translation>

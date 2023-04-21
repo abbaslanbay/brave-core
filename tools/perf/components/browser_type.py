@@ -213,7 +213,7 @@ class BraveBrowserTypeImpl(BrowserType):
         ['hdiutil', 'attach', '-noautoopen', '-nobrowse', dmg_path], check=True)
     mount_path = output.rsplit('\t')[-1].rstrip()
 
-    app_name = f'Brave Browser {self._channel}'
+    app_name = f'Minego Browser {self._channel}'
     GetProcessOutput(
         ['cp', '-R',
          os.path.join(mount_path, app_name + '.app'), out_dir],

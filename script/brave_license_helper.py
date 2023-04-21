@@ -19,7 +19,7 @@ def AddBraveCredits(root, prune_paths, special_cases, prune_dirs,
     # Exclude these specific paths from needing a README.chromium file.
     prune_paths.update([
         # Formerly external Brave code which has moved to brave-core
-        # (i.e these are already covered by the Brave Browser license notice).
+        # (i.e these are already covered by the Minego Browser license notice).
         os.path.join('brave', 'third_party', 'challenge_bypass_ristretto_ffi'),
         os.path.join('brave', 'vendor', 'brave-ios'),
         os.path.join('brave', 'vendor', 'brave_base'),

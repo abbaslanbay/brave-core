@@ -23,7 +23,7 @@
 // {
 //   "application": {
 //     "clientId": "4c2b665ca060d912fec5c735c734859a06118cc8",
-//     "name": "Brave Browser"
+//     "name": "Minego Browser"
 //   },
 //   "createdAt": "2022-12-08T18:05:13.374Z",
 //   "denomination": {
@@ -38,7 +38,7 @@
 //     "base": "0.05",
 //     "commission": "0.00",
 //     "currency": "BAT",
-//     "description": "Brave Browser",
+//     "description": "Minego Browser",
 //     "fee": "0.00",
 //     "node": {
 //       "type": "anonymous"

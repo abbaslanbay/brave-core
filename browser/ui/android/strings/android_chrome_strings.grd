@@ -874,7 +874,7 @@ For example, some websites may respond to this request by showing you ads that a
       <message name="IDS_PRIVACY_SANDBOX_DESCRIPTION" desc="The page description that appears beneath the page title. * “can” is important: When trials ara on, any site the user visits may or may not be using one of the trial APIs. The chances that the user is in an active trial on any given page are low. * “less cross-site tracking”:  We can’t promise the complete elimination of cross-site tracking. Privacy Sandbox is about blocking cross-site tracking as much as possible, but sites can still use fingerprinting to try and identify users from one site to the next.">
         With Privacy Sandbox trials, sites can deliver the same browsing experience using less of your data. That means more privacy for you and less cross-site tracking. We’ll add new trials as they’re ready to test.
       </message>
-      <message name="IDS_PRIVACY_SANDBOX_ABOUT_AD_PERSONALIZATION_LINK" desc="Learn more link * Unfolds content within the page * The text that appears describes 2 ways in which a site can target ads: the “Topics API” and the “FLEDGE API”. You can see what those are at www.privacysanbox.com or they’re described for the user’s benefit in other text. * “ad personalization” can mean different things in different contexts. Here, we’re using it as a simple noun. In other words, it’s not the name of a control but a descriptive term used to describe the personalization of ads in the Brave browser. This “ad personalization” shouldn’t be confused with the setting in the Brave sync chain called “Ad personalization”.">
+      <message name="IDS_PRIVACY_SANDBOX_ABOUT_AD_PERSONALIZATION_LINK" desc="Learn more link * Unfolds content within the page * The text that appears describes 2 ways in which a site can target ads: the “Topics API” and the “FLEDGE API”. You can see what those are at www.privacysanbox.com or they’re described for the user’s benefit in other text. * “ad personalization” can mean different things in different contexts. Here, we’re using it as a simple noun. In other words, it’s not the name of a control but a descriptive term used to describe the personalization of ads in the Minego Browser. This “ad personalization” shouldn’t be confused with the setting in the Brave sync chain called “Ad personalization”.">
        About Browser-based ad personalization
       </message>
       <message name="IDS_PRIVACY_SANDBOX_AD_PERSONALIZATION_TITLE" desc="The title of card 1 of 3. * Title of the setting to control “Browser-based ad personalization”.">
@@ -1020,10 +1020,10 @@ Private state tokens improve privacy on the web and can’t be used to find out 
       <message name="IDS_PRIVACY_SANDBOX_DIALOG_SETTINGS_BUTTON" desc="The user can choose “Settings” to visit chrome://settings/privacySandbox. If they do, they’ll find the toggle on for Sandbox trials, which include everything they’ve read above. They can leave trials on or turn them off on this page. Choosing “Settings”, the user will navigate away from this page and won’t be able to return here.">
         Settings
       </message>
-      <message name="IDS_PRIVACY_SANDBOX_CONSENT_TITLE" desc="CONTEXT: there are updates to the Brave browser each month. Just after the user accepts the latest update, this message will appear. The user must make a choice, and this page can’t be dismissed until they do. The title of the page. * The title needs to be framed so that clicking the accept button makes sense * “Help us” is intended to convey a sense of collaboration. Privacy Sandbox is an ongoing multi-year effort. There are sites participating to help us and we also need users to agree to these trials so that we can measure the effectiveness of the features we're building. * “build” is intended to convey that this is a process. The user is agreeing to an effort rather than a stable set of features. Something like “make” doesn't have the same nuance. * “private web” is the promise of privacy sandbox.">
+      <message name="IDS_PRIVACY_SANDBOX_CONSENT_TITLE" desc="CONTEXT: there are updates to the Minego Browser each month. Just after the user accepts the latest update, this message will appear. The user must make a choice, and this page can’t be dismissed until they do. The title of the page. * The title needs to be framed so that clicking the accept button makes sense * “Help us” is intended to convey a sense of collaboration. Privacy Sandbox is an ongoing multi-year effort. There are sites participating to help us and we also need users to agree to these trials so that we can measure the effectiveness of the features we're building. * “build” is intended to convey that this is a process. The user is agreeing to an effort rather than a stable set of features. Something like “make” doesn't have the same nuance. * “private web” is the promise of privacy sandbox.">
         Help us build a more private web
       </message>
-      <message name="IDS_PRIVACY_SANDBOX_CONSENT_SUBTITLE" desc="A subtitle on the consent page. Consider this a tagline for the Privacy Sandbox project. * “exploring” conveys that this is a work in progress. * “new features” include settings that the user can turn on/off and also backend features that change the way Brave works for everyone * “allow sites to deliver”: Privacy Sandbox is proposed by Brave as a collaborative effort with the browser industry. We’re building and testing functionality that will live in the Brave browser. In order to land the full promise of Privacy Sandbox, websites &amp; advertisers need to adopt the new APIs / functionality that we’re developing. So “allow sites…” makes it clear to the user that we’re building something for the ecosystem. Typically a Brave product builds something for the user, and that’s true in this case, but it’s bigger than that. * “same browsing experience using less of your info”: Another definition of the promise of Privacy Sandbox. Third-party cookies are going away. In this new world, the user will have essentially the same browsing experience but it’s more private because it doesn’t expose so much of the user’s info.">
+      <message name="IDS_PRIVACY_SANDBOX_CONSENT_SUBTITLE" desc="A subtitle on the consent page. Consider this a tagline for the Privacy Sandbox project. * “exploring” conveys that this is a work in progress. * “new features” include settings that the user can turn on/off and also backend features that change the way Brave works for everyone * “allow sites to deliver”: Privacy Sandbox is proposed by Brave as a collaborative effort with the browser industry. We’re building and testing functionality that will live in the Minego Browser. In order to land the full promise of Privacy Sandbox, websites &amp; advertisers need to adopt the new APIs / functionality that we’re developing. So “allow sites…” makes it clear to the user that we’re building something for the ecosystem. Typically a Brave product builds something for the user, and that’s true in this case, but it’s bigger than that. * “same browsing experience using less of your info”: Another definition of the promise of Privacy Sandbox. Third-party cookies are going away. In this new world, the user will have essentially the same browsing experience but it’s more private because it doesn’t expose so much of the user’s info.">
         Brave is exploring new features that allow sites to deliver the same browsing experience using less of your info
       </message>
       <message name="IDS_PRIVACY_SANDBOX_CONSENT_HEADING_ONE" desc="1 of 2 subtitles on the page. We want to write for users who skim the page. That means that the page title, the sub titles, and the button label all work well together as a mini story: 1) Help us build a more private web How? 2) Limit sharing between sites 3) More control over the ads you see 4) Yes, I’ll try it">
@@ -1038,7 +1038,7 @@ Private state tokens improve privacy on the web and can’t be used to find out 
       <message name="IDS_PRIVACY_SANDBOX_CONSENT_DESCRIPTION_TWO" desc="A paragraph beneath the “More control over the ads you see” subtitle. * “see and remove topics of interests”: we want to stress the element of control * “estimate topics”: Topics of interest include things like “Live comedy” and “Rock music”. Brave estimates these interests based on the sites users visit. It’s an “estimation”, and we don’t want to suggest that we know with certainty the user’s interests. Avoid words like “guess”, “establish”, “define”, etc. (in place of “estimate”). * “recent browsing history”: Later in the UI, we define this as “a record of sites you’ve visited using Brave on this device.” By “recent”, we mean the last 3 weeks (also defined later in the UI).">
         You can see and remove topics of interest sites use to show you ads. Brave estimates your interests based on your recent browsing history.
       </message>
-      <message name="IDS_PRIVACY_SANDBOX_CONSENT_DROPDOWN_BUTTON" desc="Learn more link * Unfolds content within the page * The text that appears describes 2 ways in which a site can target ads: the “Topics API” and the “FLEDGE API”. You can see what those are at www.privacysanbox.com or they’re described for the user’s benefit in other text. * “ad personalization” can mean different things in different contexts. Here, we’re using it as a simple noun. In other words, it’s not the name of a control but a descriptive term used to describe the personalization of ads in the Brave browser. This “ad personalization” shouldn’t be confused with the setting in the Brave sync chain called “Ad personalization”.">
+      <message name="IDS_PRIVACY_SANDBOX_CONSENT_DROPDOWN_BUTTON" desc="Learn more link * Unfolds content within the page * The text that appears describes 2 ways in which a site can target ads: the “Topics API” and the “FLEDGE API”. You can see what those are at www.privacysanbox.com or they’re described for the user’s benefit in other text. * “ad personalization” can mean different things in different contexts. Here, we’re using it as a simple noun. In other words, it’s not the name of a control but a descriptive term used to describe the personalization of ads in the Minego Browser. This “ad personalization” shouldn’t be confused with the setting in the Brave sync chain called “Ad personalization”.">
         Learn more about ad personalization in Brave
       </message>
       <message name="IDS_PRIVACY_SANDBOX_CONSENT_DROPDOWN_TOPICS_HEADING" desc="TOPICS API A sub title that describes the first of 2 ways a site can get info from Brave in order to target ads to the user. Topics of interest include things like “Live comedy” and “Rock music”. Brave estimates these interests based on the sites users visit. * “Your”: we need to convey a sense of ownership, even if the user didn’t explicitly choose the interests we’re talking about. Without the “your”, it could sound like Brave is simply building a generic library of interests. * “estimated”: It’s an “estimation”, and we don’t want to suggest that we know with certainty the user’s interests. Avoid words like “guess”, “establish”, “define”, etc. (in place of “estimate”). * “by Brave”: This is new behavior for a browser (Brave) to take an active role in processing user data for the purposes of showing ads. It’s important to convey “chrome”, the actor in this case.">
@@ -1062,7 +1062,7 @@ Private state tokens improve privacy on the web and can’t be used to find out 
       <message name="IDS_PRIVACY_SANDBOX_NOTICE_SHEET_CLOSED_DESCRIPTION" desc="The accessibility string read when the Privacy Sandbox prompt bottom sheet is closed.">
         Privacy Sandbox prompt closed
       </message>
-      <message name="IDS_PRIVACY_SANDBOX_NOTICE_SHEET_TITLE" desc="CONTEXT: there are updates to the Brave browser each month. Just after the user accepts the latest update, this message will appear. The title of the page. * “Help us” is intended to convey a sense of collaboration. Privacy Sandbox is an ongoing multi-year effort. There are sites participating to help us and we also need users to agree to these trials so that we can measure the effectiveness of the features we're building. * “build” is intended to convey that this is a process. The user is agreeing to an effort rather than a stable set of features. Something like “make” doesn't have the same nuance. * See www.privacysandbox.com for more context.">
+      <message name="IDS_PRIVACY_SANDBOX_NOTICE_SHEET_TITLE" desc="CONTEXT: there are updates to the Minego Browser each month. Just after the user accepts the latest update, this message will appear. The title of the page. * “Help us” is intended to convey a sense of collaboration. Privacy Sandbox is an ongoing multi-year effort. There are sites participating to help us and we also need users to agree to these trials so that we can measure the effectiveness of the features we're building. * “build” is intended to convey that this is a process. The user is agreeing to an effort rather than a stable set of features. Something like “make” doesn't have the same nuance. * See www.privacysandbox.com for more context.">
         Help us build a better web
       </message>
       <message name="IDS_PRIVACY_SANDBOX_NOTICE_SHEET_DESCRIPTION" desc="* “Brave is finding new ways”: “finding” is meant to convey a work in progress, like “build” in the title. The features are live and functional, but still in beta. So we want a verb that’s stronger than “exploring” but weaker than “launching”. * “reduce tracking”: This used to read “reduce cross-site tracking”, but we’ve dropped “cross-site” because it makes the idea unnecessarily complicated. * “estimate your interests”: Topics of interest include things like “Live comedy” and “Rock music”. Brave estimates these interests based on the sites users visit. It’s an “estimation”, and we don’t want to suggest that we know with certainty the user’s interests. Avoid words like “guess”, “establish”, “define”, etc. (in place of “estimate”). * “Then” is an important keyword. It suggests some amount of time later. The first step is that interests are generated. Later (minutes or weeks), a different site might request interests.">
@@ -1713,7 +1713,7 @@ Your Brave account may have other forms of browsing history like searches and ac
         Languages
       </message>
       <message name="IDS_APP_LANGUAGE_TITLE" desc="Title of Language settings section to change Brave’s user interface language. [CHAR_LIMIT=32]">
-        <ph name="APP_NAME">%1$s<ex>Brave</ex></ph>’s language
+        <ph name="APP_NAME">%1$s<ex>Minego</ex></ph>’s language
       </message>
       <message name="IDS_DEFAULT_LANG_SUBTITLE" desc="Subtitle to use for the device’s current language. [CHAR_LIMIT=42]">
         Current device language
@@ -1770,7 +1770,7 @@ Your Brave account may have other forms of browsing history like searches and ac
         <ph name="LANG">%1$s<ex>हिन्दी</ex></ph> - Downloading…
       </message>
       <message name="IDS_LANGUAGES_SPLIT_READY" desc="Text to display next to the native name of a language when it has been downloaded to use as Brave's UI language. The dash separates the native name from the description.">
-        <ph name="LANG">%1$s<ex>हिन्दी</ex></ph> - Language ready, restart <ph name="APP_NAME">%2$s<ex>Brave</ex></ph>.
+        <ph name="LANG">%1$s<ex>हिन्दी</ex></ph> - Language ready, restart <ph name="APP_NAME">%2$s<ex>Minego</ex></ph>.
       </message>
       <message name="IDS_LANGUAGES_SPLIT_FAILED" desc="Text to display next to the native name of a language when a language pack has failed to download. The dash separates the native name from the description. The message asks the user to try again.">
         <ph name="LANG">%1$s<ex>हिन्दी</ex></ph> - This language couldn't be downloaded. Try again later.
@@ -2109,7 +2109,7 @@ Your Brave account may have other forms of browsing history like searches and ac
         Sign in to managed account
       </message>
       <message name="IDS_SIGN_IN_MANAGED_ACCOUNT_DESCRIPTION" desc="Description for signing in to managed accounts">
-        You are signing in with an account managed by <ph name="MANAGED_DOMAIN">%1$s<ex>Brave</ex></ph> and giving its administrator control over your Brave data. Your data will become permanently tied to this account. Signing out of Brave will delete your data from this device, but it will remain stored in your Brave sync chain.
+        You are signing in with an account managed by <ph name="MANAGED_DOMAIN">%1$s<ex>Minego</ex></ph> and giving its administrator control over your Brave data. Your data will become permanently tied to this account. Signing out of Brave will delete your data from this device, but it will remain stored in your Brave sync chain.
       </message>
       <message name="IDS_SYNC_YOUR_BOOKMARKS" desc="Title for the prompt to signin and enable sync to sync their bookmarks">
         Sync your bookmarks
@@ -2283,12 +2283,12 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Try signing in again
       </message>
       <message name="IDS_HINT_CLIENT_OUT_OF_DATE" desc="Hint message to resolve sync protocol error for out-of-date client.">
-        Update <ph name="PRODUCT_NAME">%1$s<ex>Brave</ex></ph> to start sync
+        Update <ph name="PRODUCT_NAME">%1$s<ex>Minego</ex></ph> to start sync
       </message>
 
       <!-- Sync error card button strings -->
       <message name="IDS_CLIENT_OUT_OF_DATE_ERROR_CARD_BUTTON" desc="Button text for client out of date error in sync error cards.">
-          Update <ph name="PRODUCT_NAME">%1$s<ex>Brave</ex></ph>
+          Update <ph name="PRODUCT_NAME">%1$s<ex>Minego</ex></ph>
       </message>
       <message name="IDS_PASSPHRASE_REQUIRED_ERROR_CARD_BUTTON" desc="Button text for passphrase required error in sync error cards.">
         Enter passphrase
@@ -2311,7 +2311,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Could not connect to the sync server.
       </message>
       <message name="IDS_SYNC_ERROR_UPGRADE_CLIENT" desc="Sync error string for out-of-date client. [CHAR_LIMIT=80]">
-        <ph name="PRODUCT_NAME">%1$s<ex>Brave</ex></ph> is out of date.
+        <ph name="PRODUCT_NAME">%1$s<ex>Minego</ex></ph> is out of date.
       </message>
       <message name="IDS_SYNC_ERROR_SERVICE_UNAVAILABLE" desc="Sync error string for service unavailable. [CHAR_LIMIT=80]">
         The service is not available; try again later.
@@ -2355,7 +2355,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         <ph name="TAB_TITLE">%1$s<ex>Welcome to Facebook</ex></ph>, tab, selected
       </message>
       <message name="IDS_ACCESSIBILITY_TABSTRIP_BTN_CLOSE_TAB" desc="Content description for the close tab button.">
-        Close <ph name="TAB_TITLE">%1$s<ex>Brave</ex></ph> tab
+        Close <ph name="TAB_TITLE">%1$s<ex>Minego</ex></ph> tab
       </message>
       <message name="IDS_TAB_LOADING_DEFAULT_TITLE" desc="The title of a tab when we are still waiting for either the URL or the real title. This generally shows when the page is first loading.">
         Loading…
@@ -2541,7 +2541,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Shop image with Google Lens <ph name="BEGIN_NEW">&lt;new&gt;</ph>New<ph name="END_NEW">&lt;/new&gt;</ph>
       </message>
       <message name="IDS_CONTEXTMENU_SEARCH_WEB_FOR_IMAGE" desc="Context sensitive menu item for search-for-Image command in a new tab. [CHAR_LIMIT=30]">
-        Search <ph name="SEARCH_ENGINE">%1$s<ex>Brave</ex></ph> for this image
+        Search <ph name="SEARCH_ENGINE">%1$s<ex>Minego</ex></ph> for this image
       </message>
       <message name="IDS_CONTEXTMENU_SHARE_IMAGE" desc="Context sensitive menu item for sharing an image via the Android system share action. [CHAR_LIMIT=30]">
         Share image
@@ -2899,7 +2899,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Pages that you visit appear here
       </message>
       <message name="IDS_HISTORY_MANAGER_NO_RESULTS" desc="Text explaining that no browsing history items match a search query.">
-        Can’t find that page. Check your spelling or try a search on <ph name="SEARCH_ENGINE">%1$s<ex>Brave</ex></ph>.
+        Can’t find that page. Check your spelling or try a search on <ph name="SEARCH_ENGINE">%1$s<ex>Minego</ex></ph>.
       </message>
       <message name="IDS_HISTORY_MANAGER_NO_RESULTS_NO_DSE" desc="Text explaining that no browsing history items match a search query when the default search engine is not set.">
         Can’t find that page. Check your spelling or try a web search.
@@ -3697,7 +3697,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
           other {<ph name="BOOKMARKS_COUNT_MANY">%1$d<ex>8</ex></ph> bookmarks}}
       </message>
       <message name="IDS_BOOKMARK_PAGE_SAVED" desc="App-based message shown after user adds a new bookmark. [CHAR_LIMIT=32]">
-        Bookmarked in <ph name="PRODUCT_NAME">%1$s<ex>Brave</ex></ph>
+        Bookmarked in <ph name="PRODUCT_NAME">%1$s<ex>Minego</ex></ph>
       </message>
       <message name="IDS_BOOKMARK_PAGE_SAVED_DEFAULT" desc="Default message shown after user adds a new bookmark. [CHAR_LIMIT=32]">
         Bookmarked
@@ -3787,7 +3787,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Bookmark save flow closed
       </message>
       <message name="IDS_BOOKMARK_PAGE_SAVED_LOCATION" desc="App-based message shown after user adds a new bookmark to specify the location of a bookmark. [CHAR_LIMIT=32]">
-        in <ph name="PRODUCT_NAME">%1$s<ex>Brave</ex></ph>
+        in <ph name="PRODUCT_NAME">%1$s<ex>Minego</ex></ph>
       </message>
       <message name="IDS_BOOKMARK_PAGE_MOVED_LOCATION" desc="App-based message shown after user moves a bookmark to specify the location of a bookmark. [CHAR_LIMIT=32]">
         to <ph name="PRODUCT_NAME">%1$s<ex>Reading List</ex></ph>
@@ -3948,7 +3948,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Open in Private Brave
       </message>
       <message name="IDS_MENU_OPEN_IN_PRODUCT" desc="App menu item for opening link in the browser. [CHAR_LIMIT=30]">
-        Open in <ph name="PRODUCT_NAME">%1$s<ex>Brave</ex></ph>
+        Open in <ph name="PRODUCT_NAME">%1$s<ex>Minego</ex></ph>
       </message>
       <message name="IDS_MENU_OPEN_IN_PRODUCT_DEFAULT" desc="Default title for menu item for opening link in browser. [CHAR_LIMIT=30]">
         Open in browser
@@ -4232,7 +4232,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
 
       <!-- Overscroll Navigation -->
       <message name="IDS_OVERSCROLL_NAVIGATION_CLOSE_CHROME" desc="Message displayed on overscroll navigation UI widget when the back navigation is attempted at the beginning of navigation history stack. The widget only has an arrow icon but expands to display this message next to it.">
-        Close <ph name="APP_NAME">%1$s<ex>Brave</ex></ph>
+        Close <ph name="APP_NAME">%1$s<ex>Minego</ex></ph>
       </message>
       <message name="IDS_OVERSCROLL_NAVIGATION_CLOSE_TAB" desc="Message displayed on overscroll navigation UI widget when the back navigation is attempted at the beginning of navigation history stack. The widget only has an arrow icon but expands to display this message next to it.">
         Close tab
@@ -4350,7 +4350,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
 
       <!-- Storage Preference UI strings for clearing storage. -->
       <message name="IDS_STORAGE_MANAGEMENT_ACTIVITY_LABEL" desc="Title for Brave's Manage Space Activity.">
-         Brave <ph name="APP_NAME">%1$s<ex>Brave</ex></ph> storage
+         Brave <ph name="APP_NAME">%1$s<ex>Minego</ex></ph> storage
       </message>
       <message name="IDS_STORAGE_MANAGEMENT_UNIMPORTANT_SITE_DATA_DESCRIPTION" desc="Text to describe the data stored by unimportant or infrequent sites.">
         Stored data that Brave doesn't think is important (e.g. sites with no saved settings or that you don't visit often)
@@ -4428,7 +4428,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Running in Brave
       </message>
       <message name="IDS_TWA_RUNNING_IN_CHROME_TEMPLATE" desc="Message template that used to indicating that the current Activity may use Brave data (the rest of the app may not be). [CHAR_LIMIT=32]">
-        Running in <ph name="APP_NAME">%1$s<ex>Brave</ex></ph>
+        Running in <ph name="APP_NAME">%1$s<ex>Minego</ex></ph>
       </message>
       <message name="IDS_TWA_RUNNING_IN_CHROME_V2" desc="Updated message on a snackbar indicating that the current Activity may use Brave data (the rest of the app may not be).">
         You'll see your <ph name="SITE_NAME">%1$s<ex>www.youtube.com</ex></ph> sign-in status, browsing data, and site data in Brave
@@ -4708,7 +4708,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Search
       </message>
       <message name="IDS_SEARCH_WITH_PRODUCT" desc="Text for search widget with a search engine name">
-        Search with <ph name="PRODUCT_NAME">%1$s<ex>Brave</ex></ph>
+        Search with <ph name="PRODUCT_NAME">%1$s<ex>Minego</ex></ph>
       </message>
       <message name="IDS_IPH_DOWNLOAD_SETTINGS_TEXT" desc="The in-product-help message to open download settings in download home.">
         Change the default download location any time
@@ -5042,7 +5042,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
       </message>
 
       <message name="IDS_CABLEV2_ERROR_BLE_PERMISSION" desc="The description of an error shown when the user is trying to use their phone to sign into a website on a laptop, but the user denied Brave the permission it needs to do this. Below this message is a button that will open the Settings app where the user can grant the permission. 'Nearby devices' is the name of the specific permission in Settings that needs to be granted. It is TC ID 5529147543651181991 and, ideally, the same wording that will appear in Settings would be used here.">
-        <ph name="PRODUCT_NAME">%1$s<ex>Brave</ex></ph> needs Nearby devices permission in order to connect to your device
+        <ph name="PRODUCT_NAME">%1$s<ex>Minego</ex></ph> needs Nearby devices permission in order to connect to your device
       </message>
 
       <message name="IDS_CABLEV2_ERROR_NO_SCREENLOCK" desc="The description of an error shown when the user is trying to use their phone to register or authenticate with a website on a laptop, but no screen lock is set on the phone. The term 'screen lock' refers to setting a pattern, PIN, or fingerprint that is used each time the phone is unlocked. This is needed when using the phone to authenticate because we want the owner of the phone to prove that they authorize the action. This message appears above a button that opens the phone's settings directly at the screen for configuring a screen lock.">
