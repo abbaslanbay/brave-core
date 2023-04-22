@@ -50,6 +50,13 @@ class SidebarService : public KeyedService {
       SidebarItem::BuiltInItemType::kWallet,
       SidebarItem::BuiltInItemType::kBookmarks,
       SidebarItem::BuiltInItemType::kReadingList,
+      SidebarItem::BuiltInItemType::kWebDiscord,
+      SidebarItem::BuiltInItemType::kWebCoinMarketCap,
+      SidebarItem::BuiltInItemType::kWebFacebook,
+      SidebarItem::BuiltInItemType::kWebWhatsapp,
+      SidebarItem::BuiltInItemType::kWebBinance,
+      SidebarItem::BuiltInItemType::kWebTelegram,
+      SidebarItem::BuiltInItemType::kWebFacebookMessenger,
       SidebarItem::BuiltInItemType::kHistory,
       SidebarItem::BuiltInItemType::kPlaylist};
   static_assert(

@@ -62,6 +62,12 @@ aggregate_vector_icons("brave_vector_icons") {
       "sidebar_reading_list.icon",
       "sidebar_settings.icon",
       "sidebar_trash.icon",
+      "sidebar_telegram.icon",
+      "sidebar_discord.icon",
+      "sidebar_facebook.icon",
+      "sidebar_binance.icon",
+      "sidebar_messenger.icon",
+      "sidebar_coin.icon",
       "vertical_tab_strip_toggle_button.icon",
     ]
   }

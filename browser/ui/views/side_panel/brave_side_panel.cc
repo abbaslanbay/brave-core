@@ -21,7 +21,7 @@ BraveSidePanel::BraveSidePanel(BrowserView* browser_view,
 
   // TODO(pbos): Reconsider if SetPanelWidth() should add borders, if so move
   // accounting for the border into SetPanelWidth(), otherwise remove this TODO.
-  constexpr int kDefaultWidth = 320;
+  constexpr int kDefaultWidth = 800;
   SetPreferredSize(gfx::Size(kDefaultWidth, 1));
   AddObserver(this);
 }
