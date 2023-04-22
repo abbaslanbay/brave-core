@@ -60,6 +60,22 @@ SidebarItem::BuiltInItemType GetBuiltInItemTypeForLegacyURL(
   if (url == "chrome://sidebar-bookmarks.top-chrome/" ||
       url == "chrome://bookmarks/")
     return SidebarItem::BuiltInItemType::kBookmarks;
+    
+  if (url == "discord.com" || url == "https://discord.com/")
+    return SidebarItem::BuiltInItemType::kWebDiscord;
+  if (url == "discord.com" || url == "https://discord.com/")
+    return SidebarItem::BuiltInItemType::kWebTelegram;
+  if (url == "discord.com" || url == "https://discord.com/")
+    return SidebarItem::BuiltInItemType::kWebBinance;
+  if (url == "discord.com" || url == "https://discord.com/")
+    return SidebarItem::BuiltInItemType::kWebFacebook;
+  if (url == "discord.com" || url == "https://discord.com/")
+    return SidebarItem::BuiltInItemType::kWebWhatsapp;
+  if (url == "discord.com" || url == "https://discord.com/")
+    return SidebarItem::BuiltInItemType::kWebCoinMarketCap;
+  if (url == "facebook.com/messenger" ||
+      url == "https://www.facebook.com/messenger")
+    return SidebarItem::BuiltInItemType::kWebFacebookMessenger;
 
   if (url == "chrome://history/")
     return SidebarItem::BuiltInItemType::kHistory;
@@ -591,44 +607,47 @@ SidebarItem SidebarService::GetBuiltInItemForType(
                                  SidebarItem::BuiltInItemType::kBraveTalk,
                                  /* open_in_panel = */ false);
     case SidebarItem::BuiltInItemType::kWallet: {
-      if (brave_wallet::IsAllowed(prefs_)) {
-        return SidebarItem::Create(GURL("chrome://wallet/"),
-                                   brave_l10n::GetLocalizedResourceUTF16String(
-                                       IDS_SIDEBAR_WALLET_ITEM_TITLE),
-                                   SidebarItem::Type::kTypeBuiltIn,
-                                   SidebarItem::BuiltInItemType::kWallet,
-                                   /* open_in_panel = */ false);
-      }
+      // if (brave_wallet::IsAllowed(prefs_)) {
+      //   return SidebarItem::Create(GURL("chrome://wallet/"),
+      //                              brave_l10n::GetLocalizedResourceUTF16String(
+      //                                  IDS_SIDEBAR_WALLET_ITEM_TITLE),
+      //                              SidebarItem::Type::kTypeBuiltIn,
+      //                              SidebarItem::BuiltInItemType::kWallet,
+      //                              /* open_in_panel = */ false);
+      // }
       return SidebarItem();
     }
     case SidebarItem::BuiltInItemType::kBookmarks:
-      return SidebarItem::Create(brave_l10n::GetLocalizedResourceUTF16String(
-                                     IDS_SIDEBAR_BOOKMARKS_ITEM_TITLE),
-                                 SidebarItem::Type::kTypeBuiltIn,
-                                 SidebarItem::BuiltInItemType::kBookmarks,
-                                 /* open_in_panel = */ true);
+      // return SidebarItem::Create(brave_l10n::GetLocalizedResourceUTF16String(
+      //                                IDS_SIDEBAR_BOOKMARKS_ITEM_TITLE),
+      //                            SidebarItem::Type::kTypeBuiltIn,
+      //                            SidebarItem::BuiltInItemType::kBookmarks,
+      //                            /* open_in_panel = */ true);
+        return SidebarItem();
     case SidebarItem::BuiltInItemType::kReadingList:
-      return SidebarItem::Create(
-          // TODO(petemill): Have these items created under brave/browser
-          // so that we can access common strings, like IDS_READ_LATER_TITLE.
-          brave_l10n::GetLocalizedResourceUTF16String(
-              IDS_SIDEBAR_READING_LIST_ITEM_TITLE),
-          SidebarItem::Type::kTypeBuiltIn,
-          SidebarItem::BuiltInItemType::kReadingList,
-          /* open_in_panel = */ true);
+      // return SidebarItem::Create(
+      //     // TODO(petemill): Have these items created under brave/browser
+      //     // so that we can access common strings, like IDS_READ_LATER_TITLE.
+      //     brave_l10n::GetLocalizedResourceUTF16String(
+      //         IDS_SIDEBAR_READING_LIST_ITEM_TITLE),
+      //     SidebarItem::Type::kTypeBuiltIn,
+      //     SidebarItem::BuiltInItemType::kReadingList,
+      //     /* open_in_panel = */ true);
+        return SidebarItem();
     case SidebarItem::BuiltInItemType::kHistory: {
       // TODO(sko) When should we show history item?
-      constexpr bool kShowHistoryButton = false;
-      if constexpr (kShowHistoryButton) {
-        return SidebarItem::Create(GURL("chrome://history/"),
-                                   brave_l10n::GetLocalizedResourceUTF16String(
-                                       IDS_SIDEBAR_HISTORY_ITEM_TITLE),
-                                   SidebarItem::Type::kTypeBuiltIn,
-                                   SidebarItem::BuiltInItemType::kHistory,
-                                   /* open_in_panel = */ true);
-      } else {
-        return SidebarItem();
-      }
+      // constexpr bool kShowHistoryButton = false;
+      // if constexpr (kShowHistoryButton) {
+      //   return SidebarItem::Create(GURL("chrome://history/"),
+      //                              brave_l10n::GetLocalizedResourceUTF16String(
+      //                                  IDS_SIDEBAR_HISTORY_ITEM_TITLE),
+      //                              SidebarItem::Type::kTypeBuiltIn,
+      //                              SidebarItem::BuiltInItemType::kHistory,
+      //                              /* open_in_panel = */ true);
+      // } else {
+      //   return SidebarItem();
+      // }
+       return SidebarItem();
     }
     case SidebarItem::BuiltInItemType::kPlaylist: {
       if (base::FeatureList::IsEnabled(playlist::features::kPlaylist)) {
@@ -642,6 +661,54 @@ SidebarItem SidebarService::GetBuiltInItemForType(
 
       return SidebarItem();
     }
+        case SidebarItem::BuiltInItemType::kWebCoinMarketCap:
+      return SidebarItem::Create(
+          brave_l10n::GetLocalizedResourceUTF16String(
+              IDS_SIDEBAR_WEBCOINMARKETCAP_ITEM_TITLE),
+          SidebarItem::Type::kTypeBuiltIn,
+          SidebarItem::BuiltInItemType::kWebCoinMarketCap,
+          /* open_in_panel = */ true);
+    case SidebarItem::BuiltInItemType::kWebWhatsapp:
+      return SidebarItem::Create(
+          brave_l10n::GetLocalizedResourceUTF16String(
+              IDS_SIDEBAR_WEBWHATSAPP_ITEM_TITLE),
+          SidebarItem::Type::kTypeBuiltIn,
+          SidebarItem::BuiltInItemType::kWebWhatsapp,
+          /* open_in_panel = */ true);
+    case SidebarItem::BuiltInItemType::kWebBinance:
+      return SidebarItem::Create(brave_l10n::GetLocalizedResourceUTF16String(
+                                     IDS_SIDEBAR_WEBBINANCE_ITEM_TITLE),
+                                 SidebarItem::Type::kTypeBuiltIn,
+                                 SidebarItem::BuiltInItemType::kWebBinance,
+                                 /* open_in_panel = */ true);
+    case SidebarItem::BuiltInItemType::kWebTelegram:
+      return SidebarItem::Create(
+          brave_l10n::GetLocalizedResourceUTF16String(
+              IDS_SIDEBAR_WEBTELEGRAM_ITEM_TITLE),
+          SidebarItem::Type::kTypeBuiltIn,
+          SidebarItem::BuiltInItemType::kWebTelegram,
+          /* open_in_panel = */ true);
+    case SidebarItem::BuiltInItemType::kWebDiscord:
+      return SidebarItem::Create(
+          brave_l10n::GetLocalizedResourceUTF16String(
+              IDS_SIDEBAR_WEBDISCORD_ITEM_TITLE),
+          SidebarItem::Type::kTypeBuiltIn,
+          SidebarItem::BuiltInItemType::kWebDiscord,
+          /* open_in_panel = */ true);
+    case SidebarItem::BuiltInItemType::kWebFacebook:
+      return SidebarItem::Create(
+          brave_l10n::GetLocalizedResourceUTF16String(
+              IDS_SIDEBAR_WEBFACEBOOK_ITEM_TITLE),
+          SidebarItem::Type::kTypeBuiltIn,
+          SidebarItem::BuiltInItemType::kWebFacebook,
+          /* open_in_panel = */ true);
+    case SidebarItem::BuiltInItemType::kWebFacebookMessenger:
+      return SidebarItem::Create(
+          brave_l10n::GetLocalizedResourceUTF16String(
+              IDS_SIDEBAR_WEBFACEBOOKMESSENGER_ITEM_TITLE),
+          SidebarItem::Type::kTypeBuiltIn,
+          SidebarItem::BuiltInItemType::kWebFacebookMessenger,
+          /* open_in_panel = */ true);
     case SidebarItem::BuiltInItemType::kNone: {
       NOTREACHED();
       break;

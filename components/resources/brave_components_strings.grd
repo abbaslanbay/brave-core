@@ -374,6 +374,28 @@
         <message name="IDS_SIDEBAR_PLAYLIST_ITEM_TITLE" desc="Title for plyalist item in sidebar">
           Playlist
         </message>
+
+  <message name="IDS_SIDEBAR_WEBDISCORD_ITEM_TITLE" desc="Title for whatsapp item in sidebar">
+          Discord
+        </message>
+  <message name="IDS_SIDEBAR_WEBCOINMARKETCAP_ITEM_TITLE" desc="Title for whatsapp item in sidebar">
+          Coin Market Cap
+        </message>
+        <message name="IDS_SIDEBAR_WEBFACEBOOK_ITEM_TITLE" desc="Title for whatsapp item in sidebar">
+          Facebook
+        </message>
+        <message name="IDS_SIDEBAR_WEBWHATSAPP_ITEM_TITLE" desc="Title for whatsapp item in sidebar">
+          Whatsapp
+        </message>
+        <message name="IDS_SIDEBAR_WEBBINANCE_ITEM_TITLE" desc="Title for whatsapp item in sidebar">
+          Binance
+        </message>
+  <message name="IDS_SIDEBAR_WEBTELEGRAM_ITEM_TITLE" desc="Title for whatsapp item in sidebar">
+          Telegram
+        </message>
+  <message name="IDS_SIDEBAR_WEBFACEBOOKMESSENGER_ITEM_TITLE" desc="Title for whatsapp item in sidebar">
+          Facebook Messenger
+        </message>
       </if>
 
       <!-- WebUI private tab resources -->

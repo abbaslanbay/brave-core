@@ -22,6 +22,20 @@ SidePanelEntry::Id SidePanelIdFromSideBarItem(const SidebarItem& item) {
       return SidePanelEntry::Id::kBookmarks;
     case BuiltInItemType::kPlaylist:
       return SidePanelEntry::Id::kPlaylist;
+       case BuiltInItemType::kWebCoinMarketCap:
+      return SidePanelEntry::Id::kWebCoinMarketCap;
+    case BuiltInItemType::kWebFacebook:
+      return SidePanelEntry::Id::kWebFacebook;
+    case BuiltInItemType::kWebWhatsapp:
+      return SidePanelEntry::Id::kWebWhatsapp;
+    case BuiltInItemType::kWebBinance:
+      return SidePanelEntry::Id::kWebBinance;
+    case BuiltInItemType::kWebTelegram:
+      return SidePanelEntry::Id::kWebTelegram;
+    case BuiltInItemType::kWebDiscord:
+      return SidePanelEntry::Id::kWebDiscord;
+    case BuiltInItemType::kWebFacebookMessenger:
+      return SidePanelEntry::Id::kWebFacebookMessenger;
     case BuiltInItemType::kWallet:
       [[fallthrough]];
     case BuiltInItemType::kBraveTalk:

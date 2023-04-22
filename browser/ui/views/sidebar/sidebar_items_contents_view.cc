@@ -481,6 +481,35 @@ gfx::ImageSkia SidebarItemsContentsView::GetImageForBuiltInItems(
       focused_image_resource = IDR_SIDEBAR_READING_LIST_FOCUSED;
       normal_image_icon = &kSidebarReadingListIcon;
       break;
+  
+    case sidebar::SidebarItem::BuiltInItemType::kWebCoinMarketCap:
+      focused_image_resource = IDR_SIDEBAR_COIN_FOCUSED;
+      normal_image_icon = &kSidebarCoinIcon;
+      break;
+    case sidebar::SidebarItem::BuiltInItemType::kWebFacebook:
+      focused_image_resource = IDR_SIDEBAR_FACEBOOK_FOCUSED;
+      normal_image_icon = &kSidebarFacebookIcon;
+      break;
+    case sidebar::SidebarItem::BuiltInItemType::kWebWhatsapp:
+      focused_image_resource = IDR_SIDEBAR_WHATSAPP_FOCUSED;
+      normal_image_icon = &kSidebarFacebookIcon;
+      break;
+    case sidebar::SidebarItem::BuiltInItemType::kWebBinance:
+      focused_image_resource = IDR_SIDEBAR_BINANCE_FOCUSED;
+      normal_image_icon = &kSidebarBinanceIcon;
+      break;
+    case sidebar::SidebarItem::BuiltInItemType::kWebTelegram:
+      focused_image_resource = IDR_SIDEBAR_TELEGRAM_FOCUSED;
+      normal_image_icon = &kSidebarTelegramIcon;
+      break;
+    case sidebar::SidebarItem::BuiltInItemType::kWebDiscord:
+      focused_image_resource = IDR_SIDEBAR_DISCORD_FOCUSED;
+      normal_image_icon = &kSidebarDiscordIcon;
+      break;
+    case sidebar::SidebarItem::BuiltInItemType::kWebFacebookMessenger:
+      focused_image_resource = IDR_SIDEBAR_MESSENGER_FOCUSED;
+      normal_image_icon = &kSidebarMessengerIcon;
+      break;
     case sidebar::SidebarItem::BuiltInItemType::kHistory:
       focused_image_resource = IDR_SIDEBAR_HISTORY_FOCUSED;
       normal_image_icon = &kSidebarHistoryIcon;
