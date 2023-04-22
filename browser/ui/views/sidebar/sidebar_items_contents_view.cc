@@ -492,7 +492,7 @@ gfx::ImageSkia SidebarItemsContentsView::GetImageForBuiltInItems(
       break;
     case sidebar::SidebarItem::BuiltInItemType::kWebWhatsapp:
       focused_image_resource = IDR_SIDEBAR_WHATSAPP_FOCUSED;
-      normal_image_icon = &kSidebarFacebookIcon;
+      normal_image_icon = &kSidebarWhatsappIcon;
       break;
     case sidebar::SidebarItem::BuiltInItemType::kWebBinance:
       focused_image_resource = IDR_SIDEBAR_BINANCE_FOCUSED;
