@@ -8,13 +8,13 @@ index d1de653cc87b7db90575728cd0e3d7e753aa6010..b025cd24f6b29aedbbdc44b0126f171d
  
 +#if defined(OFFICIAL_BUILD)
 +const wchar_t kChromeRegClientsKey[] =
-+    L"Software\\BraveSoftware\\Update\\Clients\\"
++    L"Software\\MinegoInc\\Update\\Clients\\"
 +    L"{AFE6A462-C574-4B8A-AF43-4CC60DF4563B}";
 +const wchar_t kChromeRegClientStateKey[] =
-+    L"Software\\BraveSoftware\\Update\\ClientState\\"
++    L"Software\\MinegoInc\\Update\\ClientState\\"
 +    L"{AFE6A462-C574-4B8A-AF43-4CC60DF4563B}";
 +const wchar_t kChromeRegClientStateMediumKey[] =
-+    L"Software\\BraveSoftware\\Update\\ClientStateMedium\\"
++    L"Software\\MinegoInc\\Update\\ClientStateMedium\\"
 +    L"{AFE6A462-C574-4B8A-AF43-4CC60DF4563B}";
 +#else
  const wchar_t kChromeRegClientsKey[] =

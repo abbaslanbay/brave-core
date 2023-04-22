@@ -516,7 +516,7 @@ TEST(MediaYouTubeTest, GetChannelId) {
   EXPECT_TRUE(channel_id.empty());
 
   data =
-      "<div id=\"microformat\"><title>Brave</title><link rel=\"canonical\" h"
+      "<div id=\"microformat\"><title>Minego</title><link rel=\"canonical\" h"
       "ref=\"https://www.youtube.com/channel/UCFNTTISby1c_H-rm5Ww5rZg\"><met"
       "a property=\"og:site_name\" content=\"YouTube\"><meta property=\"og:u"
       "rl\" content=\"https://www.youtube.com/channel/UCFNTTISby1c_H-rm5Ww5r"

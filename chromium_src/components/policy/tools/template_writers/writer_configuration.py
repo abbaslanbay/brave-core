@@ -19,9 +19,9 @@ _BRAVE_VALUES = {
   'webview_name': 'Brave WebView',
   'win_config': {
     'win': {
-      'reg_mandatory_key_name': 'Software\\Policies\\BraveSoftware\\Brave',
+      'reg_mandatory_key_name': 'Software\\Policies\\MinegoInc\\Brave',
       'reg_recommended_key_name':
-        'Software\\Policies\\BraveSoftware\\Brave\\Recommended',
+        'Software\\Policies\\MinegoInc\\Brave\\Recommended',
       'mandatory_category_path': ['Brave:Cat_Brave', 'brave'],
       'recommended_category_path': ['Brave:Cat_Brave', 'brave_recommended'],
       'category_path_strings': {
@@ -29,7 +29,7 @@ _BRAVE_VALUES = {
         'brave_recommended':
         'Brave - {doc_recommended}'
       },
-      'namespace': 'BraveSoftware.Policies.Brave',
+      'namespace': 'MinegoInc.Policies.Brave',
     },
   },
   # The string 'Brave' is defined in brave.adml for ADMX, but ADM doesn't
@@ -39,7 +39,7 @@ _BRAVE_VALUES = {
   },
   'admx_prefix': 'brave',
   'admx_using_namespaces': {
-    'Brave': 'BraveSoftware.Policies'  # prefix: namespace
+    'Brave': 'MinegoInc.Policies'  # prefix: namespace
   },
   'linux_policy_path': '/etc/brave/policies/',
   'bundle_id': 'com.brave.ios.core',

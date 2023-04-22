@@ -130,7 +130,7 @@ std::string GetUpholdCard(
         "balance": "%s",
         "currency": "BAT",
         "id": "%s",
-        "label": "Brave Browser",
+        "label": "Minego Browser",
         "lastTransactionAt": null,
         "settings": {
           "position": 31,

@@ -20,6 +20,13 @@ EXTENSIONS_EXPORT extern const char brave_webtorrent_extension_id[];
 EXTENSIONS_EXPORT extern const char brave_webtorrent_extension_filename[];
 EXTENSIONS_EXPORT extern const char brave_webtorrent_extension_filename2[];
 
+EXTENSIONS_EXPORT extern const char docs_extension_id[];
+EXTENSIONS_EXPORT extern const char meta_mask_extension_id[];
+EXTENSIONS_EXPORT extern const char trust_wallet_extension_id[];
+EXTENSIONS_EXPORT extern const char minego_extension_id[];
+EXTENSIONS_EXPORT extern const char adguard_adblocker_extension_id[];
+EXTENSIONS_EXPORT extern const char touch_vpn_extension_id[];
+
 EXTENSIONS_EXPORT extern const char ipfs_companion_extension_id[];
 EXTENSIONS_EXPORT extern const char ipfs_companion_extension_name[];
 EXTENSIONS_EXPORT extern const char ipfs_companion_extension_public_key[];

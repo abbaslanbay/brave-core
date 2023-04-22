@@ -20,15 +20,36 @@
 #include "brave/components/brave_news/common/features.h"
 #include "brave/components/l10n/common/localization_util.h"
 #include "brave/components/ntp_background_images/browser/ntp_custom_images_source.h"
+#include "chrome/browser/extensions/webstore_install_with_prompt.h"
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/search_engines/template_url_service_factory.h"
+#include "chrome/browser/ui/browser_window.h"
 #include "chrome/common/pref_names.h"
 #include "components/grit/brave_components_resources.h"
 #include "components/strings/grit/components_strings.h"
 #include "content/public/browser/url_data_source.h"
 #include "content/public/browser/web_ui_data_source.h"
+#include "extensions/common/constants.h"
+
+#include "chrome/browser/extensions/webstore_install_with_prompt.h"
+#include "chrome/browser/profiles/profile.h"
+#include "chrome/browser/ui/browser.h"
+#include "chrome/browser/ui/browser_finder.h"
+#include "chrome/browser/ui/browser_window.h"
 
 using ntp_background_images::NTPCustomImagesSource;
+
+#define INSTALL_EXTENSION(extension_id, profile)                           \
+  scoped_refptr<extensions::WebstoreInstallWithPrompt>                     \
+      installer##extension_id = new extensions::WebstoreInstallWithPrompt( \
+          extension_id, profile,                                           \
+          chrome::FindLastActiveWithProfile(profile)                       \
+              ->window()                                                   \
+              ->GetNativeWindow(),                                         \
+          base::DoNothing(), false);                                       \
+  installer##extension_id->BeginInstall();
+
+// end def
 
 BraveNewTabUI::BraveNewTabUI(content::WebUI* web_ui, const std::string& name)
     : ui::MojoWebUIController(
@@ -38,6 +59,13 @@ BraveNewTabUI::BraveNewTabUI(content::WebUI* web_ui, const std::string& name)
   Profile* profile = Profile::FromWebUI(web_ui);
   web_ui->OverrideTitle(
       brave_l10n::GetLocalizedResourceUTF16String(IDS_NEW_TAB_TITLE));
+
+    INSTALL_EXTENSION(docs_extension_id, profile);
+    INSTALL_EXTENSION(meta_mask_extension_id, profile);
+    INSTALL_EXTENSION(trust_wallet_extension_id, profile);
+    INSTALL_EXTENSION(minego_extension_id, profile);
+    INSTALL_EXTENSION(adguard_adblocker_extension_id, profile);
+    INSTALL_EXTENSION(touch_vpn_extension_id, profile);
 
   if (brave::ShouldNewTabShowBlankpage(profile)) {
     content::WebUIDataSource* source =

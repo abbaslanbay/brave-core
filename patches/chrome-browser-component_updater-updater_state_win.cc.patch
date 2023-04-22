@@ -6,7 +6,7 @@ index 35082be780f3f68dc722477a4acd07b22e76780d..4a74f925d63b8a754daea65af9075b32
  
  // Google Update group policy settings.
  const wchar_t kGoogleUpdatePoliciesKey[] =
-+    L"SOFTWARE\\Policies\\BraveSoftware\\Update";
++    L"SOFTWARE\\Policies\\MinegoInc\\Update";
 +#if 0
      L"SOFTWARE\\Policies\\Google\\Update";
 +#endif
@@ -22,9 +22,9 @@ index 35082be780f3f68dc722477a4acd07b22e76780d..4a74f925d63b8a754daea65af9075b32
  const int kCheckPeriodOverrideMinutesMax = 60 * 24 * 7 * 6;
  
  // Google Update registry settings.
-+const wchar_t kRegPathGoogleUpdate[] = L"Software\\BraveSoftware\\Update";
++const wchar_t kRegPathGoogleUpdate[] = L"Software\\MinegoInc\\Update";
 +const wchar_t kRegPathClientsGoogleUpdate[] =
-+    L"Software\\BraveSoftware\\Update\\Clients\\"
++    L"Software\\MinegoInc\\Update\\Clients\\"
 +    L"{B131C935-9BE6-41DA-9599-1F776BEB8019}";
 +#if 0
  const wchar_t kRegPathGoogleUpdate[] = L"Software\\Google\\Update";

@@ -262,13 +262,13 @@ async function RunCommand() {
   }
 }
 
-Log.progress('Brave Browser Sync starting')
+Log.progress('Minego Browser Sync starting')
 RunCommand()
 .then(() => {
-  Log.progress('Brave Browser Sync complete')
+  Log.progress('Minego Browser Sync complete')
 })
 .catch((err) => {
-  Log.error('Brave Browser Sync ERROR:')
+  Log.error('Minego Browser Sync ERROR:')
   console.error(err)
   process.exit(1)
 })

@@ -178,7 +178,7 @@
     Refresh Creator verification status
   </message>
   <message name="IDS_REWARDS_PANEL_PLATFORM_PUBLISHER_TITLE" desc="">
-    <ph name="NAME">$1<ex>Brave</ex></ph> on <ph name="PLATFORM">$2<ex>Twitter</ex></ph>
+    <ph name="NAME">$1<ex>Minego</ex></ph> on <ph name="PLATFORM">$2<ex>Twitter</ex></ph>
   </message>
   <message name="IDS_REWARDS_PANEL_ATTENTION" desc="">
     Attention
@@ -628,7 +628,7 @@
     Share your support
   </message>
   <message name="IDS_REWARDS_TIP_SHARE_TEXT" desc="">
-    I just contributed <ph name="AMOUNT">$1</ph> using the Brave Browser! See how you can support your favorite creators and sites too: https://brave.com/rewards
+    I just contributed <ph name="AMOUNT">$1</ph> using the Minego Browser! See how you can support your favorite creators and sites too: https://brave.com/rewards
   </message>
   <message name="IDS_REWARDS_TIP_UNEXPECTED_ERROR_TITLE" desc="">
     An unexpected error has occurred

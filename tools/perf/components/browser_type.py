@@ -186,7 +186,7 @@ class BraveBrowserTypeImpl(BrowserType):
 
   def _GetWinInstallPath(self) -> str:
     return os.path.join(os.path.expanduser('~'), 'AppData', 'Local',
-                        'BraveSoftware', 'Brave-Browser-' + self._channel,
+                        'MinegoInc', 'Minego-Browser-' + self._channel,
                         'Application')
 
   @classmethod
@@ -201,7 +201,7 @@ class BraveBrowserTypeImpl(BrowserType):
 
   def _DownloadDmgAndExtract(self, tag: BraveVersion, out_dir: str) -> str:
     assert sys.platform == 'darwin'
-    dmg_name = f'Brave-Browser-{self._channel}-{platform.machine()}.dmg'
+    dmg_name = f'Minego-Browser-{self._channel}-{platform.machine()}.dmg'
     url = _GetBraveDownloadUrl(tag, dmg_name)
     logging.info('Downloading %s', url)
     f = urlopen(url)
@@ -213,7 +213,7 @@ class BraveBrowserTypeImpl(BrowserType):
         ['hdiutil', 'attach', '-noautoopen', '-nobrowse', dmg_path], check=True)
     mount_path = output.rsplit('\t')[-1].rstrip()
 
-    app_name = f'Brave Browser {self._channel}'
+    app_name = f'Minego Browser {self._channel}'
     GetProcessOutput(
         ['cp', '-R',
          os.path.join(mount_path, app_name + '.app'), out_dir],
