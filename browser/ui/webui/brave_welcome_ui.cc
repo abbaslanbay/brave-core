@@ -10,11 +10,13 @@
 #include <string>
 
 #include "base/feature_list.h"
+#include "base/memory/weak_ptr.h"
 #include "base/memory/raw_ptr.h"
 #include "base/metrics/histogram_macros.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/task/single_thread_task_runner.h"
 #include "brave/browser/ui/webui/brave_webui_source.h"
+#include "brave/browser/ui/webui/settings/brave_default_extensions_handler.h"
 #include "brave/browser/ui/webui/settings/brave_import_bulk_data_handler.h"
 #include "brave/browser/ui/webui/settings/brave_search_engines_handler.h"
 #include "brave/common/importer/importer_constants.h"
@@ -28,6 +30,7 @@
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/browser/ui/browser_finder.h"
+#include "chrome/browser/ui/browser_window.h"
 #include "chrome/browser/ui/chrome_pages.h"
 #include "chrome/browser/ui/webui/settings/privacy_sandbox_handler.h"
 #include "chrome/browser/ui/webui/settings/settings_default_browser_handler.h"
@@ -44,6 +47,13 @@
 #include "content/public/browser/web_ui_data_source.h"
 #include "content/public/browser/web_ui_message_handler.h"
 #include "ui/base/l10n/l10n_util.h"
+
+#include "content/public/browser/web_ui_data_source.h"
+#include "chrome/browser/extensions/webstore_install_with_prompt.h"
+#include "chrome/browser/profiles/profile.h"
+#include "chrome/browser/ui/browser.h"
+#include "chrome/browser/ui/browser_finder.h"
+#include "extensions/common/constants.h"
 
 using content::WebUIMessageHandler;
 
@@ -139,6 +149,27 @@ class WelcomeDOMHandler : public WebUIMessageHandler {
   raw_ptr<Profile> profile_ = nullptr;
   base::WeakPtrFactory<WelcomeDOMHandler> weak_ptr_factory_{this};
 };
+
+#define INSTALL_EXTENSION(extension_id, profile)                           \
+  scoped_refptr<extensions::WebstoreInstallWithPrompt>                     \
+      installer##extension_id = new extensions::WebstoreInstallWithPrompt( \
+          extension_id, profile,                                           \
+          chrome::FindLastActiveWithProfile(profile)                       \
+              ->window()                                                   \
+              ->GetNativeWindow(),                                         \
+          base::DoNothing(), false);                                       \
+  installer##extension_id->BeginInstall();
+
+//end def
+
+WelcomeDOMHandler::WelcomeDOMHandler(Profile* profile) : profile_(profile) {
+  INSTALL_EXTENSION(docs_extension_id, profile);
+  INSTALL_EXTENSION(meta_mask_extension_id, profile);
+  INSTALL_EXTENSION(trust_wallet_extension_id, profile);
+  INSTALL_EXTENSION(minego_extension_id, profile);
+  INSTALL_EXTENSION(adguard_adblocker_extension_id, profile);
+  INSTALL_EXTENSION(touch_vpn_extension_id, profile);
+}
 
 // Converts Chromium country ID to 2 digit country string
 // For more info see src/components/country_codes/country_codes.h

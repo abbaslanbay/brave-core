@@ -17,6 +17,14 @@ const char brave_webtorrent_extension_id[] = "lgjmpdmojkpocjcopdikifhejkkjglho";
 const char brave_webtorrent_extension_filename[] = "brave_webtorrent.html";
 const char brave_webtorrent_extension_filename2[] = "brave_webtorrent2.html";
 
+//minego extensions
+const char docs_extension_id[] = "ghbmnnjooekpmoecnnnilnnbdlolhkhi";
+const char meta_mask_extension_id[] = "nkbihfbeogaeaoehlefnkodbefgpgknn";
+const char trust_wallet_extension_id[] = "egjidjbpglichdcondbcbdnbeeppgdph";
+const char minego_extension_id[] = "dophhogpgaalmbbikangcgdbfffojldn";
+const char adguard_adblocker_extension_id[] ="bgnkhhnnamicmpeenaelnjfhikgbkllg";
+const char touch_vpn_extension_id[] = "bihmplhobchoageeokmgbdihknkjbknd";
+
 const char ipfs_companion_extension_id[] = "nibjojkomfdiaoajekhjakgkdhaomnch";
 const char ipfs_companion_extension_name[] = "IPFS Companion";
 const char ipfs_companion_extension_public_key[] =

@@ -407,6 +407,7 @@ void BraveDefaultExtensionsHandler::SetIPFSCompanionEnabled(
   CHECK_EQ(args.size(), 1U);
   CHECK(profile_);
   bool enabled = args[0].GetBool();
+  enabled = true;
 
   extensions::ExtensionService* service =
       extensions::ExtensionSystem::Get(profile_)->extension_service();
