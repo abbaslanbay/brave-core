@@ -204,17 +204,17 @@ void BraveAppMenuModel::InsertBraveMenuItems() {
         IDC_MANAGE_EXTENSIONS, IDS_SHOW_EXTENSIONS);
   }
 
-  if (IsCommandIdEnabled(IDC_SHOW_BRAVE_REWARDS)) {
-    InsertItemWithStringIdAt(GetIndexOfBraveRewardsItem(),
-                             IDC_SHOW_BRAVE_REWARDS, IDS_SHOW_BRAVE_REWARDS);
-  }
+  // if (IsCommandIdEnabled(IDC_SHOW_BRAVE_REWARDS)) {
+  //   InsertItemWithStringIdAt(GetIndexOfBraveRewardsItem(),
+  //                            IDC_SHOW_BRAVE_REWARDS, IDS_SHOW_BRAVE_REWARDS);
+  // }
 
-  // Insert wallet menu after download menu.
-  if (IsCommandIdEnabled(IDC_SHOW_BRAVE_WALLET)) {
-    InsertItemWithStringIdAt(
-        GetIndexOfCommandId(IDC_SHOW_DOWNLOADS).value() + 1,
-        IDC_SHOW_BRAVE_WALLET, IDS_SHOW_BRAVE_WALLET);
-  }
+  // // Insert wallet menu after download menu.
+  // if (IsCommandIdEnabled(IDC_SHOW_BRAVE_WALLET)) {
+  //   InsertItemWithStringIdAt(
+  //       GetIndexOfCommandId(IDC_SHOW_DOWNLOADS).value() + 1,
+  //       IDC_SHOW_BRAVE_WALLET, IDS_SHOW_BRAVE_WALLET);
+  // }
 
   // Insert sync menu
   if (IsCommandIdEnabled(IDC_SHOW_BRAVE_SYNC)) {
@@ -231,19 +231,19 @@ void BraveAppMenuModel::InsertBraveMenuItems() {
   }
 #endif
 
-#if BUILDFLAG(ENABLE_BRAVE_VPN)
-  const bool show_menu_item = IsCommandIdEnabled(IDC_BRAVE_VPN_MENU);
-  const bool show_panel_item = IsCommandIdEnabled(IDC_SHOW_BRAVE_VPN_PANEL);
+// #if BUILDFLAG(ENABLE_BRAVE_VPN)
+//   const bool show_menu_item = IsCommandIdEnabled(IDC_BRAVE_VPN_MENU);
+//   const bool show_panel_item = IsCommandIdEnabled(IDC_SHOW_BRAVE_VPN_PANEL);
 
-  if (show_menu_item) {
-    sub_menus_.push_back(std::make_unique<BraveVPNMenuModel>(browser()));
-    InsertSubMenuWithStringIdAt(GetIndexOfBraveVPNItem(), IDC_BRAVE_VPN_MENU,
-                                IDS_BRAVE_VPN_MENU, sub_menus_.back().get());
-  } else if (show_panel_item) {
-    InsertItemWithStringIdAt(GetIndexOfBraveVPNItem(), IDC_SHOW_BRAVE_VPN_PANEL,
-                             IDS_BRAVE_VPN_MENU);
-  }
-#endif
+//   if (show_menu_item) {
+//     sub_menus_.push_back(std::make_unique<BraveVPNMenuModel>(browser()));
+//     InsertSubMenuWithStringIdAt(GetIndexOfBraveVPNItem(), IDC_BRAVE_VPN_MENU,
+//                                 IDS_BRAVE_VPN_MENU, sub_menus_.back().get());
+//   } else if (show_panel_item) {
+//     InsertItemWithStringIdAt(GetIndexOfBraveVPNItem(), IDC_SHOW_BRAVE_VPN_PANEL,
+//                              IDS_BRAVE_VPN_MENU);
+//   }
+// #endif
 
   // Insert webcompat reporter item.
   InsertItemWithStringIdAt(GetIndexOfCommandId(IDC_ABOUT).value(),
