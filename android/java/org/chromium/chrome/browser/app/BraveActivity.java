@@ -222,11 +222,11 @@ public abstract class BraveActivity<C extends ChromeActivityComponent> extends C
         implements BrowsingDataBridge.OnClearBrowsingDataListener, BraveVpnObserver,
                    OnBraveSetDefaultBrowserListener, ConnectionErrorHandler, PrefObserver,
                    BraveSafeBrowsingApiHandler.BraveSafeBrowsingApiHandlerDelegate {
-    public static final String BRAVE_SWAP_URL = "brave://wallet/swap";
-    public static final String BRAVE_REWARDS_SETTINGS_URL = "brave://rewards/";
+    public static final String BRAVE_SWAP_URL = "minego://wallet/swap";
+    public static final String BRAVE_REWARDS_SETTINGS_URL = "minego://rewards/";
     public static final String BRAVE_REWARDS_SETTINGS_WALLET_VERIFICATION_URL =
-            "brave://rewards/#verify";
-    public static final String REWARDS_AC_SETTINGS_URL = "brave://rewards/contribute";
+            "minego://rewards/#verify";
+    public static final String REWARDS_AC_SETTINGS_URL = "minego://rewards/contribute";
     public static final String REWARDS_LEARN_MORE_URL = "https://brave.com/faq-rewards/#unclaimed-funds";
     public static final String BRAVE_TERMS_PAGE =
             "https://basicattentiontoken.org/user-terms-of-service/";

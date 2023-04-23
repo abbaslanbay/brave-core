@@ -12,7 +12,7 @@ namespace features {
 
 BASE_FEATURE(kBraveSync, "BraveSync", base::FEATURE_ENABLED_BY_DEFAULT);
 
-// When this feature is enabled through brave://flags it adds to history entry's
+// When this feature is enabled through minego://flags it adds to history entry's
 // title additional info for sync diagnostics:
 // - whether history entry should be synced;
 // - typed count;

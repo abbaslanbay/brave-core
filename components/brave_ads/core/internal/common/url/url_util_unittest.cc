@@ -47,7 +47,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithFooBarHostNameIsNotSupported) {
   // Act
 
   // Assert
-  EXPECT_FALSE(SchemeIsSupported(GURL("brave://foobar")));
+  EXPECT_FALSE(SchemeIsSupported(GURL("minego://foobar")));
 }
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithWalletHostNameIsSupported) {
@@ -56,7 +56,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithWalletHostNameIsSupported) {
   // Act
 
   // Assert
-  EXPECT_TRUE(SchemeIsSupported(GURL("brave://wallet")));
+  EXPECT_TRUE(SchemeIsSupported(GURL("minego://wallet")));
 }
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithWalletHostNameAndPathIsSupported) {
@@ -65,7 +65,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithWalletHostNameAndPathIsSupported) {
   // Act
 
   // Assert
-  EXPECT_TRUE(SchemeIsSupported(GURL("brave://wallet/foo")));
+  EXPECT_TRUE(SchemeIsSupported(GURL("minego://wallet/foo")));
 }
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithSyncHostNameIsSupported) {
@@ -74,7 +74,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithSyncHostNameIsSupported) {
   // Act
 
   // Assert
-  EXPECT_TRUE(SchemeIsSupported(GURL("brave://sync")));
+  EXPECT_TRUE(SchemeIsSupported(GURL("minego://sync")));
 }
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithSyncHostNameAndPathIsSupported) {
@@ -83,7 +83,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithSyncHostNameAndPathIsSupported) {
   // Act
 
   // Assert
-  EXPECT_TRUE(SchemeIsSupported(GURL("brave://sync/foo")));
+  EXPECT_TRUE(SchemeIsSupported(GURL("minego://sync/foo")));
 }
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithRewardsHostNameIsSupported) {
@@ -92,7 +92,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithRewardsHostNameIsSupported) {
   // Act
 
   // Assert
-  EXPECT_TRUE(SchemeIsSupported(GURL("brave://rewards")));
+  EXPECT_TRUE(SchemeIsSupported(GURL("minego://rewards")));
 }
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithRewardsHostNameAndPathIsSupported) {
@@ -101,7 +101,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithRewardsHostNameAndPathIsSupported) {
   // Act
 
   // Assert
-  EXPECT_TRUE(SchemeIsSupported(GURL("brave://rewards/foo")));
+  EXPECT_TRUE(SchemeIsSupported(GURL("minego://rewards/foo")));
 }
 
 TEST(BatAdsUrlUtilTest,
@@ -149,7 +149,7 @@ TEST(BatAdsUrlUtilTest, MalformedUrlIsNotSupported) {
   // Act
 
   // Assert
-  EXPECT_FALSE(SchemeIsSupported(GURL("http://foobar.com/brave://wallet")));
+  EXPECT_FALSE(SchemeIsSupported(GURL("http://foobar.com/minego://wallet")));
 }
 
 TEST(BatAdsUrlUtilTest, UrlMatchesPatternWithNoWildcards) {

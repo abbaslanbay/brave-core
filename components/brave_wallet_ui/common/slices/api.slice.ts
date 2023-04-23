@@ -276,7 +276,7 @@ let selectedPendingTransactionId: string = ''
 
         // Get all networks
         const filteredSupportedCoinTypes = SupportedCoinTypes.filter((coin) => {
-          // FIL and SOL networks, unless enabled by brave://flags
+          // FIL and SOL networks, unless enabled by minego://flags
           return (
             (coin === BraveWallet.CoinType.FIL && isFilecoinEnabled) ||
             (coin === BraveWallet.CoinType.SOL && isSolanaEnabled) ||
@@ -3221,7 +3221,7 @@ async function getEnabledCoinTypes(
   // Get All Networks
   const enabledCoinTypes = SupportedCoinTypes.filter((coin) => {
     // MULTICHAIN: While we are still in development for FIL and SOL,
-    // we will not use their networks unless enabled by brave://flags
+    // we will not use their networks unless enabled by minego://flags
     return (
       (coin === BraveWallet.CoinType.FIL && isFilecoinEnabled) ||
       (coin === BraveWallet.CoinType.SOL && isSolanaEnabled) ||

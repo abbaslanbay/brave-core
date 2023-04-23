@@ -241,7 +241,7 @@ IN_PROC_BROWSER_TEST_F(BraveSchemeLoadBrowserTest,
 #endif
 // NOTE: the actual crash functionality is covered upstream in
 // chrome/browser/crash_recovery_browsertest.cc
-// This test is for the brave:// scheme. This is a regression test added with:
+// This test is for the minego:// scheme. This is a regression test added with:
 // https://github.com/brave/brave-core/pull/2229)
 IN_PROC_BROWSER_TEST_F(BraveSchemeLoadBrowserTest, MAYBE_CrashURLTest) {
   content::RenderProcessHostWatcher crash_observer(
@@ -249,7 +249,7 @@ IN_PROC_BROWSER_TEST_F(BraveSchemeLoadBrowserTest, MAYBE_CrashURLTest) {
       content::RenderProcessHostWatcher::WATCH_FOR_PROCESS_EXIT);
   content::ScopedAllowRendererCrashes allow_renderer_crashes(active_contents());
   browser()->OpenURL(
-      content::OpenURLParams(GURL("brave://crash/"), content::Referrer(),
+      content::OpenURLParams(GURL("minego://crash/"), content::Referrer(),
                              WindowOpenDisposition::CURRENT_TAB,
                              ui::PAGE_TRANSITION_TYPED, false));
   crash_observer.Wait();
@@ -269,25 +269,25 @@ IN_PROC_BROWSER_TEST_F(BraveSchemeLoadBrowserTest,
 
 IN_PROC_BROWSER_TEST_F(BraveSchemeLoadBrowserTest,
                        RewardsPageIsNotAllowedInPrivateWindow) {
-  TestURLIsNotLoadedInPrivateWindow("brave://rewards");
+  TestURLIsNotLoadedInPrivateWindow("minego://rewards");
 }
 
 IN_PROC_BROWSER_TEST_F(BraveSchemeLoadBrowserTest,
                        WalletPageIsNotAllowedInPrivateWindow) {
-  TestURLIsNotLoadedInPrivateWindow("brave://wallet");
+  TestURLIsNotLoadedInPrivateWindow("minego://wallet");
 }
 
 IN_PROC_BROWSER_TEST_F(BraveSchemeLoadBrowserTest,
                        BraveSyncPageIsNotAllowedInPrivateWindow) {
-  TestURLIsNotLoadedInPrivateWindow("brave://sync");
+  TestURLIsNotLoadedInPrivateWindow("minego://sync");
 }
 
 IN_PROC_BROWSER_TEST_F(BraveSchemeLoadBrowserTest,
                        BraveWelcomePageIsNotAllowedInPrivateWindow) {
-  TestURLIsNotLoadedInPrivateWindow("brave://welcome");
+  TestURLIsNotLoadedInPrivateWindow("minego://welcome");
 }
 
 IN_PROC_BROWSER_TEST_F(BraveSchemeLoadBrowserTest,
                        BraveWelcomePageIsNotAllowedInGuestWindow) {
-  TestURLIsNotLoadedInGuestWindow(GURL("brave://welcome"));
+  TestURLIsNotLoadedInGuestWindow(GURL("minego://welcome"));
 }

@@ -12,7 +12,7 @@ See [anonymous confirmation token redemption](../utility/redeem_confirmation/REA
 | catalog  | no  | no  |  Catalog id  |
 | conversion  | yes  | no  | Envelope encryption for verifiable conversions  |
 | createdAtTimestamp  | no  | no  | Privacy-preserving [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp  |
-| diagnosticId  | yes  | yes  | Diagnostic id from brave://rewards-internals to help diagnose issues.  |
+| diagnosticId  | yes  | yes  | Diagnostic id from minego://rewards-internals to help diagnose issues.  |
 | locale  | yes  | no  | Privacy-preserving operating system locale  |
 | mutated  | yes  | no  | A change in the structure of the genes or chromosomes of an organism  |
 | platform  | no  | no  | Operating system  |

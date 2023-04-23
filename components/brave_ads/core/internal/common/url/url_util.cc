@@ -49,8 +49,8 @@ bool SchemeIsSupported(const GURL& url) {
     return true;
   }
 
-  // We must replace the brave:// schema with chrome:// due to GURL not parsing
-  // brave:// schemas.
+  // We must replace the minego:// schema with chrome:// due to GURL not parsing
+  // minego:// schemas.
   const GURL modified_url = ReplaceUrlBraveHostWithChromeHost(url);
 
   if (!modified_url.SchemeIs(kChromeScheme)) {

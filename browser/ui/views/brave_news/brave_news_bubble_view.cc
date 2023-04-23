@@ -137,7 +137,7 @@ BraveNewsBubbleView::~BraveNewsBubbleView() = default;
 
 void BraveNewsBubbleView::OpenManageFeeds() {
   auto* browser = chrome::FindBrowserWithWebContents(contents_);
-  browser->OpenURL({GURL("brave://newtab/?openSettings=BraveNews"),
+  browser->OpenURL({GURL("minego://newtab/?openSettings=BraveNews"),
                     content::Referrer(),
                     WindowOpenDisposition::NEW_FOREGROUND_TAB,
                     ui::PAGE_TRANSITION_LINK, false});

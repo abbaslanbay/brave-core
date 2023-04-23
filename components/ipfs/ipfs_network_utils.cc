@@ -154,9 +154,9 @@ net::NetworkTrafficAnnotationTag GetIpfsNetworkTrafficAnnotationTag() {
             sender: "IPFS service"
             description:
               "This service is used to communicate with IPFS daemon "
-              "on behalf of the user interacting with the actions in brave://ipfs."
+              "on behalf of the user interacting with the actions in minego://ipfs."
             trigger:
-              "Triggered by actions in brave://ipfs."
+              "Triggered by actions in minego://ipfs."
             data:
               "Options of the commands."
             destination: WEBSITE

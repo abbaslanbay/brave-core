@@ -108,7 +108,7 @@ net::NetworkTrafficAnnotationTag GetP3AUploadAnnotation(
           cookies_allowed: NO
           setting:
             "Users can enable or disable it by enabling or disabling Brave "
-            "rewards or ads in brave://rewards."
+            "rewards or ads in minego://rewards."
            policy_exception_justification:
              "Not implemented."
         })");
@@ -155,7 +155,7 @@ net::NetworkTrafficAnnotationTag GetP3AUploadAnnotation(
           cookies_allowed: NO
           setting:
             "Users can enable or disable it by enabling or disabling Brave "
-            "rewards or ads in brave://rewards."
+            "rewards or ads in minego://rewards."
            policy_exception_justification:
              "Not implemented."
         })");

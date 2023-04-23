@@ -139,7 +139,7 @@ IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, CanLoadChromeURL) {
   };
 
   std::vector<std::string> schemes{
-      "brave://",
+      "minego://",
       "chrome://",
   };
 
@@ -154,7 +154,7 @@ IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, CanLoadChromeURL) {
       EXPECT_STREQ(base::UTF16ToUTF8(
                        browser()->location_bar_model()->GetFormattedFullURL())
                        .c_str(),
-                   ("brave://" + page).c_str());
+                   ("minego://" + page).c_str());
       EXPECT_STREQ(contents->GetController()
                        .GetLastCommittedEntry()
                        ->GetVirtualURL()
@@ -178,7 +178,7 @@ IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, CanLoadCustomBravePages) {
   };
 
   std::vector<std::string> schemes{
-      "brave://",
+      "minego://",
       "chrome://",
   };
 
@@ -193,7 +193,7 @@ IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, CanLoadCustomBravePages) {
       EXPECT_STREQ(base::UTF16ToUTF8(
                        browser()->location_bar_model()->GetFormattedFullURL())
                        .c_str(),
-                   ("brave://" + page).c_str());
+                   ("minego://" + page).c_str());
       EXPECT_STREQ(contents->GetController()
                        .GetLastCommittedEntry()
                        ->GetVirtualURL()
@@ -213,7 +213,7 @@ IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, CanLoadCustomBravePages) {
 IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, CanLoadAboutHost) {
   std::vector<std::string> schemes{
       "chrome://",
-      "brave://",
+      "minego://",
   };
 
   for (const std::string& scheme : schemes) {
@@ -226,7 +226,7 @@ IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, CanLoadAboutHost) {
     EXPECT_STREQ(base::UTF16ToUTF8(
                      browser()->location_bar_model()->GetFormattedFullURL())
                      .c_str(),
-                 "brave://about");
+                 "minego://about");
     EXPECT_STREQ(contents->GetController()
                      .GetLastCommittedEntry()
                      ->GetVirtualURL()
@@ -243,7 +243,7 @@ IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, CanLoadAboutHost) {
 }
 IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, RewriteChromeSync) {
   std::vector<std::string> schemes{
-      "brave://",
+      "minego://",
       "chrome://",
   };
 
@@ -257,7 +257,7 @@ IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, RewriteChromeSync) {
     EXPECT_STREQ(base::UTF16ToUTF8(
                      browser()->location_bar_model()->GetFormattedFullURL())
                      .c_str(),
-                 "brave://sync");
+                 "minego://sync");
     EXPECT_STREQ(contents->GetController()
                      .GetLastCommittedEntry()
                      ->GetVirtualURL()
@@ -275,7 +275,7 @@ IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, RewriteChromeSync) {
 
 IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, RewriteAdblock) {
   std::vector<std::string> schemes{
-      "brave://",
+      "minego://",
       "chrome://",
   };
 

@@ -52,10 +52,10 @@ const AssetsPanel = (props: Props) => {
       chainId: string
     ) => () => {
       if (contractAddress === '') {
-        routeToAssetDetails(`brave://wallet${WalletRoutes.Portfolio}/${chainId}/${symbol}`)
+        routeToAssetDetails(`minego://wallet${WalletRoutes.Portfolio}/${chainId}/${symbol}`)
         return
       }
-      routeToAssetDetails(`brave://wallet${WalletRoutes.Portfolio}/${chainId}/${contractAddress}/${tokenId}`)
+      routeToAssetDetails(`minego://wallet${WalletRoutes.Portfolio}/${chainId}/${contractAddress}/${tokenId}`)
     }, [routeToAssetDetails])
 
   return (

@@ -525,7 +525,7 @@ void RewardsDOMHandler::Init() {
       brave_rewards::RewardsServiceFactory::GetForProfile(profile);
   ads_service_ = brave_ads::AdsServiceFactory::GetForProfile(profile);
 
-  // Configure a pref change registrar to update brave://rewards when settings
+  // Configure a pref change registrar to update minego://rewards when settings
   // are changed via minego://settings
   InitPrefChangeRegistrar();
 }

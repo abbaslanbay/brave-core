@@ -44,13 +44,13 @@ void ShowSync(Browser* browser) {
 
 void ShowBraveNewsConfigure(Browser* browser) {
   NavigateParams params(GetSingletonTabNavigateParams(
-      browser, GURL("brave://newtab/?openSettings=BraveNews")));
+      browser, GURL("minego://newtab/?openSettings=BraveNews")));
   ShowSingletonTabOverwritingNTP(browser, &params);
 }
 
 void ShowShortcutsPage(Browser* browser) {
   NavigateParams params(GetSingletonTabNavigateParams(
-      browser, GURL(base::StrCat({"brave://", kCommandsHost}))));
+      browser, GURL(base::StrCat({"minego://", kCommandsHost}))));
   ShowSingletonTabOverwritingNTP(browser, &params);
 }
 
