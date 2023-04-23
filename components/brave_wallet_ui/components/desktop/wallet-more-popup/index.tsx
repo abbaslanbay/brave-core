@@ -64,7 +64,7 @@ export const WalletMorePopup = (props: Props) => {
       ? 'ethereum'
       : 'solana'
 
-    chrome.tabs.create({ url: `brave://settings/content/${route}` }, () => {
+    chrome.tabs.create({ url: `minego://settings/content/${route}` }, () => {
       if (chrome.runtime.lastError) {
         console.error(
           'tabs.create failed: ' +

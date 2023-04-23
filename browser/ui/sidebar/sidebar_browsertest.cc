@@ -208,7 +208,7 @@ IN_PROC_BROWSER_TEST_F(SidebarBrowserTest, WebTypePanelTest) {
 
   // Add an item
   ASSERT_TRUE(
-      ui_test_utils::NavigateToURL(browser(), GURL("brave://settings/")));
+      ui_test_utils::NavigateToURL(browser(), GURL("minego://settings/")));
   int current_tab_index = tab_model()->active_index();
   EXPECT_EQ(0, current_tab_index);
   EXPECT_TRUE(CanAddCurrentActiveTabToSidebar(browser()));
@@ -224,7 +224,7 @@ IN_PROC_BROWSER_TEST_F(SidebarBrowserTest, WebTypePanelTest) {
   current_tab_index = tab_model()->active_index();
   EXPECT_EQ(1, current_tab_index);
 
-  // Activate sidebar item(brave://settings) and check existing first tab is
+  // Activate sidebar item(minego://settings) and check existing first tab is
   // activated.
   auto item = model()->GetAllSidebarItems()[4];
   controller()->ActivateItemAt(4);

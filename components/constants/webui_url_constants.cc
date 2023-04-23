@@ -36,8 +36,8 @@ const char kWalletPageHost[] = "wallet";
 #if BUILDFLAG(IS_ANDROID)
 const char kWalletSwapPagePath[] = "wallet/swap";
 #endif  // BUILDFLAG(IS_ANDROID)
-const char kExtensionSettingsURL[] = "brave://settings/extensions";
-const char kWalletSettingsURL[] = "brave://settings/wallet";
+const char kExtensionSettingsURL[] = "minego://settings/extensions";
+const char kWalletSettingsURL[] = "minego://settings/wallet";
 const char kBraveSyncPath[] = "braveSync";
 const char kBraveSyncSetupPath[] = "braveSync/setup";
 const char kTorInternalsHost[] = "tor-internals";

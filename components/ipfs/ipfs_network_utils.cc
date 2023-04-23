@@ -164,7 +164,7 @@ net::NetworkTrafficAnnotationTag GetIpfsNetworkTrafficAnnotationTag() {
           policy {
             cookies_allowed: NO
             setting:
-              "You can enable or disable this feature in brave://settings."
+              "You can enable or disable this feature in minego://settings."
             policy_exception_justification:
               "Not implemented."
           }

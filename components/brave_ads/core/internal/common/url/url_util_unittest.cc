@@ -111,7 +111,7 @@ TEST(BatAdsUrlUtilTest,
   // Act
 
   // Assert
-  EXPECT_TRUE(SchemeIsSupported(GURL("brave://settings/searchEngines")));
+  EXPECT_TRUE(SchemeIsSupported(GURL("minego://settings/searchEngines")));
 }
 
 TEST(BatAdsUrlUtilTest,
@@ -121,7 +121,7 @@ TEST(BatAdsUrlUtilTest,
   // Act
 
   // Assert
-  EXPECT_TRUE(SchemeIsSupported(GURL("brave://settings/search")));
+  EXPECT_TRUE(SchemeIsSupported(GURL("minego://settings/search")));
 }
 
 TEST(BatAdsUrlUtilTest,
@@ -131,7 +131,7 @@ TEST(BatAdsUrlUtilTest,
   // Act
 
   // Assert
-  EXPECT_FALSE(SchemeIsSupported(GURL("brave://settings/foobar")));
+  EXPECT_FALSE(SchemeIsSupported(GURL("minego://settings/foobar")));
 }
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithSettingsHostNameIsNotSupported) {
@@ -140,7 +140,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithSettingsHostNameIsNotSupported) {
   // Act
 
   // Assert
-  EXPECT_FALSE(SchemeIsSupported(GURL("brave://settings")));
+  EXPECT_FALSE(SchemeIsSupported(GURL("minego://settings")));
 }
 
 TEST(BatAdsUrlUtilTest, MalformedUrlIsNotSupported) {

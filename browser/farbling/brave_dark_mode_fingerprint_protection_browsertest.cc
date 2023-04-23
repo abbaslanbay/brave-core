@@ -179,7 +179,7 @@ IN_PROC_BROWSER_TEST_F(BraveDarkModeFingerprintProtectionTest,
 
   BlockFingerprinting();
   ASSERT_TRUE(
-      ui_test_utils::NavigateToURL(browser(), GURL("brave://settings")));
+      ui_test_utils::NavigateToURL(browser(), GURL("minego://settings")));
   ASSERT_TRUE(IsReportingDarkMode());
 }
 
