@@ -17,7 +17,7 @@ import DataContext from '../../state/context'
 import { ViewType } from '../../state/component_types'
 import { shouldPlayAnimations } from '../../state/hooks'
 
-import braveLogoUrl from '../../assets/brave_logo_3d@2x.webp'
+import braveLogoUrl from '../../assets/minego-logo@3x.webp'
 
 function Welcome () {
   const { setViewType, scenes, browserProfiles } = React.useContext(DataContext)
@@ -71,12 +71,17 @@ function Welcome () {
 
   return (
     <S.Box ref={shouldPlayAnimations ? ref : null}>
-      <div className="view-logo-box">
+      {/* <div className="view-logo-box">
         <img src={braveLogoUrl} />
-      </div>
+      </div> */}
       <div className={classnames({ 'view-content': true, 'initial': shouldPlayAnimations })}>
-        <div className="view-header-box">
+          <div className="view-header-box">
           <div className="view-details">
+            <div className="view-logo-box">
+              <img
+              className='minegoWelcomeLogo'
+              src={braveLogoUrl} />
+            </div>
             <h1 className="view-title">{getLocale('braveWelcomeTitle')}</h1>
             <p className="view-desc">{getLocale('braveWelcomeDesc')}</p>
           </div>

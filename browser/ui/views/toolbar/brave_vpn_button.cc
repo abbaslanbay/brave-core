@@ -39,7 +39,7 @@ using PurchasedState = brave_vpn::mojom::PurchasedState;
 
 namespace {
 
-constexpr int kButtonRadius = 47;
+// constexpr int kButtonRadius = 47;
 
 class BraveVPNButtonHighlightPathGenerator
     : public views::HighlightPathGenerator {
@@ -47,15 +47,15 @@ class BraveVPNButtonHighlightPathGenerator
   explicit BraveVPNButtonHighlightPathGenerator(const gfx::Insets& insets)
       : HighlightPathGenerator(insets) {}
 
-  BraveVPNButtonHighlightPathGenerator(
-      const BraveVPNButtonHighlightPathGenerator&) = delete;
-  BraveVPNButtonHighlightPathGenerator& operator=(
-      const BraveVPNButtonHighlightPathGenerator&) = delete;
+  // BraveVPNButtonHighlightPathGenerator(
+  //     const BraveVPNButtonHighlightPathGenerator&) = delete;
+  // BraveVPNButtonHighlightPathGenerator& operator=(
+  //     const BraveVPNButtonHighlightPathGenerator&) = delete;
 
-  // views::HighlightPathGenerator overrides:
-  absl::optional<gfx::RRectF> GetRoundRect(const gfx::RectF& rect) override {
-    return gfx::RRectF(rect, kButtonRadius);
-  }
+  // // views::HighlightPathGenerator overrides:
+  // absl::optional<gfx::RRectF> GetRoundRect(const gfx::RectF& rect) override {
+  //   return gfx::RRectF(rect, kButtonRadius);
+  // }
 };
 
 class VPNButtonMenuModel : public ui::SimpleMenuModel,
@@ -93,16 +93,16 @@ class VPNButtonMenuModel : public ui::SimpleMenuModel,
     // Clear all menu items and re-build as purchased state can be updated
     // during the runtime.
     Clear();
-    AddItemWithStringId(IDC_TOGGLE_BRAVE_VPN_TOOLBAR_BUTTON,
-                        IDS_BRAVE_VPN_HIDE_VPN_BUTTON_MENU_ITEM);
-    if (purchased) {
-      AddItemWithStringId(IDC_SEND_BRAVE_VPN_FEEDBACK,
-                          IDS_BRAVE_VPN_SHOW_FEEDBACK_MENU_ITEM);
-      AddItemWithStringId(IDC_ABOUT_BRAVE_VPN,
-                          IDS_BRAVE_VPN_ABOUT_VPN_MENU_ITEM);
-      AddItemWithStringId(IDC_MANAGE_BRAVE_VPN_PLAN,
-                          IDS_BRAVE_VPN_MANAGE_MY_PLAN_MENU_ITEM);
-    }
+    // AddItemWithStringId(IDC_TOGGLE_BRAVE_VPN_TOOLBAR_BUTTON,
+    //                     IDS_BRAVE_VPN_HIDE_VPN_BUTTON_MENU_ITEM);
+    // if (purchased) {
+    //   AddItemWithStringId(IDC_SEND_BRAVE_VPN_FEEDBACK,
+    //                       IDS_BRAVE_VPN_SHOW_FEEDBACK_MENU_ITEM);
+    //   AddItemWithStringId(IDC_ABOUT_BRAVE_VPN,
+    //                       IDS_BRAVE_VPN_ABOUT_VPN_MENU_ITEM);
+    //   AddItemWithStringId(IDC_MANAGE_BRAVE_VPN_PLAN,
+    //                       IDS_BRAVE_VPN_MANAGE_MY_PLAN_MENU_ITEM);
+    // }
   }
 
   raw_ptr<Browser> browser_ = nullptr;
@@ -121,41 +121,41 @@ BraveVPNButton::BraveVPNButton(Browser* browser)
       browser_(browser),
       service_(brave_vpn::BraveVpnServiceFactory::GetForProfile(
           browser_->profile())) {
-  DCHECK(service_);
-  Observe(service_);
+  // DCHECK(service_);
+  // Observe(service_);
 
-  // Replace ToolbarButton's highlight path generator.
-  views::HighlightPathGenerator::Install(
-      this, std::make_unique<BraveVPNButtonHighlightPathGenerator>(
-                GetToolbarInkDropInsets(this)));
+  // // Replace ToolbarButton's highlight path generator.
+  // views::HighlightPathGenerator::Install(
+  //     this, std::make_unique<BraveVPNButtonHighlightPathGenerator>(
+  //               GetToolbarInkDropInsets(this)));
 
-  // The MenuButtonController makes sure the panel closes when clicked if the
-  // panel is already open.
-  auto menu_button_controller = std::make_unique<views::MenuButtonController>(
-      this,
-      base::BindRepeating(&BraveVPNButton::OnButtonPressed,
-                          base::Unretained(this)),
-      std::make_unique<views::Button::DefaultButtonControllerDelegate>(this));
-  menu_button_controller_ = menu_button_controller.get();
-  SetButtonController(std::move(menu_button_controller));
+  // // The MenuButtonController makes sure the panel closes when clicked if the
+  // // panel is already open.
+  // auto menu_button_controller = std::make_unique<views::MenuButtonController>(
+  //     this,
+  //     base::BindRepeating(&BraveVPNButton::OnButtonPressed,
+  //                         base::Unretained(this)),
+  //     std::make_unique<views::Button::DefaultButtonControllerDelegate>(this));
+  // menu_button_controller_ = menu_button_controller.get();
+  // SetButtonController(std::move(menu_button_controller));
 
-  label()->SetText(brave_l10n::GetLocalizedResourceUTF16String(
-      IDS_BRAVE_VPN_TOOLBAR_BUTTON_TEXT));
-  gfx::FontList font_list = views::Label::GetDefaultFontList();
-  constexpr int kFontSize = 12;
-  label()->SetFontList(
-      font_list.DeriveWithSizeDelta(kFontSize - font_list.GetFontSize()));
+  // label()->SetText(brave_l10n::GetLocalizedResourceUTF16String(
+  //     IDS_BRAVE_VPN_TOOLBAR_BUTTON_TEXT));
+  // gfx::FontList font_list = views::Label::GetDefaultFontList();
+  // constexpr int kFontSize = 12;
+  // label()->SetFontList(
+  //     font_list.DeriveWithSizeDelta(kFontSize - font_list.GetFontSize()));
 
-  // Set image positions first. then label.
-  SetHorizontalAlignment(gfx::ALIGN_LEFT);
+  // // Set image positions first. then label.
+  // SetHorizontalAlignment(gfx::ALIGN_LEFT);
 
-  UpdateButtonState();
+  // UpdateButtonState();
 
-  // Views resulting in focusable nodes later on in the accessibility tree need
-  // to have an accessible name for screen readers to see what they are about.
-  // TODO(simonhong): Re-visit this name.
-  SetAccessibleName(brave_l10n::GetLocalizedResourceUTF16String(
-      IDS_BRAVE_VPN_TOOLBAR_BUTTON_TEXT));
+  // // Views resulting in focusable nodes later on in the accessibility tree need
+  // // to have an accessible name for screen readers to see what they are about.
+  // // TODO(simonhong): Re-visit this name.
+  // SetAccessibleName(brave_l10n::GetLocalizedResourceUTF16String(
+  //     IDS_BRAVE_VPN_TOOLBAR_BUTTON_TEXT));
 }
 
 BraveVPNButton::~BraveVPNButton() = default;
@@ -166,27 +166,27 @@ void BraveVPNButton::OnConnectionStateChanged(ConnectionState state) {
 
 void BraveVPNButton::UpdateColorsAndInsets() {
   if (const ui::ColorProvider* color_provider = GetColorProvider()) {
-    const gfx::Insets paint_insets =
-        gfx::Insets((height() - GetLayoutConstant(LOCATION_BAR_HEIGHT)) / 2);
-    SetBackground(views::CreateBackgroundFromPainter(
-        views::Painter::CreateSolidRoundRectPainter(
-            color_provider->GetColor(kColorToolbar), kButtonRadius,
-            paint_insets)));
+    // const gfx::Insets paint_insets =
+    //     gfx::Insets((height() - GetLayoutConstant(LOCATION_BAR_HEIGHT)) / 2);
+    // SetBackground(views::CreateBackgroundFromPainter(
+    //     views::Painter::CreateSolidRoundRectPainter(
+    //         color_provider->GetColor(kColorToolbar), kButtonRadius,
+    //         paint_insets)));
 
-    SetEnabledTextColors(color_provider->GetColor(
-        IsConnected() ? kColorBraveVpnButtonTextConnected
-                      : kColorBraveVpnButtonTextDisconnected));
+    // SetEnabledTextColors(color_provider->GetColor(
+    //     IsConnected() ? kColorBraveVpnButtonTextConnected
+    //                   : kColorBraveVpnButtonTextDisconnected));
 
-    std::unique_ptr<views::Border> border = views::CreateRoundedRectBorder(
-        1, kButtonRadius, gfx::Insets(),
-        color_provider->GetColor(kColorBraveVpnButtonBorder));
-    constexpr auto kTargetInsets = gfx::Insets::VH(3, 7);
-    const gfx::Insets extra_insets = kTargetInsets - border->GetInsets();
-    SetBorder(views::CreatePaddedBorder(std::move(border), extra_insets));
+    // std::unique_ptr<views::Border> border = views::CreateRoundedRectBorder(
+    //     1, kButtonRadius, gfx::Insets(),
+    //     color_provider->GetColor(kColorBraveVpnButtonBorder));
+    // constexpr auto kTargetInsets = gfx::Insets::VH(3, 7);
+    // const gfx::Insets extra_insets = kTargetInsets - border->GetInsets();
+    // SetBorder(views::CreatePaddedBorder(std::move(border), extra_insets));
   }
 
-  constexpr int kBraveAvatarImageLabelSpacing = 4;
-  SetImageLabelSpacing(kBraveAvatarImageLabelSpacing);
+  // constexpr int kBraveAvatarImageLabelSpacing = 4;
+  // SetImageLabelSpacing(kBraveAvatarImageLabelSpacing);
 }
 
 std::u16string BraveVPNButton::GetTooltipText(const gfx::Point& p) const {
@@ -215,7 +215,7 @@ bool BraveVPNButton::IsPurchased() const {
   return service_->is_purchased_user();
 }
 void BraveVPNButton::OnButtonPressed(const ui::Event& event) {
-  chrome::ExecuteCommand(browser_, IDC_SHOW_BRAVE_VPN_PANEL);
+ // chrome::ExecuteCommand(browser_, IDC_SHOW_BRAVE_VPN_PANEL);
 }
 
 BEGIN_METADATA(BraveVPNButton, LabelButton)

@@ -113,7 +113,7 @@
         <span class="nav-item-text">[[settingsTitle]]</span>
       </a>
     </li>
-    <template is="dom-if" if="[[shouldShowRewardsButton_]]">
+    <!-- <template is="dom-if" if="[[shouldShowRewardsButton_]]">
       <li class="nav-items-list-item" title="[[braveRewardsTitle]]">
         <a class$="nav-item [[getNavItemSelectedClassName('rewards')]]" href="chrome://rewards">
           <span class="nav-item-icon">
@@ -125,7 +125,7 @@
           <span class="nav-item-text">[[braveRewardsTitle]]</span>
         </a>
       </li>
-    </template>
+    </template> -->
     <li class="nav-items-list-item" title="[[historyTitle]]">
       <a class$="nav-item [[getNavItemSelectedClassName('history')]]" href="chrome://history">
         <span class="nav-item-icon">
@@ -160,7 +160,7 @@
         <span class="nav-item-text">[[downloadsTitle]]</span>
       </a>
     </li>
-    <template is="dom-if" if="[[isBraveWalletAllowed_]]">
+    <!-- <template is="dom-if" if="[[isBraveWalletAllowed_]]">
       <li class="nav-items-list-item" title="[[walletsTitle]]">
         <a class$="nav-item [[getNavItemSelectedClassName('wallet')]]" href="chrome://wallet">
           <span class="nav-item-icon">
@@ -173,7 +173,7 @@
           <span class="nav-item-text">[[walletsTitle]]</span>
         </a>
       </li>
-    </template>
+    </template> -->
   </ul>
     <br-toolbar-search-field id="search"
       narrow="[[narrow]]"

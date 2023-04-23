@@ -11,12 +11,12 @@ import WebAnimationPlayer from '../../api/web_animation_player'
 import DataContext from '../../state/context'
 import { shouldPlayAnimations } from '../../state/hooks'
 
-import Stars01 from '../svg/stars01'
-import Stars02 from '../svg/stars02'
-import Stars03 from '../svg/stars03'
-import Stars04 from '../svg/stars04'
-import fullCompositeBgUrl from '../../assets/background@2x.webp'
-import skyBgUrl from '../../assets/sky.webp'
+// import Stars01 from '../svg/stars01'
+// import Stars02 from '../svg/stars02'
+// import Stars03 from '../svg/stars03'
+// import Stars04 from '../svg/stars04'
+import fullCompositeBgUrl from '../../assets/background.jpg'
+import skyBgUrl from '../../assets/sky.jpg'
 
 interface BackgroundProps {
   children?: JSX.Element
@@ -93,14 +93,14 @@ function Background (props: BackgroundProps) {
 
   return (
     <S.Box ref={isReadyForAnimation ? ref : null}>
-      {isReadyForAnimation && (
+      {/* {isReadyForAnimation && (
         <div className="stars-container">
           <Stars01 />
           <Stars02 />
           <Stars03 />
           <Stars04 />
         </div>
-      )}
+      )} */}
       <div className="content-box">
         {props.children}
       </div>

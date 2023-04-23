@@ -80,7 +80,7 @@ export const Box = styled.div`
   .hills-base {
     width: 100%;
     height: 100%;
-    background: url(${hillBgUrl}) no-repeat;
+   // background: url(${hillBgUrl}) no-repeat;
     background-size: contain;
     background-position-y: bottom;
     position: absolute;
@@ -107,7 +107,7 @@ export const Box = styled.div`
   .pyramid {
     width: 100%;
     height: 100%;
-    background: url(${pyramidBgUrl}) no-repeat;
+  //  background: url(${pyramidBgUrl}) no-repeat;
     background-size: 20%;
     background-position: bottom right;
     position: absolute;

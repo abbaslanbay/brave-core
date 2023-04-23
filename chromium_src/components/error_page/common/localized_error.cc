@@ -42,7 +42,7 @@ std::u16string GetFailedUrlString(GURL failed_url);
 
 namespace error_page {
 namespace {
-const char kBraveUIScheme[] = "brave";
+const char kBraveUIScheme[] = "minego";
 }
 
 std::u16string GetFailedUrlString(GURL failed_url) {

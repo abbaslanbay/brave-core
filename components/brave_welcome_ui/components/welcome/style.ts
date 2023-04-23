@@ -67,17 +67,19 @@ export const Box = styled.div`
   }
 
   .view-logo-box {
-    width: 150px;
+    width: 100%;
     height: auto;
-    position: absolute;
-    top: calc(-160px / 2);
-    left: calc(50% - 160px/2);
-    z-index: 2;
+    justify-content:'center',
+    align-items:'center'
 
     img {
-      width: 100%;
+      width: 13rem;
       height: auto;
     }
+  }
+  .minegoWelcomeLogo {
+    width: 13rem!important;
+    height: auto;
   }
 `
 
