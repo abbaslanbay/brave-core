@@ -13,12 +13,11 @@ import {
   BraveTalkWidget as BraveTalk, Clock, EditCards, EditTopSite, OverrideReadabilityColor, RewardsWidget as Rewards, SearchPromotion
 } from '../../components/default'
 import BrandedWallpaperLogo from '../../components/default/brandedWallpaper/logo'
-import BraveNews, { GetDisplayAdContent } from '../../components/default/braveNews'
+import  { GetDisplayAdContent } from '../../components/default/braveNews'
 import FooterInfo from '../../components/default/footer/footer'
 import * as Page from '../../components/default/page'
 import TopSitesGrid from './gridSites'
 import SiteRemovalNotification from './notification'
-import Stats from './stats'
 
 // Helpers
 import isReadableOnBackground from '../../helpers/colorUtil'
@@ -35,9 +34,8 @@ import { MAX_GRID_SIZE } from '../../constants/new_tab_ui'
 import Settings, { TabType as SettingsTabType } from './settings'
 
 import { BraveNewsContextProvider } from '../../components/default/braveNews/customize/Context'
-import BraveNewsHint from '../../components/default/braveNews/hint'
 import GridWidget from './gridWidget'
-import SponsoredImageClickArea from '../../components/default/sponsoredImage/sponsoredImageClickArea'
+import minegoLogoWWhite from './explore_minego.svg'
 
 import { setIconBasePath } from '@brave/leo/react/icon'
 setIconBasePath('chrome://resources/brave-icons')
@@ -124,8 +122,8 @@ class NewTabPage extends React.Component<Props, State> {
     backgroundHasLoaded: false,
     activeSettingsTab: null,
     isPromptingBraveNews: false,
-    showSearchPromotion: false,
-    forceToHideWidget: false
+    showSearchPromotion: true,
+    forceToHideWidget: true
   }
 
   imgCache: HTMLImageElement
@@ -207,7 +205,7 @@ class NewTabPage extends React.Component<Props, State> {
           // a poor UX.
           return
         }
-        this.setState({ isPromptingBraveNews: true })
+        this.setState({ isPromptingBraveNews: false })
       }, 1700)
     }
   }
@@ -472,9 +470,7 @@ class NewTabPage extends React.Component<Props, State> {
   }
 
   renderSearchPromotion () {
-    if (!GetShouldShowSearchPromotion(this.props, this.state.showSearchPromotion)) {
-      return null
-    }
+
 
     const onClose = () => { this.closeSearchPromotion() }
     const onDismiss = () => { getNTPBrowserAPI().pageHandler.dismissBraveSearchPromotion() }
@@ -561,10 +557,9 @@ class NewTabPage extends React.Component<Props, State> {
     const hasWallpaperInfo = newTabData.backgroundWallpaper?.type === 'brave'
     const colorForBackground = newTabData.backgroundWallpaper?.type === 'color' ? newTabData.backgroundWallpaper.wallpaperColor : undefined
 
-    let cryptoContent = this.renderCryptoContent()
     const showAddNewSiteMenuItem = newTabData.customLinksNum < MAX_GRID_SIZE
 
-    let { showTopSites, showStats, showClock } = newTabData
+    let { showTopSites } = newTabData
     // In favorites mode, add site tile is visible by default if there is no
     // item. In frecency, top sites widget is hidden with empty tiles.
     if (showTopSites && !newTabData.customLinksEnabled) {
@@ -577,9 +572,7 @@ class NewTabPage extends React.Component<Props, State> {
 
     if (forceToHideWidget) {
       showTopSites = false
-      showStats = false
-      showClock = false
-      cryptoContent = null
+     
     }
 
     const BraveNewsContext = newTabData.featureFlagBraveNewsV2Enabled
@@ -600,23 +593,14 @@ class NewTabPage extends React.Component<Props, State> {
             hasImage={hasImage}
             imageSrc={this.imageSource}
             imageHasLoaded={this.state.backgroundHasLoaded}
-            showClock={showClock}
-            showStats={showStats}
+            showClock={false}
+            showStats={false}
             colorForBackground={colorForBackground}
-            showCryptoContent={!!cryptoContent}
+            showCryptoContent={false}
             showTopSites={showTopSites}
             showBrandedWallpaper={isShowingBrandedWallpaper}
         >
-          {this.renderSearchPromotion()}
-          <GridWidget
-            pref='showStats'
-            container={Page.GridItemStats}
-            paddingType={'right'}
-            widgetTitle={getLocale('statsTitle')}
-            textDirection={newTabData.textDirection}
-            menuPosition={'right'}>
-            <Stats stats={newTabData.stats}/>
-          </GridWidget>
+ 
           <GridWidget
             pref='showClock'
             container={Page.GridItemClock}
@@ -626,6 +610,8 @@ class NewTabPage extends React.Component<Props, State> {
             menuPosition='left'>
             <Clock />
           </GridWidget>
+          {this.renderSearchPromotion()}
+
           {
             showTopSites &&
               <Page.GridItemTopSites>
@@ -644,10 +630,7 @@ class NewTabPage extends React.Component<Props, State> {
                 />
               </Page.GridItemTopSites>
             }
-            {newTabData.brandedWallpaper?.isSponsored && <Page.GridItemSponsoredImageClickArea otherWidgetsHidden={this.allWidgetsHidden()}>
-              <SponsoredImageClickArea onClick={this.onClickLogo}
-                sponsoredImageUrl={newTabData.brandedWallpaper.logo.destinationUrl}/>
-              </Page.GridItemSponsoredImageClickArea>}
+            
             {
               gridSitesData.shouldShowSiteRemovedNotification
                 ? (
@@ -656,7 +639,14 @@ class NewTabPage extends React.Component<Props, State> {
                   </Page.GridItemNotification>
                 ) : null
             }
-            {cryptoContent}
+            <Page.GridItemWidgetStack>
+          <a
+          href='https://minego.io'
+          >
+            <img src={minegoLogoWWhite}/>
+          </a>
+          </Page.GridItemWidgetStack>
+
             <Page.Footer>
               <Page.FooterContent>
                 {isShowingBrandedWallpaper && newTabData.brandedWallpaper &&
@@ -682,36 +672,9 @@ class NewTabPage extends React.Component<Props, State> {
                 />
               </Page.FooterContent>
             </Page.Footer>
-            {newTabData.showToday &&
-              <Page.GridItemNavigationBraveNews>
-                <BraveNewsHint />
-              </Page.GridItemNavigationBraveNews>
-            }
+           
           </Page.Page>
-        { newTabData.showToday && newTabData.featureFlagBraveNewsEnabled &&
-        <BraveNews
-          feed={this.props.todayData.feed}
-          articleToScrollTo={this.props.todayData.articleScrollTo}
-          displayAdToScrollTo={this.props.todayData.displayAdToScrollTo}
-          displayedPageCount={this.props.todayData.currentPageIndex}
-          publishers={this.props.todayData.publishers}
-          isFetching={this.props.todayData.isFetching === true}
-          hasInteracted={this.props.todayData.hasInteracted}
-          isPrompting={this.state.isPromptingBraveNews}
-          isUpdateAvailable={this.props.todayData.isUpdateAvailable}
-          onRefresh={this.props.actions.today.refresh}
-          onAnotherPageNeeded={this.props.actions.today.anotherPageNeeded}
-          onFeedItemViewedCountChanged={this.props.actions.today.feedItemViewedCountChanged}
-          onCustomizeBraveNews={() => { this.openSettings(SettingsTabType.BraveNews) }}
-          onReadFeedItem={this.props.actions.today.readFeedItem}
-          onPromotedItemViewed={this.props.actions.today.promotedItemViewed}
-          onSetPublisherPref={this.props.actions.today.setPublisherPref}
-          onCheckForUpdate={this.props.actions.today.checkForUpdate}
-          onViewedDisplayAd={this.props.actions.today.displayAdViewed}
-          onVisitDisplayAd={this.props.actions.today.visitDisplayAd}
-          getDisplayAd={this.props.getBraveNewsDisplayAd}
-        />
-        }
+ 
         <Settings
           actions={actions}
           textDirection={newTabData.textDirection}

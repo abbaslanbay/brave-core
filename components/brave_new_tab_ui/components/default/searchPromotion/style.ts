@@ -1,27 +1,24 @@
 // Copyright (c) 2022 The Brave Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
-// You can obtain one at https://mozilla.org/MPL/2.0/.
+// you can obtain one at https://mozilla.org/MPL/2.0/.
 
 import styled from 'styled-components'
 
 export const StyledSearchPromotionWrapper = styled('div')<{}>`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 420px;
   height: 100%;
   z-index: 10;
-  background: linear-gradient(357.8deg, rgba(0, 0, 0, 0.45) 52.37%, rgba(0, 0, 0, 0.0405) 91.48%);
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  grid-column: 1 / span 2;
 `
 
 export const StyledSearchPromotion = styled('div')`
   position: relative;
-  width: 640px;
+  width: 100%;
   top: 40px;
   display: flex;
   flex-direction: column;

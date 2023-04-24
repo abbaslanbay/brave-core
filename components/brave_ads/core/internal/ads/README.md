@@ -8,6 +8,6 @@ An advertisement, or ad, is a form of marketing communication that is used to pr
 | new tab page ad  | Displayed on new tab pages   |
 | notification ad  | Displayed in system notifications  |
 | promoted content ad  | Displayed on the Brave News feed  |
-| search result ad  | Displayed on (search.brave.com)[search.brave.com]  |
+| search result ad  | Displayed on (search.minego.io)[search.minego.io]  |
 
 Please add to it!

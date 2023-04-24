@@ -12,7 +12,7 @@ import Icon from '@brave/leo/react/icon'
 import Button from '$web-components/button'
 import Toggle from '$web-components/toggle'
 import SourcesList from './SourcesList'
-import DisabledPlaceholder from './DisabledPlaceholder'
+//import DisabledPlaceholder from './DisabledPlaceholder'
 import { useBraveNews } from './Context'
 import { getLocale } from '$web-common/locale'
 import { formatMessage } from '../../../../../brave_rewards/resources/shared/lib/locale_context'
@@ -124,7 +124,8 @@ export default function Configure () {
 
   let content: JSX.Element
   if (!isBraveNewsFullyEnabled) {
-    content = <DisabledPlaceholder enableBraveNews={() => toggleBraveNewsOnNTP(true)} />
+    // content = <DisabledPlaceholder enableBraveNews={() => toggleBraveNewsOnNTP(true)} />
+    content = <></>
   } else if (customizePage === 'suggestions') {
     content = <SuggestionsPage/>
   } else if (customizePage === 'popular') {

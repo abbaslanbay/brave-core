@@ -1,121 +1,135 @@
 // Copyright (c) 2020 The Brave Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
-// You can obtain one at https://mozilla.org/MPL/2.0/.
+// you can obtain one at https://mozilla.org/MPL/2.0/.
 
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components";
 
-import favoritesSelectedLight from './assets/favorites-selected.png'
-import favoritesUnselectedLight from './assets/favorites-unselected.png'
-import frecencySelectedLight from './assets/frecency-selected.png'
-import frecencyUnselectedLight from './assets/frecency-unselected.png'
+import favoritesSelectedLight from "./assets/favorites-selected.png";
+import favoritesUnselectedLight from "./assets/favorites-unselected.png";
+import frecencySelectedLight from "./assets/frecency-selected.png";
+import frecencyUnselectedLight from "./assets/frecency-unselected.png";
 
-import favoritesSelectedDark from './assets/favorites-selected-dark.png'
-import favoritesUnselectedDark from './assets/favorites-unselected-dark.png'
-import frecencySelectedDark from './assets/frecency-selected-dark.png'
-import frecencyUnselectedDark from './assets/frecency-unselected-dark.png'
-
-import CheckedCircle from './assets/checked-circle.svg'
+import favoritesSelectedDark from "./assets/favorites-selected-dark.png";
+import favoritesUnselectedDark from "./assets/favorites-unselected-dark.png";
+import frecencySelectedDark from "./assets/frecency-selected-dark.png";
+import frecencyUnselectedDark from "./assets/frecency-unselected-dark.png";
 
 // Reverse decisions to have the controls define their margin. This helps
 // fill the gap before we remove all margins from these types of controls.
 // Usually containers will want to define spacing based on specific UI needs.
 interface ControllableLayoutProps {
-  isLayoutControlled?: boolean
+  isLayoutControlled?: boolean;
 }
 interface Props {
-  textDirection: string
+  textDirection: string;
 }
 
 const isDarkTheme = (p: any) => {
-  return p.theme.name === 'Brave Dark'
-}
+  return p.theme.name === "Brave Dark";
+};
 
-const getTopSiteCustomizationImage = (dark: boolean, selected: boolean, favorites: boolean) => {
+const getTopSiteCustomizationImage = (
+  dark: boolean,
+  selected: boolean,
+  favorites: boolean
+) => {
   if (dark) {
     if (selected) {
-      return favorites ? favoritesSelectedDark : frecencySelectedDark
+      return favorites ? favoritesSelectedDark : frecencySelectedDark;
     } else {
-      return favorites ? favoritesUnselectedDark : frecencyUnselectedDark
+      return favorites ? favoritesUnselectedDark : frecencyUnselectedDark;
     }
   } else {
     if (selected) {
-      return favorites ? favoritesSelectedLight : frecencySelectedLight
+      return favorites ? favoritesSelectedLight : frecencySelectedLight;
     } else {
-      return favorites ? favoritesUnselectedLight : frecencyUnselectedLight
+      return favorites ? favoritesUnselectedLight : frecencyUnselectedLight;
     }
   }
-}
+};
 
-export const SettingsMenu = styled('div')<Props>`
+export const SettingsMenu = styled("div")<Props>`
   width: 720px;
   min-width: 720px;
-  ${p => p.textDirection && (p.textDirection === 'rtl') ? 'left: 12px' : 'right: 12px'};
-  background-color: ${p => p.theme.color.contextMenuBackground};
-  color:  ${p => p.theme.color.contextMenuForeground};
+  ${(p) =>
+    p.textDirection && p.textDirection === "rtl"
+      ? "left: 12px"
+      : "right: 12px"};
+  background-color: ${(p) => (isDarkTheme(p) ? "#35363A" : "#F3F3F3")};
+  color: ${(p) => p.theme.color.contextMenuForeground};
   border-radius: 8px;
-  padding: 24px;
   padding-bottom: 0px;
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.24);
-  font-family: ${p => p.theme.fontFamily.body};
-`
+  font-family: ${(p) => p.theme.fontFamily.body};
+`;
 
-export const SettingsContent = styled('div')<{}>`
+export const SettingsContent = styled("div")<{}>`
   display: grid;
-  grid-template-columns: auto 1fr;
   grid-gap: 20px;
-
+  padding: 10px 20px 10px 20px;
+  background-color: ${(p) => (isDarkTheme(p) ? "#202124" : "#D6DADD")};
   @media screen and (max-width: 1150px) {
     grid-gap: 0px;
   }
-`
+`;
 
-export const SettingsSidebar = styled('aside')<{}>`
+export const SettingsSidebar = styled("aside")<{}>`
   position: relative;
   /* normalize against SettingsMenu default padding */
   margin-left: -24px;
   padding-left: 24px;
-`
+`;
 
 interface SettingsSidebarActiveButtonSliderProps {
-  translateTo: number
+  translateTo: number;
 }
 
-export const SettingsSidebarActiveButtonSlider =
-  styled('div')<SettingsSidebarActiveButtonSliderProps>`
+export const SettingsSidebarActiveButtonSlider = styled(
+  "div"
+)<SettingsSidebarActiveButtonSliderProps>`
   position: absolute;
   top: 0;
   left: 0;
   height: 48px;
   width: 4px;
-  background: linear-gradient(93.83deg, ${p => p.theme.color.brandBrave} -3.53%, ${p => p.theme.palette.magenta500} 110.11%);
+  background: linear-gradient(
+    93.83deg,
+    ${(p) => p.theme.color.brandBrave} -3.53%,
+    ${(p) => p.theme.palette.magenta500} 110.11%
+  );
   border-radius: 0px 2px 2px 0px;
-  transform: translateY(${p => p.translateTo * 48}px);
+  transform: translateY(${(p) => p.translateTo * 48}px);
   transition-delay: 0.05s;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
   transition-property: transform;
-`
+`;
 interface SettingsSidebarSVGContentProps {
-  src: string
-  isActive: boolean
+  src: string;
+  isActive: boolean;
 }
 
-export const SettingsSidebarSVGContent = styled('div')<SettingsSidebarSVGContentProps>`
+export const SettingsSidebarSVGContent = styled(
+  "div"
+)<SettingsSidebarSVGContentProps>`
   position: relative;
   width: 20px;
   height: 20px;
-  background: ${p => isDarkTheme(p) ? p.theme.palette.grey400 : p.theme.palette.grey800};
-  -webkit-mask-image: url(${p => p.src});
+  background: ${(p) =>
+    isDarkTheme(p) ? p.theme.palette.grey400 : p.theme.palette.grey800};
+  -webkit-mask-image: url(${(p) => p.src});
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   flex-shrink: 0;
 
   transition: background var(--sidebar-button-transition-timing) ease-in-out;
 
-  ${p => p.isActive && css`
-    --active-opacity: 1;
-  `}
+  ${(p) =>
+    p.isActive &&
+    css`
+      --active-opacity: 1;
+    `}
 
   /* Active version (hidden until item is active).
     This is a separate element so that we can:
@@ -123,46 +137,60 @@ export const SettingsSidebarSVGContent = styled('div')<SettingsSidebarSVGContent
   &::after {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     opacity: var(--active-opacity, 0);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(93.83deg, ${p => p.theme.color.brandBrave} -3.53%, ${p => p.theme.palette.magenta500} 110.11%);
-    -webkit-mask-image: url(${p => p.src});
+    background: linear-gradient(
+      93.83deg,
+      ${(p) => p.theme.color.brandBrave} -3.53%,
+      ${(p) => p.theme.palette.magenta500} 110.11%
+    );
+    -webkit-mask-image: url(${(p) => p.src});
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
     transition: opacity var(--sidebar-button-transition-timing) ease-in-out;
   }
+`;
+export const SettingsSidebarRowHeader = styled("div")<{}>`
+  display: flex;
+  flex-direction: row;
+  background: ${(p) => (isDarkTheme(p) ? "#202124" : "#d6dadd")};
+  border-bottom: 1px solid ${(p) => (isDarkTheme(p) ? "#202124" : "#B2B5B7")};
+  padding-top: 20px;
+`;
 
-`
-
-export const SettingsSidebarButtonText = styled('span')<{ isActive: boolean }>`
+export const SettingsSidebarButtonText = styled("span")<{ isActive: boolean }>`
   margin-left: 16px;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 13px;
-  font-family: ${p => p.theme.fontFamily.heading};
+  font-family: ${(p) => p.theme.fontFamily.heading};
   line-height: normal;
-  color: ${p => p.theme.color.contextMenuForeground};
+  color: ${(p) => (isDarkTheme(p) ? "#fff" : "#000000")};
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
   text-transform: capitalize;
 
   transition: opacity var(--sidebar-button-transition-timing) ease-in-out,
-              color var(--sidebar-button-transition-timing) ease-in-out,
-              font-weight var(--sidebar-button-transition-timing) ease-in-out;
+    color var(--sidebar-button-transition-timing) ease-in-out,
+    font-weight var(--sidebar-button-transition-timing) ease-in-out;
 
   &:hover {
-    color: ${p => p.theme.color.brandBrave};
+    color: #8323ff;
   }
 
-  ${p => p.isActive && css`
-    --active-opacity: 1;
-    font-weight: 600;
-    color: ${p => p.theme.palette.magenta500};
-  `}
+  ${(p) =>
+    p.isActive &&
+    css`
+      --active-opacity: 1;
+      font-weight: 600;
+      color: #511dff;
+      border-bottom: 3px solid #8323ff;
+      padding-bottom: 10px;
+    `}
 
   /* Active version (hidden until item is active).
      This is a separate element so that we can:
@@ -177,26 +205,32 @@ export const SettingsSidebarButtonText = styled('span')<{ isActive: boolean }>`
     left: 0;
     right: 0;
     bottom: 0;
-    background: ${p => p.theme.color.panelBackground};
+    background: ${(p) => p.theme.color.panelBackground};
     background-size: 100%;
     background-repeat: repeat;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(93.83deg, ${p => p.theme.color.brandBrave} -3.53%, ${p => p.theme.palette.magenta500} 110.11%);
+    background-image: linear-gradient(
+      93.83deg,
+      #8323ff -3.53%,
+      #511dff 110.11%
+    );
     overflow: hidden;
     text-overflow: ellipsis;
     transition: opacity var(--sidebar-button-transition-timing) ease-in-out,
-                font-weight var(--sidebar-button-transition-timing) ease-in-out;
+      font-weight var(--sidebar-button-transition-timing) ease-in-out;
   }
-`
+`;
 
 interface SettingsSidebarButtonProps {
-  activeTab: boolean
+  activeTab: boolean;
 }
 
-export const SettingsSidebarButton = styled('button')<SettingsSidebarButtonProps>`
-  --sidebar-button-transition-timing: .12s;
+export const SettingsSidebarButton = styled(
+  "button"
+)<SettingsSidebarButtonProps>`
+  --sidebar-button-transition-timing: 0.12s;
   appearance: none;
   padding: 0;
   margin: 0;
@@ -208,13 +242,15 @@ export const SettingsSidebarButton = styled('button')<SettingsSidebarButtonProps
   display: flex;
   align-items: center;
   background: inherit;
-
+  justify-content: center;
   &:hover {
     ${SettingsSidebarSVGContent} {
-      background: ${p => p.theme.color.brandBrave};
+      background: #8323ff;
     }
     ${SettingsSidebarButtonText} {
-      color: ${p => p.theme.color.brandBrave};
+      color: #8323ff;
+      border-bottom: 3px solid #8323ff;
+      padding-bottom: 10px;
     }
   }
 
@@ -229,35 +265,46 @@ export const SettingsSidebarButton = styled('button')<SettingsSidebarButtonProps
 
   &:focus-visible {
     outline-style: solid;
-    outline-color: ${p => p.theme.color.brandBrave};
+    outline-color: #8323ff;
     outline-width: 1px;
   }
-`
+`;
 
-export const SettingsFeatureBody = styled('section')<{}>`
+export const SettingsFeatureBody = styled("section")<{}>`
   padding: 10px 16px;
   height: 360px;
   overflow: auto;
   overscroll-behavior: contain;
-`
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+`;
 
-export const SettingsTitle = styled('div')<{}>`
+export const SettingsTitle = styled("div")<{}>`
   margin-bottom: 17px;
   grid-template-columns: 1fr 20px;
   display: grid;
   align-items: center;
-
+  padding: 20px 20px 0 20px;
   h1 {
-    font-family: ${p => p.theme.fontFamily.heading};
+    font-family: ${(p) => p.theme.fontFamily.heading};
     margin: 0;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.02em;
   }
-`
+`;
 
-export const SettingsCloseIcon = styled('button')<{}>`
+export const SettingsCloseIcon = styled("button")<{}>`
   appearance: none;
   padding: 0;
   margin: 0;
@@ -269,75 +316,84 @@ export const SettingsCloseIcon = styled('button')<{}>`
   outline: none;
 
   &:active {
-    color: ${p => p.theme.color.brandBraveActive};
+    color: ${(p) => p.theme.color.brandBraveActive};
   }
 
   &:focus-visible {
     outline-style: solid;
-    outline-color: ${p => p.theme.color.brandBrave};
+    outline-color: ${(p) => p.theme.color.brandBrave};
     outline-width: 2px;
   }
-`
+`;
 
+export const SettingsCustomizeHeader = styled("div")<{}>`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+`;
 interface SettingsRowProps extends ControllableLayoutProps {
-  isChildSetting?: boolean
-  isInteractive?: boolean
+  isChildSetting?: boolean;
+  isInteractive?: boolean;
 }
 
-export const SettingsRow = styled('div')<SettingsRowProps>`
+export const SettingsRow = styled("div")<SettingsRowProps>`
   box-sizing: border-box;
-  margin-bottom: ${p => !p.isLayoutControlled && '10px'};
+  margin-bottom: ${(p) => !p.isLayoutControlled && "10px"};
   display: grid;
   grid-template-columns: auto max-content;
   align-items: center;
   width: 100%;
   font-weight: normal;
-  ${p => p.isChildSetting && css`
-    padding-left: 36px;
-  `}
-  ${p => p.isInteractive && css`
-    cursor: pointer;
-    &:focus-visible {
-      outline: solid 1px ${p => p.theme.color.brandBrave};
-    }
-    &:hover {
-      color: ${p => p.theme.color.brandBraveInteracting}
-    }
-    &:active {
-      color: ${p => p.theme.color.brandBraveActive}
-    }
-  `}
+  ${(p) =>
+    p.isChildSetting &&
+    css`
+      padding-left: 36px;
+    `}
+  ${(p) =>
+    p.isInteractive &&
+    css`
+      cursor: pointer;
+      &:focus-visible {
+        outline: solid 1px ${(p) => p.theme.color.brandBrave};
+      }
+      &:hover {
+        color: ${(p) => p.theme.color.brandBraveInteracting};
+      }
+      &:active {
+        color: ${(p) => p.theme.color.brandBraveActive};
+      }
+    `}
 
   /* TODO(petemill): Use specific Component for Content and Control sides */
-  :last-child:not(:first-child)
-  {
+  :last-child:not(:first-child) {
     justify-self: end;
     margin-bottom: 0;
   }
-`
+`;
 
-export const SettingsText = styled('span')<{}>`
+export const SettingsText = styled("span")<{}>`
   display: flex;
   align-items: center;
   font-style: normal;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.01em;
-  font-family: ${p => p.theme.fontFamily.heading};
-`
+  font-family: ${(p) => p.theme.fontFamily.heading};
+`;
 
-export const SettingsSectionTitle = styled('h3')<ControllableLayoutProps>`
-  margin: 0 0 ${p => p.isLayoutControlled ? '0' : '8px'} 0;
+export const SettingsSectionTitle = styled("h3")<ControllableLayoutProps>`
+  margin: 0 0 ${(p) => (p.isLayoutControlled ? "0" : "8px")} 0;
   font-weight: 800;
   font-size: 13px;
   line-height: 24px;
-`
+`;
 
 interface SettingsWrapperProps {
-  textDirection: string
+  textDirection: string;
 }
 
-export const SettingsWrapper = styled('div')<SettingsWrapperProps>`
+export const SettingsWrapper = styled("div")<SettingsWrapperProps>`
   position: fixed;
   top: 0;
   left: 0;
@@ -347,156 +403,159 @@ export const SettingsWrapper = styled('div')<SettingsWrapperProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: ${p => p.theme.fontFamily.heading};
+  font-family: ${(p) => p.theme.fontFamily.heading};
   font-size: 13px;
   font-weight: 600;
-  color: rgba(255,255,255,0.8);
-  margin-right: ${p => p.textDirection === 'ltr' && '8px'};
-  margin-left: ${p => p.textDirection === 'rtl' && '8px'};
-  border-right: ${p => p.textDirection === 'ltr' && '1px solid rgba(255, 255, 255, 0.6)'};
-  border-left: ${p => p.textDirection === 'rtl' && '1px solid rgba(255, 255, 255, 0.6)'};
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: ${(p) => p.textDirection === "ltr" && "8px"};
+  margin-left: ${(p) => p.textDirection === "rtl" && "8px"};
+  border-right: ${(p) =>
+    p.textDirection === "ltr" && "1px solid rgba(255, 255, 255, 0.6)"};
+  border-left: ${(p) =>
+    p.textDirection === "rtl" && "1px solid rgba(255, 255, 255, 0.6)"};
   background: rgba(33, 37, 41, 0.32);
 
   &:hover {
     color: #ffffff;
   }
-`
+`;
 
-export const SettingsWidget = styled('div')<{}>`
+export const SettingsWidget = styled("div")<{}>`
   width: calc(50% - var(--widget-gap));
   margin-top: calc(20px - var(--widget-gap));
   padding: 0px 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-`
+`;
 
-export const StyledWidgetSettings = styled('div')`
+export const StyledWidgetSettings = styled("div")`
   --widget-gap: 17px;
-  font-family: ${p => p.theme.fontFamily.heading};
+  font-family: ${(p) => p.theme.fontFamily.heading};
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: var(--widget-gap);
-`
+`;
 
-export const FeaturedSettingsWidget = styled('div')<{}>`
+export const FeaturedSettingsWidget = styled("div")<{}>`
   width: 100%;
-`
+`;
 
-export const StyledBannerImage = styled('img')<{}>`
+export const StyledBannerImage = styled("img")<{}>`
   width: 100%;
   margin-bottom: 10px;
-`
+`;
 
-export const StyledSettingsInfo = styled('div')<{}>`
+export const StyledSettingsInfo = styled("div")<{}>`
   float: left;
   max-width: 250px;
   flex-grow: 1;
-`
+`;
 
-export const StyledSettingsTitle = styled('div')<{}>`
+export const StyledSettingsTitle = styled("div")<{}>`
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 5px;
-`
+`;
 
-export const StyledSettingsCopy = styled('div')<{}>`
+export const StyledSettingsCopy = styled("div")<{}>`
   font-size: 13px;
   font-weight: 300;
   line-height: 17px;
-`
+`;
 
 interface WidgetToggleProps {
-  isAdd: boolean
-  float: boolean
+  isAdd: boolean;
+  float: boolean;
 }
 
-export const StyledWidgetToggle = styled('button')<WidgetToggleProps>`
+export const StyledWidgetToggle = styled("button")<WidgetToggleProps>`
   color: white;
   font-weight: 600;
   font-size: 13px;
   padding: 10px 25px;
   border-radius: 100px;
-  float: ${p => p.float ? 'right' : 'none'};
-  margin-right: ${p => p.float ? 10 : 0}px;
+  float: ${(p) => (p.float ? "right" : "none")};
+  margin-right: ${(p) => (p.float ? 10 : 0)}px;
   border: none;
   margin-top: 15px;
   cursor: pointer;
-  background: ${p => p.isAdd ? '#9524FF' : isDarkTheme(p) ? '#5E6175' : '#212529'};
+  background: ${(p) =>
+    p.isAdd ? "#9725ff" : isDarkTheme(p) ? "#5E6175" : "#212529"};
   width: fit-content;
   display: flex;
   align-items: center;
 
   &:focus-visible {
     outline-style: solid;
-    outline-color: ${p => p.theme.color.brandBrave};
+    outline-color: ${(p) => p.theme.color.brandBrave};
     outline-width: 1px;
   }
-`
+`;
 
-export const StyledButtonIcon = styled('div')<{}>`
+export const StyledButtonIcon = styled("div")<{}>`
   display: inline-block;
   margin-right: 5px;
   width: 19px;
   height: 17px;
-`
+`;
 
 export const StyledAddButtonIcon = styled(StyledButtonIcon)`
   width: 19px;
   height: 19px;
-`
+`;
 
 export const StyledHideButtonIcon = styled(StyledButtonIcon)`
   width: 19px;
   height: 17px;
-`
+`;
 
-export const StyledButtonLabel = styled('span')<{}>`
+export const StyledButtonLabel = styled("span")<{}>`
   max-width: 100px;
   text-overflow: ellipsis;
   display: inline-block;
   white-space: nowrap;
-`
+`;
 
-export const ToggleCardsWrapper = styled('div')<{}>`
+export const ToggleCardsWrapper = styled("div")<{}>`
   padding: 15px 15px 5px 15px;
   clear: both;
   border-radius: 10px;
-  background: ${p => isDarkTheme(p) ? '#3B3F4E' : '#F3F3FE'};
-  color: ${p => isDarkTheme(p) ? '#FFF' : 'rgb(59, 62, 79)'};
-`
+  background: ${(p) => (isDarkTheme(p) ? "#3B3F4E" : "#F3F3FE")};
+  color: ${(p) => (isDarkTheme(p) ? "#FFF" : "rgb(59, 62, 79)")};
+`;
 
-export const ToggleCardsText = styled('div')<{}>`
+export const ToggleCardsText = styled("div")<{}>`
   text-align: left;
   max-width: 325px;
-`
+`;
 
-export const ToggleCardsTitle = styled('span')<{}>`
+export const ToggleCardsTitle = styled("span")<{}>`
   font-weight: bold;
-`
+`;
 
-export const ToggleCardsCopy = styled('p')<{}>`
+export const ToggleCardsCopy = styled("p")<{}>`
   line-height: 18px;
   font-weight: normal;
-`
+`;
 
-export const ToggleCardsSwitch = styled('div')<{}>`
+export const ToggleCardsSwitch = styled("div")<{}>`
   float: right;
   margin: -65px -10px 0 0;
-`
+`;
 
-export const StyledTopSitesCustomizationSettings = styled('div')`
+export const StyledTopSitesCustomizationSettings = styled("div")`
   --widget-gap: 10px;
-  font-family: ${p => p.theme.fontFamily.heading};
+  font-family: ${(p) => p.theme.fontFamily.heading};
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 16px;
-  gap: var(--widget-gap)
-`
+  gap: var(--widget-gap);
+`;
 
-export const StyledTopSitesCustomizationSettingsOption = styled('button')<{}>`
+export const StyledTopSitesCustomizationSettingsOption = styled("button")<{}>`
   width: calc(50% - var(--widget-gap) / 2);
   display: flex;
   flex-direction: column;
@@ -507,81 +566,100 @@ export const StyledTopSitesCustomizationSettingsOption = styled('button')<{}>`
 
   &:focus-visible {
     outline-style: solid;
-    outline-color: ${p => p.theme.color.brandBrave};
+    outline-color: ${(p) => p.theme.color.brandBrave};
     outline-width: 1px;
   }
-`
+`;
 
 interface CustomizationImageBorderProps {
-  selected?: boolean
+  selected?: boolean;
 }
 
-export const StyledTopSitesCustomizationImageBorder = styled('div')<CustomizationImageBorderProps>`
+export const StyledTopSitesCustomizationImageBorder = styled(
+  "div"
+)<CustomizationImageBorderProps>`
   margin-bottom: 8px;
   border-radius: 11px;
 
-  ${p => p.selected && css`
-    background: ${p => isDarkTheme(p) ? 'linear-gradient(314.42deg, #FA7250 6.04%, #FF1893 44.31%, #A78AFF 100%)'
-                                      : 'linear-gradient(122.53deg, #4C54D2 0%, #BF14A2 56.25%, #F73A1C 100%)'};
-    padding: 3px;
-  `}
+  ${(p) =>
+    p.selected &&
+    css`
+      background: ${(p) =>
+        isDarkTheme(p)
+          ? "linear-gradient(314.42deg, #FA7250 6.04%, #FF1893 44.31%, #A78AFF 100%)"
+          : "linear-gradient(122.53deg, #4C54D2 0%, #BF14A2 56.25%, #F73A1C 100%)"};
+      padding: 3px;
+    `}
 
-  ${p => !p.selected && css`
-    border: 2px solid ${p => isDarkTheme(p) ? '#3B3E4F' : '#F1F3F5'};
-    background: ${p => isDarkTheme(p) ? '#17171F' : '#FFF'};
-    padding: 1px;
-
-    &:hover {
-      border: 2px solid ${p => isDarkTheme(p) ? '#C2C4CF' : '#AEB1C2'};
-      background: ${p => isDarkTheme(p) ? '#2B2D3F' : '#FAFAFF'};
+  ${(p) =>
+    !p.selected &&
+    css`
+      border: 2px solid ${(p) => (isDarkTheme(p) ? "#3B3E4F" : "#F1F3F5")};
+      background: ${(p) => (isDarkTheme(p) ? "#17171F" : "#FFF")};
       padding: 1px;
-    }
-  `}
-`
+
+      &:hover {
+        border: 2px solid ${(p) => (isDarkTheme(p) ? "#C2C4CF" : "#AEB1C2")};
+        background: ${(p) => (isDarkTheme(p) ? "#2B2D3F" : "#FAFAFF")};
+        padding: 1px;
+      }
+    `}
+`;
 
 interface CustomizationImageProps {
-  isFavorites: boolean
-  selected?: boolean
+  isFavorites: boolean;
+  selected?: boolean;
 }
 
-export const StyledTopSitesCustomizationImage = styled('img')<CustomizationImageProps>`
+export const StyledTopSitesCustomizationImage = styled(
+  "img"
+)<CustomizationImageProps>`
   width: 100%;
   height: 100%;
   cursor: pointer;
-  content: url(${p => getTopSiteCustomizationImage(isDarkTheme(p), p.selected ?? false, p.isFavorites)});
+  content: url(${(p) =>
+    getTopSiteCustomizationImage(
+      isDarkTheme(p),
+      p.selected ?? false,
+      p.isFavorites
+    )});
 
-  ${p => p.selected && css`
-    background: ${p => isDarkTheme(p) ? '#525779' : '#F0F2FF'};
-    border-radius: 8px;
-  `}
-`
+  ${(p) =>
+    p.selected &&
+    css`
+      background: ${(p) => (isDarkTheme(p) ? "#525779" : "#F0F2FF")};
+      border-radius: 8px;
+    `}
+`;
 
-export const StyledTopSitesCustomizationOptionTitle = styled('div')<{}>`
+export const StyledTopSitesCustomizationOptionTitle = styled("div")<{}>`
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
   margin-bottom: 2px;
   text-align: left;
-`
+`;
 
-export const StyledTopSitesCustomizationOptionDesc = styled('div')<{}>`
+export const StyledTopSitesCustomizationOptionDesc = styled("div")<{}>`
   font-weight: 400;
   font-size: 11px;
   line-height: 17px;
   text-align: left;
-`
+`;
 
-export const StyledCustomBackgroundSettings = styled('div')<{}>`
+export const StyledCustomBackgroundSettings = styled("div")<{}>`
   --option-gap: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 16px;
-  gap: var(--option-gap)
-`
+  gap: var(--option-gap);
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+`;
 
-export const StyledCustomBackgroundOption = styled('button')<{}>`
-  width: calc(50% - var(--option-gap) / 2);
+export const StyledCustomBackgroundOption = styled("button")<{}>`
+  width: 90%;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -593,47 +671,48 @@ export const StyledCustomBackgroundOption = styled('button')<{}>`
 
   &:focus-visible {
     outline-style: solid;
-    outline-color: ${p => p.theme.color.brandBrave};
+    outline-color: ${(p) => p.theme.color.brandBrave};
     outline-width: 1px;
   }
-`
+`;
 
 interface SelectionProps {
-  selected: boolean
-  removable?: boolean
+  selected: boolean;
+  removable?: boolean;
 }
 
 interface ColoredBackgroundProps {
-  colorValue: string
+  colorValue: string;
 }
 
 interface ImageBackgroundProps {
-  image: string
+  image: string;
 }
 
-export const StyledSelectionBorder = styled('div')<SelectionProps>`
+export const StyledSelectionBorder = styled("div")<SelectionProps>`
   position: relative;
   width: 100%;
   height: 160px;
-  ${p => p.selected && css`
-    background: ${p => isDarkTheme(p)
-        ? 'linear-gradient(314.42deg, #FA7250 6.04%, #FF1893 44.31%, #A78AFF 100%)'
-        : 'linear-gradient(122.53deg, #4C54D2 0%, #BF14A2 56.25%, #F73A1C 100%)'};
-    padding: 2px;
-    border-radius: 10px;
-    &::after {
-      content: url(${CheckedCircle});
-      position:absolute;
-      top: 10px;
-      right: 10px;
-    }
-  `}
+  ${(p) =>
+    p.selected &&
+    css`
+      background: ${(p) =>
+        isDarkTheme(p)
+          ? "linear-gradient(314.42deg, #9625FF 6.04%, #6A20FF 44.31%, #411BFF 100%)"
+          : "linear-gradient(122.53deg, #9625FF 0%, #6A20FF 56.25%, #411BFF 100%)"};
+      padding: 2px;
+      border-radius: 10px;
+    `}
 
-  ${p => p.removable && css`
-    &:hover::after { display: none; }
-  `}
-`
-export const StyledUploadIconContainer = styled('div')<SelectionProps>`
+  ${(p) =>
+    p.removable &&
+    css`
+      &:hover::after {
+        display: none;
+      }
+    `}
+`;
+export const StyledUploadIconContainer = styled("div")<SelectionProps>`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -641,48 +720,64 @@ export const StyledUploadIconContainer = styled('div')<SelectionProps>`
   align-items: center;
   justify-content: center;
   gap: 16px;
-  ${p => p.selected
-    ? css`    
-      background: ${p => isDarkTheme(p) ? '#525779' : '#F0F2FF'}; 
-      border-radius: 8px;`
-    : css`
-      border: 2px solid #E9E9F4; 
-      border-radius: 10px; 
-  `}
-`
+  ${(p) =>
+    p.selected
+      ? css`
+          background: ${(p) => (isDarkTheme(p) ? "#525779" : "#F0F2FF")};
+          border-radius: 8px;
+        `
+      : css`
+          border: 2px solid #e9e9f4;
+          border-radius: 10px;
+        `}
+`;
 
-export const StyledCustomBackgroundOptionImage = styled('div')<SelectionProps & ImageBackgroundProps>`
+export const StyledCustomBackgroundOptionImage = styled("div")<
+  SelectionProps & ImageBackgroundProps
+>`
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-clip: padding-box;
   background-position: center;
   background-size: cover;
-  ${p => p.selected
-    ? css`border-radius: 8px;`
-    : css`border-radius: 10px;`}
-  background-image: url("${p => p.image}");
-`
+  ${(p) =>
+    p.selected
+      ? css`
+          border-radius: 8px;
+        `
+      : css`
+          border-radius: 10px;
+        `}
+  background-image: url("${(p) => p.image}");
+`;
 
-export const StyledCustomBackgroundOptionColor = styled('div')<SelectionProps & ColoredBackgroundProps>`
+export const StyledCustomBackgroundOptionColor = styled("div")<
+  SelectionProps & ColoredBackgroundProps
+>`
   width: 100%;
   height: 100%;
-  ${p => p.selected
-    ? css`border-radius: 8px;`
-    : css`border-radius: 10px;`}
-  background: ${p => p.colorValue};
-`
+  ${(p) =>
+    p.selected
+      ? css`
+          border-radius: 8px;
+        `
+      : css`
+          border-radius: 10px;
+        `}
+  background: ${(p) => p.colorValue};
+`;
 
-export const StyledUploadLabel = styled('div')<{}>`
-font-style: normal;
-font-weight: 400;
-font-size: 11px;
-line-height: 17px;
-`
+export const StyledUploadLabel = styled("div")<{}>`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+`;
 
-export const StyledCustomBackgroundOptionLabel = styled('div')<{}>`
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-`
+export const StyledCustomBackgroundOptionLabel = styled("div")<{}>`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+`;

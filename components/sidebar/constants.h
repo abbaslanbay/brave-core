@@ -15,8 +15,8 @@ constexpr char kSidebarItemTitleKey[] = "title";
 constexpr char kSidebarItemOpenInPanelKey[] = "open_in_panel";
 
 // list is provided from chrome layer.
-constexpr char kBraveTalkURL[] = "https://talk.brave.com/widget";
-constexpr char kBraveTalkHost[] = "talk.brave.com";
+constexpr char kBraveTalkURL[] = "https://meet.minego.io";
+constexpr char kBraveTalkHost[] = "meet.minego.io";
 
 }  // namespace sidebar
 

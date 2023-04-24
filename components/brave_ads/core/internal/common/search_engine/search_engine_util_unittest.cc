@@ -140,7 +140,7 @@ TEST(BatAdsSearchEngineUtilTest, IsMonolingualSearchEngine) {
                                   GURL("https://fireball.de/"),
                                   GURL("https://github.com/"),
                                   GURL("https://infogalactic.com/"),
-                                  GURL("https://search.brave.com/"),
+                                  GURL("https://search.minego.io/"),
                                   GURL("https://search.yahoo.com/"),
                                   GURL("https://stackoverflow.com/"),
                                   GURL("https://swisscows.com/"),

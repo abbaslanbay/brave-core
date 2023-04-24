@@ -45,7 +45,7 @@ public class BraveSearchBannerProcessor implements DropdownItemProcessor {
         model.set(BraveSearchBannerProperties.DELEGATE, new BraveSearchBannerProperties.Delegate() {
             @Override
             public void onPositiveClicked() {
-                mUrlBarDelegate.loadUrl("https://search.brave.com/search?q="
+                mUrlBarDelegate.loadUrl("https://search.minego.io/search?q="
                                 + mUrlBarEditingTextProvider.getTextWithoutAutocomplete()
                                 + "&action=makeDefault",
                         PageTransition.LINK, System.currentTimeMillis());

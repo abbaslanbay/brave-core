@@ -10,9 +10,6 @@ import { loadTimeData } from '../../../common/loadTimeData'
 
 import BackgroundView from './components/background-view'
 import SearchBox from './components/search-box'
-import DisclaimerDialog from './components/disclaimer-dialog'
-import BadgeTor from './components/badge-tor'
-import { useTorObserver, useHasDisclaimerDismissed } from './hooks'
 
 const CenterView = styled.div`
   width: 100%;
@@ -51,8 +48,6 @@ const BadgePrivateWindow = styled.div`
 function Container () {
   const isWindowTor = loadTimeData.getBoolean('isWindowTor')
 
-  const { isConnected, progress, message, connectionStatus } = useTorObserver()
-  const { hasDisclaimerDismissed } = useHasDisclaimerDismissed()
 
   let badgeElement = (
     <BadgePrivateWindow>
@@ -61,39 +56,10 @@ function Container () {
     </BadgePrivateWindow>
   )
 
-  let dialogContent = (
-    <p>
-      {getLocale('headerText1')}
-      {' '}
-      {getLocale('headerText2')}
-    </p>
-  )
-
-  if (isWindowTor) {
-    badgeElement = (
-      <BadgeTor
-        isConnected={isConnected}
-        progress={progress ?? ''}
-        message={message ?? ''}
-        connectionStatus={connectionStatus}
-      />
-    )
-
-    dialogContent = (
-      <>
-        <p>{getLocale('headerTorText')}</p>
-      </>
-    )
-  }
-
   const handleSearchSubmit = (value: string, openNewTab: boolean) => {
     getPageHandlerInstance().pageHandler.goToBraveSearch(value, openNewTab)
   }
 
-  const handleDialogClose = () => {
-    if (hasDisclaimerDismissed) return
-    getPageHandlerInstance().pageHandler.setDisclaimerDismissed(true)
-  }
 
   return (
     <BackgroundView isTor={isWindowTor}>
@@ -101,17 +67,7 @@ function Container () {
       <CenterView>
         <SearchBox onSubmit={handleSearchSubmit} />
       </CenterView>
-      <DialogBox>
-        {(hasDisclaimerDismissed != null) && (
-          <DisclaimerDialog
-            title={isWindowTor ? getLocale('headerTorTitle') : getLocale('headerTitle')}
-            isOpen={!hasDisclaimerDismissed}
-            onClose={handleDialogClose}
-          >
-            {dialogContent}
-          </DisclaimerDialog>
-        )}
-      </DialogBox>
+
     </BackgroundView>
   )
 }
