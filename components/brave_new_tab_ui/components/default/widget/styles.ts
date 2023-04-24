@@ -146,7 +146,7 @@ export const StyledWidgetLink = styled('a')<WidgetButtonProps>`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  outline-color: #FF7654;
+  outline-color: #9424FE;
   outline-width: 2px;
   outline-offset: -3px;
   cursor: pointer;

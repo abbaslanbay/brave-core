@@ -423,7 +423,7 @@ export const StyledWidgetToggle = styled('button')<WidgetToggleProps>`
   border: none;
   margin-top: 15px;
   cursor: pointer;
-  background: ${p => p.isAdd ? '#FB542B' : isDarkTheme(p) ? '#5E6175' : '#212529'};
+  background: ${p => p.isAdd ? '#9524FF' : isDarkTheme(p) ? '#5E6175' : '#212529'};
   width: fit-content;
   display: flex;
   align-items: center;

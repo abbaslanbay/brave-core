@@ -80,7 +80,7 @@ body {
 #local-node-button {
   color: #fff;
   border: none;
-  background-color: #FB542B;
+  background-color: #9524FF;
   padding: 10px 30px;
 }
 
@@ -139,7 +139,7 @@ body.dark {
 }
 
 .dark #local-node-button {
-  background: #FB542B;
+  background: #9524FF;
 }
 
 .error-container-hidden {

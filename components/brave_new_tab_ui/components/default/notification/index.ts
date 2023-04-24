@@ -31,7 +31,7 @@ interface SiteRemovalActionProps {
 export const SiteRemovalAction = styled('a')<SiteRemovalActionProps>`
   font-size: 16px;
   cursor: pointer;
-  color: #fb542b;
+  color: #9524FF;
   width: ${p => p.iconOnly && '16px'};
   line-height: 1;
 `

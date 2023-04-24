@@ -56,7 +56,7 @@ export const StyledTitle = styled('div')<StyleProps>`
   line-height: 1.29;
   letter-spacing: -0.2px;
   text-align: center;
-  color: #fb542b;
+  color: #9524FF;
 `
 
 export const StyledClose = styled('button')<{}>`

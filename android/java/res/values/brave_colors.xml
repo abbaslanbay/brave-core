@@ -13,13 +13,13 @@
 
     <!-- Overriding chromium theme colors to brave theme colors -->
     <color name="baseline_primary_100">#F9C3B6</color>
-    <color name="baseline_primary_200">#FF7654</color>
+    <color name="baseline_primary_200">#9424FE</color>
     <color name="baseline_primary_600">#EA3A0D</color>
     <color name="baseline_primary_800">@color/modern_blue_600</color>
     <color name="baseline_primary_900">@color/modern_blue_700</color>
     <color name="black_alpha_30">#4D000000</color>
     <color name="black_alpha_50">#80000000</color>
-    <color name="modern_blue_300">#FF7654</color>
+    <color name="modern_blue_300">#9424FE</color>
     <color name="modern_blue_600">#EA3A0D</color>
     <color name="modern_blue_700">#C22700</color>
     <color name="dialog_bg_color_dark_baseline">@color/toolbar_background_primary_dark</color>
@@ -42,7 +42,7 @@
     <color name="brave_theme_error_txt">#E32444</color>
 
     <!-- Onboarding colors -->
-    <color name="onboarding_orange">#fb542b</color>
+    <color name="onboarding_orange">#9524FF</color>
     <color name="onboarding_gray">#84889c</color>
     <color name="onboarding_black">#1e2029</color>
     <color name="onboarding_radio_button_active">#f0f1ff</color>
@@ -56,7 +56,7 @@
     <color name="onboarding_progress_start_color">#FA7250</color>
     <color name="onboarding_progress_mid_color">#FF1893</color>
     <color name="onboarding_progress_end_color">#4F30AB</color>
-    <color name="onboarding_indicator_selected_color">#FF7654</color>
+    <color name="onboarding_indicator_selected_color">#9424FE</color>
     <color name="onboarding_indicator_default_color">#C2C4CF</color>
 
     <color name="onboarding_welcome_text_color">#F0F2FF</color>
@@ -90,7 +90,7 @@
     <color name="brave_set_default_dialog_text_color">@color/modern_grey_700</color>
 
     <!-- Theme colors -->
-    <color name="brave_theme_color">#fb542b</color>
+    <color name="brave_theme_color">#9524FF</color>
     <color name="brave_tab_view_card_selected_bg">@color/baseline_primary_200</color>
     <color name="brave_wallet_button_pressed">#737ADE</color>
     <color name="brave_add_widget_button_pressed">#737ADE</color>
@@ -155,7 +155,7 @@
     <color name="shield_rounded_button_color">#C2C4CF</color>
     <color name="shield_thank_you_icon_color">#212529</color>
 
-    <color name="brave_stats_ads_color">#FF7654</color>
+    <color name="brave_stats_ads_color">#9424FE</color>
     <color name="brave_stats_data_saved_color">#737ADE</color>
     <color name="brave_state_time_count_color">#FFFFFF</color>
 
