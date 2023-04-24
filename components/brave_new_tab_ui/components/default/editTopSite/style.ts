@@ -1,7 +1,7 @@
 // Copyright (c) 2021 The Brave Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
-// You can obtain one at https://mozilla.org/MPL/2.0/.
+// you can obtain one at https://mozilla.org/MPL/2.0/.
 
 import styled from 'styled-components'
 import Button, { Props as ButtonProps } from 'brave-ui/components/buttonsIndicators/button'
@@ -9,7 +9,9 @@ import Button, { Props as ButtonProps } from 'brave-ui/components/buttonsIndicat
 interface StyledDialogWrapperProps {
   textDirection: string
 }
-
+const isDarkTheme = (p: any) => {
+  return p.theme.name === 'Brave Dark'
+}
 export const StyledDialogWrapper = styled('div')<StyledDialogWrapperProps>`
   position: fixed;
   top: 0;
@@ -20,9 +22,14 @@ export const StyledDialogWrapper = styled('div')<StyledDialogWrapperProps>`
   display: flex;
   justify-content: center;
   align-items: center;
+  background: ${p => isDarkTheme(p) ? 'rgba(0,0,0,0.5)' : 'rgba(255,255,255,0.5)'}; 
+  
 `
 
 interface StyledDialogProps {
+  textDirection: string
+}
+interface StyledDialogAddProps {
   textDirection: string
 }
 
@@ -38,7 +45,20 @@ export const StyledDialog = styled('div')<StyledDialogProps>`
 
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
 `
+export const StyledDialogAdd = styled('div')<StyledDialogAddProps>`
+  position: relative;
+  width: 55vW;
+  top: 0;
+  background-color: ${p => p.theme.color.contextMenuBackground};
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
 
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 600px) {
+    width: 75vW;
+  }
+`
 export const DialogTitle = styled('div')<{}>`
   font-weight: 600;
   font-size: 15px;
@@ -148,4 +168,254 @@ export const StyledButton = styled(Button as React.ComponentType<ButtonProps>)`
   &:active {
     outline: none;
   }
+`
+
+
+
+
+
+// Modal Style 
+
+export const StyledModalMain = styled('div')<{}>`
+    border-radius: 4px;
+    width: 100%;
+    color: ${p => isDarkTheme(p) ? '#fff' : '#000'};
+    background: ${p => isDarkTheme(p) ? '#202124' : '#D4D8DB'};
+    @media screen and (max-width: 600px) {
+      width: 65vW;
+    }
+`
+
+export const StyledModalHeader = styled('div')<{}>`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    border-radius: 4px;
+    background: ${p => isDarkTheme(p) ? '#35363A' : '#FFFFFF'};
+`
+
+export const StyledModalHeaderFlex = styled('div')<{}>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const StyledModalHeaderIcon = styled('div')<{}>`
+    padding: 12px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ${p => isDarkTheme(p) ? '#202124' : 'RGBA(0, 0, 0, 0.15)'};
+`
+
+export const StyledModalHeaderText= styled('span')<{}>`
+    font-size: 20px;
+    font-weight: 600;
+`
+
+export const StyledModalHeaderButton= styled('button')<{}>`
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 20px;
+    margin-right: 20px;
+    cursor:pointer
+
+`
+
+export const StyledModalContentBg= styled('div')<{}>`
+    padding: 2vh; 
+`
+export const StyledModalInputButtonFlex= styled('div')<{}>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+`
+
+
+export const StyledModalInputButtonDiv= styled('div')<{}>`
+    position: relative;
+    width: 60%;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+    }
+`
+export const StyledModalInput= styled('input')<{}>`
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    padding: 10px;
+    align-items: center;
+    border: none;
+    outline: none;
+    color: white;
+    position: relative;
+    margin-bottom: 5px;
+    color: ${p => isDarkTheme(p) ? '#fff' : '#000'};
+    background: ${p => isDarkTheme(p) ? '#2B2B2B' : '#FFFFFF'};
+    @media screen and (max-width: 750px) {
+      .modalInput::placeholder {
+          color: transparent;
+      }
+    }
+`
+
+export const StyledModalInputButton= styled('button')<{}>`
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 2px;
+    width: 20%;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border: none;
+    background:
+        linear-gradient(90deg, #9725FF 0%, #401BFF 100%);
+`
+
+export const StyledModalSitesMainDiv= styled('div')<{}>`
+    max-height: 45vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 2vh 0 2vh;
+    margin-top: 20px;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px
+    }
+    @media screen and (max-width: 1000px) {
+      max-height: 40vh;
+      padding: 0;
+      margin-top: 20px;
+    }
+`
+export const StyledModalSitesDiv= styled('div')<{}>`
+  padding: 3vh 0 3vh 5vh;
+  @media screen and (max-width: 600px) {
+    padding: 0px;
+  }
+`
+
+export const StyledModalContentHeaderText= styled('span')<{}>`
+    font-size: 20px;
+    font-weight: 600;
+`
+
+export const StyledModalContentSitesBoxDiv= styled('div')<{}>`
+    padding: 1vh 1.5vh;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 150px;
+      padding: 1vh 0vh;
+    }
+
+`
+
+
+
+export const StyledModalContentSitesBox= styled('div')<{}>`
+    margin-right: 0.5vh;
+    margin-bottom: 1vh;
+    cursor:pointer;
+    padding: 4vh 5vh;
+    height: 130px;
+    color: white;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: ${p => isDarkTheme(p) ? 'RGB(19, 20, 21)' : 'RGBA(0, 0, 0, 0.15)'};
+    @media screen and (max-width: 600px) {
+      padding:0
+    }
+ 
+    &:hover, :focus-visible {
+      background-color:  ${p => isDarkTheme(p) ? 'black' : '#9e9e9e'};
+    }
+`
+
+
+export const StyledModalContentSitesBoxSpan= styled('span')<{}>`
+    margin-top: 20px;
+
+`
+
+
+export const StyledModalContentSitesBoxNotFound= styled('span')<{}>`
+   color: ${p => isDarkTheme(p) ? 'white' : 'black'};
+
+`
+
+export const StyledModalSuggestionDiv= styled('div')<{}>`
+    padding: 1vh 0 3vh 5vh;
+    @media screen and (max-width: 600px) {
+      padding: 0;
+    }
+
+`
+
+export const StyledModalSuggestionDivSpan= styled('span')<{}>`
+    font-size: 20px;
+    font-weight: 600;
+
+`
+
+export const StyledModalSuggestionBoxDiv= styled('div')<{}>`
+    padding: 1vh 1.5vh;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 150px;
+      padding: 1vh 0vh;
+    }
+
+`
+
+export const StyledModalSuggestionBox= styled('div')<{}>`
+    margin-right: 0.5vh;
+    margin-bottom: 1vh;
+    cursor:pointer;
+    padding: 4vh 5vh;
+    height: 120px;
+    color: white;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: ${p => isDarkTheme(p) ? 'RGB(19, 20, 21)' : 'RGBA(0, 0, 0, 0.15)'};
+    &:hover, :focus-visible {
+      background-color:  ${p => isDarkTheme(p) ? 'black' : '#9e9e9e'};
+    }
+    @media screen and (max-width: 600px) {
+      padding:0
+    }
 `

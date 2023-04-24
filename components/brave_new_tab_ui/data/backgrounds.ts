@@ -4,7 +4,7 @@
 
 export const images: NewTab.BraveBackground[] = [{
   'type': 'brave',
-  'wallpaperImageUrl': 'dylan-malval_sea-min.webp',
+  'wallpaperImageUrl': window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ?  'dylan-malval_sea-min.webp' : 'minego_light.jpg',
   'author': 'Dylan Malval',
   'link': 'https://www.instagram.com/vass_captures/',
   'originalUrl': 'Contributor sent the hi-res version through email',

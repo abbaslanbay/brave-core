@@ -1,13 +1,13 @@
 // Copyright (c) 2020 The Brave Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
-// You can obtain one at https://mozilla.org/MPL/2.0/.
+// you can obtain one at https://mozilla.org/MPL/2.0/.
 
 import * as React from 'react'
 
 import {
-  SettingsRow,
-  SettingsText,
+  // SettingsRow,
+  // SettingsText,
   StyledCustomBackgroundOption,
   StyledCustomBackgroundOptionImage,
   StyledCustomBackgroundOptionLabel,
@@ -17,20 +17,18 @@ import {
   StyledUploadIconContainer,
   StyledUploadLabel
 } from '../../../components/default'
-import braveBackground from './assets/brave-background.png'
+// import braveBackground from './assets/brave-background.png'
+import minegoBackgroundDark from './assets/minego-background-dark.jpg'
 import UploadIcon from './assets/upload-icon'
-import { Toggle } from '../../../components/toggle'
+// import { Toggle } from '../../../components/toggle'
 
 import { getLocale } from '../../../../common/locale'
 
 import BackgroundChooser from './backgroundChooser'
 import { defaultSolidBackgroundColor, solidColorsForBackground, gradientColorsForBackground, defaultGradientColor } from '../../../data/backgrounds'
-import SponsoredImageToggle from './sponsoredImagesToggle'
 
 import { RANDOM_SOLID_COLOR_VALUE, RANDOM_GRADIENT_COLOR_VALUE, MAX_CUSTOM_IMAGE_BACKGROUNDS } from 'gen/brave/components/brave_new_tab_ui/brave_new_tab_page.mojom.m.js'
 import BackgroundImageTiles from './backgroundImageTiles'
-
-import * as mojom from '../../../../brave_rewards/resources/shared/lib/mojom'
 
 interface Props {
   newTabData: NewTab.State
@@ -117,13 +115,9 @@ class BackgroundImageSettings extends React.PureComponent<Props, State> {
   render () {
     const {
       newTabData,
-      toggleShowBackgroundImage,
-      toggleBrandedWallpaperOptIn,
-      brandedWallpaperOptIn,
+      // toggleShowBackgroundImage,
       showBackgroundImage,
       featureCustomBackgroundEnabled,
-      onEnableRewards,
-      braveRewardsSupported
     } = this.props
 
     const usingCustomImageBackground = newTabData.backgroundWallpaper?.type === 'image'
@@ -141,14 +135,14 @@ class BackgroundImageSettings extends React.PureComponent<Props, State> {
       <>
         {this.state.location === Location.LIST && (
           <div>
-            <SettingsRow>
+            {/* <SettingsRow>
               <SettingsText>{getLocale('showBackgroundImage')}</SettingsText>
               <Toggle
                 onChange={toggleShowBackgroundImage}
                 checked={showBackgroundImage}
                 size='large'
               />
-            </SettingsRow>
+            </SettingsRow> */}
             {showBackgroundImage && featureCustomBackgroundEnabled && (
               <StyledCustomBackgroundSettings>
                 {this.renderUploadButton(this.onClickCustomBackground, usingCustomImageBackground, /* showTitle= */ true, this.props.newTabData.customImageBackgrounds)}
@@ -156,7 +150,7 @@ class BackgroundImageSettings extends React.PureComponent<Props, State> {
                   onClick={this.onClickBraveBackground}
                 >
                   <StyledSelectionBorder selected={usingBraveBackground}>
-                    <StyledCustomBackgroundOptionImage image={braveBackground} selected={usingBraveBackground}/>
+                    <StyledCustomBackgroundOptionImage image={minegoBackgroundDark} selected={usingBraveBackground}/>
                   </StyledSelectionBorder>
                   <StyledCustomBackgroundOptionLabel>
                     {getLocale('braveBackgroundImageOptionTitle')}
@@ -191,21 +185,18 @@ class BackgroundImageSettings extends React.PureComponent<Props, State> {
               </StyledCustomBackgroundSettings>
             )}
             <div style={{ height: '16px' }}/>
-            {braveRewardsSupported && !this.props.newTabData.rewardsState.isUnsupportedRegion && (
+            {/* {braveRewardsSupported && !this.props.newTabData.rewardsState.isUnsupportedRegion && (
               <SettingsRow>
                 <SponsoredImageToggle
                   onChange={toggleBrandedWallpaperOptIn}
                   onEnableRewards={onEnableRewards}
                   checked={showBackgroundImage && brandedWallpaperOptIn}
-                  disabled={!showBackgroundImage /* This option can only be enabled if users opt in for background images */}
+                  disabled={!showBackgroundImage }
                   rewardsEnabled={this.props.newTabData.rewardsState.rewardsEnabled}
                   adsEnabled={this.props.newTabData.rewardsState.enabledAds}
-                  canSupportAds={!!this.props.newTabData.rewardsState.adsSupported}
-                  isExternalWalletConnected={
-                    this.props.newTabData.rewardsState.externalWallet?.status !==
-                    mojom.WalletStatus.kNotConnected} />
+                  canSupportAds={!!this.props.newTabData.rewardsState.adsSupported}/>
               </SettingsRow>
-            )}
+            )} */}
           </div>
         )}
         {this.state.location === Location.SOLID_COLORS &&

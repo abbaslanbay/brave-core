@@ -79,6 +79,7 @@ void CustomizeWebUIHTMLSource(content::WebUI* web_ui,
         // New tab Backgrounds
 #if !BUILDFLAG(IS_ANDROID)
         { "dylan-malval_sea-min.webp", IDR_BRAVE_NEW_TAB_BACKGROUND1 },
+        { "minego_light.jpg", IDR_BRAVE_NEW_TAB_BACKGROUND2 },
 #endif
         // private tab
         { "c168145d6bf1abf2c0322636366f7dbe.svg", IDR_BRAVE_PRIVATE_TAB_TOR_IMG },               // NOLINT

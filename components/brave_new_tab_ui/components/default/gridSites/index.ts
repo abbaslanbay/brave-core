@@ -1,7 +1,7 @@
 // Copyright (c) 2019 The Brave Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
-// You can obtain one at https://mozilla.org/MPL/2.0/.
+// you can obtain one at https://mozilla.org/MPL/2.0/.
 
 import styled, { css } from 'styled-components'
 
@@ -27,6 +27,7 @@ export const AddSiteTileImage = styled('div')<{}>`
   width: 70px;
   height: 70px;
   display: flex;
+  margin-top:10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -54,7 +55,13 @@ export const AddSiteTile = styled('button')<AddSiteTileProps>`
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
+  @media screen and (max-width: 700px) {
+   margin-top:20px!important
+  }
 
+  @media screen and (max-width: 360px) {
+    margin-top:20px!important
+  }
   ${p => p.isDragging && css`
     visibility: hidden;
   `}
@@ -96,14 +103,14 @@ export const PagesContainer = styled('div')`
   margin-bottom: 24px;
 
   --grid-columns: 6;
-  --grid-column-width: 86px;
+  --grid-column-width: 140px;
 
   @media screen and (max-width: 700px) {
-    --grid-columns: 4;
+    --grid-columns: 3;
   }
 
   @media screen and (max-width: 360px) {
-    --grid-columns: 3;
+    --grid-columns: 2;
   }
 `
 
@@ -111,7 +118,6 @@ export const GridPagesContainer = styled('div')<{ customLinksEnabled: boolean }>
   display: flex;
   flex-direction: row;
 
-  margin-left: 24px;
   padding: 24px 24px 0 24px;
   max-width: calc((var(--grid-columns) + 1) * var(--grid-column-width));
   overflow-x: ${p => p.customLinksEnabled ? 'auto' : 'hidden'};
@@ -225,13 +231,12 @@ export const TileFavicon = styled('img')<{}>`
   padding: 16px;
   width: 70px;
   height: 70px;
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   object-fit: contain;
 
-  background: ${p => p.theme.palette.white};
+  background:'transparent';
   @media (prefers-color-scheme: dark) {
-    background: ${p => p.theme.palette.black};
+    background: 'transparent';
   }
 `
 
@@ -247,14 +252,20 @@ export const Tile = styled('a')<TileProps>`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 78px;
+  width: 120px;
   height: 110px;
+  backdrop-filter: blur(3px);
   cursor: pointer;
+  background: rgba(0,0,0,0.4);
   // Menu goes behind in other Tiles when tils has z-index.
   // Give z-index while dragging to make dragging tile moves over other tiles.
   z-index: ${p => p.isDragging ? 3 : 'unset'}
   outline: unset;
   gap: 8px;
+  margin-top:10px;
+  @media screen and (max-width: 870px) {
+   margin-top:20px;
+  }
 
   ${p => !p.isMenuShowing && css`
     &:active {
