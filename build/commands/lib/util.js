@@ -250,7 +250,7 @@ const util = {
     fileMap.add([path.join(braveComponentsDir, 'resources', 'default_200_percent'), path.join(chromeComponentsDir, 'resources', 'default_200_percent')])
     fileMap.add([path.join(braveComponentsDir, 'resources', 'default_200_percent', 'brave'), path.join(chromeComponentsDir, 'resources', 'default_200_percent', 'chromium')])
     fileMap.add([path.join(braveAppVectorIconsDir, 'vector_icons', 'brave'), path.join(chromeComponentsDir, 'vector_icons', 'brave')])
-    // Copy chrome-logo-faded.png for replacing chrome logo of welcome page with brave's on Win8.
+    // Copy chrome-logo-faded.png for replacing chrome logo of welcome page with Minego'son Win8.
     fileMap.add([path.join(braveBrowserResourcesDir, 'chrome-logo-faded.png'), path.join(chromeBrowserResourcesDir, 'chrome-logo-faded.png')])
     fileMap.add([path.join(braveBrowserResourcesDir, 'downloads', 'images', 'incognito_marker.svg'), path.join(chromeBrowserResourcesDir, 'downloads', 'images', 'incognito_marker.svg')])
     fileMap.add([path.join(braveBrowserResourcesDir, 'settings', 'images'), path.join(chromeBrowserResourcesDir, 'settings', 'images')])
@@ -373,7 +373,7 @@ const util = {
       const androidSafeBrowsingResSource = path.join(config.braveCoreDir, 'browser', 'safe_browsing', 'android', 'java', 'res')
       const androidSafeBrowsingResDest = path.join(config.srcDir, 'chrome', 'browser', 'safe_browsing', 'android', 'java', 'res')
 
-      // Mapping for copying Brave's Android resource into chromium folder.
+      // Mapping for copying Minego'sAndroid resource into chromium folder.
       const copyAndroidResourceMapping = {
         [androidTranslateResSource]: [androidTranslateResDest],
         [androidIconSource]: [androidIconDest],

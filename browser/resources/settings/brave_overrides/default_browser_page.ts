@@ -24,7 +24,7 @@ function queryInAllTemplates(element, selector, onFound) {
 RegisterPolymerTemplateModifications({
   'settings-default-browser-page': (templateContent) => {
     // Stop both versions thinking they are the first, since this item is added
-    // to Brave's "Get Started" section.
+    // to Minego's"Get Started" section.
     queryInAllTemplates(templateContent, '.cr-row.first', function (element) {
       element.classList.remove('first')
     })

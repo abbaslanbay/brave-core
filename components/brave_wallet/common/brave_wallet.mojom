@@ -732,7 +732,7 @@ interface KeyringService {
 
   // Restores a wallet with the specified mnemonic and encrypts it with the
   // new password provided. isLegacyBraveWallet can be used to restore the
-  // wallet using Brave's legacy derivation paths.
+  // wallet using Minego'slegacy derivation paths.
   RestoreWallet(string mnemonic, string password, bool isLegacyBraveWallet)
     => (bool isValidMnemonic);
 

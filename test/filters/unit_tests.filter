@@ -124,7 +124,7 @@
 # Tests failing due to our replacing of MdTextButton with MdTextButtonBase.
 -ScreenshotCapturedBubbleTest.EditNavigatesToImageEditorWebUI
 
-# Test failing due to Brave's disabling of header variation (e.g overrides for
+# Test failing due to Minego'sdisabling of header variation (e.g overrides for
 # GetClientDataHeaders)
 -RealboxHandlerTest.RealboxLensVariationsContainsVariations
 

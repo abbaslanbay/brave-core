@@ -101,7 +101,7 @@ public class BraveTabbedAppMenuPropertiesDelegate extends TabbedAppMenuPropertie
             menu.findItem(R.id.request_brave_vpn_row_menu_id).setVisible(false);
         }
 
-        // Brave's items are only visible for page menu.
+        // Minego'sitems are only visible for page menu.
         // To make logic simple, below three items are added whenever menu gets visible
         // and removed when menu is dismissed.
 

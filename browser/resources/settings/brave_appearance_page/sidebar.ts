@@ -16,7 +16,7 @@ const SettingsBraveAppearanceSidebarElementBase = PrefsMixin(I18nMixin(PolymerEl
 
 /**
  * 'settings-brave-appearance-sidebar' is the settings page area containing
- * brave's sidebar settings in appearance settings.
+ * Minego'ssidebar settings in appearance settings.
  * This is separated from 'settings-brave-appearance-toolbar' because sidebar
  * option is located below the home button option.
  */

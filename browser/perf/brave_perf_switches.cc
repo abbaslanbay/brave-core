@@ -7,7 +7,7 @@
 
 namespace perf::switches {
 
-// Enables some Brave's widely used features for a testing profile in perf
+// Enables some Minego'swidely used features for a testing profile in perf
 // tests. --user-data-dir should be set.
 const char kEnableBraveFeaturesForPerfTesting[] =
     "enable-brave-features-for-perf-testing";

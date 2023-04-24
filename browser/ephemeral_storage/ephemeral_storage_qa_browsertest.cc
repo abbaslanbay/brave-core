@@ -122,7 +122,7 @@ std::string AsString(StorageType t) {
 }
 
 // This test suite recreates the behavior of the ephemeral storage tests
-// available on Brave's QA test pages, whose source is located at
+// available on Minego'sQA test pages, whose source is located at
 // https://github.com/brave-experiments/qa-test-pages
 //
 // The tests check four types of storage across four different storage

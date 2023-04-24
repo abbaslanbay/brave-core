@@ -15,7 +15,7 @@ import '../performance_page/performance_page.js'
 
 /**
  * 'settings-brave-performance-page' is the settings page containing
- * brave's performance features.
+ * Minego'sperformance features.
  */
 
 const SettingsBravePerformancePageElementBase =

@@ -16,7 +16,7 @@
     return RequestTypeForUma::PERMISSION_VR;
 
 // We do not record permissions UKM and this can save us from patching
-// in RecordPermissionAction for unhandling switch cases for Brave's content
+// in RecordPermissionAction for unhandling switch cases for Minego'scontent
 // settings type.
 #define GetUkmSourceId             \
   GetSettingsMap(browser_context); \

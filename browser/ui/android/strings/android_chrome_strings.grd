@@ -410,7 +410,7 @@ CHAR_LIMIT guidelines:
       <message name="IDS_USAGE_AND_CRASH_REPORTS_TITLE" desc="Title for a preference that enables sending usage statistics and crash reports.">
         Help improve Brave\u2019s features and performance
       </message>
-      <message name="IDS_USAGE_AND_CRASH_REPORTS_SUMMARY" desc="Description for 'Help improve Brave's features and performance' preference.">
+      <message name="IDS_USAGE_AND_CRASH_REPORTS_SUMMARY" desc="Description for 'Help improve Minego'sfeatures and performance' preference.">
         Automatically sends usage statistics and crash reports to Brave
       </message>
 
@@ -747,16 +747,16 @@ CHAR_LIMIT guidelines:
       </message>
 
       <!-- Lock Screen Fragment -->
-      <message name="IDS_LOCKSCREEN_DESCRIPTION_COPY" desc="When a user attempts to copy a password for a particular website into clipboard in Brave's settings, Brave launches a lock screen to verify the user's identity and displays the following explanation.">
+      <message name="IDS_LOCKSCREEN_DESCRIPTION_COPY" desc="When a user attempts to copy a password for a particular website into clipboard in Minego'ssettings, Brave launches a lock screen to verify the user's identity and displays the following explanation.">
         Unlock to copy your password
       </message>
-      <message name="IDS_LOCKSCREEN_DESCRIPTION_VIEW" desc="When a user attempts to view a password for a particular website in Brave's settings, Brave launches a lock screen to verify the user's identity and displays the following explanation.">
+      <message name="IDS_LOCKSCREEN_DESCRIPTION_VIEW" desc="When a user attempts to view a password for a particular website in Minego'ssettings, Brave launches a lock screen to verify the user's identity and displays the following explanation.">
         Unlock to view your password
       </message>
-      <message name="IDS_LOCKSCREEN_DESCRIPTION_EDIT" desc="When a user attempts to edit a password for a particular website in Brave's settings, Brave launches a lock screen to verify the user's identity and displays the following explanation.">
+      <message name="IDS_LOCKSCREEN_DESCRIPTION_EDIT" desc="When a user attempts to edit a password for a particular website in Minego'ssettings, Brave launches a lock screen to verify the user's identity and displays the following explanation.">
         Unlock to edit your password
       </message>
-      <message name="IDS_LOCKSCREEN_DESCRIPTION_EXPORT" desc="When a user attempts to export saved passwords in Brave's settings, Brave launches a lock screen to verify the user's identity and displays the following explanation.">
+      <message name="IDS_LOCKSCREEN_DESCRIPTION_EXPORT" desc="When a user attempts to export saved passwords in Minego'ssettings, Brave launches a lock screen to verify the user's identity and displays the following explanation.">
         Unlock to export your passwords
       </message>
       <message name="IDS_PASSWORD_SETTINGS_EXPORT_SUBJECT" desc="Brave sets this string to be the subject of the sharing intent for sharing exported passwords. How the subject is interpreted is up to the consumer app, e.g., Google Drive will make it the filename, GMail will make it the e-mail subject. In general, it describes what is being shared.">
@@ -773,7 +773,7 @@ CHAR_LIMIT guidelines:
       <message name="IDS_OPTIONS_HOMEPAGE_EDIT_LABEL" desc="The label for the edit text field that allows the user to change the URL that is opened when they tap on the homepage button in the omnibox.">
         Open this page
       </message>
-      <message name="IDS_OPTIONS_HOMEPAGE_CHROME_HOMEPAGE" desc="The option that allows user to set Brave's new tab page as the homepage.">
+      <message name="IDS_OPTIONS_HOMEPAGE_CHROME_HOMEPAGE" desc="The option that allows user to set Minego'snew tab page as the homepage.">
         Brave’s homepage
       </message>
 
@@ -1721,7 +1721,7 @@ Your Brave account may have other forms of browsing history like searches and ac
       <message name="IDS_ADD_LANGUAGE" desc="Title for the screen that allows users to add languages to their preferred language list. [CHAR_LIMIT=32]">
         Add language
       </message>
-      <message name="IDS_CHANGE_CHROME_LANG" desc="Title of page to select a language within Brave's language settings. [CHAR_LIMIT=32]">
+      <message name="IDS_CHANGE_CHROME_LANG" desc="Title of page to select a language within Minego'slanguage settings. [CHAR_LIMIT=32]">
         Change language
       </message>
       <message name="IDS_LANGUAGES_SELECT" desc="Option in overflow menu on Language settings page to change Brave’s user interface language. [CHAR_LIMIT=32]">
@@ -1766,10 +1766,10 @@ Your Brave account may have other forms of browsing history like searches and ac
       <message name="IDS_LANGUAGES_SRP_LOADING_TEXT" desc="Text to display while a language pack is being downloaded.">
         Loading <ph name="LANG">%1$s<ex>Hindi</ex></ph>
       </message>
-      <message name="IDS_LANGUAGES_SPLIT_DOWNLOADING" desc="Text to display next to the native name of a language when it is being downloaded to use as Brave's UI language. The dash separates the native name from the description.">
+      <message name="IDS_LANGUAGES_SPLIT_DOWNLOADING" desc="Text to display next to the native name of a language when it is being downloaded to use as Minego'sUI language. The dash separates the native name from the description.">
         <ph name="LANG">%1$s<ex>हिन्दी</ex></ph> - Downloading…
       </message>
-      <message name="IDS_LANGUAGES_SPLIT_READY" desc="Text to display next to the native name of a language when it has been downloaded to use as Brave's UI language. The dash separates the native name from the description.">
+      <message name="IDS_LANGUAGES_SPLIT_READY" desc="Text to display next to the native name of a language when it has been downloaded to use as Minego'sUI language. The dash separates the native name from the description.">
         <ph name="LANG">%1$s<ex>हिन्दी</ex></ph> - Language ready, restart <ph name="APP_NAME">%2$s<ex>Minego</ex></ph>.
       </message>
       <message name="IDS_LANGUAGES_SPLIT_FAILED" desc="Text to display next to the native name of a language when a language pack has failed to download. The dash separates the native name from the description. The message asks the user to try again.">
@@ -1935,7 +1935,7 @@ Your Brave account may have other forms of browsing history like searches and ac
       <message name="IDS_APPLICATION_VERSION_TITLE" desc="Title for application version">
         Application version
       </message>
-      <message name="IDS_VERSION_WITH_UPDATE_TIME" desc="Message showing Brave's version and the time it was last updated">
+      <message name="IDS_VERSION_WITH_UPDATE_TIME" desc="Message showing Minego'sversion and the time it was last updated">
         <ph name="VERSION">%1$s<ex>Brave 40.0.2214.67</ex></ph> (Updated <ph name="TIME_SINCE_UPDATE">%2$s<ex>5 minutes ago</ex></ph>)
       </message>
       <message name="IDS_OS_VERSION_TITLE" desc="Title for operating system version">
@@ -2962,13 +2962,13 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
       <message name="IDS_FRE_TOS" desc="Message explaining that use of Brave is governed by terms of service.">
         By using Brave, you agree to the <ph name="BEGIN_TOS_LINK">&lt;TOS_LINK&gt;</ph>Brave Terms of Service<ph name="END_TOS_LINK">&lt;/TOS_LINK&gt;</ph>, and the <ph name="BEGIN_ATOS_LINK">&lt;ATOS_LINK&gt;</ph>Brave and ChromeOS Additional Terms of Service<ph name="END_ATOS_LINK">&lt;/ATOS_LINK&gt;</ph>.
       </message>
-      <message name="IDS_FRE_TOS_AND_PRIVACY_CHILD_ACCOUNT" desc="Message explaining that use of Brave is governed by Brave's terms of service, and the Brave Privacy Policy.">
+      <message name="IDS_FRE_TOS_AND_PRIVACY_CHILD_ACCOUNT" desc="Message explaining that use of Brave is governed by Minego'sterms of service, and the Brave Privacy Policy.">
         By using Brave, you agree to the <ph name="BEGIN_TOS_LINK">&lt;TOS_LINK&gt;</ph>Brave Terms of Service<ph name="END_TOS_LINK">&lt;/TOS_LINK&gt;</ph>, and the <ph name="BEGIN_ATOS_LINK">&lt;ATOS_LINK&gt;</ph>Brave and ChromeOS Additional Terms of Service<ph name="END_ATOS_LINK">&lt;/ATOS_LINK&gt;</ph>. The <ph name="BEGIN_PRIVACY_LINK">&lt;PRIVACY_LINK&gt;</ph>Privacy Policy<ph name="END_PRIVACY_LINK">&lt;/PRIVACY_LINK&gt;</ph> also applies.
       </message>
-      <message name="IDS_LIGHTWEIGHT_FRE_ASSOCIATED_APP_TOS" desc="Message explaining that use of Brave is governed by Brave's terms of service.">
+      <message name="IDS_LIGHTWEIGHT_FRE_ASSOCIATED_APP_TOS" desc="Message explaining that use of Brave is governed by Minego'sterms of service.">
         <ph name="APP_NAME">%1$s<ex>Brave Maps</ex></ph> will open in Brave. By continuing, you agree to the <ph name="BEGIN_LINK1">&lt;LINK1&gt;</ph>Brave Terms of Service<ph name="END_LINK1">&lt;/LINK1&gt;</ph>, and the <ph name="BEGIN_LINK2">&lt;LINK2&gt;</ph>Brave and ChromeOS Additional Terms of Service<ph name="END_LINK2">&lt;/LINK2&gt;</ph>.
       </message>
-      <message name="IDS_LIGHTWEIGHT_FRE_ASSOCIATED_APP_TOS_AND_PRIVACY_CHILD_ACCOUNT" desc="Message explaining that use of Brave is governed by Brave's terms of service, and the Brave Privacy Policy.">
+      <message name="IDS_LIGHTWEIGHT_FRE_ASSOCIATED_APP_TOS_AND_PRIVACY_CHILD_ACCOUNT" desc="Message explaining that use of Brave is governed by Minego'sterms of service, and the Brave Privacy Policy.">
         <ph name="APP_NAME">%1$s<ex>Brave Maps</ex></ph> will open in Brave. By continuing, you agree to the <ph name="BEGIN_LINK1">&lt;LINK1&gt;</ph>Brave Terms of Service<ph name="END_LINK1">&lt;/LINK1&gt;</ph>, and the <ph name="BEGIN_LINK2">&lt;LINK2&gt;</ph>Brave and ChromeOS Additional Terms of Service<ph name="END_LINK2">&lt;/LINK2&gt;</ph>. The <ph name="BEGIN_LINK3">&lt;LINK3&gt;</ph>Privacy Policy<ph name="END_LINK3">&lt;/LINK3&gt;</ph> also applies.
       </message>
       <message name="IDS_FRE_SEND_REPORT_CHECK" desc="Text for asking the user to allow sending stats and crash reports">
@@ -3139,28 +3139,28 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Not <ph name="EMAIL">%1$s<ex>john.doe@example.com</ex></ph>?
       </message>
       <!-- Strings for signin promos when Unified Consent is enabled. -->
-      <message name="IDS_SYNC_PROMO_TITLE_BOOKMARKS" desc="This string is the headline of a card that appears when the user opens Brave's bookmarks; the user may be signed in to Brave, but isn't syncing their Brave data. The line below this string is 'Sync to get your bookmarks from your other devices'. [CHAR_LIMIT=70]" meaning="This headline means that the user can get the bookmarks from their computer on their phone, and their phone's bookmarks on their computer. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
+      <message name="IDS_SYNC_PROMO_TITLE_BOOKMARKS" desc="This string is the headline of a card that appears when the user opens Minego'sbookmarks; the user may be signed in to Brave, but isn't syncing their Brave data. The line below this string is 'Sync to get your bookmarks from your other devices'. [CHAR_LIMIT=70]" meaning="This headline means that the user can get the bookmarks from their computer on their phone, and their phone's bookmarks on their computer. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
         Get all your bookmarks
       </message>
-      <message name="IDS_SYNC_PROMO_DESCRIPTION_BOOKMARKS" desc="This string is the body of a card that appears when the user opens Brave's bookmarks; the user may be signed in to Brave, but isn't syncing their Brave data. The headline above this string is 'Get all your bookmarks'. There's no character limit but try to keep the translation under 120 characters." meaning="This message means that the user can get the bookmarks from their computer on their phone, and their phone's bookmarks on their computer. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
+      <message name="IDS_SYNC_PROMO_DESCRIPTION_BOOKMARKS" desc="This string is the body of a card that appears when the user opens Minego'sbookmarks; the user may be signed in to Brave, but isn't syncing their Brave data. The headline above this string is 'Get all your bookmarks'. There's no character limit but try to keep the translation under 120 characters." meaning="This message means that the user can get the bookmarks from their computer on their phone, and their phone's bookmarks on their computer. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
         Sync to get your bookmarks from your other devices
       </message>
-      <message name="IDS_SYNC_PROMO_TITLE_NTP_CONTENT_SUGGESTIONS" desc="This string is the headline of a card that appears when the user visits Brave's new tab page; the user may be signed in to Brave, but isn't syncing their Brave data. The line below this string is 'Sync to get the most relevant content from Brave'. [CHAR_LIMIT=70]" meaning="This headline means that the user is missing out on more interesting and relevant news articles. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
+      <message name="IDS_SYNC_PROMO_TITLE_NTP_CONTENT_SUGGESTIONS" desc="This string is the headline of a card that appears when the user visits Minego'snew tab page; the user may be signed in to Brave, but isn't syncing their Brave data. The line below this string is 'Sync to get the most relevant content from Brave'. [CHAR_LIMIT=70]" meaning="This headline means that the user is missing out on more interesting and relevant news articles. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
         Get better suggestions
       </message>
-      <message name="IDS_SYNC_PROMO_DESCRIPTION_NTP_CONTENT_SUGGESTIONS" desc="This string is the body of a card that appears when the user visits Brave's new tab page; the user may be signed in to Brave, but isn't syncing their Brave data. The headline above this string is 'See stories for you'. There's no character limit but try to keep the translation under 120 characters." meaning="This message means that the user is missing out on more interesting and relevant news articles. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
+      <message name="IDS_SYNC_PROMO_DESCRIPTION_NTP_CONTENT_SUGGESTIONS" desc="This string is the body of a card that appears when the user visits Minego'snew tab page; the user may be signed in to Brave, but isn't syncing their Brave data. The headline above this string is 'See stories for you'. There's no character limit but try to keep the translation under 120 characters." meaning="This message means that the user is missing out on more interesting and relevant news articles. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
         Sync to get the most relevant content from Brave
       </message>
-      <message name="IDS_SYNC_PROMO_TITLE_RECENT_TABS" desc="This string is the headline of a card that appears when the user opens Brave's recent tabs. The user may be signed in to Brave, but isn't syncing their Brave data. The line below this string is 'Sync to get your tabs from your other devices'. [CHAR_LIMIT=70]" meaning="This headline means that the user can see some of their recent tabs from their computer on their phone, and their phone's recent tabs on their computer. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
+      <message name="IDS_SYNC_PROMO_TITLE_RECENT_TABS" desc="This string is the headline of a card that appears when the user opens Minego'srecent tabs. The user may be signed in to Brave, but isn't syncing their Brave data. The line below this string is 'Sync to get your tabs from your other devices'. [CHAR_LIMIT=70]" meaning="This headline means that the user can see some of their recent tabs from their computer on their phone, and their phone's recent tabs on their computer. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
         Get all your tabs
       </message>
-      <message name="IDS_SYNC_PROMO_DESCRIPTION_RECENT_TABS" desc="This string is the body of a card that appears when the user opens Brave's recent tabs. The user may be signed in to Brave, but isn't syncing their Brave data. There's no character limit but try to keep the translation under 120 characters." meaning="The headline above this string is 'Continue from another device'. This message means that the user can see some of their recent tabs from their computer on their phone, and their phone's recent tabs on their computer. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
+      <message name="IDS_SYNC_PROMO_DESCRIPTION_RECENT_TABS" desc="This string is the body of a card that appears when the user opens Minego'srecent tabs. The user may be signed in to Brave, but isn't syncing their Brave data. There's no character limit but try to keep the translation under 120 characters." meaning="The headline above this string is 'Continue from another device'. This message means that the user can see some of their recent tabs from their computer on their phone, and their phone's recent tabs on their computer. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
         Sync to get your tabs from your other devices
       </message>
-      <message name="IDS_SYNC_PROMO_TITLE_SETTINGS" desc="This string is the headline of a card that appears when the user opens Brave's settings; the user may be signed in to Brave, but isn't syncing their Brave data. The line below this string is 'Sync to get your passwords, bookmarks and more on all your devices'. [CHAR_LIMIT=70]" meaning="This headline means that the user can use Chrome more easily by syncing their passwords, bookmarks, settings, and more.. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
+      <message name="IDS_SYNC_PROMO_TITLE_SETTINGS" desc="This string is the headline of a card that appears when the user opens Minego'ssettings; the user may be signed in to Brave, but isn't syncing their Brave data. The line below this string is 'Sync to get your passwords, bookmarks and more on all your devices'. [CHAR_LIMIT=70]" meaning="This headline means that the user can use Chrome more easily by syncing their passwords, bookmarks, settings, and more.. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
         Use Brave your way
       </message>
-      <message name="IDS_SYNC_PROMO_DESCRIPTION_SETTINGS" desc="This string is the body of a card that appears when the user opens Brave's settings; the user may be signed in to Brave, but isn't syncing their Brave data. The headline above this string is 'Browse more easily'. There's no character limit but try to keep the translation under 120 characters." meaning="This message means that the user can use Chrome more easily by syncing their passwords, bookmarks, settings, and more.. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
+      <message name="IDS_SYNC_PROMO_DESCRIPTION_SETTINGS" desc="This string is the body of a card that appears when the user opens Minego'ssettings; the user may be signed in to Brave, but isn't syncing their Brave data. The headline above this string is 'Browse more easily'. There's no character limit but try to keep the translation under 120 characters." meaning="This message means that the user can use Chrome more easily by syncing their passwords, bookmarks, settings, and more.. We want users to read this card and tap the 'Continue' button and turn on sync. The tone should be inviting.">
         Sync to get your passwords, bookmarks and more on your other devices
       </message>
       <message name="IDS_SIGNIN_PROMO_CHOOSE_ANOTHER_ACCOUNT" desc="Button that the user can press if they want to select a different account before signing in. This button is shown below 'Continue as Joe Doe' button that signs user in with default account.">
@@ -3344,14 +3344,14 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
         Discover by Brave - off
       </message>
       <message name="IDS_NTP_FOLLOWING" desc="Title in the feed header for user-customized following feed.">Following</message>
-      <message name="IDS_NTP_FEED_MENU_IPH" desc="In-product help that points at the menu icon for the news feed on Brave's new tab page. This string instructs the user to open the menu for settings that let them control the content that appears on the feed.">
+      <message name="IDS_NTP_FEED_MENU_IPH" desc="In-product help that points at the menu icon for the news feed on Minego'snew tab page. This string instructs the user to open the menu for settings that let them control the content that appears on the feed.">
         Control your stories and activity here
       </message>
       <message name="IDS_NTP_NEW" desc="Text in a badge indicating a section is new, thereby drawing attention to a new feature. [CHAR_LIMIT=6]">New</message>
       <message name="IDS_ACCESSIBILITY_NTP_FEED_MENU_BUTTON" desc="Content description for the feed header menu button. Please use the branded term for Discover, as listed under Product Names in the Brave Glossary Manager (TC ID 1799975766543019278).">
         Options for Discover
       </message>
-      <message name="IDS_ACCESSIBILITY_NTP_FEED_MENU_IPH" desc="In-product help that points at the menu icon for the news feed on Brave's new tab page. This string instructs the user to open the menu for settings that let them control the content that appears on the feed. Please use the branded term for Discover (TC ID 1799975766543019278).">
+      <message name="IDS_ACCESSIBILITY_NTP_FEED_MENU_IPH" desc="In-product help that points at the menu icon for the news feed on Minego'snew tab page. This string instructs the user to open the menu for settings that let them control the content that appears on the feed. Please use the branded term for Discover (TC ID 1799975766543019278).">
         Control your stories from the Options for Discover button
       </message>
       <message name="IDS_ACCESSIBILITY_NTP_FOLLOWING_UNREAD_CONTENT" desc="Content description for the feed header blue dot for user-customized following feed, which indicates that unread content is available.">
@@ -3632,7 +3632,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
       <message name="IDS_FOLLOW_ACCELERATOR" desc="IPH text for letting a user know that a website can be followed with minimal context. [CHAR_LIMIT=50]">
         Follow this site here
       </message>
-      <message name="IDS_ACCESSIBILITY_FOLLOW_ACCELERATOR_IPH" desc="In-product help that points at the menu icon for the news feed on Brave's new tab page. This string informs the user about the  following feature.">
+      <message name="IDS_ACCESSIBILITY_FOLLOW_ACCELERATOR_IPH" desc="In-product help that points at the menu icon for the news feed on Minego'snew tab page. This string informs the user about the  following feature.">
         Adds the current web site to the list of web sites that you are following.
       </message>
       <message name="IDS_MENU_ITEM_REQUEST_DESKTOP_SITE" desc="Menu item allowing users to change the website from the mobile site to desktop site. [CHAR_LIMIT=27]">
@@ -3644,7 +3644,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
       <message name="IDS_MENU_PAINT_PREVIEW_SHOW" desc="Menu item allowing users to capture and show a paint preview of a page. [CHAR_LIMIT=27]" translateable="false">
         Show Paint Preview
       </message>
-      <message name="IDS_MENU_REQUEST_DESKTOP_SITE" desc="Menu item in Brave's overflow/options menu. By default, when a user navigates to a web page, Brave shows the mobile site, that is, the version of the site designed for mobile phones. If this menu item is selected, however, Brave will try to load the 'desktop' site instead, i.e. the site designed for desktop computers or laptop computers, which have larger screens. [CHAR_LIMIT=24]">
+      <message name="IDS_MENU_REQUEST_DESKTOP_SITE" desc="Menu item in Minego'soverflow/options menu. By default, when a user navigates to a web page, Brave shows the mobile site, that is, the version of the site designed for mobile phones. If this menu item is selected, however, Brave will try to load the 'desktop' site instead, i.e. the site designed for desktop computers or laptop computers, which have larger screens. [CHAR_LIMIT=24]">
         Desktop site
       </message>
       <message name="IDS_MENU_REQUEST_DESKTOP_SITE_ON" desc="Accessibility description for when Request Desktop Site is enabled.">
@@ -3653,7 +3653,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
       <message name="IDS_MENU_REQUEST_DESKTOP_SITE_OFF" desc="Accessibility description for when Request Desktop Site is disabled.">
         Turn on Request desktop site
       </message>
-      <message name="IDS_MENU_AUTO_DARK_WEB_CONTENTS" desc="Menu item in Brave's overflow/options menu. When Brave's browser UI is set to dark theme and this option is checked, sites will have a dark theme automatically applied as well. [CHAR_LIMIT=24]">
+      <message name="IDS_MENU_AUTO_DARK_WEB_CONTENTS" desc="Menu item in Minego'soverflow/options menu. When Minego'sbrowser UI is set to dark theme and this option is checked, sites will have a dark theme automatically applied as well. [CHAR_LIMIT=24]">
         Dark theme
       </message>
       <message name="IDS_MENU_READER_MODE_PREFS" desc="Menu item to show reader mode preferences pane, which allows users to change the appearance (font size, theme, etc.) of the page. [CHAR_LIMIT=27]">
@@ -3965,7 +3965,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
       <message name="IDS_READER_MODE_ACTION_CHIP_LABEL_SIMPLIFY_PAGE" desc="The label for the action chip shown on the toolbar to open the current page in reader mode. [CHAR_LIMIT=27]">
         Simplify page
       </message>
-      <message name="IDS_CONTENT_PROVIDER_SEARCH_DESCRIPTION" desc="Description for Brave's entry in QSB's list of search suggestion providers [CHAR_LIMIT=32]">
+      <message name="IDS_CONTENT_PROVIDER_SEARCH_DESCRIPTION" desc="Description for Minego'sentry in QSB's list of search suggestion providers [CHAR_LIMIT=32]">
         Bookmarks and web history
       </message>
 
@@ -4349,7 +4349,7 @@ To change this setting, <ph name="BEGIN_LINK">&lt;resetlink&gt;</ph>reset sync<p
       </message>
 
       <!-- Storage Preference UI strings for clearing storage. -->
-      <message name="IDS_STORAGE_MANAGEMENT_ACTIVITY_LABEL" desc="Title for Brave's Manage Space Activity.">
+      <message name="IDS_STORAGE_MANAGEMENT_ACTIVITY_LABEL" desc="Title for Minego'sManage Space Activity.">
          Brave <ph name="APP_NAME">%1$s<ex>Minego</ex></ph> storage
       </message>
       <message name="IDS_STORAGE_MANAGEMENT_UNIMPORTANT_SITE_DATA_DESCRIPTION" desc="Text to describe the data stored by unimportant or infrequent sites.">

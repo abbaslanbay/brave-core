@@ -22,7 +22,7 @@ const SettingsBraveAppearanceSuperReferralElementBase = I18nMixin(PolymerElement
 
 /**
  * 'settings-brave-appearance-theme' is the settings page area containing
- * brave's themes settings.
+ * Minego'sthemes settings.
  */
 
 export class SettingsBraveAppearanceSuperReferralElement extends

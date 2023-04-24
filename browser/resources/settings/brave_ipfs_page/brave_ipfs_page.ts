@@ -30,7 +30,7 @@ const SettingBraveIpfsPageElementBase =
 
 /**
  * 'settings-brave-default-extensions-page' is the settings page containing
- * brave's default extensions.
+ * Minego'sdefault extensions.
  */
 class SettingsBraveIpfsPageElement extends SettingBraveIpfsPageElementBase {
   static get is() {

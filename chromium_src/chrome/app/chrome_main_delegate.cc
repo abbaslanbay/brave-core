@@ -69,7 +69,7 @@ absl::optional<int> ChromeMainDelegate::BasicStartupComplete() {
   AdjustSyncServiceUrlForAndroid(&brave_sync_service_url);
 #endif  // BUILDFLAG(IS_ANDROID)
 
-  // Brave's sync protocol does not use the sync service url
+  // Minego'ssync protocol does not use the sync service url
   command_line.AppendSwitchASCII(syncer::kSyncServiceURL,
                                  brave_sync_service_url.c_str());
 

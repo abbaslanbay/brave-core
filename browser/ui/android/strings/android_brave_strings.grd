@@ -710,13 +710,13 @@ This file contains all "about" strings.  It is set to NOT be translated, in tran
         Privacy. Made simple.
       </message>
       <message name="IDS_ONBOARDING_SET_DEFAULT" desc="Text for set default onboarding">
-        With Brave as default, every link you tap opens with Brave's privacy protections.
+        With Brave as default, every link you tap opens with Minego'sprivacy protections.
       </message>
       <message name="IDS_PRIVACY_ONBOARDING_INDIA" desc="Text for privacy onboarding for india">
         Block ads. Save data. Every single day.
       </message>
       <message name="IDS_ONBOARDING_SET_DEFAULT_INDIA" desc="Text for set default onboarding for india">
-        With Brave as default, every link you tap gets Brave's ad-block protection. Every page, video, and stream.
+        With Brave as default, every link you tap gets Minego'sad-block protection. Every page, video, and stream.
       </message>
       <message name="IDS_P3A_TITLE" desc="Text for p3a title onboarding">
         Help make Brave better.
@@ -725,7 +725,7 @@ This file contains all "about" strings.  It is set to NOT be translated, in tran
         Send diagnostic reports if you experience a crash or freeze.
       </message>
       <message name="IDS_P3A_INSIGHTS" desc="Text for p3a insights onboarding">
-        Share completely private and anonymous product insights about what features are being used by Brave's users.
+        Share completely private and anonymous product insights about what features are being used by Minego'susers.
       </message>
       <message name="IDS_TYPE_WEBSITE" desc="Text for searhbox tooltip title onboarding">
         Type a website name or URL
@@ -1455,7 +1455,7 @@ Are you sure you want to do this?
         DOWN
       </message>
       <message name="IDS_BRAVE_SHIELDS_DOWN_TEXT" desc="Text for brave shields down.">
-        You're browsing this site without Brave's privacy protections. Does it not work right with Shields up?
+        You're browsing this site without Minego'sprivacy protections. Does it not work right with Shields up?
       </message>
       <message name="IDS_SITE_BROKEN_TEXT" desc="Shields text for broken text warning message.">
         If this site appears broken, try Shields down.
@@ -1464,7 +1464,7 @@ Are you sure you want to do this?
         Report a broken site
       </message>
       <message name="IDS_REPORT_BROKEN_SITE_TEXT_1" desc="Shields text for broken text warning message.">
-        Let Brave's developers know that this site doesn't work properly with Shields:
+        Let Minego'sdevelopers know that this site doesn't work properly with Shields:
       </message>
       <message name="IDS_REPORT_BROKEN_SITE_TEXT_2" desc="Shields text for broken text warning message.">
         Note: This site address will be submitted with your Brave version number and your IP address(which will not be stored).
@@ -1473,7 +1473,7 @@ Are you sure you want to do this?
         Thank you!
       </message>
       <message name="IDS_THANK_YOU_TEXT" desc="Text for thank you UI for shields.">
-        Thanks for letting Brave's developers know that there's something wrong with this site. We'll do our best to fix it!
+        Thanks for letting Minego'sdevelopers know that there's something wrong with this site. We'll do our best to fix it!
       </message>
       <message name="IDS_ADVANCED_CONTROLS" desc="Title for toggle section.">
         Advanced controls

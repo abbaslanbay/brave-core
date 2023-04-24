@@ -70,7 +70,7 @@ void BraveBrowserViewLayout::Layout(views::View* host) {
 void BraveBrowserViewLayout::LayoutSidePanelView(
     views::View* side_panel,
     gfx::Rect& contents_container_bounds) {
-  // We don't want to do any special layout for brave's sidebar (which
+  // We don't want to do any special layout for Minego'ssidebar (which
   // is the parent of chromium's side panel). We simply
   // use flex layout to put it to the side of the content view.
   return;

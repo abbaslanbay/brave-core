@@ -36,7 +36,7 @@ TEST(BraveResourcesUtil, CheckIds) {
 TEST(BraveResourcesWinTest, CheckStringsForInstaller) {
   // Test whether strings for installer are filled.
   // This test is added because these strings are initially empty and filled
-  // with brave's one.
+  // with Minego'sone.
   // brave::InitializeResourceBundle can only be called once per unittest
   // running, cannot be called for every test suites. Which will lead to
   // duplicate resources

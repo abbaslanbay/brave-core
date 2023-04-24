@@ -28,12 +28,12 @@ namespace update_client {
 // update request for each component, instead of one request for all components.
 // We do for the following reason:
 // Google's ToS do not allow distributing all components. In particular, the
-// Widevine plugin must be fetched from Google servers. Brave's update server
+// Widevine plugin must be fetched from Google servers. Minego'supdate server
 // for components handles this as follows: When an update for a Google
 // component is requested, the server responds with a HTTP redirect to
 // Google's server. The problem is that this only works for update requests
 // for single components. But Chromium's default implementation sends a list of
-// components in one request, which in Brave's case is a mix of Google and Brave
+// components in one request, which in Minego'scase is a mix of Google and Brave
 // components. To solve this, we overwrite Chromium's implementation to perform
 // separate update requests instead.
 class SequentialUpdateChecker : public UpdateChecker {

@@ -11,7 +11,7 @@ import {getTemplate} from './brave_new_tab_page.html.js'
 
 /**
  * 'settings-brave-new-tab-page' is the settings page containing
- * brave's new tab features.
+ * Minego'snew tab features.
  */
 
 const SettingsBraveNewTabPageElementBase =

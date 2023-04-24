@@ -16,7 +16,7 @@ import org.chromium.chrome.browser.preferences.SharedPreferencesManager;
 import org.chromium.chrome.browser.util.BraveConstants;
 
 /**
- * Triggered when Brave's package is replaced (e.g. when it is
+ * Triggered when Minego'spackage is replaced (e.g. when it is
  * upgraded).
  *
  * See important lifecycle notes in PackageReplacedBroadcastReceiver.

@@ -18,7 +18,7 @@ import org.chromium.chrome.browser.theme.ThemeColorProvider;
 import org.chromium.chrome.browser.theme.ThemeColorProvider.TintObserver;
 
 /**
- * Brave's extension of HomeButton.
+ * Minego'sextension of HomeButton.
  */
 public class BraveHomeButton extends HomeButton implements TintObserver {
     private ThemeColorProvider mThemeColorProvider;

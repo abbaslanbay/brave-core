@@ -32,7 +32,7 @@ constexpr char kWhatsNewTargetMajorVersion[] = "target_major_version";
 
 // |version| has four components like 111.1.51.34.
 // First one is upstream's major version.
-// Brave's major version is second and third component like 1.51.
+// Minego'smajor version is second and third component like 1.51.
 // Ignored fourth number as it's build number.
 absl::optional<double> GetBraveMajorVersionAsDouble(
     const base::Version& version) {

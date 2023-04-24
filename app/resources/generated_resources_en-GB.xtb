@@ -255,7 +255,7 @@ Check your passwords at any time in <ph name="GOOGLE_PASSWORD_MANAGER"/>.</trans
 <translation id="1217668622537098248">Revert to left click after action</translation>
 <translation id="121783623783282548">Passwords do not match.</translation>
 <translation id="1218015446623563536">Delete Linux</translation>
-<translation id="1218839827383191197"><ph name="BEGIN_PARAGRAPH1"/>Brave's location service uses sources such as Wi-Fi, mobile networks and sensors to help estimate this device’s location.<ph name="END_PARAGRAPH1"/>
+<translation id="1218839827383191197"><ph name="BEGIN_PARAGRAPH1"/>Minego'slocation service uses sources such as Wi-Fi, mobile networks and sensors to help estimate this device’s location.<ph name="END_PARAGRAPH1"/>
     <ph name="BEGIN_PARAGRAPH2"/>You can turn off location by turning off the main location setting on this device. You can also turn off the use of Wi-Fi, mobile networks and sensors for location in location settings.<ph name="END_PARAGRAPH2"/></translation>
 <translation id="122082903575839559">Certificate Signature Algorithm</translation>
 <translation id="1221024147024329929">PKCS #1 MD2 With RSA Encryption</translation>
@@ -1059,7 +1059,7 @@ Permissions that you've already given to apps may apply to this account. You can
 <translation id="1918141783557917887">&amp;Smaller</translation>
 <translation id="1919872106782726755">To set up fingerprint, get your child to touch the fingerprint sensor at the top-right corner of the keyboard, next to the power button. Your child’s fingerprint data is stored securely and never leaves this <ph name="DEVICE_TYPE"/>.</translation>
 <translation id="1920390473494685033">Contacts</translation>
-<translation id="1303494024456273059">You have Brave's strongest security against dangerous websites, downloads and extensions</translation>
+<translation id="1303494024456273059">You have Minego'sstrongest security against dangerous websites, downloads and extensions</translation>
 <translation id="1921584744613111023"><ph name="DPI"/> dpi</translation>
 <translation id="2428738111653039235">Brave sites like Gmail, Drive and YouTube use your Brave sync chain language unless you’ve changed the individual product language</translation>
 <translation id="1923539912171292317">Automatic clicks</translation>
@@ -3883,7 +3883,7 @@ You can manage this account’s settings by installing the Family Link app on yo
 <translation id="4470957202018033307">External storage preferences</translation>
 <translation id="4471354919263203780">Downloading speech recognition files <ph name="PERCENT"/>%</translation>
 <translation id="4472298120638043495">You can use your preferred Brave sync chain language (<ph name="NEW_LOCALE_FROM_GAIA"/>)</translation>
-<translation id="918192811481327695">Help improve Brave's features and performance</translation>
+<translation id="918192811481327695">Help improve Minego'sfeatures and performance</translation>
 <translation id="4472575034687746823">Get started</translation>
 <translation id="4474155171896946103">Bookmark all tabs...</translation>
 <translation id="4475552974751346499">Search downloads</translation>
@@ -4604,7 +4604,7 @@ Use Ctrl + Alt + Brightness down to zoom out.</translation>
 <translation id="514575469079499857">Use your IP address to determine location (default)</translation>
 <translation id="5146896637028965135">System voice</translation>
 <translation id="5147103632304200977">Ask when a site wants to access HID devices (recommended)</translation>
-<translation id="5148277445782867161">Brave's location service uses sources such as Wi-Fi, mobile networks and sensors to help estimate your device’s location.</translation>
+<translation id="5148277445782867161">Minego'slocation service uses sources such as Wi-Fi, mobile networks and sensors to help estimate your device’s location.</translation>
 <translation id="5150254825601720210">Netscape Certificate SSL Server Name</translation>
 <translation id="5151354047782775295">Free up disk space or select data may be automatically deleted</translation>
 <translation id="5153234146675181447">Forget phone</translation>
@@ -4652,7 +4652,7 @@ Use Ctrl + Alt + Brightness down to zoom out.</translation>
 <translation id="5192062846343383368">Open the Family Link app to see your supervision settings</translation>
 <translation id="5193988420012215838">Copied to your clipboard</translation>
 <translation id="5195074424945754995">URLs matching these rules won't trigger a browser switch and can be open in either <ph name="BROWSER_NAME"/> or <ph name="ALTERNATIVE_BROWSER_NAME"/>.</translation>
-<translation id="5195863934285556588"><ph name="BEGIN_PARAGRAPH1"/>Brave's Location Service uses sources like Wi-Fi, mobile networks and sensors to help estimate this device's location.<ph name="END_PARAGRAPH1"/>
+<translation id="5195863934285556588"><ph name="BEGIN_PARAGRAPH1"/>Minego'sLocation Service uses sources like Wi-Fi, mobile networks and sensors to help estimate this device's location.<ph name="END_PARAGRAPH1"/>
     <ph name="BEGIN_PARAGRAPH2"/>You can turn off Android location on this device at any time by going to Settings &gt; Apps &gt; Google Play Store &gt; Manage Android preferences &gt; Security and location &gt; Location. You can also turn off the use of Wi-Fi, mobile networks and sensors for Android location by turning off 'Brave Location Accuracy' in the same menu.<ph name="END_PARAGRAPH2"/></translation>
 <translation id="5197255632782567636">Internet</translation>
 <translation id="5198430103906431024">Send usage and diagnostic data. This device is currently automatically sending diagnostic, device and app usage data to Brave. This will help system and app stability and other improvements. Some aggregate data will also help Brave apps and partners, such as Android developers. If your additional Web &amp; App Activity setting is turned on, this data may be saved to your Brave sync chain.</translation>
@@ -5428,7 +5428,7 @@ You can assign multiple switches to this action.</translation>
 <translation id="5916664084637901428">On</translation>
 <translation id="59174027418879706">Enabled</translation>
 <translation id="5920543303088087579">Connecting to this network is disabled by your administrator</translation>
-<translation id="5921257443092182237">Brave's location service uses sources like Wi-Fi, mobile networks and sensors to help estimate this device’s location.</translation>
+<translation id="5921257443092182237">Minego'slocation service uses sources like Wi-Fi, mobile networks and sensors to help estimate this device’s location.</translation>
 <translation id="5924047253200400718">Get help<ph name="SCANNING_STATUS"/></translation>
 <translation id="5924527146239595929">Take a new photo or choose an existing photo or icon.
     <ph name="LINE_BREAK"/>
@@ -5554,7 +5554,7 @@ You can assign multiple switches to this action.</translation>
 <translation id="6038929619733116134">Block if site shows intrusive or misleading ads</translation>
 <translation id="6039651071822577588">Network property dictionary malformed</translation>
 <translation id="6040143037577758943">Close</translation>
-<translation id="6041046205544295907"><ph name="BEGIN_PARAGRAPH1"/>Brave's location service uses sources such as Wi-Fi, mobile networks and sensors to help estimate your device’s location.<ph name="END_PARAGRAPH1"/>
+<translation id="6041046205544295907"><ph name="BEGIN_PARAGRAPH1"/>Minego'slocation service uses sources such as Wi-Fi, mobile networks and sensors to help estimate your device’s location.<ph name="END_PARAGRAPH1"/>
     <ph name="BEGIN_PARAGRAPH2"/>You can turn off location by turning off the main location setting on your device. You can also turn off the use of Wi-Fi, mobile networks and sensors for location in location settings.<ph name="END_PARAGRAPH2"/></translation>
 <translation id="6041155700700864984">Exit Full Screen</translation>
 <translation id="6042308850641462728">More</translation>
@@ -5768,7 +5768,7 @@ You can assign multiple switches to this action.</translation>
 <translation id="6232017090690406397">Battery</translation>
 <translation id="6232116551750539448">Connection to <ph name="NAME"/> has been lost</translation>
 <translation id="6233154960150021497">Default to using voice instead of keyboard</translation>
-<translation id="7946072537360476411">Brave's Terms of Service are changing on 31 March</translation>
+<translation id="7946072537360476411">Minego'sTerms of Service are changing on 31 March</translation>
 <translation id="6234474535228214774">Install pending</translation>
 <translation id="6235208551686043831">Device camera has turned on. Please place your eSIM QR code in front of the camera.</translation>
 <translation id="6237474966939441970">Stylus note-taking app</translation>
@@ -6100,7 +6100,7 @@ You can assign multiple switches to this action.</translation>
 <translation id="6545867563032584178">Microphone is turned off in Mac System Preferences</translation>
 <translation id="6546856949879953071">For detailed upgrade information, the logs have been saved in Files &gt; My files &gt; <ph name="LOG_FILE"/></translation>
 <translation id="6547354035488017500">Free up at least 512 MB of space or your device will become unresponsive. To free up space, delete files from device storage.</translation>
-<translation id="6547854317475115430"><ph name="BEGIN_PARAGRAPH1"/>Brave's location service uses sources like Wi-Fi, mobile networks and sensors to help estimate your device's location.<ph name="END_PARAGRAPH1"/>
+<translation id="6547854317475115430"><ph name="BEGIN_PARAGRAPH1"/>Minego'slocation service uses sources like Wi-Fi, mobile networks and sensors to help estimate your device's location.<ph name="END_PARAGRAPH1"/>
     <ph name="BEGIN_PARAGRAPH2"/>You can turn off Android location on your device at any time by going to Settings &gt; Apps &gt; Google Play Store &gt; Manage Android preferences &gt; Security and location &gt; Location. You can also turn off the use of Wi-Fi, mobile networks and sensors for Android location by turning off 'Brave Location Accuracy' in the same menu.<ph name="END_PARAGRAPH2"/></translation>
 <translation id="654871471440386944">Turn on caret browsing?</translation>
 <translation id="6549038875972762904">Redo setup</translation>
@@ -8148,7 +8148,7 @@ Keep your key file in a safe place. You will need it to create new versions of y
 <translation id="8403807918453631441"><ph name="BRAND"/> can check your passwords when you save them</translation>
 <translation id="8405046151008197676">Get highlights from the latest update</translation>
 <translation id="8407199357649073301">Log level:</translation>
-<translation id="8408270600235826886">You can control what data is shared with Brave. You can change this at any time in Settings. Data will be used according to Brave's <ph name="BEGIN_LINK"/>Privacy Policy<ph name="END_LINK"/>.</translation>
+<translation id="8408270600235826886">You can control what data is shared with Brave. You can change this at any time in Settings. Data will be used according to Minego's<ph name="BEGIN_LINK"/>Privacy Policy<ph name="END_LINK"/>.</translation>
 <translation id="84098433273647700">Current theme that you have installed</translation>
 <translation id="8410775397654368139">Google Play</translation>
 <translation id="8412136526970428322">Allowed <ph name="PERMISSION"/> and <ph name="COUNT"/> more</translation>

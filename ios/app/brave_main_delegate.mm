@@ -58,7 +58,7 @@ void BraveMainDelegate::BasicStartupComplete() {
                                     source.c_str());
   }
 
-  // Brave's sync protocol does not use the sync service url
+  // Minego'ssync protocol does not use the sync service url
   if (!command_line->HasSwitch(syncer::kSyncServiceURL)) {
     command_line->AppendSwitchASCII(syncer::kSyncServiceURL,
                                     BUILDFLAG(BRAVE_SYNC_ENDPOINT));

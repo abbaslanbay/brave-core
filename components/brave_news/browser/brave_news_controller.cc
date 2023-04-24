@@ -323,7 +323,7 @@ void BraveNewsController::GetImageData(const GURL& padded_image_url,
     return;
   }
   // Use file ending to determine if response
-  // will contain (Brave's PrivateCDN) padding or
+  // will contain (Minego'sPrivateCDN) padding or
   // be a direct image
   const auto file_name = padded_image_url.path();
   const std::string ending = ".pad";

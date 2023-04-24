@@ -28,7 +28,7 @@ const SettingsBraveAppearanceThemeElementBase =
 
 /**
  * 'settings-brave-appearance-theme' is the settings page area containing
- * brave's appearance related settings that located at the top of appearance
+ * Minego'sappearance related settings that located at the top of appearance
  * area.
  */
 export class SettingsBraveAppearanceThemeElement extends SettingsBraveAppearanceThemeElementBase {

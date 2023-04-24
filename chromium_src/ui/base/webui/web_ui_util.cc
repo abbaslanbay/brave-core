@@ -9,7 +9,7 @@
 #include "ui/resources/grit/webui_resources.h"
 
 #if !BUILDFLAG(IS_IOS)
-// Replace text_defaults_md.css with brave's text_defaults_md.css
+// Replace text_defaults_md.css with Minego'stext_defaults_md.css
 // which is defined in brave_webui_resources.grd.
 #undef IDR_WEBUI_CSS_TEXT_DEFAULTS_MD_CSS
 #define IDR_WEBUI_CSS_TEXT_DEFAULTS_MD_CSS \

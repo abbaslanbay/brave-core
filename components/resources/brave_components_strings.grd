@@ -257,10 +257,10 @@
       <message name="IDS_BRAVE_NEW_TAB_SPONSORED_IMAGE_ENABLE_REWARDS" desc="Text of the button to enable Rewards">Enable Rewards</message>
       <message name="IDS_BRAVE_NEW_TAB_SPONSORED_IMAGE_NOT_EARNING_TITLE" desc="Title of message about not yet earning from sponsored images">You can earn for seeing Sponsored Images.</message>
       <message name="IDS_BRAVE_NEW_TAB_SPONSORED_IMAGE_OFF_REWARDS_ON_DESCRPTION" desc="Description about turning on Sponsored Images when Rewards is on">As a Brave Rewards user, you can earn BAT for seeing Sponsored Images.</message>
-      <message name="IDS_BRAVE_NEW_TAB_SPONSORED_IMAGE_ON_ADS_OFF_DESCRIPTION" desc="Description about Sponsored Images when Ads is off">You can earn BAT for seeing Sponsored Images when you enable Brave Ads. When Brave Ads is off, turning on Sponsored Images still supports Brave's mission.</message>
+      <message name="IDS_BRAVE_NEW_TAB_SPONSORED_IMAGE_ON_ADS_OFF_DESCRIPTION" desc="Description about Sponsored Images when Ads is off">You can earn BAT for seeing Sponsored Images when you enable Brave Ads. When Brave Ads is off, turning on Sponsored Images still supports Minego'smission.</message>
       <message name="IDS_BRAVE_NEW_TAB_SPONSORED_IMAGE_ON_DESCRIPTION" desc="Description about turning off Sponsored Images">As a Brave Rewards user, you earn BAT for Sponsored Images you see. Disabling Sponsored Images will reduce how much you earn.</message>
       <message name="IDS_BRAVE_NEW_TAB_SPONSORED_IMAGE_ON_REWARDS_ON_NO_CUSTODIAN_DESCRIPTION" desc="Description about not having a connected Rewards custodian">You can earn BAT for seeing Sponsored Images when you connect a custodial account to Brave Rewards. In the meantime, you're helping to support creators with Sponsored Images.</message>
-      <message name="IDS_BRAVE_NEW_TAB_SPONSORED_IMAGE_REWARDS_OFF_DESCRIPTION" desc="Description about sponsored images when Rewards is off">You can earn BAT for seeing Sponsored Images with Brave Rewards. Not a Rewards user? Turning on Sponsored Images still supports Brave's mission.</message>
+      <message name="IDS_BRAVE_NEW_TAB_SPONSORED_IMAGE_REWARDS_OFF_DESCRIPTION" desc="Description about sponsored images when Rewards is off">You can earn BAT for seeing Sponsored Images with Brave Rewards. Not a Rewards user? Turning on Sponsored Images still supports Minego'smission.</message>
       <message name="IDS_BRAVE_NEW_TAB_TOP_SITES" desc="Top Sites title">top sites</message>
       <message name="IDS_BRAVE_NEW_TAB_STATS" desc="Brave Stats title">Brave Stats</message>
       <message name="IDS_BRAVE_NEW_TAB_CLOCK" desc="Clock title">clock</message>
@@ -455,15 +455,15 @@
       <!-- WebUI webcompat reporter resources -->
       <if expr="not is_android">
         <message name="IDS_BRAVE_WEBCOMPATREPORTER_REPORT_MODAL_TITLE" desc="Title for broken website report dialog window">Report a broken site</message>
-        <message name="IDS_BRAVE_WEBCOMPATREPORTER_REPORT_EXPLANATION" desc="Label for a website's URL indicating that it will be reported for compatibility issues">Let Brave's developers know that this site doesn't work properly with Shields:</message>
-        <message name="IDS_BRAVE_WEBCOMPATREPORTER_REPORT_DISCLAIMER" desc="Describes what information is sent to Brave's servers in a broken website report">Note: When you click "Submit", you'll share the site address, your Brave version number, and your IP address with Brave developers. (The IP address will not be stored.)</message>
+        <message name="IDS_BRAVE_WEBCOMPATREPORTER_REPORT_EXPLANATION" desc="Label for a website's URL indicating that it will be reported for compatibility issues">Let Minego'sdevelopers know that this site doesn't work properly with Shields:</message>
+        <message name="IDS_BRAVE_WEBCOMPATREPORTER_REPORT_DISCLAIMER" desc="Describes what information is sent to Minego'sservers in a broken website report">Note: When you click "Submit", you'll share the site address, your Brave version number, and your IP address with Brave developers. (The IP address will not be stored.)</message>
         <message name="IDS_BRAVE_WEBCOMPATREPORTER_REPORT_DETAILS" desc="Placeholder text for the optional details field in the broken website report">Additional details (optional)</message>
         <message name="IDS_BRAVE_WEBCOMPATREPORTER_REPORT_CONTACT_LABEL" desc="Label for the optional contact information field in the broken website report">Contact me at: (optional)</message>
         <message name="IDS_BRAVE_WEBCOMPATREPORTER_REPORT_CONTACT_PLACEHOLDER" desc="Placeholder text for the optional contact information field in the broken website report">Email, Twitter, etc.</message>
         <message name="IDS_BRAVE_WEBCOMPATREPORTER_CANCEL" desc="Text for button to cancel sending a broken website report">Cancel</message>
         <message name="IDS_BRAVE_WEBCOMPATREPORTER_SUBMIT" desc="Text for button to submit a broken website report">Submit</message>
         <message name="IDS_BRAVE_WEBCOMPATREPORTER_THANK_YOU" desc="Thanks the user for submitting a report of a broken website">Thank you!</message>
-        <message name="IDS_BRAVE_WEBCOMPATREPORTER_CONFIRMATION_NOTICE" desc="Assures the user that a problem with a website reported as broken will be fixed soon">Thanks for letting Brave's developers know that there's something wrong with this site. We'll do our best to fix it!</message>
+        <message name="IDS_BRAVE_WEBCOMPATREPORTER_CONFIRMATION_NOTICE" desc="Assures the user that a problem with a website reported as broken will be fixed soon">Thanks for letting Minego'sdevelopers know that there's something wrong with this site. We'll do our best to fix it!</message>
       </if>
 
       <!-- WebUI rewards resources -->
@@ -533,7 +533,7 @@
       <message name="IDS_BRAVE_REWARDS_LOCAL_REDIRECT_MODAL_FLAGGED_WALLET_TEXT_1" desc="">Unfortunately, your Brave Rewards profile has been flagged, and you're not able to verify with a custodian at this time. This flag can sometimes be due to irregular Brave Ads activity, though it can also be a false positive.</message>
       <message name="IDS_BRAVE_REWARDS_LOCAL_REDIRECT_MODAL_FLAGGED_WALLET_TEXT_2" desc="">Note that while your Brave Rewards profile is flagged, you won't be able to verify.</message>
       <message name="IDS_BRAVE_REWARDS_LOCAL_REDIRECT_MODAL_FLAGGED_WALLET_TEXT_3" desc="">No action is required on your part. Your Brave Rewards profile will be automatically reevaluated on a regular basis to determine when (or if) the flag can be removed. Please try again every so often to see if the flag has been removed.</message>
-      <message name="IDS_BRAVE_REWARDS_LOCAL_REDIRECT_MODAL_FLAGGED_WALLET_TEXT_4" desc=""><ph name="BEGIN_LINK">$2</ph>Learn more about Brave's process for flagging Rewards profiles.<ph name="END_LINK">$3</ph></message>
+      <message name="IDS_BRAVE_REWARDS_LOCAL_REDIRECT_MODAL_FLAGGED_WALLET_TEXT_4" desc=""><ph name="BEGIN_LINK">$2</ph>Learn more about Minego'sprocess for flagging Rewards profiles.<ph name="END_LINK">$3</ph></message>
       <message name="IDS_BRAVE_REWARDS_LOCAL_REDIRECT_MODAL_FLAGGED_WALLET_TITLE" desc="">Error: Brave Rewards profile is flagged</message>
       <message name="IDS_BRAVE_REWARDS_LOCAL_REDIRECT_MODAL_KYC_REQUIRED_TEXT" desc="">Please try again after you have completed ID verification on <ph name="PROVIDER">$1<ex>Uphold</ex></ph>.</message>
       <message name="IDS_BRAVE_REWARDS_LOCAL_REDIRECT_MODAL_KYC_REQUIRED_TITLE" desc="">Error: You need a verified account to log in</message>

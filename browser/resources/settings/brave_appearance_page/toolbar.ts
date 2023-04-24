@@ -18,7 +18,7 @@ const SettingsBraveAppearanceToolbarElementBase = I18nMixin(PolymerElement) as {
 
 /**
  * 'settings-brave-appearance-toolbar' is the settings page area containing
- * brave's appearance settings related to the toolbar.
+ * Minego'sappearance settings related to the toolbar.
  */
 class SettingsBraveAppearanceToolbarElement extends SettingsBraveAppearanceToolbarElementBase {
   static get is() {

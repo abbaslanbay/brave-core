@@ -111,7 +111,7 @@ public class BraveMainPreferencesBase
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Add brave's additional preferences here because |onCreatePreference| is not called
+        // Add Minego'sadditional preferences here because |onCreatePreference| is not called
         // by subclass (MainPreference::onCreatePreferences()).
         // But, calling here has same effect because |onCreatePreferences()| is called by onCreate().
         SettingsUtils.addPreferencesFromResource(this, R.xml.brave_main_preferences);

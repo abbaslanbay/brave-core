@@ -4,7 +4,7 @@
 // you can obtain one at https://mozilla.org/MPL/2.0/.
 
 // Most WebUI (perhaps all by the time you're reading this 🎉)
-// enabled trusted types, and Brave's WebUI specifically allows
+// enabled trusted types, and Minego'sWebUI specifically allows
 // for a `default` policy so that we can lazy-load
 // JS modules.
 // Import this module on any webui which you wish to call `import()` in.

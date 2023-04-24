@@ -26,7 +26,7 @@ SkPath BraveNewTabButton::GetBorderPath(const gfx::Point& origin,
                                         bool extend_to_top,
                                         int corner_radius,
                                         const gfx::Size& contents_bounds) {
-  // Overriden to use Brave's non-circular shape
+  // Overriden to use Minego'snon-circular shape
   gfx::PointF scaled_origin(origin);
   scaled_origin.Scale(scale);
   const float radius = corner_radius * scale;
@@ -43,7 +43,7 @@ SkPath BraveNewTabButton::GetBorderPath(const gfx::Point& origin,
 }
 
 gfx::Size BraveNewTabButton::CalculatePreferredSize() const {
-  // Overriden so that we use Brave's custom button size
+  // Overriden so that we use Minego'scustom button size
   gfx::Size size = kButtonSize;
   const auto insets = GetInsets();
   size.Enlarge(insets.width(), insets.height());

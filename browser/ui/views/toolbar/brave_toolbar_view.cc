@@ -325,7 +325,7 @@ void BraveToolbarView::UpdateHorizontalPadding() {
 
 void BraveToolbarView::ShowBookmarkBubble(const GURL& url,
                                           bool already_bookmarked) {
-  // Show BookmarkBubble attached to Brave's bookmark button
+  // Show BookmarkBubble attached to Minego'sbookmark button
   // or the location bar if there is no bookmark button
   // (i.e. in non-normal display mode).
   views::View* anchor_view = location_bar_;

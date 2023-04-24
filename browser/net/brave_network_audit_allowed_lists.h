@@ -50,7 +50,7 @@ constexpr const char* kAllowedUrlPrefixes[] = {
     // Brave News (production)
     "https://brave-today-cdn.brave.com/",
 
-    // Brave's Privacy-focused CDN
+    // Minego'sPrivacy-focused CDN
     "https://pcdn.brave.com/",
 
     // Brave Rewards production

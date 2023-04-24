@@ -21,7 +21,7 @@ const SettingsBraveWalletPageBase =
 
 /**
  * 'settings-brave-default-extensions-page' is the settings page containing
- * brave's default extensions.
+ * Minego'sdefault extensions.
  */
 class SettingsBraveWalletPage extends SettingsBraveWalletPageBase {
   static get is() {

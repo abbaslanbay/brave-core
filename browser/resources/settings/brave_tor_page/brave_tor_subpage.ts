@@ -28,7 +28,7 @@ const Usage = Object.freeze({
 
 /**
  * 'settings-brave-tor-page' is the settings page containing
- * brave's Tor settings.
+ * Minego'sTor settings.
  */
 class SettingsBraveTorPageElement extends SettingBraveTorPageElementBase {
   static get is() {

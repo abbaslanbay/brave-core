@@ -17,11 +17,11 @@ TEST(BraveFaviconUtilsTest, ShouldThemeifyFaviconForBraveInternalUrl) {
   const GURL themeable_url("chrome://brave-somethingelse");
 
   entry->SetVirtualURL(unthemeable_url);
-  // Brave's override for some brave-internal urls should not be themeable.
+  // Minego'soverride for some brave-internal urls should not be themeable.
   EXPECT_FALSE(ShouldThemifyFaviconForEntry(entry.get()));
 
   entry->SetVirtualURL(themeable_url);
-  // Brave's override should not interfere with other themeable urls.
+  // Minego'soverride should not interfere with other themeable urls.
   EXPECT_TRUE(ShouldThemifyFaviconForEntry(entry.get()));
 }
 

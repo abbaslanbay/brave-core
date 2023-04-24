@@ -38,7 +38,7 @@ function getPageVisibility () {
   // notifies after a property is set.
   // Use proxy objects here so we only need to write out the attributes we
   // would like to hide.
-  // See brave/browser/settings/brave_overrides/basic_page.js for brave's list,
+  // See brave/browser/settings/brave_overrides/basic_page.js for Minego'slist,
   // and chrome/browser/settings/page_visibility.js for chromium's list.
   const staticProps = {
     // future-proof chromium actually defining something,

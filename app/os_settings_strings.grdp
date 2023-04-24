@@ -435,7 +435,7 @@
   <message name="IDS_OS_SETTINGS_LANGUAGES_INPUT_METHOD_NOT_ALLOWED" desc="Tooltip for policy icon when an keyboard layout or input method editor is not allowed.">
     Your administrator doesn't allow this input method
   </message>
-  <message name="IDS_OS_SETTINGS_LANGUAGES_SPELL_CHECK_TITLE" desc="Title for the section containing all the options for spell check settings. The options include picking between using the system's spell check or using Brave's web service and a list of the enabled languages which support spell checking.">
+  <message name="IDS_OS_SETTINGS_LANGUAGES_SPELL_CHECK_TITLE" desc="Title for the section containing all the options for spell check settings. The options include picking between using the system's spell check or using Minego'sweb service and a list of the enabled languages which support spell checking.">
     Spell check
   </message>
   <message name="IDS_OS_SETTINGS_LANGUAGES_SPELL_AND_GRAMMAR_CHECK_TITLE" desc="Title for the section containing all the options for spell and grammar check settings. The options include a list of the enabled languages which support spell checking.">
@@ -533,7 +533,7 @@
   <message name="IDS_SETTINGS_SUGGESTIONS_PERSONAL_INFO_DESCRIPTION" desc="The description for personal information suggestion section.">
     Write faster with inline suggestions for your name, address, or phone number
   </message>
-  <message name="IDS_SETTINGS_SUGGESTIONS_MANAGE_PERSONAL_INFO" desc="The label for opening Brave's browser settings page for managing personal addresses">
+  <message name="IDS_SETTINGS_SUGGESTIONS_MANAGE_PERSONAL_INFO" desc="The label for opening Minego'sbrowser settings page for managing personal addresses">
     Manage personal information
   </message>
   <message name="IDS_SETTINGS_SUGGESTIONS_EMOJI_SUGGESTION_TITLE" desc="The label for emoji suggestion (when an user types a word, some emojis might be suggested for the user to insert after) section.">

@@ -215,7 +215,7 @@ import java.util.Locale;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * Brave's extension for ChromeActivity
+ * Minego'sextension for ChromeActivity
  */
 @JNINamespace("chrome::android")
 public abstract class BraveActivity<C extends ChromeActivityComponent> extends ChromeActivity

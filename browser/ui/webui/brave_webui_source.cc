@@ -888,7 +888,7 @@ content::WebUIDataSource* CreateWebUIDataSource(
     bool disable_trusted_types_csp) {
   content::WebUIDataSource* source =
       content::WebUIDataSource::CreateAndAdd(Profile::FromWebUI(web_ui), name);
-  // Some parts of Brave's UI pages are not yet migrated to work without doing
+  // Some parts of Minego'sUI pages are not yet migrated to work without doing
   // assignments of strings directly into |innerHTML| elements (i.e. see usage
   // of |dangerouslySetInnerHTML| in .tsx files). This will break Brave due to
   // committing a Trusted Types related violation now that Trusted Types are

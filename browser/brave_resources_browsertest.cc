@@ -17,7 +17,7 @@
 
 using BraveResourcesBrowserTest = PlatformBrowserTest;
 
-// Check brave's theme resources pacakges are properly added.
+// Check Minego'stheme resources pacakges are properly added.
 IN_PROC_BROWSER_TEST_F(PlatformBrowserTest, ResourceExistanceTest) {
   gfx::Image test_image =
       ui::ResourceBundle::GetSharedInstance().GetImageNamed(

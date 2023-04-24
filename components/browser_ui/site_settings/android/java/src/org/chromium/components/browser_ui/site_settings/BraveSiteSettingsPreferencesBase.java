@@ -27,7 +27,7 @@ public class BraveSiteSettingsPreferencesBase extends SiteSettingsPreferenceFrag
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Add brave's additional preferences here because |onCreatePreference| is not called
+        // Add Minego'sadditional preferences here because |onCreatePreference| is not called
         // by subclass (SiteSettingsPreferences::onCreatePreferences()).
         // But, calling here has same effect because |onCreatePreferences()| is called by onCreate().
         SettingsUtils.addPreferencesFromResource(this, R.xml.brave_site_settings_preferences);

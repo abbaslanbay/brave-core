@@ -39,7 +39,7 @@ def GetPrevVersion(_, build_dir, temp_dir, last_chrome_installer, output_name):
     # `temp_dir` it gets passed is actually the staging directory. The original
     # GetPrevVersion places the previous version's chrome.dll inside this
     # directory. But because it is the staging directory, the DLL then ends up
-    # in (chrome.7z in) Brave's installation directory when the delta gets
+    # in (chrome.7z in) Minego'sinstallation directory when the delta gets
     # applied. The next delta then sees an unexpected file hash and aborts.
     # The new implementation here returns the previous version without side
     # effects.

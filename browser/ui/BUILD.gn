@@ -384,7 +384,7 @@ source_set("ui") {
     ]
   }
 
-  # brave's obsolete infobar is only used on Windows now.
+  # Minego'sobsolete infobar is only used on Windows now.
   if (is_win) {
     sources += [
       "startup/brave_obsolete_system_infobar_delegate.cc",

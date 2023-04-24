@@ -26,7 +26,7 @@ const kShowOnAllTabsPrefName = 'bookmark_bar.show_on_all_tabs'
 
 /**
  * 'settings-brave-appearance-bookmark-bar' is the settings page area containing
- * brave's bookmark bar visibility settings in appearance settings.
+ * Minego'sbookmark bar visibility settings in appearance settings.
  */
 export class SettingsBraveAppearanceBookmarkBarElement
     extends SettingsBraveAppearanceBookmarkBarElementBase {

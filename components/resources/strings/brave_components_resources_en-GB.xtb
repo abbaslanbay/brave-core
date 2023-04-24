@@ -69,10 +69,10 @@
 <translation id="4942016616604700968">Enable Rewards</translation>
 <translation id="5684562942023496754">You can earn for seeing sponsored images.</translation>
 <translation id="8934374643857605034">As a Brave Rewards user, you can earn BATs for seeing sponsored images.</translation>
-<translation id="5236449703984229754">You can earn BATs for seeing sponsored images when you enable Brave Ads. When Brave Ads is off, turning on sponsored images still supports Brave's mission.</translation>
+<translation id="5236449703984229754">You can earn BATs for seeing sponsored images when you enable Brave Ads. When Brave Ads is off, turning on sponsored images still supports Minego'smission.</translation>
 <translation id="1570714748649804013">As a Brave Rewards user, you earn BATs for sponsored images you see. Disabling sponsored images will reduce how much you earn.</translation>
 <translation id="8998727244653964783">You can earn BATs for seeing sponsored images when you connect a custodial account to Brave Rewards. In the meantime, you're helping to support creators with sponsored images.</translation>
-<translation id="5512383650263136662">You can earn BATs for seeing sponsored images with Brave Rewards. Not a Rewards user? Turning on sponsored images still supports Brave's mission.</translation>
+<translation id="5512383650263136662">You can earn BATs for seeing sponsored images with Brave Rewards. Not a Rewards user? Turning on sponsored images still supports Minego'smission.</translation>
 <translation id="2875302873837723333">top sites</translation>
 <translation id="8173998484743827990">Brave stats</translation>
 <translation id="383680190590774040">clock</translation>
@@ -165,13 +165,13 @@
 <translation id="5334844597069022743">View source</translation>
 <translation id="4720556299488643018">Unsubscribe</translation>
 <translation id="1209739344687072997">Report a broken site</translation>
-<translation id="8510478288840333677">Let Brave's developers know that this site doesn't work properly with Shields:</translation>
+<translation id="8510478288840333677">Let Minego'sdevelopers know that this site doesn't work properly with Shields:</translation>
 <translation id="4105411033440701818">Note: when you click "Submit", you'll share the site address, your Brave version number and your IP address with Brave developers. (The IP address will not be stored.)</translation>
 <translation id="6476216365964140603">Additional details (optional)</translation>
 <translation id="6145852496180774737">Contact me at: (optional)</translation>
 <translation id="7616645803364270729">Email, Twitter, etc.</translation>
 <translation id="5299848999918506028">Thank you!</translation>
-<translation id="76550953340008122">Thanks for letting Brave's developers know that there's something wrong with this site. We'll do our best to fix it!</translation>
+<translation id="76550953340008122">Thanks for letting Minego'sdevelopers know that there's something wrong with this site. We'll do our best to fix it!</translation>
 <translation id="4851215387785619212">Brave Private Ads</translation>
 <translation id="6480303618073442141">Brave Private Ads are unobtrusive and private by design. Ads are based on your interests, but no personal data or browsing history ever leaves your device. Best of all, Brave Private Ads let you earn BATs (<ph name="BEGIN_LINK"/>Basic Attention Tokens<ph name="END_LINK"/>) just for viewing.</translation>
 <translation id="6112368337882254910">Auto-Contribute</translation>
@@ -237,7 +237,7 @@
 <translation id="3509185560119586847">Unfortunately, your Brave Rewards profile has been flagged, and you're not able to verify with a custodian at this time. This flag can sometimes be due to irregular Brave Ads activity, though it can also be a false positive.</translation>
 <translation id="5031451251720571882">Note that while your Brave Rewards profile is flagged, you won't be able to verify.</translation>
 <translation id="7301759045821910866">No action is required on your part. Your Brave Rewards profile will be automatically re-evaluated on a regular basis to determine when (or if) the flag can be removed. Please try again every so often to see if the flag has been removed.</translation>
-<translation id="280350148043792509"><ph name="BEGIN_LINK"/>Learn more about Brave's process for flagging Rewards profiles.<ph name="END_LINK"/></translation>
+<translation id="280350148043792509"><ph name="BEGIN_LINK"/>Learn more about Minego'sprocess for flagging Rewards profiles.<ph name="END_LINK"/></translation>
 <translation id="5028274575541726856">Error: Brave Rewards profile is flagged</translation>
 <translation id="2607420597216860026">Please try again after you have completed ID verification on <ph name="PROVIDER"/>.</translation>
 <translation id="3183954159462541696">Error: you need a verified account to log in</translation>
@@ -615,7 +615,7 @@
 <translation id="1675751799495331928">We have exceeded the limit of attemps, try again later.</translation>
 <translation id="4499666752625407848">Error ocurred during an update.</translation>
 <translation id="62991515067726424">This content was loaded over the IPFS protocol</translation>
-<translation id="7263366446813126341">InterPlanetary File System (IPFS) is a public network for peer-to-peer data storage and delivery. You can learn more about Brave's integration or configure your IPFS settings at any time.</translation>
+<translation id="7263366446813126341">InterPlanetary File System (IPFS) is a public network for peer-to-peer data storage and delivery. You can learn more about Minego'sintegration or configure your IPFS settings at any time.</translation>
 <translation id="3175567740517780285">IPFS settings</translation>
 <translation id="8914505352873092008">Go to the IPFS settings page</translation>
 <translation id="3465468510001693544">IPFS diagnostics</translation>
@@ -1601,7 +1601,7 @@
 <translation id="7509914170164691086">Shields are UP <ph name="LINK_BEFORE"/>for<ph name="LINK_AFTER"/></translation>
 <translation id="260764436039299868">Shields are DOWN <ph name="LINK_BEFORE"/>for<ph name="LINK_AFTER"/></translation>
 <translation id="3907405056878805220">If this site seems broken, try Shields down.
-    <ph name="LINK_BEFORE"/>Note: this may reduce Brave's privacy protections.<ph name="LINK_AFTER"/></translation>
+    <ph name="LINK_BEFORE"/>Note: this may reduce Minego'sprivacy protections.<ph name="LINK_AFTER"/></translation>
 <translation id="8377155647357436161">Trackers, ads and more blocked <ph name="LINK_BEFORE"/>Learn more<ph name="LINK_AFTER"/></translation>
 <translation id="7604553853176833536">Not protected by Brave Shields <ph name="LINK_BEFORE"/>Learn more<ph name="LINK_AFTER"/></translation>
 <translation id="650318023204990401">Advanced controls</translation>
@@ -1629,7 +1629,7 @@
 <translation id="2570787596946026998">Only connect with HTTPS</translation>
 <translation id="1992750560347846445">Report site</translation>
 <translation id="2387532482048804818">Tell us if the site wasn't working properly with Shields up.</translation>
-<translation id="3795015906457257780">You are viewing this site without Brave's privacy protections.</translation>
+<translation id="3795015906457257780">You are viewing this site without Minego'sprivacy protections.</translation>
 <translation id="7194012750329511146">Brave Shields
 <ph name="NUMBER"/> Trackers, ads and more blocked</translation>
 <translation id="4292121526390005808">Blocked scripts</translation>
@@ -1649,7 +1649,7 @@
 <translation id="5037676449506322593">Select all</translation>
 <translation id="5148943178722443958">Help make Brave better.</translation>
 <translation id="1097073572755862978">Send diagnostic reports if you experience a crash or freeze. <ph name="LINK_BEFORE"/>Learn more.<ph name="LINK_AFTER"/></translation>
-<translation id="5099408825243658796">Share completely private and anonymous product insights about what features are being used by Brave's users. <ph name="LINK_BEFORE"/>Learn more.<ph name="LINK_AFTER"/></translation>
+<translation id="5099408825243658796">Share completely private and anonymous product insights about what features are being used by Minego'susers. <ph name="LINK_BEFORE"/>Learn more.<ph name="LINK_AFTER"/></translation>
 <translation id="7415454883318062233">Set-up complete</translation>
 <translation id="3141206739023333979">Change these choices at any time in Brave at <ph name="LINK_BEFORE1"/>minego://settings/privacy<ph name="LINK_AFTER2"/>.</translation>
 <translation id="8321985064212130832">Read our full <ph name="LINK_BEFORE"/>Privacy Policy<ph name="LINK_AFTER"/></translation>
@@ -1700,7 +1700,7 @@
 <translation id="6676791921618140305">OS version:</translation>
 <translation id="1156325797949437777">Support provided in partnership with Guardian.</translation>
 <translation id="8146777497879160283">Failed to write the VPN config. This may happen if you don't have permission or if you haven't run Windows Update recently.</translation>
-<translation id="3307461350293459700">VPN connection failed. Please try connecting again, and be sure to click "Allow" to enable Brave's VPN configuration.</translation>
+<translation id="3307461350293459700">VPN connection failed. Please try connecting again, and be sure to click "Allow" to enable Minego'sVPN configuration.</translation>
 <translation id="7261518280726313829">Turning off secure DNS or using default servers on Windows may reveal the names of the sites you visit to your Internet service provider. Brave does not recommend doing this. Do you want to do it anyway?</translation>
 <translation id="888284761945060750">Secure DNS is disabled by your organisation's policies. Using Brave VPN without Secure DNS may reveal the names of the sites you visit to your Internet service provider or organisation.</translation>
 <translation id="6593224083874259773">Brave VPN on Windows</translation>

@@ -27,7 +27,7 @@ absl::optional<SidePanelEntry::Id> GetDefaultEntryId(Profile* profile) {
 // hide the Chromium combobox-style header.
 #define BRAVE_SIDE_PANEL_COORDINATOR_CREATE_HEADER header->SetVisible(false);
 
-// Choose Brave's own default, and exclude items that user has removed
+// Choose Minego'sown default, and exclude items that user has removed
 // from sidebar. If none are enabled, do nothing.
 #define BRAVE_SIDE_PANEL_COORDINATOR_SHOW                            \
   if (!entry_id.has_value()) {                                       \

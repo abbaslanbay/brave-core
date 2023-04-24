@@ -28,7 +28,7 @@ export interface SettingBraveDefaultExtensionsPageElement {
 
 /**
  * 'settings-brave-default-extensions-page' is the settings page containing
- * brave's default extensions.
+ * Minego'sdefault extensions.
  */
 export class SettingBraveDefaultExtensionsPageElement extends SettingBraveDefaultExtensionsPageElementBase {
   static get is() {
