@@ -168,11 +168,11 @@ void BraveAppMenuModel::InsertBraveMenuItems() {
                              IDC_NEW_TOR_CONNECTION_FOR_SITE,
                              IDS_NEW_TOR_CONNECTION_FOR_SITE);
   }
-  if (IsCommandIdEnabled(IDC_NEW_OFFTHERECORD_WINDOW_TOR)) {
-    InsertItemWithStringIdAt(
-        GetIndexOfCommandId(IDC_NEW_INCOGNITO_WINDOW).value() + 1,
-        IDC_NEW_OFFTHERECORD_WINDOW_TOR, IDS_NEW_OFFTHERECORD_WINDOW_TOR);
-  }
+  // if (IsCommandIdEnabled(IDC_NEW_OFFTHERECORD_WINDOW_TOR)) {
+  //   InsertItemWithStringIdAt(
+  //       GetIndexOfCommandId(IDC_NEW_INCOGNITO_WINDOW).value() + 1,
+  //       IDC_NEW_OFFTHERECORD_WINDOW_TOR, IDS_NEW_OFFTHERECORD_WINDOW_TOR);
+  // }
 
   // Step 2. Configure second section that includes history, downloads and
   // bookmark. Then, insert brave items.
