@@ -494,7 +494,7 @@ TEST_F(SidebarServiceTest, MigratePrefSidebarBuiltInItemsNoType) {
   {
     // Items should not receive a built-in-item-type.
     std::vector<std::string> urls{
-        "https://together.brave.com/",
+        "https://meet.minego.io/",
         "chrome://wallet/",
         "chrome://bookmarks/",
         "chrome://history/",

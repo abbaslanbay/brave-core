@@ -167,7 +167,7 @@ TEST_F(SidebarModelTest, ItemsChangedTest) {
 }
 
 TEST_F(SidebarModelTest, CanUseNotAddedBuiltInItemInsteadOfTest) {
-  GURL talk("https://talk.brave.com/1Ar1vHfLBWX2sAdi");
+  GURL talk("https://meet.minego.io/1Ar1vHfLBWX2sAdi");
   // False because builtin talk item is already added.
   EXPECT_FALSE(HiddenDefaultSidebarItemsContains(service(), talk));
 
@@ -179,10 +179,10 @@ TEST_F(SidebarModelTest, CanUseNotAddedBuiltInItemInsteadOfTest) {
 
 TEST(SidebarUtilTest, ConvertURLToBuiltInItemURLTest) {
   EXPECT_EQ(GURL(kBraveTalkURL),
-            ConvertURLToBuiltInItemURL(GURL("https://talk.brave.com")));
+            ConvertURLToBuiltInItemURL(GURL("https://meet.minego.io")));
   EXPECT_EQ(GURL(kBraveTalkURL),
             ConvertURLToBuiltInItemURL(
-                GURL("https://talk.brave.com/1Ar1vHfLBWX2sAdi")));
+                GURL("https://meet.minego.io/1Ar1vHfLBWX2sAdi")));
   EXPECT_EQ(
       GURL(kBraveUIWalletPageURL),
       ConvertURLToBuiltInItemURL(GURL("chrome://wallet/crypto/onboarding")));

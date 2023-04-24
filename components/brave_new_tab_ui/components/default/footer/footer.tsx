@@ -7,16 +7,12 @@
  // Feature-specific components
  import {
    Navigation,
-   IconButton,
-   IconButtonContainer,
-   IconButtonSideText,
    IconLink,
  } from '..'
  import * as S from '../page'
  
  // Items
  import {
-   SettingsIcon,
    SettingsAdvancedIcon,
    BookmarkBook,
    HistoryIcon
@@ -41,43 +37,20 @@
  export default class FooterInfo extends React.PureComponent<Props, {}> {
    render () {
      const {
-       textDirection,
        supportsBraveTalk,
-       onClickSettings
      } = this.props
  
      return (
        <>
-         {/* { showPhotoInfo && backgroundImageInfo?.type === 'brave' &&
-           <S.GridItemCredits>
-             <PhotoName>
-               {`${getLocale('photoBy')} `}
-               { backgroundImageInfo.link
-                   ? <Link href={backgroundImageInfo.link} rel='noreferrer noopener' target='_blank'>
-                       {backgroundImageInfo.author}
-                     </Link>
-                   : <Label> {backgroundImageInfo.author} </Label>
-               }
-             </PhotoName>
-           </S.GridItemCredits>
-         } */}
          <S.GridItemNavigation>
            <Navigation>
-             <IconButtonContainer textDirection={textDirection}>
-               <IconButtonSideText textDirection={textDirection}>
-                 <IconButton onClick={onClickSettings}>
-                   <SettingsIcon />
-                 </IconButton>
-                 {getLocale('customize')}
-               </IconButtonSideText>
-             </IconButtonContainer>
-             <IconLink title={getLocale('preferencesPageTitle')} href='minego://settings'>
+             <IconLink title={getLocale('preferencesPageTitle')} href='chrome://settings/'>
                <SettingsAdvancedIcon />
              </IconLink>
-             <IconLink title={getLocale('bookmarksPageTitle')} href='minego://bookmarks'>
+             <IconLink title={getLocale('bookmarksPageTitle')} href='chrome://bookmarks/'>
                <BookmarkBook />
              </IconLink>
-             <IconLink title={getLocale('historyPageTitle')} href='minego://history'>
+             <IconLink title={getLocale('historyPageTitle')} href='chrome://history/'>
                <HistoryIcon />
              </IconLink>
              {supportsBraveTalk &&
