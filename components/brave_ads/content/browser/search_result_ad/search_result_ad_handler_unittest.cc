@@ -30,10 +30,10 @@ using testing::Return;
 using OnRetrieveSearchResultAdCallback =
     base::OnceCallback<void(std::vector<std::string> placement_ids)>;
 
-constexpr char kAllowedDomain[] = "https://search.brave.com";
+constexpr char kAllowedDomain[] = "https://search.minego.io";
 constexpr char kNotAllowedDomain[] = "https://brave.com";
 constexpr char kSearchResultAdClickUrl[] =
-    "https://search.brave.com/a/redirect?";
+    "https://search.minego.io/a/redirect?";
 constexpr char kPlacementId[] = "placement_id";
 
 blink::mojom::WebPagePtr CreateTestWebPage(

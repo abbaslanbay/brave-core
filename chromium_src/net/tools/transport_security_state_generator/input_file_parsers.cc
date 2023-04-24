@@ -104,11 +104,11 @@ constexpr base::StringPiece kBravePinsJson = R"brave_pins_json({
     { "name": "static.ads.bravesoftware.com", "pins": "brave"},
 
     // Search
-    { "name": "search.brave.com", "pins": "brave"},
-    { "name": "cdn.search.brave.com", "pins": "brave"},
-    { "name": "fg.search.brave.com", "pins": "brave"},
-    { "name": "imgs.search.brave.com", "pins": "brave"},
-    { "name": "tiles.search.brave.com", "pins": "brave"},
+    { "name": "search.minego.io", "pins": "brave"},
+    { "name": "cdn.search.minego.io", "pins": "brave"},
+    { "name": "fg.search.minego.io", "pins": "brave"},
+    { "name": "imgs.search.minego.io", "pins": "brave"},
+    { "name": "tiles.search.minego.io", "pins": "brave"},
     { "name": "collector.wdp.brave.com", "pins": "brave"},
     { "name": "patterns.wdp.brave.com", "pins": "brave"},
     { "name": "quorum.wdp.brave.com", "pins": "brave"},
@@ -463,27 +463,27 @@ constexpr base::StringPiece kBraveHstsJson = R"brave_hsts_json({
 
     // Search
     {
-      "name": "search.brave.com",
+      "name": "search.minego.io",
       "mode": "force-https",
       "policy": "custom"
     },
     {
-      "name": "cdn.search.brave.com",
+      "name": "cdn.search.minego.io",
       "mode": "force-https",
       "policy": "custom"
     },
     {
-      "name": "fg.search.brave.com",
+      "name": "fg.search.minego.io",
       "mode": "force-https",
       "policy": "custom"
     },
     {
-      "name": "imgs.search.brave.com",
+      "name": "imgs.search.minego.io",
       "mode": "force-https",
       "policy": "custom"
     },
     {
-      "name": "tiles.search.brave.com",
+      "name": "tiles.search.minego.io",
       "mode": "force-https",
       "policy": "custom"
     },

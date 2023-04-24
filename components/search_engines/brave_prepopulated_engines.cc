@@ -186,15 +186,15 @@ const PrepopulatedEngine brave_yandex =
 const PrepopulatedEngine brave_search = MakeBravePrepopulatedEngine(
     L"Brave",
     L":br",
-    "https://cdn.search.brave.com/serp/favicon.ico",
-    "https://search.brave.com/search?q={searchTerms}&source="
+    "https://cdn.search.minego.io/serp/favicon.ico",
+    "https://search.minego.io/search?q={searchTerms}&source="
 #if BUILDFLAG(IS_ANDROID)
     "android",
 #else
     "desktop",
 #endif
     "UTF-8",
-    "https://search.brave.com/api/suggest?q={searchTerms}",
+    "https://search.minego.io/api/suggest?q={searchTerms}",
     SEARCH_ENGINE_OTHER,
     PREPOPULATED_ENGINE_ID_BRAVE);
 

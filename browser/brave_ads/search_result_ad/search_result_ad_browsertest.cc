@@ -39,7 +39,7 @@ using testing::_;
 using testing::Mock;
 using testing::Return;
 
-constexpr char kAllowedDomain[] = "search.brave.com";
+constexpr char kAllowedDomain[] = "search.minego.io";
 constexpr char kNotAllowedDomain[] = "brave.com";
 constexpr char kClickRedirectPath[] = "/a/redirect";
 constexpr char kTargetDomain[] = "example.com";

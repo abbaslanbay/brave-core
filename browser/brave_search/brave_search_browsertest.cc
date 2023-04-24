@@ -42,7 +42,7 @@ using RequestExpectationsCallback =
 namespace {
 
 const char kEmbeddedTestServerDirectory[] = "brave-search";
-const char kAllowedDomain[] = "search.brave.com";
+const char kAllowedDomain[] = "search.minego.io";
 const char kAllowedDomainDev[] = "search.brave.software";
 const char kNotAllowedDomain[] = "brave.com";
 const char kBraveSearchPath[] = "/bravesearch.html";

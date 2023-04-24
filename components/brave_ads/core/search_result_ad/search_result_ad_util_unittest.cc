@@ -11,13 +11,13 @@ namespace brave_ads {
 
 TEST(SearchResultAdUtilTest, CheckGetPlacementIdFromSearchResultAdClickedUrl) {
   GURL url(
-      "https://search.brave.com/a/"
+      "https://search.minego.io/a/"
       "redirect?click_url=https:%3A%2F%2Fexample.com&placement_id=placement-id&"
       "creative_instance_id=creative-id");
   EXPECT_EQ("placement-id", GetPlacementIdFromSearchResultAdClickedUrl(url));
 
   url = GURL(
-      "https://safesearch.brave.com/a/"
+      "https://safesearch.minego.io/a/"
       "redirect?click_url=https:%3A%2F%2Fexample.com&placement_id=placement-id&"
       "creative_instance_id=creative");
   EXPECT_EQ("placement-id", GetPlacementIdFromSearchResultAdClickedUrl(url));

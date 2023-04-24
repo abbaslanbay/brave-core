@@ -30,12 +30,12 @@ using testing::Return;
 namespace {
 
 constexpr char kBraveSearchRequestUrl[] =
-    "https://search.brave.com/search?q=qwerty";
+    "https://search.minego.io/search?q=qwerty";
 constexpr char kBraveSearchImageRequestUrl[] =
-    "https://search.brave.com/img.png";
+    "https://search.minego.io/img.png";
 constexpr char kNonBraveSearchRequestUrl[] =
     "https://brave.com/search?q=qwerty";
-constexpr char kBraveSearchTabUrl[] = "https://search.brave.com";
+constexpr char kBraveSearchTabUrl[] = "https://search.minego.io";
 constexpr char kNonBraveSearchTabUrl[] = "https://brave.com";
 
 }  // namespace
