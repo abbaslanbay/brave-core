@@ -269,7 +269,7 @@ IN_PROC_BROWSER_TEST_F(BraveContentBrowserClientTest, RewriteChromeSync) {
                      ->GetURL()
                      .spec()
                      .c_str(),
-                 "chrome://settings/braveSync");
+                 "chrome://settings/minegoSync");
   }
 }
 

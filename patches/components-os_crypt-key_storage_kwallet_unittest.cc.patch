@@ -8,8 +8,8 @@ index 73d6a5125e37f087f1431253fadcd41e1592cda6..e48e29fb5d3c8c47b4556767abd1ed61
  #else
 -const char kExpectedFolderName[] = "Chromium Keys";
 -const char kExpectedEntryName[] = "Chromium Safe Storage";
-+const char kExpectedFolderName[] = "Brave Keys";
-+const char kExpectedEntryName[] = "Brave Safe Storage";
++const char kExpectedFolderName[] = "Minego Keys";
++const char kExpectedEntryName[] = "Minego Safe Storage";
  #endif
  
  // Environment-specific behavior is handled and tested with KWalletDBus, not

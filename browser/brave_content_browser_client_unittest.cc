@@ -96,7 +96,7 @@ TEST_F(BraveContentBrowserClientTest, ResolvesSync) {
   GURL url("chrome://sync/");
   ASSERT_TRUE(
     BraveContentBrowserClient::HandleURLOverrideRewrite(&url, nullptr));
-  ASSERT_STREQ(url.spec().c_str(), "chrome://settings/braveSync");
+  ASSERT_STREQ(url.spec().c_str(), "chrome://settings/minegoSync");
 
   GURL url2("chrome://sync/");
   ASSERT_TRUE(

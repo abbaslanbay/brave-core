@@ -6,8 +6,8 @@
 #include "components/os_crypt/key_storage_linux.h"
 
 #define BRAVE_KEY_STORAGE_LINUX                             \
-  const char KeyStorageLinux::kFolderName[] = "Brave Keys"; \
-  const char KeyStorageLinux::kKey[] = "Brave Safe Storage";
+  const char KeyStorageLinux::kFolderName[] = "Minego Keys"; \
+  const char KeyStorageLinux::kKey[] = "Minego Safe Storage";
 
 // clang-format off
 #define BRAVE_KEY_STORAGE_LINUX_CREATE_SERVICE_INTERNAL                       \

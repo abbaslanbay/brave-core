@@ -529,6 +529,28 @@
     Does not protect you against dangerous websites, downloads, and extensions.
   </message>
 
+  <message name="IDS_SETTINGS_SEARCH_ENGINE_TITLE" desc="Default Minego reduce language control setting label">
+   Search engine
+  </message>
+   <message name="IDS_SETTINGS_PRIVACY_TITLE" desc="The label of Privacy Title">
+    Privacy and security
+  </message>
+  <message name="IDS_SETTINGS_BRAVE_AUTOFILL_TITLE" desc="Label for the checkbox which enables or disables syncing autofill title.">
+    Autofill
+  </message>
+  <message name="IDS_SETTINGS_RESET_TITLE" desc="Description for safe browsing no protection mode">
+   Reset settings
+  </message>
+    <message name="IDS_SETTINGS_BRAVE_LANGUAGE_TITLE" desc="Default Minego reduce language control setting label">
+   Languages
+  </message>
+    <message name="IDS_SETTINGS_DOWNLOAD_TITLE" desc="Description for safe browsing no protection mode">
+    Downloads
+  </message>
+  <message name="IDS_SETTINGS_SYSTEM_TITLE" desc="Description for safe browsing no protection mode">
+    System
+  </message>
+
   <!-- Settings / Privacy and security / Site and Shields Settings -->
   <message name="IDS_SETTINGS_SITE_AND_SHIELDS_SETTINGS" desc="Label for site and shields settings in clear browsing data dialog">
     Site and Shields Settings
