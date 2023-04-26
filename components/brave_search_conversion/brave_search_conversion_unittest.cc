@@ -61,7 +61,7 @@ TEST_F(BraveSearchConversionTest, DefaultValueTest) {
   EXPECT_EQ(ConversionType::kNone,
             GetConversionType(&pref_service_, &template_url_service_));
   EXPECT_EQ(GURL("https://search.minego.io/search?q=brave&action=makeDefault"),
-            GetPromoURL(u"brave"));
+            GetPromoURL(u"minego"));
 }
 
 TEST_F(BraveSearchConversionTest, ConversionTypeTest) {

@@ -184,7 +184,7 @@ const PrepopulatedEngine brave_yandex =
                        PREPOPULATED_ENGINE_ID_YANDEX);
 
 const PrepopulatedEngine brave_search = MakeBravePrepopulatedEngine(
-    L"Brave",
+    L"Minego",
     L":br",
     "https://cdn.search.minego.io/serp/favicon.ico",
     "https://search.minego.io/search?q={searchTerms}&source="

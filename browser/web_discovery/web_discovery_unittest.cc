@@ -57,7 +57,7 @@ class WebDiscoveryCTATest : public testing::Test {
   void SetBraveSearchAsDefaultProvider() {
     // Set brave search as a default provider.
     std::unique_ptr<TemplateURL> brave = CreateTestTemplateURL(
-        u"brave", "https://search.minego.io/", std::string(),
+        u"minego", "https://search.minego.io/", std::string(),
         base::Time::FromTimeT(100), false, false,
         TemplateURLPrepopulateData::PREPOPULATED_ENGINE_ID_BRAVE);
     service()->SetUserSelectedDefaultSearchProvider(brave.get());

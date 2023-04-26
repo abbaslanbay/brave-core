@@ -742,7 +742,7 @@ void BraveAddAboutStrings(content::WebUIDataSource* html_source,
       kBraveReleaseTagPrefix +
           base::UTF8ToUTF16(
               version_info::GetBraveVersionWithoutChromiumMajorVersion()));
-  html_source->AddString("aboutProductLicense", license);
+ // html_source->AddString("aboutProductLicense", license);
 }
 
 void BraveAddSyncStrings(content::WebUIDataSource* html_source) {

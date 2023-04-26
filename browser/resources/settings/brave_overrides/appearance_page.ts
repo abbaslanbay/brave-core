@@ -123,9 +123,9 @@ RegisterPolymerTemplateModifications({
               'label', loadTimeData.getString('speedreaderSettingLabel'))
           speedreaderToggle.setAttribute(
               'sub-label', loadTimeData.getString('speedreaderSettingSubLabel'))
-          speedreaderToggle.setAttribute(
-              'learn-more-url',
-              loadTimeData.getString('speedreaderLearnMoreURL'))
+          // speedreaderToggle.setAttribute(
+          //     'learn-more-url',
+          //     loadTimeData.getString('speedreaderLearnMoreURL'))
         }
       }
     }
