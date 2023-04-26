@@ -35,7 +35,7 @@ import Settings, { TabType as SettingsTabType } from './settings'
 
 import { BraveNewsContextProvider } from '../../components/default/braveNews/customize/Context'
 import GridWidget from './gridWidget'
-import minegoLogoWWhite from './explore_minego.svg'
+import minegoLogoWWhite from './explore_minego.png'
 
 import { setIconBasePath } from '@brave/leo/react/icon'
 setIconBasePath('chrome://resources/brave-icons')

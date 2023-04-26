@@ -16,7 +16,7 @@ constexpr char kManageUrlStaging[] =
 constexpr char kManageUrlDev[] = "https://account.brave.software/account/";
 
 // TODO(simonhong): Update when vpn feedback url is ready.
-constexpr char kFeedbackUrl[] = "https://support.brave.com/";
+constexpr char kFeedbackUrl[] = "https://minego.io/help-categories/";
 constexpr char kAboutUrl[] = "https://brave.com/firewall-vpn/";
 
 constexpr char kRegionContinentKey[] = "continent";

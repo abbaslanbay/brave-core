@@ -34,8 +34,8 @@ export default function addBraveRoutes(r: Partial<SettingsRoutes>) {
   r.EXTENSIONS = r.BASIC.createSection('/extensions', 'extensions')
   r.EXTENSIONS_V2 = r.EXTENSIONS.createChild('/extensions/v2')
   if (pageVisibility.braveSync) {
-    r.BRAVE_SYNC = r.BASIC.createSection('/braveSync', 'braveSync')
-    r.BRAVE_SYNC_SETUP = r.BRAVE_SYNC.createChild('/braveSync/setup');
+    r.BRAVE_SYNC = r.BASIC.createSection('/minegoSync', 'braveSync')
+    r.BRAVE_SYNC_SETUP = r.BRAVE_SYNC.createChild('/minegoSync/setup');
   }
   if (pageVisibility.braveWeb3) {
     r.BRAVE_WEB3 = r.BASIC.createSection('/web3', 'web3')
@@ -50,7 +50,7 @@ export default function addBraveRoutes(r: Partial<SettingsRoutes>) {
     r.BRAVE_WALLET_NETWORKS = r.BRAVE_WALLET.createChild('/wallet/networks');
   }
   if (r.ADVANCED) {
-    r.BRAVE_HELP_TIPS = r.ADVANCED.createSection('/braveHelpTips', 'braveHelpTips')
+    r.BRAVE_HELP_TIPS = r.ADVANCED.createSection('/minegoHelpTips', 'braveHelpTips')
   } else if (!isGuest) {
     console.error('[Brave Settings Overrides] Could not find ADVANCED page', r)
   }

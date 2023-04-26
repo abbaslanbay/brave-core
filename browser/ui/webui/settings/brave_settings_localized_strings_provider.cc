@@ -108,6 +108,15 @@ void BraveAddCommonStrings(content::WebUIDataSource* html_source,
     {"siteSettingsShieldsDown", IDS_SETTINGS_SITE_SETTINGS_SHIELDS_DOWN},
     {"siteSettingsShieldsDescription",
      IDS_SETTINGS_SITE_SETTINGS_SHIELDS_DESCRIPTION},
+
+    {"searchEngineTitle", IDS_SETTINGS_SEARCH_ENGINE_TITLE},
+    {"autofillTitle" , IDS_SETTINGS_BRAVE_AUTOFILL_TITLE},
+    {"languagesTitle" ,IDS_SETTINGS_BRAVE_LANGUAGE_TITLE},
+    {"downloadsTitle" , IDS_SETTINGS_DOWNLOAD_TITLE},
+    {"systemTitle" , IDS_SETTINGS_SYSTEM_TITLE},
+    {"resetTitle" , IDS_SETTINGS_RESET_TITLE},
+    {"privacyTitle", IDS_SETTINGS_PRIVACY_TITLE},
+
     {"appearanceSettingsBraveTheme",
      IDS_SETTINGS_APPEARANCE_SETTINGS_BRAVE_THEMES},
     {"appearanceSettingsShowBookmarksButton",
@@ -733,7 +742,7 @@ void BraveAddAboutStrings(content::WebUIDataSource* html_source,
       kBraveReleaseTagPrefix +
           base::UTF8ToUTF16(
               version_info::GetBraveVersionWithoutChromiumMajorVersion()));
-  html_source->AddString("aboutProductLicense", license);
+ // html_source->AddString("aboutProductLicense", license);
 }
 
 void BraveAddSyncStrings(content::WebUIDataSource* html_source) {

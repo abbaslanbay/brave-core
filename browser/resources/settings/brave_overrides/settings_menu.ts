@@ -5,49 +5,77 @@
 
 // @ts-nocheck TODO(petemill): Define types and remove ts-nocheck
 
-import '../brave_icons.html.js'
+
 
 import {RegisterPolymerTemplateModifications, RegisterStyleOverride} from 'chrome://resources/brave/polymer_overriding.js'
 import {html} from 'chrome://resources/polymer/v3_0/polymer/polymer_bundled.min.js'
 
 import {loadTimeData} from '../i18n_setup.js'
+import "../brave_icons.html.js";
+
 
 function createMenuElement(title, href, iconName, pageVisibilitySection) {
-  const menuEl = document.createElement('a')
+  const menuEl = document.createElement("a");
   if (pageVisibilitySection) {
-    menuEl.setAttribute('hidden', `[[!pageVisibility.${pageVisibilitySection}]]`)
+    menuEl.setAttribute(
+      "hidden",
+      `[[!pageVisibility.${pageVisibilitySection}]]`
+    );
   }
-  menuEl.href = href
-  menuEl.setAttribute('role', 'menuitem')
-  menuEl.setAttribute('class', 'cr-nav-menu-item')
-  const iconChild = document.createElement('iron-icon')
-  iconChild.setAttribute('icon', iconName)
-  menuEl.appendChild(iconChild)
-  const text = document.createTextNode(title)
-  menuEl.appendChild(text)
-  const paperRippleChild = document.createElement('paper-ripple')
-  menuEl.appendChild(paperRippleChild)
-  return menuEl
+  menuEl.href = href;
+  menuEl.setAttribute("role", "menuitem");
+  menuEl.setAttribute("class", "cr-nav-menu-item");
+  const imageChild = document.createElement("img");
+  imageChild.setAttribute("src", `chrome://settings/images/${iconName}.svg`);
+
+  // const iconChild = document.createElement("iron-icon");
+  // iconChild.setAttribute("icon", iconName);
+  menuEl.appendChild(imageChild);
+  const text = document.createTextNode(title);
+  menuEl.appendChild(text);
+  const paperRippleChild = document.createElement("paper-ripple");
+  menuEl.appendChild(paperRippleChild);
+  return menuEl;
 }
 
 function getMenuElement(templateContent, href) {
-  let menuEl = templateContent.querySelector(`a[href="${href}"]`)
+  let menuEl = templateContent.querySelector(`a[href="${href}"]`);
   if (!menuEl) {
     // Search templates
-    const templates = templateContent.querySelectorAll('template')
+    const templates = templateContent.querySelectorAll("template");
     for (const template of templates) {
-      menuEl = template.content.querySelector(`a[href="${href}"]`)
+      console.log("template", template);
+      menuEl = template.content.querySelector(`a[href="${href}"]`);
+      console.log("menuEl", menuEl);
       if (menuEl) {
-        return menuEl
+        return menuEl;
       }
     }
-    console.error(`[Brave Settings Overrides] Could not find menu item '${href}'`)
+    console.error(
+      `[Brave Settings Overrides] Could not find menu item '${href}'`
+    );
   }
-  return menuEl
+  return menuEl;
+}
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  //find .cr-nav-menu-item and change color to white
+  const menuItems = document.querySelectorAll(".cr-nav-menu-item");
+  for (const menuItem of menuItems) {
+    menuItem.style.color = "white";
+  }
+} else {
+  //find .cr-nav-menu-item and change color to white
+  const menuItems = document.querySelectorAll(".cr-nav-menu-item");
+  for (const menuItem of menuItems) {
+    menuItem.style.color = "black";
+  }
 }
 
 RegisterStyleOverride(
-  'settings-menu',
+  "settings-menu",
   html`
     <style>
       :host {
@@ -57,12 +85,20 @@ RegisterStyleOverride(
         position: sticky;
         top: var(--brave-settings-menu-margin-v);
         margin: 0 var(--brave-settings-menu-margin) !important;
-        max-height: calc(100vh - 56px - (var(--brave-settings-menu-margin-v) * 2) - (var(--brave-settings-menu-padding) * 2));
+        max-height: calc(
+          100vh - 56px - (var(--brave-settings-menu-margin-v) * 2) -
+            (var(--brave-settings-menu-padding) * 2)
+        );
         min-width: 172px;
-        border-radius: 6px;
-        background-color: #fff;
+        border-radius: 16px;
+        background: linear-gradient(
+          90deg,
+          rgba(151, 37, 255, 1) 0%,
+          rgba(100, 31, 255, 1) 71%,
+          rgba(64, 27, 255, 1) 100%
+        ) !important;
+        margin-top: 10px !important;
         overflow-y: auto;
-        padding: 30px !important;
       }
 
       .cr-nav-menu-item {
@@ -78,12 +114,13 @@ RegisterStyleOverride(
       }
 
       .cr-nav-menu-item[selected] {
-        --selected-gradient-color1: #FA7250;
-        --selected-gradient-color2: #FF1893;
-        --selected-gradient-color3: #A78AFF;
-
-        color: var(--cr-link-color) !important;
-        background: transparent !important;
+        --selected-gradient-color1: #9725ff;
+        --selected-gradient-color2: #641fff;
+        --selected-gradient-color3: #401bff;
+        color: #fff !important;
+        background: #471cff !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
       }
 
       .cr-nav-menu-item paper-ripple {
@@ -92,7 +129,7 @@ RegisterStyleOverride(
 
       @media (prefers-color-scheme: dark) {
         :host {
-          --settings-nav-item-color: #F4F4F4 !important;
+          --settings-nav-item-color: #fff !important;
           border-color: transparent !important;
           background-color: #161719;
         }
@@ -105,8 +142,9 @@ RegisterStyleOverride(
         margin-inline-end: 0 !important;
         padding-bottom: 0 !important;
         padding-top: 0 !important;
-        padding-inline-start: 0 !important;
+        padding-inline-start: 10px !important;
         position: relative !important;
+        color: #fff !important;
       }
 
       a[href]:focus-visible {
@@ -116,18 +154,24 @@ RegisterStyleOverride(
       }
 
       a[href].iron-selected {
-        color: #DB2F04;
+        color: #fff;
         font-weight: 400 !important;
       }
 
-      a:hover, iron-icon:hover {
-        color: #444DD0 !important;
+      a:hover,
+      iron-icon:hover {
+        color: #ebebeb !important;
       }
 
       iron-icon {
         margin-inline-end: 14px !important;
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
+      }
+      .cr-nav-menu-item img {
+        margin-inline-end: 14px !important;
+        width: 20px;
+        height: 20px;
       }
 
       a[href].iron-selected::before {
@@ -139,17 +183,18 @@ RegisterStyleOverride(
         display: block;
         height: 32px;
         width: 4px;
-        background: linear-gradient(96.98deg, #E51D00 0%, #E5007B 78.13%);
+        background: linear-gradient(96.98deg, #401bff 0%, #9725ff 78.13%);
         border-radius: 0px 2px 2px 0px;
       }
 
       @media (prefers-color-scheme: dark) {
         a[href].iron-selected {
-          color: #FB5930;
+          color: #fb5930;
         }
 
-        a:hover, iron-icon:hover {
-          color: #A6ABE9 !important;
+        a:hover,
+        iron-icon:hover {
+          color: #a6abe9 !important;
         }
       }
 
@@ -174,8 +219,12 @@ RegisterStyleOverride(
         align-items: center !important;
         font-weight: normal !important;
         font-size: larger !important;
-        color: var(--settings-nav-item-color) !important;
+        color: #fff !important;
         margin-bottom: 20px !important;
+      }
+
+      #settingsHeader {
+        padding: 10px !important;
       }
 
       #about-menu {
@@ -188,11 +237,15 @@ RegisterStyleOverride(
       }
       .brave-about-graphic {
         flex: 0;
-        flex-basis: 30%;
+        flex-basis: 20%;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         align-self: stretch;
+        margin-left: 10px;
+      }
+      .brave-about-graphic img {
+        width: 70%;
       }
       .brave-about-meta {
         flex: 1;
@@ -202,177 +255,256 @@ RegisterStyleOverride(
       }
     </style>
   `
-)
+);
 
-RegisterStyleOverride('iron-icon', html`
- <style>
+RegisterStyleOverride(
+  "iron-icon",
+  html` <style>
     :host-context(.cr-nav-menu-item) svg {
       fill: url(#selectedGradient);
     }
- </style>`)
+  </style>`
+);
 
 RegisterPolymerTemplateModifications({
-  'settings-menu': (templateContent) => {
+  "settings-menu": (templateContent) => {
     // Add title
-    const titleEl = document.createElement('h1')
-    titleEl.id = 'settingsHeader'
-    titleEl.textContent = loadTimeData.getString('settings')
-    const menuEl = templateContent.querySelector('#menu')
+    const titleEl = document.createElement("h1");
+    titleEl.id = "settingsHeader";
+    titleEl.textContent = loadTimeData.getString("settings");
+    const menuEl = templateContent.querySelector("#menu");
     if (!menuEl) {
-      console.error('[Brave Settings Overrides] Could not find menu element to add title after')
+      console.error(
+        "[Brave Settings Overrides] Could not find menu element to add title after"
+      );
     } else {
-      menuEl.insertAdjacentElement('afterbegin', titleEl)
+      menuEl.insertAdjacentElement("afterbegin", titleEl);
     }
-
-    // Hide performance menu. We moved it under system menu instead.
-    const performanceEl = getMenuElement(templateContent, '/performance')
-    if (performanceEl) {
-      performanceEl.remove()
-    }
-
     // Add 'Get Started' item
-    const peopleEl = getMenuElement(templateContent, '/people')
+    const peopleEl = getMenuElement(templateContent, "/people");
     const getStartedEl = createMenuElement(
-      loadTimeData.getString('braveGetStartedTitle'),
-      '/getStarted',
-      'brave_settings:get-started',
-      'getStarted'
-    )
-    peopleEl.insertAdjacentElement('afterend', getStartedEl)
+      loadTimeData.getString("braveGetStartedTitle"),
+      "/getStarted",
+      "get_started",
+      "getStarted"
+    );
+    peopleEl.insertAdjacentElement("afterend", getStartedEl);
     // Move Appearance item
-    const appearanceBrowserEl = getMenuElement(templateContent, '/appearance')
-    getStartedEl.insertAdjacentElement('afterend', appearanceBrowserEl)
+    // const appearanceBrowserEl = getMenuElement(templateContent, "/appearance");
+    // getStartedEl.insertAdjacentElement("afterend", appearanceBrowserEl);
 
     // Add New Tab item
     const newTabEl = createMenuElement(
-      loadTimeData.getString('braveNewTab'),
-      '/newTab',
-      'brave_settings:new-tab',
-      'newTab'
-    )
-    appearanceBrowserEl.insertAdjacentElement('afterend', newTabEl)
+      loadTimeData.getString("braveNewTab"),
+      "chrome://settings/newTab",
+      "new_tab",
+      "newTab"
+    );
+    // appearanceBrowserEl.insertAdjacentElement("afterend", newTabEl);
+
+    const appearanceEl = createMenuElement(
+      loadTimeData.getString("braveRewardsAppearanceTitle"),
+      "/appearance",
+      "appearance",
+      "appearance"
+    );
+    getStartedEl.insertAdjacentElement("afterend", appearanceEl);
+
+    appearanceEl.insertAdjacentElement("afterend", newTabEl);
+
     // Add Shields item
-    const shieldsEl = createMenuElement(
-      loadTimeData.getString('braveShieldsTitle'),
-      '/shields',
-      'brave_settings:shields',
-      'shields',
-    )
-    newTabEl.insertAdjacentElement('afterend', shieldsEl)
+    // const shieldsEl = createMenuElement(
+    //   loadTimeData.getString('braveShieldsTitle'),
+    //   '/shields',
+    //   'brave_settings:shields',
+    //   'shields',
+    // )
+    // newTabEl.insertAdjacentElement('afterend', shieldsEl)
     // Add Rewards item
-    const isBraveRewardsSupported = loadTimeData.getBoolean('isBraveRewardsSupported')
-    let rewardsEl = undefined
-    if (isBraveRewardsSupported) {
-      rewardsEl = createMenuElement(
-        loadTimeData.getString('braveRewards'),
-        '/rewards',
-        'brave_settings:rewards',
-        'rewards',
-      )
-      shieldsEl.insertAdjacentElement('afterend', rewardsEl)
-    }
+    // const isBraveRewardsSupported = loadTimeData.getBoolean('isBraveRewardsSupported')
+    // let rewardsEl = undefined
+    // if (isBraveRewardsSupported) {
+    //   rewardsEl = createMenuElement(
+    //     loadTimeData.getString('braveRewards'),
+    //     '/rewards',
+    //     'brave_settings:rewards',
+    //     'rewards',
+    //   )
+    //   shieldsEl.insertAdjacentElement('afterend', rewardsEl)
+    // }
     // Add Embed Blocking item
-    const embedEl = createMenuElement(
-      loadTimeData.getString('socialBlocking'),
-      '/socialBlocking',
-      'brave_settings:social-permissions',
-      'socialBlocking',
-    )
-    if (isBraveRewardsSupported) {
-      rewardsEl.insertAdjacentElement('afterend', embedEl)
-    } else {
-      shieldsEl.insertAdjacentElement('afterend', embedEl)
-    }
+    // const embedEl = createMenuElement(
+    //   loadTimeData.getString('socialBlocking'),
+    //   '/socialBlocking',
+    //   'brave_settings:social-permissions',
+    //   'socialBlocking',
+    // )
+
+    //   shieldsEl.insertAdjacentElement('afterend', embedEl)
     // Add privacy
-    const privacyEl = getMenuElement(templateContent, '/privacy')
-    embedEl.insertAdjacentElement('afterend', privacyEl)
+    // const privacyEl = getMenuElement(templateContent, "/privacy");
+    //embedEl.insertAdjacentElement('afterend', privacyEl)
     // Add Sync item
+    const privacyEl = createMenuElement(
+      loadTimeData.getString("privacyTitle"),
+      "/privacy",
+      "privacy",
+      "privacy"
+    );
+    newTabEl.insertAdjacentElement("afterend", privacyEl);
+
     const syncEl = createMenuElement(
-      loadTimeData.getString('braveSync'),
-      '/braveSync',
-      'brave_settings:sync',
-      'braveSync',
-    )
-    privacyEl.insertAdjacentElement('afterend', syncEl)
+      loadTimeData.getString("braveSync"),
+      "/minegoSync",
+      "sync",
+      "braveSync"
+    );
+    privacyEl.insertAdjacentElement("afterend", syncEl);
     // Move search item
-    const searchEl = getMenuElement(templateContent, '/search')
-    syncEl.insertAdjacentElement('afterend', searchEl)
+    //const searchEl = getMenuElement(templateContent, "/search");
+    const searchEl = createMenuElement(
+      loadTimeData.getString("searchEngineTitle"),
+      "/search",
+      "search",
+      "search"
+    );
+
+    syncEl.insertAdjacentElement("afterend", searchEl);
     // Add Extensions item
     const extensionEl = createMenuElement(
-      loadTimeData.getString('braveDefaultExtensions'),
-      '/extensions',
-      'brave_settings:extensions',
-      'extensions',
-    )
-    searchEl.insertAdjacentElement('afterend', extensionEl)
+      loadTimeData.getString("braveDefaultExtensions"),
+      "/extensions",
+      "extension",
+      "extensions"
+    );
 
+    searchEl.insertAdjacentElement("afterend", extensionEl);
 
-    const web3El = createMenuElement(
-      loadTimeData.getString('braveWeb3'),
-      '/web3',
-      'brave_settings:wallet',
-      'wallet',
-    )
+    // const web3El = createMenuElement(
+    //   loadTimeData.getString('braveWeb3'),
+    //   '/web3',
+    //   'brave_settings:wallet',
+    //   'wallet',
+    // )
 
-    extensionEl.insertAdjacentElement('afterend', web3El)
+    // extensionEl.insertAdjacentElement('afterend', web3El)
+
+    const autofillEl = createMenuElement(
+      loadTimeData.getString("autofillTitle"),
+      "/autofill",
+      "auto_fill",
+      "autofill"
+    );
+
+    extensionEl.insertAdjacentElement("afterend", autofillEl);
 
     // Move autofill to advanced
-    const autofillEl = getMenuElement(templateContent, '/autofill')
-    const languagesEl = getMenuElement(templateContent, '/languages')
-    languagesEl.insertAdjacentElement('beforebegin', autofillEl)
+    // const autofillEl = getMenuElement(templateContent, "/autofill");
+    const languagesEl = createMenuElement(
+      loadTimeData.getString("languagesTitle"),
+      "/languages",
+      "language",
+      "languages"
+    );
+
+    autofillEl.insertAdjacentElement("afterend", languagesEl);
+    //  const languagesEl = getMenuElement(templateContent, "/languages");
+    // languagesEl.insertAdjacentElement("afterend", autofillEl);
     // Move HelpTips after downloads
     const helpTipsEl = createMenuElement(
-      loadTimeData.getString('braveHelpTips'),
-      '/braveHelpTips',
-      'brave_settings:help',
-      'braveHelpTips',
-    )
-    const downloadsEl = getMenuElement(templateContent, '/downloads')
-    downloadsEl.insertAdjacentElement('afterend', helpTipsEl)
+      loadTimeData.getString("braveHelpTips"),
+      "/minegoHelpTips",
+      "help",
+      "braveHelpTips"
+    );
+
+    const downloadsEl = createMenuElement(
+      loadTimeData.getString("downloadsTitle"),
+      "/downloads",
+      "download",
+      "downloads"
+    );
+
+    languagesEl.insertAdjacentElement("afterend", downloadsEl);
+
+    //  const downloadsEl = getMenuElement(templateContent, "/downloads");
+
+    downloadsEl.insertAdjacentElement("afterend", helpTipsEl);
+
+    const systemEl = createMenuElement(
+      loadTimeData.getString("systemTitle"),
+      "/system",
+      "setting",
+      "system"
+    );
+    helpTipsEl.insertAdjacentElement("afterend", systemEl);
+
+    const resetEl = createMenuElement(
+      loadTimeData.getString("resetTitle"),
+      "/reset",
+      "reset",
+      "reset"
+    );
+    systemEl.insertAdjacentElement("afterend", resetEl);
+
     // Allow Accessibility to be removed :-(
-    const a11yEl = getMenuElement(templateContent, '/accessibility')
-    a11yEl.setAttribute('hidden', '[[!pageVisibility.a11y]')
+    const a11yEl = getMenuElement(templateContent, "/accessibility");
+    a11yEl.setAttribute("hidden", "[[!pageVisibility.a11y]");
     // Remove extensions link
-    const extensionsLinkEl = templateContent.querySelector('#extensionsLink')
+    const extensionsLinkEl = templateContent.querySelector("#extensionsLink");
     if (!extensionsLinkEl) {
-      console.error('[Brave Settings Overrides] Could not find extensionsLinkEl to remove')
+      console.error(
+        "[Brave Settings Overrides] Could not find extensionsLinkEl to remove"
+      );
     }
-    extensionsLinkEl.remove()
+    extensionsLinkEl.remove();
     // Add version number to 'about' link
-    const aboutEl = templateContent.querySelector('#about-menu')
+    const aboutEl = templateContent.querySelector("#about-menu");
     if (!aboutEl) {
-      console.error('[Brave Settings Overrides] Could not find about-menu element')
-      return
+      console.error(
+        "[Brave Settings Overrides] Could not find about-menu element"
+      );
+      return;
     }
-    const parent = aboutEl.parentNode
-    parent.removeChild(aboutEl)
+    const parent = aboutEl.parentNode;
+    parent.removeChild(aboutEl);
 
-    const newAboutEl = document.createElement('a')
-    newAboutEl.setAttribute('href', '/help')
-    newAboutEl.setAttribute('id', aboutEl.id)
+    const newAboutEl = document.createElement("a");
+    newAboutEl.setAttribute("href", "/help");
+    newAboutEl.setAttribute("id", aboutEl.id);
 
-    const graphicsEl = document.createElement('div')
-    graphicsEl.setAttribute('class', 'brave-about-graphic')
+    const graphicsEl = document.createElement("div");
+    graphicsEl.setAttribute("class", "brave-about-graphic");
 
-    const icon = document.createElement('iron-icon')
-    icon.setAttribute('icon', 'brave_settings:full-color-brave-lion')
+    const image = document.createElement("img");
+    image.setAttribute("src", "chrome://settings/images/minego.svg");
+    // const icon = document.createElement("iron-icon");
+    // icon.setAttribute("icon", "brave_settings:full-color-brave-lion");
 
-    const metaEl = document.createElement('div')
-    metaEl.setAttribute('class', 'brave-about-meta')
+    const metaEl = document.createElement("div");
+    metaEl.setAttribute("class", "brave-about-meta");
 
-    const menuLink = document.createElement('span')
-    menuLink.setAttribute('class', 'brave-about-item brave-about-menu-link-text')
-    menuLink.textContent = aboutEl.textContent
+    const menuLink = document.createElement("span");
+    menuLink.setAttribute(
+      "class",
+      "brave-about-item brave-about-menu-link-text"
+    );
+    menuLink.textContent = aboutEl.textContent;
 
-    const versionEl = document.createElement('span')
-    versionEl.setAttribute('class', 'brave-about-item brave-about-menu-version')
-    versionEl.textContent = `v ${loadTimeData.getString('braveProductVersion')}`
+    const versionEl = document.createElement("span");
+    versionEl.setAttribute(
+      "class",
+      "brave-about-item brave-about-menu-version"
+    );
+    versionEl.textContent = `v ${loadTimeData.getString(
+      "braveProductVersion"
+    )}`;
 
-    parent.appendChild(newAboutEl)
-    newAboutEl.appendChild(graphicsEl)
-    graphicsEl.appendChild(icon)
-    newAboutEl.appendChild(metaEl)
-    metaEl.appendChild(menuLink)
-    metaEl.appendChild(versionEl)
-  }
-})
+    parent.appendChild(newAboutEl);
+    newAboutEl.appendChild(graphicsEl);
+    graphicsEl.appendChild(image);
+    newAboutEl.appendChild(metaEl);
+    metaEl.appendChild(menuLink);
+    metaEl.appendChild(versionEl);
+  },
+});

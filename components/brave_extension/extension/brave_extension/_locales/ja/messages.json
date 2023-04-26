@@ -1,6 +1,6 @@
 {
   "appName": {
-    "message": "Braveの拡張機能",
+    "message": "Minegoの拡張機能",
     "description": "The name of the the extension."
   },
   "shields": {
@@ -24,12 +24,12 @@
     "description": "Message telling the user to disable shields if a site appears broken"
   },
   "disabledMessage": {
-    "message": "Braveのプライバシーおよびセキュリティー保護なく、このサイトを閲覧しています。シールドを有効にすると、正しく機能しませんか？",
+    "message": "Minegoのプライバシーおよびセキュリティー保護なく、このサイトを閲覧しています。シールドを有効にすると、正しく機能しませんか？",
     "description": "Message telling the user that shields are disabled, and prompting them towards reporting an issue if necessary"
   },
   "reportBrokenSite": {
     "message": "サイト表示の不具合を報告",
-    "description": "Message for the button allowing users to report a broken site to Brave developers"
+    "description": "Message for the button allowing users to report a broken site to Minego developers"
   },
   "itemsBlocked": {
     "message": "アイテムがブロックされました",
@@ -188,8 +188,8 @@
     "description": "Message for the simple view option"
   },
   "shieldsExplanation": {
-    "message": "大抵の場合、ウェブサイトはCookieとスクリプトを使用しています（広告に組み込まれることが多いです）が、これらはユーザーとデバイスを識別しようとしています。Cookieとスクリプトはユーザーが誰なのかを把握し、ウェブ全体でユーザーを追跡しようとします。すなわちあらゆるサイトでユーザーの行動を追跡するのです。BraveはこれらのCookieやスクリプトをブロックするので、ユーザーは行動を追跡されることなくインターネットを閲覧できます。",
-    "description": "Message in read-only view explaining what Brave Shields do"
+    "message": "大抵の場合、ウェブサイトはCookieとスクリプトを使用しています（広告に組み込まれることが多いです）が、これらはユーザーとデバイスを識別しようとしています。Cookieとスクリプトはユーザーが誰なのかを把握し、ウェブ全体でユーザーを追跡しようとします。すなわちあらゆるサイトでユーザーの行動を追跡するのです。MinegoはこれらのCookieやスクリプトをブロックするので、ユーザーは行動を追跡されることなくインターネットを閲覧できます。",
+    "description": "Message in read-only view explaining what Minego Shields do"
   },
   "blockedResoucesExplanation": {
     "message": "クロスサイト・トラッカーおよびその他の不審な通信をブロックしました",
@@ -208,12 +208,12 @@
     "description": "Message inviting the user to learn more about Shields"
   },
   "addToBrave": {
-    "message": "Brave に追加",
-    "description": "Message for adding an extension to Brave"
+    "message": "Minego に追加",
+    "description": "Message for adding an extension to Minego"
   },
   "removeFromBrave": {
-    "message": "Brave から削除",
-    "description": "Message for removing an extension from Brave"
+    "message": "Minego から削除",
+    "description": "Message for removing an extension from Minego"
   },
   "addToChrome": {
     "message": "Chrome に追加",

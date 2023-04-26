@@ -56,6 +56,20 @@ generate_grd("build_grd") {
     "images/safe_browsing_banner.svg",
     "images/safe_browsing_banner_dark.svg",
     "images/warning_triangle.svg",
+    "images/get_started.svg",
+    "images/appearance.svg",
+    "images/auto_fill.svg",
+    "images/download.svg",
+    "images/extension.svg",
+    "images/help.svg",
+    "images/language.svg",
+    "images/minego.svg",
+    "images/new_tab.svg",
+    "images/privacy.svg",
+    "images/reset.svg",
+    "images/search.svg",
+    "images/setting.svg",
+    "images/sync.svg",
   ]
   input_files_base_dir = rebase_path(".", "//")
 
