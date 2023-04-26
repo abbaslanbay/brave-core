@@ -1,6 +1,6 @@
 {
   "appName": {
-    "message": "Brave-laajennus",
+    "message": "Minego-laajennus",
     "description": "The name of the the extension."
   },
   "shields": {
@@ -24,12 +24,12 @@
     "description": "Message telling the user to disable shields if a site appears broken"
   },
   "disabledMessage": {
-    "message": "Selaat tätä sivustoa ilman Braven yksityisyys- ja tietoturvasuojia. Eikö se toimi oikein kilpien ollessa käytössä?",
+    "message": "Selaat tätä sivustoa ilman Minegon yksityisyys- ja tietoturvasuojia. Eikö se toimi oikein kilpien ollessa käytössä?",
     "description": "Message telling the user that shields are disabled, and prompting them towards reporting an issue if necessary"
   },
   "reportBrokenSite": {
     "message": "Ilmoita toimimattomasta sivustosta",
-    "description": "Message for the button allowing users to report a broken site to Brave developers"
+    "description": "Message for the button allowing users to report a broken site to Minego developers"
   },
   "itemsBlocked": {
     "message": "Kohdetta estetty",
@@ -188,8 +188,8 @@
     "description": "Message for the simple view option"
   },
   "shieldsExplanation": {
-    "message": "Sivustoihin sisältyy usein evästeitä ja komentosarjoja (usein mainoksiin upotettuina), jotka yrittävät tunnistaa sinut ja laitteesi. Ne yrittävät selvittää henkilöllisyytesi ja jäljittää sinua verkossa seuraamalla, mitä teet kaikilla vierailemillasi sivustoilla. Brave estää ne, jotta voit selata verkkoa ilman seuratuksi tulemista.",
-    "description": "Message in read-only view explaining what Brave Shields do"
+    "message": "Sivustoihin sisältyy usein evästeitä ja komentosarjoja (usein mainoksiin upotettuina), jotka yrittävät tunnistaa sinut ja laitteesi. Ne yrittävät selvittää henkilöllisyytesi ja jäljittää sinua verkossa seuraamalla, mitä teet kaikilla vierailemillasi sivustoilla. Minego estää ne, jotta voit selata verkkoa ilman seuratuksi tulemista.",
+    "description": "Message in read-only view explaining what Minego Shields do"
   },
   "blockedResoucesExplanation": {
     "message": "Sivustojen välistä seurantasovellusta (cross-site trackers) ja muuta ikävää juttua estetty",
@@ -208,12 +208,12 @@
     "description": "Message inviting the user to learn more about Shields"
   },
   "addToBrave": {
-    "message": "Lisää Braveiin",
-    "description": "Message for adding an extension to Brave"
+    "message": "Lisää Minegoiin",
+    "description": "Message for adding an extension to Minego"
   },
   "removeFromBrave": {
-    "message": "Poista Bravesta",
-    "description": "Message for removing an extension from Brave"
+    "message": "Poista Minegosta",
+    "description": "Message for removing an extension from Minego"
   },
   "addToChrome": {
     "message": "Lisää Chromeen",
