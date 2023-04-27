@@ -70,23 +70,23 @@ RegisterPolymerTemplateModifications({
     }
 
     // Append rewards reset data link
-    const body = templateContent.querySelector('[slot="body"]')
-    if (!body) {
-      console.error(`[Brave Settings Overrides] cannot find 'slot="body"' in clear-browsing-data-dialog`)
-      return
-    }
-    body.insertAdjacentHTML(
-      'beforeend',
-      getTrustedHTML`
-        <a id="rewards-reset-data" href="chrome://rewards/#manage-wallet"></a>
-      `)
-    const rewardsResetLink =
-      templateContent.getElementById('rewards-reset-data')
-    if (!rewardsResetLink) {
-      console.error(
-        '[Brave Settings Overrides] Couldn\'t find Rewards reset link')
-    } else {
-      rewardsResetLink.textContent = loadTimeData.getString('resetRewardsData')
-    }
+    // const body = templateContent.querySelector('[slot="body"]')
+    // if (!body) {
+    //   console.error(`[Brave Settings Overrides] cannot find 'slot="body"' in clear-browsing-data-dialog`)
+    //   return
+    // }
+    // body.insertAdjacentHTML(
+    //   'beforeend',
+    //   getTrustedHTML`
+    //     <a id="rewards-reset-data" href="chrome://rewards/#manage-wallet"></a>
+    //   `)
+    // const rewardsResetLink =
+    //   templateContent.getElementById('rewards-reset-data')
+    // if (!rewardsResetLink) {
+    //   console.error(
+    //     '[Brave Settings Overrides] Couldn\'t find Rewards reset link')
+    // } else {
+    //   rewardsResetLink.textContent = loadTimeData.getString('resetRewardsData')
+    // }
   }
 })

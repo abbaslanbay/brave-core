@@ -313,7 +313,7 @@ RegisterPolymerTemplateModifications({
       // Insert Web3 Domains
       last = last.insertAdjacentElement('afterend', sectionWeb3Domains)
       // Insert Tor
-      last = last.insertAdjacentElement('afterend', sectionTor)
+      //last = last.insertAdjacentElement('afterend', sectionTor)
 
       // Advanced
       const advancedTemplate = templateContent.querySelector('template[if="[[showAdvancedSettings_(pageVisibility.advancedSettings)]]"]')

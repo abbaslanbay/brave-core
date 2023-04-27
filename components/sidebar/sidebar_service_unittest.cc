@@ -194,8 +194,8 @@ TEST_F(SidebarServiceTest, UpdateItem) {
   EXPECT_FALSE(service_->IsEditableItemAt(last_item_index));
 
   SidebarItem brave_item;
-  const GURL brave_url("https://brave.com/");
-  const std::u16string brave_title(u"Brave software");
+  const GURL brave_url("https://minego.io/");
+  const std::u16string brave_title(u"Minego");
   brave_item.url = brave_url;
   brave_item.title = brave_title;
   brave_item.type = SidebarItem::Type::kTypeWeb;
