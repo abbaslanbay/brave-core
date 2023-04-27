@@ -94,7 +94,7 @@ const PrepopulatedEngine duckduckgo = MakeBravePrepopulatedEngine(
     L"DuckDuckGo",
     L":d",
     "https://duckduckgo.com/favicon.ico",
-    "https://duckduckgo.com/?q={searchTerms}&t=brave",
+    "https://duckduckgo.com/?q={searchTerms}&t=minego",
     "UTF-8",
     "https://ac.duckduckgo.com/ac/?q={searchTerms}&type=list",
     SEARCH_ENGINE_DUCKDUCKGO,
@@ -104,7 +104,7 @@ const PrepopulatedEngine duckduckgo_de =
     ModifyEngineParams(duckduckgo,
                        nullptr,
                        nullptr,
-                       "https://duckduckgo.com/?q={searchTerms}&t=bravened",
+                       "https://duckduckgo.com/?q={searchTerms}&t=minegoned",
                        nullptr,
                        nullptr,
                        PREPOPULATED_ENGINE_ID_DUCKDUCKGO_DE);
@@ -113,7 +113,7 @@ const PrepopulatedEngine duckduckgo_au_nz_ie =
     ModifyEngineParams(duckduckgo,
                        nullptr,
                        nullptr,
-                       "https://duckduckgo.com/?q={searchTerms}&t=braveed",
+                       "https://duckduckgo.com/?q={searchTerms}&t=minegoed",
                        nullptr,
                        nullptr,
                        PREPOPULATED_ENGINE_ID_DUCKDUCKGO_AU_NZ_IE);
@@ -123,7 +123,7 @@ const PrepopulatedEngine duckduckgo_lite = MakeBravePrepopulatedEngine(
     L"DuckDuckGo Lite",
     L":dl",
     "https://duckduckgo.com/favicon.ico",
-    "https://duckduckgo.com/lite/?q={searchTerms}&t=brave",
+    "https://duckduckgo.com/lite/?q={searchTerms}&t=minego",
     "UTF-8",
     "https://ac.duckduckgo.com/ac/?q={searchTerms}&type=list",
     SEARCH_ENGINE_DUCKDUCKGO,
@@ -140,7 +140,7 @@ const PrepopulatedEngine brave_ecosia =
 #else
                        "e8eb07a6"
 #endif
-                       "&q={searchTerms}&addon=brave",
+                       "&q={searchTerms}&addon=minego",
                        "https://ac.ecosia.org/?q={searchTerms}",
                        nullptr,
                        PREPOPULATED_ENGINE_ID_ECOSIA);
@@ -179,7 +179,7 @@ const PrepopulatedEngine brave_yandex =
 #endif
                        "&text={searchTerms}",
                        "https://suggest.yandex.ru/suggest-ff.cgi?"
-                       "part={searchTerms}&v=3&sn=5&srv=brave_desktop",
+                       "part={searchTerms}&v=3&sn=5&srv=minego_desktop",
                        nullptr,
                        PREPOPULATED_ENGINE_ID_YANDEX);
 
