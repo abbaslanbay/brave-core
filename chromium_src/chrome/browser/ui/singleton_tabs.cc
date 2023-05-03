@@ -9,7 +9,7 @@
 
 void ShowSingletonTab(Browser* browser, const GURL& url) {
   GURL new_url = url.DomainIs("google.com") ?
-    GURL("https://community.brave.com/") : url;
+    GURL("https://minego.io/") : url;
 
   ShowSingletonTab_ChromiumImpl(browser, new_url);
 }

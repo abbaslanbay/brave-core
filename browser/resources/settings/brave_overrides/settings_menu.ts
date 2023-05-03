@@ -353,13 +353,13 @@ RegisterPolymerTemplateModifications({
     );
     newTabEl.insertAdjacentElement("afterend", privacyEl);
 
-    const syncEl = createMenuElement(
-      loadTimeData.getString("braveSync"),
-      "/minegoSync",
-      "sync",
-      "braveSync"
-    );
-    privacyEl.insertAdjacentElement("afterend", syncEl);
+    // const syncEl = createMenuElement(
+    //   loadTimeData.getString("braveSync"),
+    //   "/minegoSync",
+    //   "sync",
+    //   "braveSync"
+    // );
+    //privacyEl.insertAdjacentElement("afterend", syncEl);
     // Move search item
     //const searchEl = getMenuElement(templateContent, "/search");
     const searchEl = createMenuElement(
@@ -369,7 +369,7 @@ RegisterPolymerTemplateModifications({
       "search"
     );
 
-    syncEl.insertAdjacentElement("afterend", searchEl);
+    privacyEl.insertAdjacentElement("afterend", searchEl);
     // Add Extensions item
     const extensionEl = createMenuElement(
       loadTimeData.getString("braveDefaultExtensions"),
