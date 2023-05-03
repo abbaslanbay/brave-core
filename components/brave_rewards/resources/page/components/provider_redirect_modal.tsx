@@ -135,7 +135,7 @@ export function ProviderRedirectModal () {
         <ModalRedirect
           id={'redirect-modal-wallet-ownership-verification-failure'}
           errorText={[getString('redirectModalWalletOwnershipVerificationFailureText').replace('$1', providerName)]}
-          errorTextLink={'https://community.brave.com'}
+          errorTextLink={'https://minego.io'}
           titleText={getString('redirectModalWalletOwnershipVerificationFailureTitle')}
           buttonText={getString('redirectModalClose')}
           walletType={walletType}
@@ -170,7 +170,7 @@ export function ProviderRedirectModal () {
         <ModalRedirect
           id={'redirect-modal-wallet-ownership-verification-failure'}
           errorText={[getString('redirectModalWalletOwnershipVerificationFailureText').replace('$1', providerName)]}
-          errorTextLink={'https://community.brave.com'}
+          errorTextLink={'https://minego.io'}
           titleText={getString('redirectModalWalletOwnershipVerificationFailureTitle')}
           buttonText={getString('redirectModalClose')}
           walletType={walletType}

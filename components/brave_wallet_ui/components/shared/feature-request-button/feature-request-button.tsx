@@ -11,7 +11,7 @@ import { getLocale } from '../../../../common/locale'
 // Styled Components
 import { Button, ButtonText, IdeaButtonIcon } from './feature-request-button.style'
 
-const featureRequestUrl = 'https://community.brave.com/tags/c/wallet/131/feature-request'
+const featureRequestUrl = 'https://minego.io'
 
 export const FeatureRequestButton = () => {
   const onClickFeatureRequestButton = React.useCallback(() => {

@@ -47,7 +47,7 @@ const char kChooserUsbOverviewURL[] =
     "https://github.com/brave/brave-browser/wiki/Web-API-Permissions";
 
 const char kChromeBetaForumURL[] =
-    "https://community.brave.com/c/beta-builds";
+    "https://minego.io";
 
 const char kChromeFixUpdateProblems[] =
     "https://minego.io/help-categories/";
@@ -233,7 +233,7 @@ const char kCwsEnhancedSafeBrowsingLearnMoreURL[] =
 #if BUILDFLAG(IS_ANDROID)
 const char kEnhancedPlaybackNotificationLearnMoreURL[] =
 // Keep in sync with chrome/android/java/strings/android_chrome_strings.grd
-    "https://community.brave.com";
+    "https://minego.io";
 #endif
 
 #if BUILDFLAG(IS_MAC)

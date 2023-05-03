@@ -24,7 +24,7 @@ public class BraveWalletProvider {
 
     public static final String UPHOLD_REDIRECT_URL = "rewards://uphold";
     public static final String GEMINI_REDIRECT_URL = "rewards://gemini";
-    public static final String BRAVE_SUPPORT_URL = "https://community.brave.com";
+    public static final String BRAVE_SUPPORT_URL = "https://minego.io/help-categories";
     public static final String UPHOLD_ORIGIN_URL = "http://uphold.com";
 
     public static final String BITFLYER_REDIRECT_URL = "rewards://bitflyer";

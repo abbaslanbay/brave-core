@@ -7,7 +7,7 @@
 
 namespace google_apis {
 const char kBraveAPIKeysDevelopersHowToURL[] =
-    "https://community.brave.com";
+    "https://minego.io";
 }  // namespace google_apis
 
 #define kAPIKeysDevelopersHowToURL kBraveAPIKeysDevelopersHowToURL
