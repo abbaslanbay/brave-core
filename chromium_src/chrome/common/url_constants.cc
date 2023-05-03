@@ -19,14 +19,14 @@ const char kAccessibilityLabelsLearnMoreURL[] =
 const char kAdPrivacyLearnMoreURL[] = "https://minego.io/help-categories/";
 
 const char kAutomaticSettingsResetLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360017903152-How-do-I-reset-Brave-settings-to-default-";
+    "https://minego.io/"
+    "help-categories";
 
 const char kAdvancedProtectionDownloadLearnMoreURL[] =
     "https://minego.io/help-categories/";
 
 const char kBatterySaverModeLearnMoreUrl[] =
-    "https://support.brave.com/hc/en-us/articles/13380606172557";
+    "https://minego.io/help-categories/";
 
 const char kBluetoothAdapterOffHelpURL[] =
     "https://minego.io/help-categories/";
@@ -86,36 +86,36 @@ const char kChromeUIUntrustedNewTabPageUrl[] =
 const char kChromiumProjectURL[] = "https://github.com/brave/brave-browser/";
 
 const char kContentSettingsExceptionsLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360018205431-How-do-I-change-site-permissions-";
+    "https://minego.io/"
+    "help-categories";
 
 const char kCookiesSettingsHelpCenterURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360018205431-How-do-I-change-site-permissions-";
+     "https://minego.io/"
+    "help-categories";
 
 const char kCrashReasonURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360018192251-How-do-I-fix-page-crashes-and-other-page-loading-errors-";
+    "https://minego.io/"
+    "help-categories";
 
 const char kCrashReasonFeedbackDisplayedURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360018192251-How-do-I-fix-page-crashes-and-other-page-loading-errors-";
+   "https://minego.io/"
+    "help-categories";
 
 const char kDoNotTrackLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360017905612-How-do-I-turn-Do-Not-Track-on-or-off-";
+     "https://minego.io/"
+    "help-categories";
 
 const char kDownloadInterruptedLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360018192491-How-do-I-fix-file-download-errors-";
+   "https://minego.io/"
+    "help-categories";
 
 const char kDownloadScanningLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360018192491-How-do-I-fix-file-download-errors-";
+      "https://minego.io/"
+    "help-categories";
 
 const char kExtensionControlledSettingLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360018185651-How-do-I-stop-extensions-from-changing-my-settings-";
+   "https://minego.io/"
+    "help-categories";
 
 const char kExtensionInvalidRequestURL[] = "chrome-extension://invalid/";
 
@@ -137,11 +137,11 @@ const char kGoogleAccountDeviceActivityURL[] = "https://minego.io/help-categorie
 const char kGooglePasswordManagerURL[] = "https://support.brave.com";
 
 const char kLearnMoreReportingURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360017905872-How-do-I-enable-or-disable-automatic-crash-reporting-";
+     "https://minego.io/"
+    "help-categories";
 
 const char kHighEfficiencyModeLearnMoreUrl[] =
-    "https://support.brave.com/hc/en-us/articles/13383683902733";
+    "https://minego.io/help-categories";
 
 const char kManagedUiLearnMoreUrl[] = "https://minego.io/help-categories/";
 
@@ -152,34 +152,34 @@ const char kMyActivityUrlInClearBrowsingData[] =
     "https://minego.io/help-categories/";
 
 const char kOmniboxLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360017479752-How-do-I-set-my-default-search-engine-";
+  "https://minego.io/"
+    "help-categories";
 
 const char kPageInfoHelpCenterURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360018185871-How-do-I-check-if-a-site-s-connection-is-secure-";
+     "https://minego.io/"
+    "help-categories";
 
 const char kPasswordCheckLearnMoreURL[] = "https://minego.io/help-categories/";
 
 const char kPasswordGenerationLearnMoreURL[] = "https://minego.io/help-categories/";
 
 const char kPasswordManagerLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360018185951-How-do-I-use-the-built-in-password-manager-";
+     "https://minego.io/"
+    "help-categories";
 
 const char kPaymentMethodsURL[] = "https://support.brave.com";
 
 const char kPrivacyLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360017989132-How-do-I-change-my-Privacy-Settings-";
+     "https://minego.io/"
+    "help-categories";
 
 const char kRemoveNonCWSExtensionURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360017914832-Why-am-I-seeing-the-message-extensions-disabled-by-Brave-";
+     "https://minego.io/"
+    "help-categories";
 
 const char kResetProfileSettingsLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360017903152-How-do-I-reset-Brave-settings-to-default-";
+     "https://minego.io/"
+    "help-categories";
 
 const char kSafeBrowsingHelpCenterURL[] =
     "https://minego.io/help-categories/";
@@ -221,8 +221,8 @@ const char kSyncTrustedVaultOptInURL[] = "https://minego.io/help-categories/";
 const char kSyncTrustedVaultLearnMoreURL[] = "https://minego.io/help-categories/";
 
 const char kUpgradeHelpCenterBaseURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360025390311-How-do-I-download-and-install-Brave-";
+     "https://minego.io/"
+    "help-categories";
 
 const char kWhoIsMyAdministratorHelpURL[] =
     "https://minego.io/help-categories/";
@@ -241,28 +241,28 @@ const char kChromeEnterpriseSignInLearnMoreURL[] =
     "https://minego.io/help-categories/";
 
 const char kMacOsObsoleteURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360025390311-How-do-I-download-and-install-Brave-";
+     "https://minego.io/"
+    "help-categories";
 #endif
 
 #if BUILDFLAG(IS_WIN)
 const char kChromeCleanerLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360017884152-How-do-I-remove-unwanted-ads-pop-ups-malware-";
+     "https://minego.io/"
+    "help-categories";
 
 const char kWindowsXPVistaDeprecationURL[] =
     "https://minego.io/help-categories/";
 
 const char kWindows78DeprecationURL[] =
-    "https://support.brave.com/hc/en-us/articles/11197967945613";
+    "https://minego.io/help-categories/";
 #endif  // BUILDFLAG(IS_WIN)
 
 const char kChromeSyncLearnMoreURL[] = "https://minego.io/help-categories/";
 
 #if BUILDFLAG(ENABLE_PLUGINS)
 const char kOutdatedPluginLearnMoreURL[] =
-    "https://support.brave.com/hc/en-us/articles/"
-    "360018163151-How-do-I-manage-Flash-audio-video-";
+      "https://minego.io/"
+    "help-categories";
 #endif
 
 #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
@@ -278,6 +278,6 @@ const char kChromeRootStoreSettingsHelpCenterURL[] =
 #endif
 
 const char kAddressesAndPaymentMethodsLearnMoreURL[] =
-    "https://support.brave.com";
+    "https://minego.io/help-categories";
 
 }  // namespace chrome

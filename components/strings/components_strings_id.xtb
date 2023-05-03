@@ -24,7 +24,7 @@
 <translation id="1055184225775184556">&amp;Urungkan Penambahan</translation>
 <translation id="1056663316309890343">Software foto</translation>
 <translation id="1056898198331236512">Peringatan</translation>
-<translation id="1248991947169346185"><ph name="PLAY_CHROME_DINO_GAME_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk memainkan game Dino Run di Brave</translation>
+<translation id="1248991947169346185"><ph name="PLAY_CHROME_DINO_GAME_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk memainkan game Dino Run di Minego</translation>
 <translation id="1058479211578257048">Menyimpan kartu...</translation>
 <translation id="1060320201901229167">Envelope Kaku 5</translation>
 <translation id="10614374240317010">Jangan pernah disimpan</translation>
@@ -42,7 +42,7 @@
 <translation id="1088860948719068836">Tambahkan Nama di Kartu</translation>
 <translation id="1089439967362294234">Ubah Sandi</translation>
 <translation id="1096545575934602868">Kolom ini tidak boleh memiliki lebih dari <ph name="MAX_ITEMS_LIMIT"/> entri. Semua entri lanjutan akan dibuang.</translation>
-<translation id="7584468665743195331">Tombol Lanjutkan perjalanan Anda, tekan Enter untuk melanjutkan perjalanan Anda dan melihat aktivitas yang relevan di histori Brave Anda</translation>
+<translation id="7584468665743195331">Tombol Lanjutkan perjalanan Anda, tekan Enter untuk melanjutkan perjalanan Anda dan melihat aktivitas yang relevan di histori Minego Anda</translation>
 <translation id="1101672080107056897">Tindakan error</translation>
 <translation id="1103523840287552314">Selalu terjemahkan <ph name="LANGUAGE"/></translation>
 <translation id="1104409666019087579">Beberapa kolom wajib diisi masih kosong. Isi kolom sebelum menyimpan.</translation>
@@ -53,7 +53,7 @@
 <translation id="1123753900084781868">Teks Otomatis tidak tersedia untuk saat ini</translation>
 <translation id="1125573121925420732">Peringatan mungkin akan sering ditampilkan selama situs mengupdate keamanannya. Situasi ini akan segera diperbaiki.</translation>
 <translation id="112840717907525620">Cache kebijakan Oke</translation>
-<translation id="3186248837008742887">Tombol Terjemahkan halaman, tekan Enter untuk menerjemahkan halaman ini dengan Brave Terjemahan</translation>
+<translation id="3186248837008742887">Tombol Terjemahkan halaman, tekan Enter untuk menerjemahkan halaman ini dengan Minego Terjemahan</translation>
 <translation id="1131264053432022307">Gambar yang Anda Salin</translation>
 <translation id="1147769322402934017">Galeri gambar online</translation>
 <translation id="1150979032973867961">Server ini tidak dapat membuktikan bahwa ini adalah <ph name="DOMAIN"/>; sertifikat keamanannya tidak dipercaya oleh sistem operasi komputer Anda. Hal ini dapat disebabkan oleh kesalahan konfigurasi atau penyerang memotong sambungan Anda.</translation>
@@ -85,13 +85,13 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1204602502194308272">Ikan &amp; akuarium</translation>
 <translation id="1206967143813997005">Tanda tangan awal tidak valid</translation>
 <translation id="1209206284964581585">Sembunyikan untuk saat ini</translation>
-<translation id="8250355499536962710">Tombol Buat formulir, tekan Enter untuk membuat formulir baru di Brave Formulir dengan cepat</translation>
+<translation id="8250355499536962710">Tombol Buat formulir, tekan Enter untuk membuat formulir baru di Minego Formulir dengan cepat</translation>
 <translation id="121201262018556460">Anda bermaksud membuka <ph name="DOMAIN"/>, namun server menyajikan sertifikat yang berisi kunci yang lemah. Penyerang mungkin telah merusak kunci pribadi, dan server mungkin bukan yang diharapkan (Anda mungkin sedang berkomunikasi dengan penyerang).</translation>
 <translation id="1219129156119358924">Keamanan Sistem</translation>
 <translation id="1222060260947439312">Baki Kanan</translation>
 <translation id="1224330468394120478">A3x6</translation>
 <translation id="1225570101506606926">Biliar</translation>
-<translation id="2735968720006267833">Brave akan menemukan diskon untuk Anda</translation>
+<translation id="2735968720006267833">Minego akan menemukan diskon untuk Anda</translation>
 <translation id="1227224963052638717">Kebijakan tidak dikenal.</translation>
 <translation id="1228893227497259893">Pengidentifikasi entitas salah</translation>
 <translation id="1232569758102978740">Tanpa Judul</translation>
@@ -101,8 +101,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="124116460088058876">Bahasa lainnya</translation>
 <translation id="1243027604378859286">Pengarang:</translation>
 <translation id="1246424317317450637">Tebal</translation>
-<translation id="1052005765108026699">Untuk membayar lebih cepat di pembelian berikutnya, simpan kartu, nama, dan alamat penagihan ke Akun Brave Anda.</translation>
-<translation id="2900208483223661703">Tombol Buat sheet, tekan Enter untuk membuat Spreadsheet Brave baru dengan cepat</translation>
+<translation id="1052005765108026699">Untuk membayar lebih cepat di pembelian berikutnya, simpan kartu, nama, dan alamat penagihan ke Akun Minego Anda.</translation>
+<translation id="2900208483223661703">Tombol Buat sheet, tekan Enter untuk membuat Spreadsheet Minego baru dengan cepat</translation>
 <translation id="1253921432148366685"><ph name="TYPE_1"/>, <ph name="TYPE_2"/> (disinkronkan)</translation>
 <translation id="1256368399071562588">&lt;p&gt;Jika Anda mencoba membuka situs dan tidak terbuka, terlebih dahulu coba perbaiki error dengan langkah-langkah pemecahan masalah ini:&lt;/p&gt;
     &lt;ol&gt;
@@ -112,20 +112,20 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
     &lt;/ol&gt;</translation>
 <translation id="1257286744552378071">Anda memasukkan sandi di situs yang tidak dikelola oleh organisasi. Untuk melindungi akun, jangan gunakan sandi yang sama di aplikasi dan situs lain.</translation>
 <translation id="1257553931232494454">tingkat zoom</translation>
-<translation id="8101828947363663989"><ph name="MANAGE_CHROME_SETTINGS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan Tab lalu Enter untuk mengelola setelan Brave Anda</translation>
+<translation id="8101828947363663989"><ph name="MANAGE_CHROME_SETTINGS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan Tab lalu Enter untuk mengelola setelan Minego Anda</translation>
 <translation id="1263231323834454256">Daftar bacaan</translation>
 <translation id="1264309058268477500">Alternatif</translation>
 <translation id="1264974993859112054">Olahraga</translation>
 <translation id="1266469291454105242">Buka kunci perangkat</translation>
 <translation id="1268480293435976622">Envelope Chinese #7</translation>
-<translation id="53564677632020212">Buat situs baru di Brave Sites dengan cepat</translation>
+<translation id="53564677632020212">Buat situs baru di Minego Sites dengan cepat</translation>
 <translation id="1270502636509132238">Metode Pengambilan</translation>
 <translation id="1273592791152866347">Pemantauan harga nonaktif</translation>
 <translation id="1281476433249504884">Tempat kertas 1</translation>
 <translation id="1285320974508926690">Jangan pernah terjemahkan situs ini</translation>
 <translation id="1288548991597756084">Simpan kartu dengan aman</translation>
 <translation id="1292571435393770077">Baki 16</translation>
-<translation id="1209478311331937175">"Software di komputer mencegah Brave terhubung dengan aman ke web" (khusus komputer Windows)</translation>
+<translation id="1209478311331937175">"Software di komputer mencegah Minego terhubung dengan aman ke web" (khusus komputer Windows)</translation>
 <translation id="1293797321964802402">Envelope 9 x 11 inci</translation>
 <translation id="1294154142200295408">Variasi baris perintah</translation>
 <translation id="129553762522093515">Baru saja ditutup</translation>
@@ -145,7 +145,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1323433172918577554">Tampilkan Lebih Banyak</translation>
 <translation id="132390688737681464">Simpan dan Isi Alamat</translation>
 <translation id="1330449323196174374">Lipatan format gate di kiri</translation>
-<translation id="4274264486214599895">Mainkan Game Brave Dino</translation>
+<translation id="4274264486214599895">Mainkan Game Minego Dino</translation>
 <translation id="1333989956347591814">Aktivitas Anda <ph name="BEGIN_EMPHASIS"/>mungkin tetap dapat dilihat<ph name="END_EMPHASIS"/> oleh:
         <ph name="BEGIN_LIST"/>
           <ph name="LIST_ITEM"/>Situs yang Anda buka
@@ -223,7 +223,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1492194039220927094">Push kebijakan:</translation>
 <translation id="14938948731065592">Perlengkapan komputer</translation>
 <translation id="1495677929897281669">Kembali ke tab</translation>
-<translation id="1812569385220097122">Tampilkan kartu dari Akun Brave Anda</translation>
+<translation id="1812569385220097122">Tampilkan kartu dari Akun Minego Anda</translation>
 <translation id="150536342253161096">Berita lokal</translation>
 <translation id="1507202001669085618">&lt;p&gt;Anda akan melihat error ini jika menggunakan portal Wi-Fi yang mengharuskan Anda login sebelum terhubung online.&lt;/p&gt;
     &lt;p&gt;Untuk memperbaiki error, klik &lt;strong&gt;Sambungkan&lt;/strong&gt; di halaman yang ingin Anda buka.&lt;/p&gt;</translation>
@@ -233,7 +233,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1517433312004943670">Perlu nomor telepon</translation>
 <translation id="1519264250979466059">Tanggal Dibuat</translation>
 <translation id="1521159554480556801">Seni serat &amp; tekstil</translation>
-<translation id="5524011986660000129">Brave Spreadsheet</translation>
+<translation id="5524011986660000129">Minego Spreadsheet</translation>
 <translation id="1527263332363067270">Menunggu koneksi internet...</translation>
 <translation id="1529789484829130889">Baki 8</translation>
 <translation id="1530707389502320859">Situs yang baru saja Anda coba kunjungi terlihat palsu. Penyerang terkadang meniru situs dengan membuat perubahan kecil dan sulit terlihat pada URL situs.</translation>
@@ -244,7 +244,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="154408704832528245">Pilih Alamat Pengiriman</translation>
 <translation id="1549470594296187301">JavaScript harus diaktifkan untuk menggunakan fitur ini.</translation>
 <translation id="1551884710160394169">Freeware &amp; shareware</translation>
-<translation id="1705567146636171298">Perbarui browser Brave</translation>
+<translation id="1705567146636171298">Perbarui browser Minego</translation>
 <translation id="1555130319947370107">Biru</translation>
 <translation id="1559447966090556585">Dapatkan notifikasi?</translation>
 <translation id="1559486004335285648">Isi otomatis info pembayaran</translation>
@@ -257,7 +257,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1567040042588613346">Kebijakan ini berfungsi sebagaimana mestinya, tetapi nilai yang sama disetel di sumber lain dan digantikan oleh kebijakan ini.</translation>
 <translation id="1567405528131216114">Tambahkan <ph name="TOPIC"/></translation>
 <translation id="1569487616857761740">Masukkan tanggal habis masa berlaku</translation>
-<translation id="1385693425784118652">Brave mencoba mengaktifkan Windows Hello untuk mengisi sandi.</translation>
+<translation id="1385693425784118652">Minego mencoba mengaktifkan Windows Hello untuk mengisi sandi.</translation>
 <translation id="1572765991610098222"><ph name="WIDTH"/> x <ph name="HEIGHT"/> inci</translation>
 <translation id="1581080074034554886">CVC</translation>
 <translation id="1583429793053364125">Terjadi masalah sewaktu menampilkan halaman web ini.</translation>
@@ -269,7 +269,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1594030484168838125">Pilih</translation>
 <translation id="1596296697375291157">Film thriller, kriminal &amp; misteri</translation>
 <translation id="1599199147673445968">Kartu baru? <ph name="BEGIN_LINK"/>Masukkan Detail Kartu<ph name="END_LINK"/></translation>
-<translation id="8523167061098356223">Mainkan game Dino Run di Brave</translation>
+<translation id="8523167061098356223">Mainkan game Dino Run di Minego</translation>
 <translation id="161042844686301425">Sian</translation>
 <translation id="1611101756749861742">Rol Kedua</translation>
 <translation id="1615402009686901181">Kebijakan administrator akan menonaktifkan tangkapan layar saat konten rahasia terlihat</translation>
@@ -287,23 +287,23 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1640244768702815859">Coba <ph name="BEGIN_LINK"/>buka beranda situs<ph name="END_LINK"/>.</translation>
 <translation id="1641976391427233992">Tunda keluaran hingga</translation>
 <translation id="164212631332220697">Bayar dengan <ph name="CARD_DETAIL"/> saat checkout.</translation>
-<translation id="9108890623444393630">Tombol Ubah sandi Brave, tekan Enter untuk mengubah sandi Akun Brave Anda</translation>
+<translation id="9108890623444393630">Tombol Ubah sandi Minego, tekan Enter untuk mengubah sandi Akun Minego Anda</translation>
 <translation id="1644574205037202324">Histori</translation>
 <translation id="1645368109819982629">Protokol yang tidak didukung</translation>
-<translation id="1995056549836388472">Kelola setelan Brave Anda</translation>
+<translation id="1995056549836388472">Kelola setelan Minego Anda</translation>
 <translation id="1652415888492971589">JIS B8</translation>
-<translation id="3848846802033604519">Brave menyederhanakan halaman ini agar lebih mudah dibaca. Brave mengambil halaman asli melalui koneksi yang aman.</translation>
+<translation id="3848846802033604519">Minego menyederhanakan halaman ini agar lebih mudah dibaca. Minego mengambil halaman asli melalui koneksi yang aman.</translation>
 <translation id="1656489000284462475">Pengambilan</translation>
 <translation id="1658918301167915956">perangkat bluetooth</translation>
 <translation id="1662550410081243962">Simpan dan isi metode pembayaran</translation>
-<translation id="1838576226863399477">Kartu dan alamat berasal dari Brave. Anda dapat mengelolanya di <ph name="BEGIN_LINK"/>Setelan<ph name="END_LINK"/>.</translation>
+<translation id="1838576226863399477">Kartu dan alamat berasal dari Minego. Anda dapat mengelolanya di <ph name="BEGIN_LINK"/>Setelan<ph name="END_LINK"/>.</translation>
 <translation id="1671391448414634642">Mulai sekarang, halaman dalam bahasa <ph name="SOURCE_LANGUAGE"/> akan diterjemahkan ke dalam bahasa <ph name="TARGET_LANGUAGE"/>.</translation>
 <translation id="1674504678466460478"><ph name="SOURCE_LANGUAGE"/> ke <ph name="TARGET_LANGUAGE"/></translation>
 <translation id="1682696192498422849">Tepi pendek lebih dulu</translation>
 <translation id="168693727862418163">Nilai kebijakan ini gagal memvalidasi skemanya dan akan diabaikan.</translation>
 <translation id="168841957122794586">Sertifikat server berisi kunci kriptografis yang lemah.</translation>
 <translation id="1689333818294560261">Nama panggilan</translation>
-<translation id="4480331350562494522"><ph name="BEGIN_BOLD"/>Cara untuk mengelola data Anda:<ph name="END_BOLD"/> Brave otomatis menghapus topik yang tersimpan lebih dari 4 minggu. Saat Anda menjelajah, suatu topik mungkin muncul kembali di daftar. Anda juga dapat memblokir topik dari Brave yang tidak ingin Anda bagikan ke situs dan menonaktifkan topik iklan kapan saja di setelan Brave.</translation>
+<translation id="4480331350562494522"><ph name="BEGIN_BOLD"/>Cara untuk mengelola data Anda:<ph name="END_BOLD"/> Minego otomatis menghapus topik yang tersimpan lebih dari 4 minggu. Saat Anda menjelajah, suatu topik mungkin muncul kembali di daftar. Anda juga dapat memblokir topik dari Minego yang tidak ingin Anda bagikan ke situs dan menonaktifkan topik iklan kapan saja di setelan Minego.</translation>
 <translation id="1697532407822776718">Anda sudah siap!</translation>
 <translation id="1702815194757674443">ROC 16K</translation>
 <translation id="1703835215927279855">Letter</translation>
@@ -332,7 +332,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1736420071277903564">Komputer</translation>
 <translation id="1740951997222943430">Masukkan bulan habis masa berlaku yang valid</translation>
 <translation id="1741613555002899862">Harus ditentukan dan menjadi string yang valid saat DnsOverHttpsMode <ph name="SECURE_DNS_MODE_SECURE"/>.</translation>
-<translation id="6072474764708015774"><ph name="BEGIN_BOLD"/>Cara kami menggunakan data ini:<ph name="END_BOLD"/> Brave mencatat topik minat saat Anda melakukan penjelajahan. Label topik sudah ditentukan sebelumnya dan mencakup hal-hal seperti, Seni &amp; Hiburan, Belanja, dan Olahraga. Kemudian, situs yang Anda buka dapat meminta beberapa topik Anda (tetapi bukan histori penjelajahan) kepada Brave untuk mempersonalisasi iklan yang Anda lihat.</translation>
+<translation id="6072474764708015774"><ph name="BEGIN_BOLD"/>Cara kami menggunakan data ini:<ph name="END_BOLD"/> Minego mencatat topik minat saat Anda melakukan penjelajahan. Label topik sudah ditentukan sebelumnya dan mencakup hal-hal seperti, Seni &amp; Hiburan, Belanja, dan Olahraga. Kemudian, situs yang Anda buka dapat meminta beberapa topik Anda (tetapi bukan histori penjelajahan) kepada Minego untuk mempersonalisasi iklan yang Anda lihat.</translation>
 <translation id="1745880797583122200">Browser Anda dikelola</translation>
 <translation id="1746113442205726301">Perpindahan image Y</translation>
 <translation id="1746531169546376413">0 derajat</translation>
@@ -348,8 +348,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1768211456781949159"><ph name="BEGIN_LINK"/>Coba jalankan Diagnostik Jaringan Windows<ph name="END_LINK"/>.</translation>
 <translation id="1778646502362731194">JIS B0</translation>
 <translation id="1787142507584202372">Tab yang terbuka muncul di sini</translation>
-<translation id="3480410886581896628">Brave Smart Lock</translation>
-<translation id="8114214752558951503"><ph name="MANAGE_GOOGLE_ACCOUNT_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola info, privasi, dan keamanan di Akun Brave Anda</translation>
+<translation id="3480410886581896628">Minego Smart Lock</translation>
+<translation id="8114214752558951503"><ph name="MANAGE_GOOGLE_ACCOUNT_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola info, privasi, dan keamanan di Akun Minego Anda</translation>
 <translation id="1798447301915465742"><ph name="MULTIPLE_ACTIONS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, beberapa tindakan tersedia, tekan Tab untuk melihat semua tindakan</translation>
 <translation id="1800473098294731951">B9</translation>
 <translation id="1801812870656502108">Detail kartu virtual</translation>
@@ -380,7 +380,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1873899211667975540">Musik rock</translation>
 <translation id="1874224422119691492">Anda dapat mengubah apakah akan menggunakan kunci layar untuk mengisi sandi di <ph name="SETTINGS"/></translation>
 <translation id="1875025161375567525">Baki Foto</translation>
-<translation id="85321348617848915">Brave Formulir</translation>
+<translation id="85321348617848915">Minego Formulir</translation>
 <translation id="187918866476621466">Buka halaman awal</translation>
 <translation id="1883255238294161206">Ciutkan daftar</translation>
 <translation id="1884843295353628214">Musik jazz</translation>
@@ -388,7 +388,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1898423065542865115">Pemfilteran</translation>
 <translation id="1901443836186977402">{1,plural, =1{Server ini tidak dapat membuktikan bahwa ini adalah <ph name="DOMAIN"/>; masa berlaku sertifikat keamanannya telah habis beberapa hari yang lalu. Hal ini mungkin disebabkan oleh kesalahan konfigurasi, atau ada penyerang yang menginterupsi sambungan Anda. Saat ini jam komputer Anda disetel ke <ph name="CURRENT_DATE"/>. Apakah sudah sesuai? Jika belum, sebaiknya perbaiki jam sistem dan muat ulang halaman ini.}other{Server ini tidak dapat membuktikan bahwa ini adalah <ph name="DOMAIN"/>; masa berlaku sertifikat keamanannya telah habis # hari yang lalu. Hal ini mungkin disebabkan oleh kesalahan konfigurasi, atau ada penyerang yang menginterupsi sambungan Anda. Saat ini jam komputer Anda disetel ke <ph name="CURRENT_DATE"/>. Apakah sudah benar? Jika belum, sebaiknya perbaiki jam sistem dan muat ulang halaman ini.}}</translation>
 <translation id="1902576642799138955">Periode Validitas</translation>
-<translation id="6932104141210291380">Tombol Buat catatan, tekan Enter untuk membuat catatan baru di Brave Keep dengan cepat</translation>
+<translation id="6932104141210291380">Tombol Buat catatan, tekan Enter untuk membuat catatan baru di Minego Keep dengan cepat</translation>
 <translation id="1908217026282415406">Penggunaan &amp; gerakan kamera</translation>
 <translation id="191374271204266022">Salin sebagai JSON</translation>
 <translation id="1914326953223720820">Layanan Ekstraksi File</translation>
@@ -397,7 +397,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1919526244108283799">400 x 600 mm</translation>
 <translation id="192020519938775529">{COUNT,plural, =0{Tidak ada}=1{1 situs}other{# situs}}</translation>
 <translation id="1924727005275031552">Baru</translation>
-<translation id="2926892173992041302">Tombol Jalankan pemeriksaan keamanan Brave, tekan Enter untuk menjalankan pemeriksaan keamanan di setelan Brave</translation>
+<translation id="2926892173992041302">Tombol Jalankan pemeriksaan keamanan Minego, tekan Enter untuk menjalankan pemeriksaan keamanan di setelan Minego</translation>
 <translation id="1935995810530254458">Tetap salin</translation>
 <translation id="1939175642807587452">Dapat meminta untuk mengirimkan notifikasi</translation>
 <translation id="1943994668912612445">Desain</translation>
@@ -406,7 +406,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1954847915560574887">A3x3</translation>
 <translation id="1956486093533522234">Temukan, amankan, atau hapus perangkat Anda</translation>
 <translation id="1958218078413065209">Skor tertinggi Anda adalah <ph name="SCORE"/>.</translation>
-<translation id="990584554013599191">Bantu sempurnakan keamanan di web untuk semua orang dengan mengirimkan <ph name="BEGIN_WHITEPAPER_LINK"/>URL beberapa halaman yang Anda kunjungi, informasi sistem terbatas, dan beberapa konten halaman<ph name="END_WHITEPAPER_LINK"/> ke Brave. <ph name="BEGIN_PRIVACY_PAGE_LINK"/>Kebijakan privasi<ph name="END_PRIVACY_PAGE_LINK"/></translation>
+<translation id="990584554013599191">Bantu sempurnakan keamanan di web untuk semua orang dengan mengirimkan <ph name="BEGIN_WHITEPAPER_LINK"/>URL beberapa halaman yang Anda kunjungi, informasi sistem terbatas, dan beberapa konten halaman<ph name="END_WHITEPAPER_LINK"/> ke Minego. <ph name="BEGIN_PRIVACY_PAGE_LINK"/>Kebijakan privasi<ph name="END_PRIVACY_PAGE_LINK"/></translation>
 <translation id="1962204205936693436">Bookmark <ph name="DOMAIN"/></translation>
 <translation id="1973335181906896915">Kesalahan serialisasi</translation>
 <translation id="1974060860693918893">Lanjutan</translation>
@@ -422,8 +422,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2001146170449793414">{COUNT,plural, =1{dan 1 lainnya}other{dan # lainnya}}</translation>
 <translation id="2003709556000175978">Reset sandi Anda sekarang</translation>
 <translation id="2003775180883135320">Empat lubang di atas</translation>
-<translation id="2342444980304536062">Kelola izin dan data yang disimpan di seluruh situs di setelan Brave</translation>
-<translation id="6955198705411680473">Tombol Kelola setelan aksesibilitas, tekan Enter untuk mempersonalisasi alat aksesibilitas Anda di setelan Brave</translation>
+<translation id="2342444980304536062">Kelola izin dan data yang disimpan di seluruh situs di setelan Minego</translation>
+<translation id="6955198705411680473">Tombol Kelola setelan aksesibilitas, tekan Enter untuk mempersonalisasi alat aksesibilitas Anda di setelan Minego</translation>
 <translation id="202224654587969958">12 x 19 inci (30 x 48 cm)</translation>
 <translation id="2025115093177348061">Augmented reality</translation>
 <translation id="2025186561304664664">Proxy disetel ke konfigurasi otomatis.</translation>
@@ -436,12 +436,12 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2040463897538655645">Penyimpanan eksternal</translation>
 <translation id="2040894699575719559">Lokasi diblokir</translation>
 <translation id="2042213636306070719">Baki 7</translation>
-<translation id="3163988908275223348">Login untuk menggunakan sandi yang disimpan di Akun Brave Anda</translation>
+<translation id="3163988908275223348">Login untuk menggunakan sandi yang disimpan di Akun Minego Anda</translation>
 <translation id="2045871135676061132">Envelope Personal</translation>
 <translation id="2048261947532620704">Menerjemahkan halaman</translation>
 <translation id="205212645995975601">BBQ &amp; pemanggangan</translation>
 <translation id="2053111141626950936">Halaman dalam bahasa <ph name="LANGUAGE"/> tidak akan diterjemahkan.</translation>
-<translation id="5469355573019315764">Situs dapat meminta informasi kepada Brave untuk membantu mempersonalisasi iklan yang Anda lihat.</translation>
+<translation id="5469355573019315764">Situs dapat meminta informasi kepada Minego untuk membantu mempersonalisasi iklan yang Anda lihat.</translation>
 <translation id="2059202684901022309">22 x 34 inci (55 x 86 cm)</translation>
 <translation id="2064691555167957331">{COUNT,plural, =1{1 saran}other{# saran}}</translation>
 <translation id="2066915425250589881">minta untuk dihapus</translation>
@@ -454,9 +454,9 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="20817612488360358">Setelan proxy sistem disetel untuk digunakan namun konfigurasi proxy eksplisit juga ditentukan.</translation>
 <translation id="2082238445998314030">Hasil <ph name="RESULT_NUMBER"/> dari <ph name="TOTAL_RESULTS"/></translation>
 <translation id="2085876078937250610">Simpan…</translation>
-<translation id="7333248841044450790">Tombol Kelola sinkronisasi, tekan Enter untuk mengelola info apa saja yang Anda sinkronkan di setelan Brave</translation>
+<translation id="7333248841044450790">Tombol Kelola sinkronisasi, tekan Enter untuk mengelola info apa saja yang Anda sinkronkan di setelan Minego</translation>
 <translation id="2091887806945687916">Suara</translation>
-<translation id="4871965986998315786">Brave mencoba menonaktifkan Windows Hello untuk mengisi sandi.</translation>
+<translation id="4871965986998315786">Minego mencoba menonaktifkan Windows Hello untuk mengisi sandi.</translation>
 <translation id="2094505752054353250">Ketidakcocokan domain</translation>
 <translation id="2094704029599359040">Informasi Versi</translation>
 <translation id="2099652385553570808">Tiga jepretan di kiri</translation>
@@ -505,7 +505,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2202627062836089804">bagian belakang kartu Anda</translation>
 <translation id="22081806969704220">Baki 3</translation>
 <translation id="2210794033760923560">Upload Laporan</translation>
-<translation id="4866314834364634468">Alamat ini disimpan di Akun Brave Anda (<ph name="ACCOUNT"/>). Anda dapat menggunakan alamat di seluruh produk Brave di perangkat mana pun.</translation>
+<translation id="4866314834364634468">Alamat ini disimpan di Akun Minego Anda (<ph name="ACCOUNT"/>). Anda dapat menggunakan alamat di seluruh produk Minego di perangkat mana pun.</translation>
 <translation id="2212735316055980242">Kebijakan tidak ditemukan</translation>
 <translation id="2213606439339815911">Mengambil entri...</translation>
 <translation id="2213612003795704869">Halaman dicetak</translation>
@@ -543,7 +543,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2289385804009217824">Pangkas</translation>
 <translation id="2292556288342944218">Akses Internet Anda diblokir</translation>
 <translation id="2293443924986248631">Jika diaktifkan, situs tidak dapat menggunakan cookie yang akan melacak Anda di seluruh web. Fitur di beberapa situs mungkin error.</translation>
-<translation id="2144551375735610273">Tombol Kelola cookie, tekan Enter untuk mengelola preferensi cookie di setelan Brave</translation>
+<translation id="2144551375735610273">Tombol Kelola cookie, tekan Enter untuk mengelola preferensi cookie di setelan Minego</translation>
 <translation id="2300306941146563769">Tidak diupload</translation>
 <translation id="2316159751672436664">Personalisasi alat aksesibilitas Anda di setelan ChromeOS</translation>
 <translation id="2316887270356262533">Sediakan ruang kurang dari 1 MB. Beberapa situs mungkin dimuat lebih lambat dibuka lagi.</translation>
@@ -572,9 +572,9 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2365355378251437925">Masukkan <ph name="FIELD"/></translation>
 <translation id="2367567093518048410">Tingkat</translation>
 <translation id="2380886658946992094">Legal</translation>
-<translation id="5475992123321966556">Personalisasikan alat aksesibilitas Anda di setelan Brave</translation>
+<translation id="5475992123321966556">Personalisasikan alat aksesibilitas Anda di setelan Minego</translation>
 <translation id="2384307209577226199">Default perusahaan</translation>
-<translation id="5244533701344680487">Update Brave dari setelan Brave</translation>
+<translation id="5244533701344680487">Update Minego dari setelan Minego</translation>
 <translation id="2386255080630008482">Sertifikat server telah dicabut.</translation>
 <translation id="239293030466334554">Konvertibel</translation>
 <translation id="2392959068659972793">Tampilkan kebijakan yang nilainya tidak ditetapkan</translation>
@@ -585,7 +585,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2413155254802890957">Lama</translation>
 <translation id="2413528052993050574">Server ini tidak dapat membuktikan bahwa ini adalah <ph name="DOMAIN"/>; sertifikat keamanannya mungkin dicabut. Hal ini dapat disebabkan oleh kesalahan konfigurasi atau penyerang memotong sambungan Anda.</translation>
 <translation id="2414886740292270097">Gelap</translation>
-<translation id="2089192652156377984">Kelola Akun Brave, tekan Enter untuk mengelola info, privasi, dan keamanan di Akun Brave Anda</translation>
+<translation id="2089192652156377984">Kelola Akun Minego, tekan Enter untuk mengelola info, privasi, dan keamanan di Akun Minego Anda</translation>
 <translation id="2436186046335138073">Izinkan <ph name="HANDLER_HOSTNAME"/> membuka semua link <ph name="PROTOCOL"/>?</translation>
 <translation id="2438874542388153331">Empat lubang di kanan</translation>
 <translation id="2441854154602066476">Metode pembayaran yang tersedia untuk diisi dengan gestur sentuh. Keyboard disembunyikan.</translation>
@@ -594,7 +594,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2463739503403862330">Isi</translation>
 <translation id="2465655957518002998">Pilih Metode Pengiriman</translation>
 <translation id="2465688316154986572">Jepretan</translation>
-<translation id="4058615531773510267">Kelola file yang telah Anda download di Brave</translation>
+<translation id="4058615531773510267">Kelola file yang telah Anda download di Minego</translation>
 <translation id="2466004615675155314">Tampilkan informasi dari web</translation>
 <translation id="2467272921457885625">Spesifikasi dan statistik hardware perangkat seperti histori penggunaan CPU/RAM</translation>
 <translation id="2467694685043708798"><ph name="BEGIN_LINK"/>Jalankan Diagnostik Jaringan<ph name="END_LINK"/></translation>
@@ -611,7 +611,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2505268675989099013">Lindungi Akun</translation>
 <translation id="2509167091171468975">Retailer makanan &amp; bahan makanan</translation>
 <translation id="2512101340618156538">Tidak diizinkan (default)</translation>
-<translation id="3233967599412104589">Tombol Setel Brave sebagai browser default, tekan Enter untuk menyetel Brave sebagai browser default sistem di setelan iOS</translation>
+<translation id="3233967599412104589">Tombol Setel Minego sebagai browser default, tekan Enter untuk menyetel Minego sebagai browser default sistem di setelan iOS</translation>
 <translation id="2515629240566999685">Periksa sinyal di area Anda</translation>
 <translation id="2515761554693942801">Anda memilih untuk memverifikasi dengan Touch ID di situs yang menggunakan <ph name="PROVIDER_ORIGIN"/>. Penyedia ini mungkin telah menyimpan informasi tentang metode pembayaran Anda, yang dapat Anda <ph name="LINK_TEXT"/>.</translation>
 <translation id="2521385132275182522">Jepretan di kanan bawah</translation>
@@ -626,7 +626,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2542106216580219892">Selancar</translation>
 <translation id="2544546346215446551">Administrator memulai ulang perangkat Anda</translation>
 <translation id="2544644783021658368">Dokumen tunggal</translation>
-<translation id="5342827302598046226">Setel Brave sebagai Browser Default</translation>
+<translation id="5342827302598046226">Setel Minego sebagai Browser Default</translation>
 <translation id="2546283357679194313">Cookie dan data situs</translation>
 <translation id="2547466893236767989">Desain &amp; pengembangan web</translation>
 <translation id="254947805923345898">Nilai kebijakan tidak valid.</translation>
@@ -641,7 +641,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2570734079541893434">Kelola setelan</translation>
 <translation id="2573834589046842510">Pencetakan &amp; penerbitan</translation>
 <translation id="257674075312929031">Grup</translation>
-<translation id="1447512280692323528">Tombol Kelola setelan keamanan, tekan Enter untuk mengelola Safe Browsing dan lainnya di setelan Brave</translation>
+<translation id="1447512280692323528">Tombol Kelola setelan keamanan, tekan Enter untuk mengelola Safe Browsing dan lainnya di setelan Minego</translation>
 <translation id="2586657967955657006">Papan klip</translation>
 <translation id="2587730715158995865">Dari <ph name="ARTICLE_PUBLISHER"/>. Baca artikel ini dan <ph name="OTHER_ARTICLE_COUNT"/> artikel lainnya.</translation>
 <translation id="2587841377698384444">ID API Direktori:</translation>
@@ -654,14 +654,14 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2610561535971892504">Klik untuk menyalin</translation>
 <translation id="2625385379895617796">Setelan jam terlalu cepat</translation>
 <translation id="262745152991669301">Dapat meminta untuk terhubung ke perangkat USB</translation>
-<translation id="2915787201097107005">Untuk mendapatkan tingkat keamanan tertinggi Brave, <ph name="BEGIN_ENHANCED_PROTECTION_LINK"/>aktifkan perlindungan yang ditingkatkan<ph name="END_ENHANCED_PROTECTION_LINK"/></translation>
+<translation id="2915787201097107005">Untuk mendapatkan tingkat keamanan tertinggi Minego, <ph name="BEGIN_ENHANCED_PROTECTION_LINK"/>aktifkan perlindungan yang ditingkatkan<ph name="END_ENHANCED_PROTECTION_LINK"/></translation>
 <translation id="2634124572758952069">Alamat IP server <ph name="HOST_NAME"/> tidak dapat ditemukan.</translation>
 <translation id="2639739919103226564">Status:</translation>
 <translation id="2643134278432436513">Perawatan rambut</translation>
 <translation id="2647852283046201479">Game strategi</translation>
 <translation id="264810637653812429">Tidak ditemukan perangkat yang kompatibel.</translation>
 <translation id="2649204054376361687"><ph name="CITY"/>, <ph name="COUNTRY"/></translation>
-<translation id="9078005688100552065"><ph name="CLEAR_BROWSING_DATA_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk menghapus histori penjelajahan, cookie, cache, dan lainnya di setelan Brave</translation>
+<translation id="9078005688100552065"><ph name="CLEAR_BROWSING_DATA_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk menghapus histori penjelajahan, cookie, cache, dan lainnya di setelan Minego</translation>
 <translation id="2650446666397867134">Akses ke file ditolak</translation>
 <translation id="2653659639078652383">Kirim</translation>
 <translation id="2657637947725373811">{0,plural, =1{Transfer file rahasia?}other{Transfer file rahasia?}}</translation>
@@ -689,18 +689,18 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2709516037105925701">Isi otomatis</translation>
 <translation id="2712173769900027643">Minta izin</translation>
 <translation id="2713444072780614174">Putih</translation>
-<translation id="4131157740532436004"><ph name="UPDATE_CREDIT_CARD_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola info pembayaran dan kartu kredit di setelan Brave</translation>
+<translation id="4131157740532436004"><ph name="UPDATE_CREDIT_CARD_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola info pembayaran dan kartu kredit di setelan Minego</translation>
 <translation id="2715808615350965923">Super A</translation>
 <translation id="271663710482723385">Tekan |<ph name="ACCELERATOR1"/>| + |<ph name="ACCELERATOR2"/>| untuk keluar dari mode layar penuh</translation>
 <translation id="2718207025093645426">Pengguna atau perangkat terkelola tidak memuat kebijakan.</translation>
 <translation id="2721148159707890343">Permintaan berhasil</translation>
-<translation id="4054726005361352357">Jalankan pemeriksaan keamanan di setelan Brave</translation>
+<translation id="4054726005361352357">Jalankan pemeriksaan keamanan di setelan Minego</translation>
 <translation id="2726001110728089263">Baki Samping</translation>
 <translation id="2728127805433021124">Sertifikat server ditandai menggunakan algoritme yang lemah.</translation>
 <translation id="2730326759066348565"><ph name="BEGIN_LINK"/>Jalankan Diagnostik Konektivitas<ph name="END_LINK"/></translation>
 <translation id="2730600605555029057">Musik klasik</translation>
 <translation id="2731382536835015353">44 x 68 inci (111 x 172 cm)</translation>
-<translation id="3163800392243881597">Izinkan Brave menggunakan keranjang Anda untuk menelusuri diskon yang dipersonalisasi. Jika tersedia, diskon akan otomatis muncul di keranjang.</translation>
+<translation id="3163800392243881597">Izinkan Minego menggunakan keranjang Anda untuk menelusuri diskon yang dipersonalisasi. Jika tersedia, diskon akan otomatis muncul di keranjang.</translation>
 <translation id="2738330467931008676">Pilih Alamat Pengambilan</translation>
 <translation id="2740531572673183784">Oke</translation>
 <translation id="2742511345840685325">Tenis meja</translation>
@@ -735,7 +735,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2859806420264540918">Situs ini menampilkan iklan yang mengganggu atau menyesatkan.</translation>
 <translation id="287596039013813457">Bersahabat</translation>
 <translation id="28761159517501904">Film</translation>
-<translation id="1117301625415017890"><ph name="MANAGE_SECURITY_SETTINGS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola Safe Browsing dan lainnya di setelan Brave</translation>
+<translation id="1117301625415017890"><ph name="MANAGE_SECURITY_SETTINGS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola Safe Browsing dan lainnya di setelan Minego</translation>
 <translation id="2878197950673342043">Lipatan poster</translation>
 <translation id="2878424575911748999">A1</translation>
 <translation id="2879694782644540289">menggunakan kunci layar untuk mengisi sandi</translation>
@@ -752,7 +752,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2916038427272391327">Tutup program lain</translation>
 <translation id="2918922650248459053">Kegiatan menyelam &amp; bawah air</translation>
 <translation id="2922350208395188000">Sertifikat server tidak dapat diperiksa.</translation>
-<translation id="3249101334307130799">Setelan Brave</translation>
+<translation id="3249101334307130799">Setelan Minego</translation>
 <translation id="2925673989565098301">Metode Pengiriman</translation>
 <translation id="2928905813689894207">Alamat Penagihan</translation>
 <translation id="2929525460561903222">{SHIPPING_ADDRESS,plural, =0{<ph name="SHIPPING_ADDRESS_PREVIEW"/>}=1{<ph name="SHIPPING_ADDRESS_PREVIEW"/> dan <ph name="NUMBER_OF_ADDITIONAL_ADDRESSES"/> lainnya}other{<ph name="SHIPPING_ADDRESS_PREVIEW"/> dan <ph name="NUMBER_OF_ADDITIONAL_ADDRESSES"/> lainnya}}</translation>
@@ -764,7 +764,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="2943895734390379394">Waktu Upload:</translation>
 <translation id="2945026002409061480">Komunitas online</translation>
 <translation id="2948083400971632585">Anda dapat menonaktifkan proxy apa pun yang dikonfigurasi untuk sambungan dari halaman setelan.</translation>
-<translation id="3955566820843143766">Diabaikan karena perangkat tidak didaftarkan dengan Pengelolaan Cloud Browser Brave.</translation>
+<translation id="3955566820843143766">Diabaikan karena perangkat tidak didaftarkan dengan Pengelolaan Cloud Browser Minego.</translation>
 <translation id="2951588413176968965">Kotak surat saya</translation>
 <translation id="2952904171810469095">A2x5</translation>
 <translation id="295526156371527179">Perhatian: Kebijakan ini tidak digabung sebagai kamus sebagaimana yang ditetapkan oleh kebijakan karena bukan merupakan kamus.</translation>
@@ -797,14 +797,14 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3037177537145227281">Memantau harga</translation>
 <translation id="3037605927509011580">Yah!</translation>
 <translation id="3041612393474885105">Informasi Sertifikat</translation>
-<translation id="8418829431154568330">Histori Brave Desktop Jarak Jauh, termasuk stempel waktu, host, dan ID sesi klien</translation>
+<translation id="8418829431154568330">Histori Minego Desktop Jarak Jauh, termasuk stempel waktu, host, dan ID sesi klien</translation>
 <translation id="3052964831964880138">Diskon <ph name="PRICE_DROP"/> untuk <ph name="PRODUCT_NAME"/></translation>
 <translation id="3061707000357573562">Layanan Patch</translation>
 <translation id="306573536155379004">Game dimulai.</translation>
 <translation id="3068991664510324412">Game komputer &amp; video game</translation>
 <translation id="3080254622891793721">Grafis</translation>
 <translation id="3081538120861307764">Untuk mengukur performa iklan, beberapa jenis data tertentu akan dibagikan antar-situs, seperti waktu iklan ditampilkan kepada Anda.</translation>
-<translation id="254030672859277244">Izinkan Brave menggunakan keranjang Anda untuk menemukan diskon yang dipersonalisasi, jika tersedia</translation>
+<translation id="254030672859277244">Izinkan Minego menggunakan keranjang Anda untuk menemukan diskon yang dipersonalisasi, jika tersedia</translation>
 <translation id="3086579638707268289">Aktivitas Anda di web sedang dipantau</translation>
 <translation id="3087734570205094154">Bawah</translation>
 <translation id="3095940652251934233">Statement</translation>
@@ -850,7 +850,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3194737229810486521"><ph name="URL"/> ingin menyimpan data di perangkat Anda secara permanen</translation>
 <translation id="3195213714973468956"><ph name="PRINTER_NAME"/> di <ph name="SERVER_NAME"/></translation>
 <translation id="3197136577151645743">Dapat meminta untuk mengetahui saat Anda aktif menggunakan perangkat ini</translation>
-<translation id="6629751330289763215"><ph name="MANAGE_SYNC_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola info apa saja yang Anda sinkronkan di setelan Brave</translation>
+<translation id="6629751330289763215"><ph name="MANAGE_SYNC_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola info apa saja yang Anda sinkronkan di setelan Minego</translation>
 <translation id="320323717674993345">Batalkan Pembayaran</translation>
 <translation id="3203366800380907218">Dari web</translation>
 <translation id="3207960819495026254">Diberi bookmark</translation>
@@ -872,16 +872,16 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3240683217920639535"><ph name="MANAGE_CHROME_THEMES_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk menyesuaikan tampilan browser Anda</translation>
 <translation id="3240791268468473923">Sheet tidak ada kredensial yang cocok untuk Kredensial pembayaran aman terbuka</translation>
 <translation id="324180406144491771">Link “<ph name="HOST_NAME"/>” diblokir</translation>
-<translation id="5195034764845981810">Situs ini menentukan minat yang dapat digunakan oleh situs lain untuk menampilkan iklan kepada Anda. Situs ini juga mendapatkan minat Anda dari Brave untuk menampilkan iklan yang lebih relevan.</translation>
+<translation id="5195034764845981810">Situs ini menentukan minat yang dapat digunakan oleh situs lain untuk menampilkan iklan kepada Anda. Situs ini juga mendapatkan minat Anda dari Minego untuk menampilkan iklan yang lebih relevan.</translation>
 <translation id="3249151924975132674">Pinjaman mahasiswa &amp; pembiayaan kuliah</translation>
 <translation id="3249845759089040423">Groovy</translation>
 <translation id="3250640885957938546">Periklanan &amp; pemasaran</translation>
 <translation id="3252266817569339921">Prancis</translation>
 <translation id="3254301855501243548">18 x 22 inci (45 x 55 cm)</translation>
 <translation id="3256863843508922226">Pensiun</translation>
-<translation id="6900454207575412115"><ph name="CREATE_GOOGLE_CALENDAR_EVENT_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat acara baru di Brave Kalender dengan cepat</translation>
+<translation id="6900454207575412115"><ph name="CREATE_GOOGLE_CALENDAR_EVENT_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat acara baru di Minego Kalender dengan cepat</translation>
 <translation id="3261488570342242926">Pelajari kartu virtual</translation>
-<translation id="3893393287627341086">Tombol Kelola setelan Brave, tekan Enter untuk membuka setelan Brave Anda</translation>
+<translation id="3893393287627341086">Tombol Kelola setelan Minego, tekan Enter untuk membuka setelan Minego Anda</translation>
 <translation id="3266367459139339908">Kami meluncurkan cara baru untuk membatasi informasi Anda yang dapat dipelajari situs tentang Anda saat menampilkan iklan yang dipersonalisasi, misalnya:</translation>
 <translation id="3266793032086590337">Nilai (bertentangan)</translation>
 <translation id="3266972086368072861">{NUM_COOKIES,plural, =0{Tidak ada situs yang diblokir, termasuk situs terkait}=1{1 situs diblokir, termasuk situs terkait}other{# situs diblokir, termasuk situs terkait}}</translation>
@@ -897,7 +897,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3287510313208355388">Download saat online</translation>
 <translation id="3288238092761586174"><ph name="URL"/> mungkin perlu melakukan langkah tambahan untuk memverifikasi pembayaran Anda</translation>
 <translation id="3293642807462928945">Pelajari lebih lanjut tentang kebijakan <ph name="POLICY_NAME"/></translation>
-<translation id="5894665462526421022">Lihat dan kelola sandi Anda di setelan Brave</translation>
+<translation id="5894665462526421022">Lihat dan kelola sandi Anda di setelan Minego</translation>
 <translation id="3299098170013242198">Windows Hello aktif untuk mengisi sandi</translation>
 <translation id="3303176609391916566">30 x 42 inci (76 x 106 cm)</translation>
 <translation id="3303855915957856445">Hasil penelusuran tidak ditemukan</translation>
@@ -926,9 +926,9 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3366477098757335611">Lihat kartu</translation>
 <translation id="3369192424181595722">Kesalahan jam</translation>
 <translation id="3369459162151165748">Suku cadang &amp; aksesori kendaraan</translation>
-<translation id="2273851479262317744">Setel Brave sebagai browser default</translation>
+<translation id="2273851479262317744">Setel Minego sebagai browser default</translation>
 <translation id="337363190475750230">Dicabut aksesnya</translation>
-<translation id="7740652748540081864">Jalankan pemeriksaan keamanan Brave</translation>
+<translation id="7740652748540081864">Jalankan pemeriksaan keamanan Minego</translation>
 <translation id="3377144306166885718">Server menggunakan versi TLS yang sudah tidak digunakan lagi.</translation>
 <translation id="3377188786107721145">Kesalahan penguraian kebijakan</translation>
 <translation id="3377736046129930310">Gunakan kunci layar untuk mengonfirmasi kartu dengan lebih cepat</translation>
@@ -956,7 +956,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3431216045099978607">Tekan |<ph name="ACCELERATOR"/>| untuk keluar dari layar penuh dan melihat download.</translation>
 <translation id="3432601291244612633">Tutup halaman</translation>
 <translation id="3435738964857648380">Keamanan</translation>
-<translation id="4527130811319726464">Gunakan sandi yang disimpan di Akun Brave Anda</translation>
+<translation id="4527130811319726464">Gunakan sandi yang disimpan di Akun Minego Anda</translation>
 <translation id="3440783957068352691">persegi</translation>
 <translation id="3447661539832366887">Pemilik perangkat ini menonaktifkan game dinosaurus.</translation>
 <translation id="3447884698081792621">Tampilkan sertifikat (diterbitkan oleh <ph name="ISSUER"/>)</translation>
@@ -979,7 +979,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3507936815618196901">Membuat peta 3D untuk area di sekeliling Anda dan melacak posisi kamera</translation>
 <translation id="3512163584740124171">Kebijakan ini diabaikan karena kebijakan lain dari grup kebijakan yang sama memiliki prioritas lebih tinggi.</translation>
 <translation id="3515972145999192222">Organisasi Anda telah memblokir <ph name="BEGIN_BOLD"/><ph name="DOMAIN"/><ph name="END_BOLD"/> karena melanggar kebijakan. <ph name="BEGIN_LEARN_MORE_LINK"/>Pelajari lebih lanjut<ph name="END_LEARN_MORE_LINK"/></translation>
-<translation id="6733862566637706294">Tombol Kelola alamat, tekan Enter untuk menambahkan dan mengelola alamat di setelan Brave</translation>
+<translation id="6733862566637706294">Tombol Kelola alamat, tekan Enter untuk menambahkan dan mengelola alamat di setelan Minego</translation>
 <translation id="3518941727116570328">Penanganan beberapa objek</translation>
 <translation id="3525130752944427905">10 x 14 inci (25 x 35 cm)</translation>
 <translation id="3528171143076753409">Sertifikat server tidak dipercaya.</translation>
@@ -1007,7 +1007,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3576616784287504635">Halaman tersemat di <ph name="SITE"/> menyatakan</translation>
 <translation id="3577473026931028326">Terjadi error. Coba lagi.</translation>
 <translation id="3577902790357386792">Senam</translation>
-<translation id="230476913390177517">Brave akan memberi tahu Anda saat halaman ini sudah siap. &lt;a&gt;Batal&lt;/a&gt;</translation>
+<translation id="230476913390177517">Minego akan memberi tahu Anda saat halaman ini sudah siap. &lt;a&gt;Batal&lt;/a&gt;</translation>
 <translation id="3582930987043644930">Tambahkan nama</translation>
 <translation id="3583757800736429874">&amp;Ulangi Pemindahan</translation>
 <translation id="3584299510153766161">Dua lubang di bawah</translation>
@@ -1021,7 +1021,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3611317423880285981">Perlengkapan rumah tangga</translation>
 <translation id="3614103345592970299">Ukuran 2</translation>
 <translation id="361438452008624280">Entri daftar "<ph name="LANGUAGE_ID"/>": Bahasa tidak dikenal atau tidak didukung.</translation>
-<translation id="3274500070896023877"><ph name="RUN_CHROME_SAFETY_CHECK_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk menjalankan pemeriksaan keamanan di setelan Brave</translation>
+<translation id="3274500070896023877"><ph name="RUN_CHROME_SAFETY_CHECK_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk menjalankan pemeriksaan keamanan di setelan Minego</translation>
 <translation id="3615877443314183785">Masukkan tanggal masa berlaku yang valid</translation>
 <translation id="36224234498066874">Hapus Data Penjelajahan...</translation>
 <translation id="362276910939193118">Tampilkan Histori Lengkap</translation>
@@ -1032,7 +1032,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3631244953324577188">Biometrik</translation>
 <translation id="3632503704576938756">Berbagi layar dilanjutkan</translation>
 <translation id="3632892046558972264">Berbagi layar dijeda</translation>
-<translation id="1367445511302842209">Tombol Update Brave, tekan Enter untuk mengupdate Brave dari setelan Brave</translation>
+<translation id="1367445511302842209">Tombol Update Minego, tekan Enter untuk mengupdate Minego dari setelan Minego</translation>
 <translation id="3634530185120165534">Baki 5</translation>
 <translation id="3642638418806704195">Aplikasi:</translation>
 <translation id="3646643500201740985">Mengukur seberapa baik performa iklan</translation>
@@ -1053,7 +1053,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3678029195006412963">Permintaan tidak dapat ditandatangani</translation>
 <translation id="3678342917559046352">Ekstensi Tidak Valid: Nilai yang diharapkan harus dalam salah satu format berikut: &lt;extension_id&gt; atau &lt;extension_id&gt;;&lt;update_url&gt;.</translation>
 <translation id="3681007416295224113">Informasi sertifikat</translation>
-<translation id="2659564324969662497">Brave mencatat topik minat berdasarkan histori penjelajahan terbaru Anda.</translation>
+<translation id="2659564324969662497">Minego mencatat topik minat berdasarkan histori penjelajahan terbaru Anda.</translation>
 <translation id="3693327506115126094">Pilih cara memverifikasi diri Anda</translation>
 <translation id="3701427423622901115">Reset dikonfirmasi.</translation>
 <translation id="3704162925118123524">Jaringan yang digunakan mungkin mewajibkan Anda mengunjungi halaman masuk jaringan.</translation>
@@ -1068,11 +1068,11 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3713662424819367124">Parfum &amp; wewangian</translation>
 <translation id="3714633008798122362">kalender web</translation>
 <translation id="3714780639079136834">Aktifkan data seluler atau Wi-Fi</translation>
-<translation id="2241987852555440600">Saat peristiwa keamanan ditandai oleh Brave, data yang relevan dengan peristiwa tersebut akan dikirimkan ke administrator Anda. Data ini dapat mencakup URL halaman yang Anda buka di Brave, metadata atau nama file, error browser atau tab, dan nama pengguna yang Anda gunakan untuk login ke aplikasi berbasis web, perangkat, dan Brave.</translation>
+<translation id="2241987852555440600">Saat peristiwa keamanan ditandai oleh Minego, data yang relevan dengan peristiwa tersebut akan dikirimkan ke administrator Anda. Data ini dapat mencakup URL halaman yang Anda buka di Minego, metadata atau nama file, error browser atau tab, dan nama pengguna yang Anda gunakan untuk login ke aplikasi berbasis web, perangkat, dan Minego.</translation>
 <translation id="3715597595485130451">Menghubungkan ke jaringan Wi-Fi</translation>
 <translation id="3717027428350673159"><ph name="BEGIN_LINK"/>Periksa proxy, firewall, dan konfigurasi DNS<ph name="END_LINK"/></translation>
 <translation id="372429172604983730">Aplikasi yang dapat menyebabkan error ini mencakup antivirus, firewall, dan software proxy atau pemfilteran web.</translation>
-<translation id="3838210050876514022"><ph name="CREATE_GOOGLE_SLIDE_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat presentasi Brave baru di Slide dengan cepat</translation>
+<translation id="3838210050876514022"><ph name="CREATE_GOOGLE_SLIDE_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat presentasi Minego baru di Slide dengan cepat</translation>
 <translation id="3733139489341305600">Kendaraan otonom</translation>
 <translation id="3736520371357197498">Jika Anda memahami risiko terhadap keamanan, Anda dapat <ph name="BEGIN_LINK"/>mengunjungi situs tidak aman ini<ph name="END_LINK"/> sebelum program berbahaya tersebut dibuang.</translation>
 <translation id="3738166223076830879">Browser dikelola oleh administrator Anda.</translation>
@@ -1090,8 +1090,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3761718714832595332">Sembunyikan status</translation>
 <translation id="3765588406864124894">Kotak surat 9</translation>
 <translation id="3767485424735936570">Menyalin dan menempelkan konten ini ke <ph name="VM_NAME"/> tidak direkomendasikan oleh kebijakan administrator</translation>
-<translation id="8247912309816231326"><ph name="CREATE_GOOGLE_KEEP_NOTE_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat catatan baru di Brave Keep dengan cepat</translation>
-<translation id="5141491707451394486">Ingin menyimpan kartu ini di Akun Brave dan perangkat ini?</translation>
+<translation id="8247912309816231326"><ph name="CREATE_GOOGLE_KEEP_NOTE_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat catatan baru di Minego Keep dengan cepat</translation>
+<translation id="5141491707451394486">Ingin menyimpan kartu ini di Akun Minego dan perangkat ini?</translation>
 <translation id="3780694243617746492">Tampungan keluaran</translation>
 <translation id="3781428340399460090">Merah Muda Terang</translation>
 <translation id="3783418713923659662">Mastercard</translation>
@@ -1121,7 +1121,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3832522519263485449">Beberapa lubang di kiri</translation>
 <translation id="3835233591525155343">Penggunaan perangkat Anda</translation>
 <translation id="3844725157150297127">RA1</translation>
-<translation id="5749930378398424146"><ph name="CREATE_GOOGLE_DOC_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat Dokumen Brave baru dengan cepat</translation>
+<translation id="5749930378398424146"><ph name="CREATE_GOOGLE_DOC_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat Dokumen Minego baru dengan cepat</translation>
 <translation id="385051799172605136">Kembali</translation>
 <translation id="3853684360927654006">Kalkulator Kekuatan Sandi</translation>
 <translation id="3858027520442213535">Perbarui tanggal dan waktu</translation>
@@ -1138,7 +1138,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="3901925938762663762">Kartu telah habis masa berlakunya</translation>
 <translation id="3906954721959377182">Tablet</translation>
 <translation id="3909695131102177774"><ph name="LABEL"/> <ph name="ERROR"/></translation>
-<translation id="5852873875468214161">Anda dapat mengubahnya kapan saja di setelan Brave</translation>
+<translation id="5852873875468214161">Anda dapat mengubahnya kapan saja di setelan Minego</translation>
 <translation id="3921869355029467742">Masukkan kode keamanan</translation>
 <translation id="3927932062596804919">Tolak</translation>
 <translation id="393316646445601645">Internet &amp; telekomunikasi</translation>
@@ -1175,7 +1175,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="401170183602135785">Envelope C6</translation>
 <translation id="4014128326099193693">{COUNT,plural, =1{Dokumen PDF berisi {COUNT} halaman}other{Dokumen PDF berisi {COUNT} halaman}}</translation>
 <translation id="4023431997072828269">Karena formulir ini dikirim menggunakan koneksi yang tidak aman, informasi Anda akan dapat dilihat oleh pengguna lain.</translation>
-<translation id="3356024105713905662">Tombol Kelola setelan Privasi Brave, tekan Enter untuk membuka setelan privasi Akun Brave Anda</translation>
+<translation id="3356024105713905662">Tombol Kelola setelan Privasi Minego, tekan Enter untuk membuka setelan privasi Akun Minego Anda</translation>
 <translation id="4030383055268325496">&amp;Urungkan penambahan</translation>
 <translation id="4030545038933060179">Jika diaktifkan, daftar topik akan muncul di sini berdasarkan histori penjelajahan terbaru Anda</translation>
 <translation id="4031179711345676612">Mikrofon diizinkan</translation>
@@ -1183,7 +1183,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4047351652147966654">18 x 24 inci (45 x 60 cm)</translation>
 <translation id="405399507749852140">Dapatkan notifikasi jika ada diskon di situs mana pun</translation>
 <translation id="4056223980640387499">Sepia</translation>
-<translation id="4161619938555288542">Izinkan Brave membantu Anda menemukan diskon untuk keranjang Anda</translation>
+<translation id="4161619938555288542">Izinkan Minego membantu Anda menemukan diskon untuk keranjang Anda</translation>
 <translation id="4063924980214801036">Gunakan fitur buka kunci perangkat untuk mengonfirmasi kartu lebih cepat</translation>
 <translation id="4067098466788473230">Hibah &amp; beasiswa pendidikan</translation>
 <translation id="4067947977115446013">Tambahkan Alamat yang Valid</translation>
@@ -1196,17 +1196,17 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4079302484614802869">Konfigurasi proxy disetel untuk menggunakan URL skrip .pac, bukan server proxy yang tetap.</translation>
 <translation id="4082393374666368382">Setelan - Pengelolaan</translation>
 <translation id="4084219288110917128">Envelope C1</translation>
-<translation id="8049340108547416244">Tombol Buat acara, tekan Enter untuk membuat acara baru di Brave Kalender dengan cepat</translation>
+<translation id="8049340108547416244">Tombol Buat acara, tekan Enter untuk membuat acara baru di Minego Kalender dengan cepat</translation>
 <translation id="4088981014127559358">Perpindahan image Y sisi 1</translation>
 <translation id="4089152113577680600">Baki 14</translation>
 <translation id="4096237801206588987">11 x 15 inci (27 x 38 cm)</translation>
 <translation id="4098354747657067197">Situs yang akan dibuka berisi penipuan</translation>
 <translation id="4099048595830172239">Kebijakan administrator tidak merekomendasikan berbagi layar dengan <ph name="APPLICATION_TITLE"/> saat konten rahasia terlihat:</translation>
-<translation id="5393384033795488834"><ph name="CUSTOMIZE_CHROME_FONTS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk menyesuaikan ukuran font dan rupa huruf di Brave</translation>
+<translation id="5393384033795488834"><ph name="CUSTOMIZE_CHROME_FONTS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk menyesuaikan ukuran font dan rupa huruf di Minego</translation>
 <translation id="4101413244023615925">Teks dan grafis</translation>
 <translation id="410148943680000050">Desktop publishing</translation>
 <translation id="4103249731201008433">Nomor seri perangkat tidak valid</translation>
-<translation id="1823668038006695695">Tombol Buat situs, tekan Enter untuk membuat situs baru di Brave Sites dengan cepat</translation>
+<translation id="1823668038006695695">Tombol Buat situs, tekan Enter untuk membuat situs baru di Minego Sites dengan cepat</translation>
 <translation id="4110652170750985508">Tinjau pembayaran</translation>
 <translation id="4111546256784973544">Paintball</translation>
 <translation id="4112140312785995938">Cari Mundur</translation>
@@ -1279,8 +1279,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4281998142035485137">{0,plural, =1{Buka file rahasia?}other{Buka file rahasia?}}</translation>
 <translation id="4282346679996504092">Notifikasi untuk produk ini telah dinonaktifkan dan bookmark dihapus</translation>
 <translation id="4285498937028063278">Lepaskan</translation>
-<translation id="8314946990939758167">{NUM_CARDS,plural, =1{Kartu ini telah disimpan di Akun Brave Anda}other{Kartu-kartu ini telah disimpan di Akun Brave Anda}}</translation>
-<translation id="2820825061680010514">Privasi iklan yang lebih baik di Brave</translation>
+<translation id="8314946990939758167">{NUM_CARDS,plural, =1{Kartu ini telah disimpan di Akun Minego Anda}other{Kartu-kartu ini telah disimpan di Akun Minego Anda}}</translation>
+<translation id="2820825061680010514">Privasi iklan yang lebih baik di Minego</translation>
 <translation id="4287885627794386150">Memenuhi syarat untuk uji coba tetapi tidak aktif</translation>
 <translation id="4297502707443874121">Thumbnail untuk halaman <ph name="THUMBNAIL_PAGE"/></translation>
 <translation id="4298000214066716287">Investasi</translation>
@@ -1291,7 +1291,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4305666528087210886">File Anda tidak dapat diakses</translation>
 <translation id="4306529830550717874">Simpan alamat?</translation>
 <translation id="4306812610847412719">papan klip</translation>
-<translation id="4270648948919210881">Kebijakan ini diabaikan karena pengguna tidak berafiliasi. Agar kebijakan ini diterapkan, browser dan profil Brave harus dikelola melalui konsol Admin oleh organisasi yang sama.</translation>
+<translation id="4270648948919210881">Kebijakan ini diabaikan karena pengguna tidak berafiliasi. Agar kebijakan ini diterapkan, browser dan profil Minego harus dikelola melalui konsol Admin oleh organisasi yang sama.</translation>
 <translation id="4310070645992025887">Telusuri Perjalanan Anda</translation>
 <translation id="4310496734563057511">Jika Anda berbagi perangkat ini dengan orang lain, Anda dapat mengaktifkan Windows Hello untuk memverifikasi diri Anda setiap kali Anda menggunakan sandi tersimpan</translation>
 <translation id="4312613361423056926">B2</translation>
@@ -1307,8 +1307,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4331519897422864041">Tempat kertas 5</translation>
 <translation id="4331708818696583467">Tidak Aman</translation>
 <translation id="4333561522337981382">Mengelola jendela di semua layar Anda</translation>
-<translation id="5792122559159836842">Iklan ini menggunakan terlalu banyak resource untuk perangkat Anda, sehingga Brave menghapusnya.</translation>
-<translation id="6116812392674177288">Komputer ini tidak terdeteksi sebagai dikelola perusahaan sehingga kebijakan hanya dapat secara otomatis menginstal ekstensi yang dihosting di Brave Webstore. URL update Brave Webstore-nya adalah "<ph name="CWS_UPDATE_URL"/>".</translation>
+<translation id="5792122559159836842">Iklan ini menggunakan terlalu banyak resource untuk perangkat Anda, sehingga Minego menghapusnya.</translation>
+<translation id="6116812392674177288">Komputer ini tidak terdeteksi sebagai dikelola perusahaan sehingga kebijakan hanya dapat secara otomatis menginstal ekstensi yang dihosting di Minego Webstore. URL update Minego Webstore-nya adalah "<ph name="CWS_UPDATE_URL"/>".</translation>
 <translation id="4346197816712207223">Kartu Kredit yang Diterima</translation>
 <translation id="4348834659292907206">Koneksi ke <ph name="SITE"/> tidak aman</translation>
 <translation id="4349365535725594680">Tidak dapat membagikan konten rahasia</translation>
@@ -1323,7 +1323,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="437040971055499437">Terjadi peristiwa keamanan</translation>
 <translation id="4371591986692297148">Tidak aktif</translation>
 <translation id="4372948949327679948">Nilai <ph name="VALUE_TYPE"/> yang diharapkan.</translation>
-<translation id="7617743757131201121">Tambahkan item kembali jika Anda menginginkannya berada di kumpulan topik yang dapat dipilih Brave saat memperkirakan minat Anda</translation>
+<translation id="7617743757131201121">Tambahkan item kembali jika Anda menginginkannya berada di kumpulan topik yang dapat dipilih Minego saat memperkirakan minat Anda</translation>
 <translation id="4377125064752653719">Anda berusaha menjangkau <ph name="DOMAIN"/>, tetapi sertifikat yang disajikan oleh server telah dibatalkan oleh penerbitnya. Artinya informasi rahasia keamanan yang disajikan tidak dapat dipercaya. Anda mungkin sedang berkomunikasi dengan penyerang.</translation>
 <translation id="4378154925671717803">Ponsel</translation>
 <translation id="4384395682990721132">A4x3</translation>
@@ -1347,7 +1347,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4441832193888514600">Diabaikan karena kebijakan ini hanya dapat disetel sebagai kebijakan pengguna cloud.</translation>
 <translation id="4451135742916150903">Dapat meminta untuk terhubung ke perangkat HID</translation>
 <translation id="4451684391620232683">Teks yang ditampilkan kepada pengguna:</translation>
-<translation id="8416018650396907203">Sandi yang baru saja Anda gunakan terekspos dalam pelanggaran data. Untuk mengamankan akun Anda, Pengelola Sandi Brave merekomendasikan untuk memeriksa sandi tersimpan Anda.</translation>
+<translation id="8416018650396907203">Sandi yang baru saja Anda gunakan terekspos dalam pelanggaran data. Untuk mengamankan akun Anda, Pengelola Sandi Minego merekomendasikan untuk memeriksa sandi tersimpan Anda.</translation>
 <translation id="4460315069258617173">Diizinkan sampai Anda menutup tab untuk situs ini</translation>
 <translation id="4464826014807964867">Situs dengan info dari organisasi Anda</translation>
 <translation id="447665707681730621"><ph name="BUBBLE_MESSAGE"/>. <ph name="LEARN_MORE_TEXT"/></translation>
@@ -1357,17 +1357,17 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4482953324121162758">Situs ini tidak akan diterjemahkan.</translation>
 <translation id="4489023393592172404">Envelope Kaku 4</translation>
 <translation id="4490717597759821841">A7</translation>
-<translation id="3966104135245031874">Enkripsikan sandi yang disinkronkan dengan Akun Brave Anda</translation>
-<translation id="3614771894046523359">Fitur ini dinonaktifkan secara default. Fitur ini tidak akan tersedia pada versi mendatang Brave.</translation>
+<translation id="3966104135245031874">Enkripsikan sandi yang disinkronkan dengan Akun Minego Anda</translation>
+<translation id="3614771894046523359">Fitur ini dinonaktifkan secara default. Fitur ini tidak akan tersedia pada versi mendatang Minego.</translation>
 <translation id="4493480324863638523">URL tidak valid. Harus berupa URL dengan skema standar, misalnya http://example.com atau https://example.com.</translation>
-<translation id="7622628059331736328">Anda dapat melihat topik iklan di setelan dan memblokir topik yang tidak ingin Anda bagikan ke situs. Brave juga menghapus otomatis topik iklan yang tersimpan lebih dari 4 minggu.</translation>
+<translation id="7622628059331736328">Anda dapat melihat topik iklan di setelan dan memblokir topik yang tidak ingin Anda bagikan ke situs. Minego juga menghapus otomatis topik iklan yang tersimpan lebih dari 4 minggu.</translation>
 <translation id="4500587658229086076">konten tidak aman</translation>
 <translation id="4506176782989081258">Kesalahan validasi: <ph name="VALIDATION_ERROR"/></translation>
 <translation id="4506599922270137252">Hubungi admin sistem</translation>
 <translation id="450710068430902550">Berbagi dengan Administrator</translation>
-<translation id="7581711177899574338"><ph name="TRANSLATE_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk menerjemahkan halaman ini dengan Brave Terjemahan</translation>
+<translation id="7581711177899574338"><ph name="TRANSLATE_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk menerjemahkan halaman ini dengan Minego Terjemahan</translation>
 <translation id="4514308731478712184">Nonaktifkan Perjalanan</translation>
-<translation id="4892470328555495647">Kartu dan alamat berasal dari Brave dan Akun Brave (<ph name="ACCOUNT_EMAIL"/>). Anda dapat mengelolanya di <ph name="BEGIN_LINK"/>Setelan<ph name="END_LINK"/>.</translation>
+<translation id="4892470328555495647">Kartu dan alamat berasal dari Minego dan Akun Minego (<ph name="ACCOUNT_EMAIL"/>). Anda dapat mengelolanya di <ph name="BEGIN_LINK"/>Setelan<ph name="END_LINK"/>.</translation>
 <translation id="4520048001084013693">Download file ini diblokir oleh kebijakan administrator</translation>
 <translation id="4521157617044179198"><ph name="WIDTH"/> × <ph name="HEIGHT"/> mm (<ph name="ORIENTATION"/>)</translation>
 <translation id="4521280267704259211">Envelope Monarch</translation>
@@ -1397,13 +1397,13 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4600084978141515058">Masakan vegan</translation>
 <translation id="4602465984861132303">Boling</translation>
 <translation id="4606870351894164739">Berpengaruh</translation>
-<translation id="7265018635737406618">Tombol Lihat tips Brave, tekan Enter untuk mempelajari fitur-fitur Brave</translation>
-<translation id="8338928872956435647">Lihat tips Brave</translation>
+<translation id="7265018635737406618">Tombol Lihat tips Minego, tekan Enter untuk mempelajari fitur-fitur Minego</translation>
+<translation id="8338928872956435647">Lihat tips Minego</translation>
 <translation id="460848736049414407">Diblokir oleh Admin</translation>
 <translation id="4610279718074907952">Situs ini berada dalam grup, yang ditentukan oleh <ph name="SET_OWNER"/>, yang dapat melihat aktivitas Anda</translation>
 <translation id="4617273035598175554">Software grafis &amp; animasi</translation>
 <translation id="4622292761762557753">Tetap transfer</translation>
-<translation id="6398431831028858802">Kebijakan ini tidak dapat disetel di tingkat profil Brave dan akan diabaikan.</translation>
+<translation id="6398431831028858802">Kebijakan ini tidak dapat disetel di tingkat profil Minego dan akan diabaikan.</translation>
 <translation id="4628948037717959914">Foto</translation>
 <translation id="4629370161347991046">A4x6</translation>
 <translation id="4631649115723685955">Disertai cashback</translation>
@@ -1420,13 +1420,13 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4663373278480897665">Kamera diizinkan</translation>
 <translation id="4666114623408286498">Farmasi &amp; bioteknologi</translation>
 <translation id="4668929960204016307">,</translation>
-<translation id="2972922043310308045">Brave mencatat topik yang diminati berdasarkan histori penjelajahan Anda dari beberapa minggu terakhir.</translation>
+<translation id="2972922043310308045">Minego mencatat topik yang diminati berdasarkan histori penjelajahan Anda dari beberapa minggu terakhir.</translation>
 <translation id="4670064810192446073">Virtual reality</translation>
 <translation id="4671339777629075741">Envelope DL</translation>
 <translation id="4673460618347856347">Game Dino, mainkan</translation>
 <translation id="467662567472608290">Server ini tidak dapat membuktikan bahwa ini adalah <ph name="DOMAIN"/>; sertifikat keamanannya berisi kesalahan. Hal ini dapat disebabkan oleh kesalahan konfigurasi atau penyerang memotong sambungan Anda.</translation>
 <translation id="4677585247300749148"><ph name="URL"/> ingin merespons peristiwa aksesibilitas</translation>
-<translation id="8197094463444457125">Brave Slide</translation>
+<translation id="8197094463444457125">Minego Slide</translation>
 <translation id="4682496302933121474">Terjemahkan halaman?</translation>
 <translation id="468314109939257734">Lihat nomor kartu virtual Anda</translation>
 <translation id="4687718960473379118">Iklan yang disarankan situs</translation>
@@ -1461,16 +1461,16 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4754461935447132332">Tidak diizinkan untuk situs yang tidak aman</translation>
 <translation id="4756388243121344051">&amp;Riwayat</translation>
 <translation id="4756501505996488486">PRC 16K</translation>
-<translation id="1015173303159845845">Anda baru saja memasukkan sandi ke situs penipuan. Untuk mengamankan akun Anda, Brave merekomendasikan pemeriksaan sandi tersimpan Anda.</translation>
+<translation id="1015173303159845845">Anda baru saja memasukkan sandi ke situs penipuan. Untuk mengamankan akun Anda, Minego merekomendasikan pemeriksaan sandi tersimpan Anda.</translation>
 <translation id="4758311279753947758">Tambahkan info kontak</translation>
 <translation id="4761104368405085019">Menggunakan mikrofon Anda</translation>
-<translation id="1980929286541331105">Jalankan Pemeriksaan Keamanan Brave</translation>
+<translation id="1980929286541331105">Jalankan Pemeriksaan Keamanan Minego</translation>
 <translation id="4764776831041365478">Halaman web di <ph name="URL"/> mungkin sedang tidak aktif untuk sementara atau dipindahkan secara permanen ke alamat web baru.</translation>
 <translation id="4766713847338118463">Dua jepretan di bawah</translation>
 <translation id="4771973620359291008">Terjadi error yang tidak diketahui.</translation>
 <translation id="477945296921629067">{NUM_POPUPS,plural, =1{Pop-up diblokir}other{# pop-up diblokir}}</translation>
 <translation id="4780366598804516005">Kotak surat 1</translation>
-<translation id="752757955979594126">Kelola Akun Brave</translation>
+<translation id="752757955979594126">Kelola Akun Minego</translation>
 <translation id="4785689107224900852">Alihkan ke tab ini</translation>
 <translation id="4786804728079074733">Bola voli</translation>
 <translation id="4789704664580239421">Notifikasi diskon akan muncul di tab terbuka</translation>
@@ -1478,7 +1478,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4792686369684665359">Informasi yang akan Anda kirimkan tidak aman</translation>
 <translation id="4793219378458250238">11 x 12 inci (27 x 30 cm)</translation>
 <translation id="4796594887379589189">ID akun tugas</translation>
-<translation id="7110430050177876111">Masukkan tanggal habis masa berlaku dan CVC untuk <ph name="CREDIT_CARD"/> guna memperbarui detail kartu. Setelah mengonfirmasi, detail kartu dari Akun Brave Anda akan dibagikan dengan situs ini.</translation>
+<translation id="7110430050177876111">Masukkan tanggal habis masa berlaku dan CVC untuk <ph name="CREDIT_CARD"/> guna memperbarui detail kartu. Setelah mengonfirmasi, detail kartu dari Akun Minego Anda akan dibagikan dengan situs ini.</translation>
 <translation id="4798269756263412078">Dapatkan notifikasi jika ada diskon di situs mana pun. Notifikasi akan dikirim ke email Anda.</translation>
 <translation id="4800132727771399293">Periksa tanggal masa berlaku habis dan CVC, lalu coba lagi</translation>
 <translation id="4803924862070940586"><ph name="CURRENCY_CODE"/> <ph name="FORMATTED_TOTAL_AMOUNT"/></translation>
@@ -1488,13 +1488,13 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4813512666221746211">Kesalahan jaringan</translation>
 <translation id="4816492930507672669">Paskan dengan halaman</translation>
 <translation id="4819347708020428563">Edit anotasi dalam tampilan default?</translation>
-<translation id="551961240839010112"><ph name="CREATE_GOOGLE_SHEET_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat Spreadsheet Brave baru dengan cepat</translation>
+<translation id="551961240839010112"><ph name="CREATE_GOOGLE_SHEET_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat Spreadsheet Minego baru dengan cepat</translation>
 <translation id="4825507807291741242">Kuat</translation>
 <translation id="483241715238664915">Aktifkan peringatan</translation>
 <translation id="4834250788637067901">Metode pembayaran, penawaran, dan alamat yang menggunakan Google Pay</translation>
 <translation id="4838327282952368871">Sangat Indah</translation>
-<translation id="1923748633297576468">Bayar lebih cepat dan lindungi kartu Anda dengan keamanan terbaik di industri dari Brave.</translation>
-<translation id="246176083348620700">Lihat histori Brave Anda</translation>
+<translation id="1923748633297576468">Bayar lebih cepat dan lindungi kartu Anda dengan keamanan terbaik di industri dari Minego.</translation>
+<translation id="246176083348620700">Lihat histori Minego Anda</translation>
 <translation id="484462545196658690">Otomatis</translation>
 <translation id="484671803914931257">Dapatkan diskon di <ph name="MERCHANT_NAME"/> dan lainnya</translation>
 <translation id="484988093836683706">Gunakan fitur buka kunci perangkat</translation>
@@ -1503,7 +1503,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="485316830061041779">Jerman</translation>
 <translation id="4853901935952445031">Situs ini tidak akan dapat menggunakan U2F API setelah Februari 2022. Jika Anda memiliki situs ini, sebaiknya ubah untuk menggunakan Web Authentication API.</translation>
 <translation id="4854362297993841467">Metode pengiriman tidak tersedia. Coba metode lain.</translation>
-<translation id="3418609161696289726">Buat catatan baru di Brave Keep dengan cepat</translation>
+<translation id="3418609161696289726">Buat catatan baru di Minego Keep dengan cepat</translation>
 <translation id="4858792381671956233">Kamu telah meminta izin kepada orang tua untuk mengunjungi situs ini</translation>
 <translation id="485902285759009870">Memverifikasi kode ...</translation>
 <translation id="486459320933704969">Orang tua atau wali harus menyatakan bahwa kamu boleh membuka situs ini</translation>
@@ -1559,7 +1559,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="4995216769782533993">Konfirmasi kode keamanan untuk berbagi detail kartu dengan situs ini</translation>
 <translation id="4995474875135717171">Diubah:</translation>
 <translation id="4995749490935861684"><ph name="CUSTOMIZE_SEARCH_ENGINES_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk mengelola penelusuran situs dan mesin telusur default Anda</translation>
-<translation id="3676215163710610678">Jika diaktifkan, Brave akan menyimpan salinan kartu Anda di perangkat ini untuk pengisian formulir yang lebih cepat.</translation>
+<translation id="3676215163710610678">Jika diaktifkan, Minego akan menyimpan salinan kartu Anda di perangkat ini untuk pengisian formulir yang lebih cepat.</translation>
 <translation id="5011561501798487822">Bahasa yang Terdeteksi</translation>
 <translation id="5015510746216210676">Nama Mesin:</translation>
 <translation id="5017554619425969104">Teks yang Anda salin</translation>
@@ -1568,12 +1568,12 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5018802455907704660">16 x 20 inci (40 x 50 cm)</translation>
 <translation id="5019198164206649151">Penyimpanan cadangan dalam kondisi buruk</translation>
 <translation id="5020776957610079374">Musik dunia</translation>
-<translation id="6516968977334148048">Pantau harga dengan Brave</translation>
+<translation id="6516968977334148048">Pantau harga dengan Minego</translation>
 <translation id="5023310440958281426">Periksa kebijakan administrator Anda</translation>
 <translation id="5029568752722684782">Hapus salinan</translation>
 <translation id="5030338702439866405">Diterbitkan Oleh</translation>
 <translation id="503069730517007720">Sertifikat root wajib untuk "<ph name="SOFTWARE_NAME"/>" tidak diinstal. Administrator IT Anda harus melihat petunjuk konfigurasi untuk "<ph name="SOFTWARE_NAME"/>" agar dapat menyelesaikan masalah ini. <ph name="FURTHER_EXPLANATION"/></translation>
-<translation id="6425384654920630035">Tentang Brave Terjemahan</translation>
+<translation id="6425384654920630035">Tentang Minego Terjemahan</translation>
 <translation id="503498442187459473"><ph name="HOST"/> ingin menggunakan kamera dan mikrofon Anda</translation>
 <translation id="5035135400558156732">Berkebun</translation>
 <translation id="503574301575803523">SRA3</translation>
@@ -1600,7 +1600,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5087580092889165836">Tambahkan kartu</translation>
 <translation id="5088142053160410913">Pesan untuk operator</translation>
 <translation id="5093232627742069661">Lipatan Z</translation>
-<translation id="4906192414477726331">Server ini tidak dapat membuktikan bahwa ini adalah <ph name="DOMAIN"/>; sertifikat keamanannya tidak dipercaya oleh Brave. Hal ini dapat disebabkan oleh kesalahan konfigurasi atau penyerang memotong sambungan Anda.</translation>
+<translation id="4906192414477726331">Server ini tidak dapat membuktikan bahwa ini adalah <ph name="DOMAIN"/>; sertifikat keamanannya tidak dipercaya oleh Minego. Hal ini dapat disebabkan oleh kesalahan konfigurasi atau penyerang memotong sambungan Anda.</translation>
 <translation id="5097099694988056070">Statistik perangkat seperti penggunaan CPU/RAM</translation>
 <translation id="5097468150760963273">27 x 39 inci (68 x 99 cm)</translation>
 <translation id="5097501891273180634">A2</translation>
@@ -1633,8 +1633,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5161334686036120870">Subjek:</translation>
 <translation id="5161506081086828129">Tempat kertas 9</translation>
 <translation id="5164798890604758545">Teks dimasukkan</translation>
-<translation id="2996889577833788807">Masukkan CVC untuk <ph name="CREDIT_CARD"/>. Setelah mengonfirmasi, detail kartu dari Akun Brave Anda akan dibagikan dengan situs ini.</translation>
-<translation id="8515152881111950319">Anda dapat kehilangan akses ke akun organisasi atau mengalami pencurian identitas. Brave menyarankan Anda untuk mengubah sandi sekarang.</translation>
+<translation id="2996889577833788807">Masukkan CVC untuk <ph name="CREDIT_CARD"/>. Setelah mengonfirmasi, detail kartu dari Akun Minego Anda akan dibagikan dengan situs ini.</translation>
+<translation id="8515152881111950319">Anda dapat kehilangan akses ke akun organisasi atau mengalami pencurian identitas. Minego menyarankan Anda untuk mengubah sandi sekarang.</translation>
 <translation id="5171045022955879922">Telusuri atau ketik URL</translation>
 <translation id="5172758083709347301">Mesin</translation>
 <translation id="5177076414499237632">Pelajari sumber &amp; topik halaman ini</translation>
@@ -1661,7 +1661,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5239623327352565343">Lokasi diizinkan</translation>
 <translation id="5242889659037569123">Koper &amp; aksesori perjalanan</translation>
 <translation id="5250209940322997802">"Sambungkan ke jaringan"</translation>
-<translation id="6055400808586511449">Pelajari fitur-fitur Brave</translation>
+<translation id="6055400808586511449">Pelajari fitur-fitur Minego</translation>
 <translation id="5251803541071282808">Awan</translation>
 <translation id="5254043433801397071">Optimalkan konten cetak</translation>
 <translation id="5255690596502591079">Tetap ambil screenshot</translation>
@@ -1681,7 +1681,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5287456746628258573">Situs ini menggunakan konfigurasi keamanan yang telah habis masa berlakunya, yang dapat mengekspos informasi Anda (misalnya, sandi atau nomor kartu kredit) saat dikirimkan ke situs ini.</translation>
 <translation id="5288108484102287882">Validasi nilai kebijakan telah memunculkan peringatan</translation>
 <translation id="5288393065350884210">Akuntansi &amp; pengauditan</translation>
-<translation id="782502454152246205">Koneksi situs aman kecuali jika Brave menyatakan sebaliknya.</translation>
+<translation id="782502454152246205">Koneksi situs aman kecuali jika Minego menyatakan sebaliknya.</translation>
 <translation id="5289384342738547352">Penanganan beberapa dokumen</translation>
 <translation id="5293919335876685914">Coupe</translation>
 <translation id="5296589789433599000">Memasak &amp; resep masakan</translation>
@@ -1691,7 +1691,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5306593769196050043">Kedua lembar</translation>
 <translation id="5307166000025436103">Oke</translation>
 <translation id="5308380583665731573">Hubungkan</translation>
-<translation id="9017231970148712387">Anda dapat melakukan perubahan di setelan Brave</translation>
+<translation id="9017231970148712387">Anda dapat melakukan perubahan di setelan Minego</translation>
 <translation id="5308689395849655368">Pelaporan kondisi ngadat dinonaktifkan.</translation>
 <translation id="5310178588836736698">Kendaraan off-road</translation>
 <translation id="5314967030527622926">Pembuat buklet</translation>
@@ -1701,15 +1701,15 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5324080437450482387">Pilih Info Kontak</translation>
 <translation id="5329858041417644019">Browser Anda tidak dikelola</translation>
 <translation id="5332219387342487447">Metode Pengiriman</translation>
-<translation id="5038014878861342914">Brave menemukan sandi yang baru saja Anda gunakan dalam pelanggaran data. Untuk mengamankan akun, sebaiknya periksa sandi tersimpan Anda.</translation>
+<translation id="5038014878861342914">Minego menemukan sandi yang baru saja Anda gunakan dalam pelanggaran data. Untuk mengamankan akun, sebaiknya periksa sandi tersimpan Anda.</translation>
 <translation id="5334013548165032829">Log sistem mendetail</translation>
 <translation id="5334145288572353250">Simpan Alamat?</translation>
-<translation id="4632358739585490563">Tombol Setel Brave sebagai browser default, tekan Enter untuk menyetel Brave sebagai browser default sistem</translation>
+<translation id="4632358739585490563">Tombol Setel Minego sebagai browser default, tekan Enter untuk menyetel Minego sebagai browser default sistem</translation>
 <translation id="5340250774223869109">Aplikasi diblokir</translation>
 <translation id="534295439873310000">Perangkat NFC</translation>
 <translation id="5344522958567249764">Kelola privasi iklan</translation>
 <translation id="5344579389779391559">Halaman ini mungkin mencoba menagih Anda</translation>
-<translation id="145631537248113690">Tombol Sesuaikan font di Brave, tekan Enter untuk menyesuaikan ukuran font dan rupa huruf di Brave</translation>
+<translation id="145631537248113690">Tombol Sesuaikan font di Minego, tekan Enter untuk menyesuaikan ukuran font dan rupa huruf di Minego</translation>
 <translation id="5355557959165512791">Anda tidak dapat membuka <ph name="SITE"/> sekarang karena sertifikatnya telah dicabut. Error jaringan dan serangan biasanya bersifat sementara, sehingga halaman ini mungkin akan berfungsi nanti.</translation>
 <translation id="5357848622083956825">Seni &amp; desain visual</translation>
 <translation id="536296301121032821">Gagal menyimpan setelan kebijakan</translation>
@@ -1718,7 +1718,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5371425731340848620">Perbarui kartu</translation>
 <translation id="5375686690914744327">SRA1</translation>
 <translation id="5377026284221673050">"Jam Anda terlalu lambat" atau "Jam Anda terlalu cepat" atau "&lt;span class="error-code"&gt;NET::ERR_CERT_DATE_INVALID&lt;/span&gt;"</translation>
-<translation id="6943284267010400133">Tombol Buat presentasi, tekan Enter untuk membuat presentasi Brave baru di Slide dengan cepat</translation>
+<translation id="6943284267010400133">Tombol Buat presentasi, tekan Enter untuk membuat presentasi Minego baru di Slide dengan cepat</translation>
 <translation id="5385857628869214740">Humor</translation>
 <translation id="5386426401304769735">Rantai sertifikat untuk situs ini berisi sertifikat yang ditandatangani menggunakan SHA-1.</translation>
 <translation id="5396631636586785122">Jahitan tepi di kanan</translation>
@@ -1726,7 +1726,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5400836586163650660">Grey</translation>
 <translation id="540969355065856584">Server ini tidak dapat membuktikan bahwa ini adalah <ph name="DOMAIN"/>; sertifikat keamanannya saat ini tidak valid. Hal ini mungkin disebabkan oleh kesalahan konfigurasi atau ada penyerang yang mengganggu koneksi internet Anda.</translation>
 <translation id="5412040515238827314">Format tidak valid: Format harus berupa daftar pola.</translation>
-<translation id="9079419934310259761">Situs ini mendapatkan minat Anda dari Brave untuk menampilkan iklan yang lebih relevan</translation>
+<translation id="9079419934310259761">Situs ini mendapatkan minat Anda dari Minego untuk menampilkan iklan yang lebih relevan</translation>
 <translation id="5412245327974352290"><ph name="TRADITIONAL_TEXT"/> - <ph name="ADDITIONAL_TEXT"/></translation>
 <translation id="541416427766103491">Tempat kertas 4</translation>
 <translation id="5414511064953050917">Tetap pindahkan</translation>
@@ -1770,7 +1770,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5526617258931667850"><ph name="MANAGE_CHROMEOS_ACCESSIBILITY_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk mempersonalisasi alat aksesibilitas Anda di setelan ChromeOS</translation>
 <translation id="5528532273234423708">Otomatisasi rumah</translation>
 <translation id="55293785478302737">Jahitan tepi</translation>
-<translation id="6477838366754392112">Tombol Hapus data penjelajahan, tekan Enter untuk menghapus histori penjelajahan, cookie, cache, dan lainnya di setelan Brave</translation>
+<translation id="6477838366754392112">Tombol Hapus data penjelajahan, tekan Enter untuk menghapus histori penjelajahan, cookie, cache, dan lainnya di setelan Minego</translation>
 <translation id="5536214594743852365">Tampilkan bagian "<ph name="SECTION"/>"</translation>
 <translation id="553782666181800029">Envelope Chou 2</translation>
 <translation id="5539243836947087108">Raft</translation>
@@ -1781,7 +1781,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5543722831081909240">180 derajat</translation>
 <translation id="5545756402275714221">Artikel untuk Anda</translation>
 <translation id="5551890439174915351">100 x 200 mm</translation>
-<translation id="6084314943327785510">Brave memeriksa sandi Anda secara berkala berdasarkan daftar sandi yang telah diterbitkan secara online. Saat pemeriksaan dilakukan, sandi dan nama pengguna Anda dienkripsi, sehingga tidak dapat dibaca oleh siapa pun, termasuk Brave.</translation>
+<translation id="6084314943327785510">Minego memeriksa sandi Anda secara berkala berdasarkan daftar sandi yang telah diterbitkan secara online. Saat pemeriksaan dilakukan, sandi dan nama pengguna Anda dienkripsi, sehingga tidak dapat dibaca oleh siapa pun, termasuk Minego.</translation>
 <translation id="5556459405103347317">Muat ulang</translation>
 <translation id="5558125320634132440">Situs ini diblokir karena mungkin berisi konten dewasa</translation>
 <translation id="5559311991468302423">Hapus alamat</translation>
@@ -1792,7 +1792,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5570825185877910964">Lindungi akun</translation>
 <translation id="5571083550517324815">Tidak dapat mengambil dari alamat ini. Pilih alamat lain.</translation>
 <translation id="5572434905385510939">22 x 28 inci (55 x 71 cm)</translation>
-<translation id="1254756632288991504">Mulai dan login ke Brave agar Brave dapat memeriksa apakah Anda diizinkan untuk mengakses situs ini atau tidak.</translation>
+<translation id="1254756632288991504">Mulai dan login ke Minego agar Minego dapat memeriksa apakah Anda diizinkan untuk mengakses situs ini atau tidak.</translation>
 <translation id="557886905979275351">Pisau cukur &amp; pencukur jenggot</translation>
 <translation id="5580958916614886209">Periksa bulan kedaluwarsa dan coba lagi</translation>
 <translation id="558420943003240152">Kelola sandi dan kunci sandi …</translation>
@@ -1805,10 +1805,10 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5598944008576757369">Pilih Metode Pembayaran</translation>
 <translation id="560412284261940334">Pengelolaan tidak didukung</translation>
 <translation id="5605670050355397069">Ledger</translation>
-<translation id="5410660524905453058"><ph name="BEGIN_BOLD"/>Cara Anda dapat mengelola data Anda:<ph name="END_BOLD"/> Brave otomatis menghapus situs yang tersimpan lebih dari 4 minggu. Situs yang Anda buka lagi mungkin akan muncul kembali di daftar. Anda juga dapat memblokir situs agar tidak menyarankan iklan dan menonaktifkan iklan yang disarankan situs kapan saja di setelan Brave.</translation>
+<translation id="5410660524905453058"><ph name="BEGIN_BOLD"/>Cara Anda dapat mengelola data Anda:<ph name="END_BOLD"/> Minego otomatis menghapus situs yang tersimpan lebih dari 4 minggu. Situs yang Anda buka lagi mungkin akan muncul kembali di daftar. Anda juga dapat memblokir situs agar tidak menyarankan iklan dan menonaktifkan iklan yang disarankan situs kapan saja di setelan Minego.</translation>
 <translation id="5610142619324316209">Periksa sambungan</translation>
 <translation id="5610807607761827392">Anda dapat mengelola kartu dan alamat di <ph name="BEGIN_LINK"/>Setelan<ph name="END_LINK"/>.</translation>
-<translation id="2012723355262040739">Terjemahkan halaman ini dengan Brave Terjemahan</translation>
+<translation id="2012723355262040739">Terjemahkan halaman ini dengan Minego Terjemahan</translation>
 <translation id="5612720917913232150"><ph name="URL"/> ingin menggunakan lokasi komputer Anda</translation>
 <translation id="561669346091975195">Acara TV fiksi ilmiah &amp; fantasi</translation>
 <translation id="5617949217645503996"><ph name="HOST_NAME"/> terlalu sering mengalihkan Anda.</translation>
@@ -1847,10 +1847,10 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5720705177508910913">Pengguna saat ini</translation>
 <translation id="5723287205918986743">Industri pertahanan</translation>
 <translation id="5725567311035061582">Kelola cookie dan data situs</translation>
-<translation id="3006790309890592320">Brave menyarankan untuk menyetel ulang sandi jika Anda juga menggunakannya di situs lain.</translation>
+<translation id="3006790309890592320">Minego menyarankan untuk menyetel ulang sandi jika Anda juga menggunakannya di situs lain.</translation>
 <translation id="5732392974455271431">Orang tua dapat berhenti memblokirnya untukmu</translation>
 <translation id="5736165827969430182">Logam &amp; pertambangan</translation>
-<translation id="5576538372759072019">{NUM_CARDS,plural, =1{Simpan kartu di Akun Brave Anda}other{Simpan kartu di Akun Brave Anda}}</translation>
+<translation id="5576538372759072019">{NUM_CARDS,plural, =1{Simpan kartu di Akun Minego Anda}other{Simpan kartu di Akun Minego Anda}}</translation>
 <translation id="5738385766833540397">Kelola cara Anda menerima notifikasi diskon untuk produk yang dipantau</translation>
 <translation id="5740911612628596808">Envelope C9</translation>
 <translation id="5743638595296120378">Belanja kendaraan</translation>
@@ -1874,11 +1874,11 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5784606427469807560">Terjadi error saat mengonfirmasi kartu. Periksa koneksi internet Anda dan coba lagi.</translation>
 <translation id="5785756445106461925">Selain itu, halaman ini berisi sumber daya lainnya yang tidak aman. Sumber daya ini dapat dilihat oleh orang lain saat transit dan dapat dimodifikasi oleh penyerang untuk mengubah tampilan perangkat.</translation>
 <translation id="5786044859038896871">Ingin mengisi informasi kartu?</translation>
-<translation id="3985758120980526872">Brave menemukan sandi yang baru saja Anda gunakan dalam pelanggaran data. Sebaiknya ubah sandi ini sekarang.</translation>
+<translation id="3985758120980526872">Minego menemukan sandi yang baru saja Anda gunakan dalam pelanggaran data. Sebaiknya ubah sandi ini sekarang.</translation>
 <translation id="5789643057113097023">:</translation>
 <translation id="5803412860119678065">Ingin mengisi <ph name="CARD_DETAIL"/>?</translation>
 <translation id="5804241973901381774">Izin</translation>
-<translation id="5937482014241669139">Lihat Histori Brave Anda</translation>
+<translation id="5937482014241669139">Lihat Histori Minego Anda</translation>
 <translation id="5808542072418270309">Game simulasi</translation>
 <translation id="5810442152076338065">Sambungan Anda ke <ph name="DOMAIN"/> dienkripsi menggunakan cipher suite yang sudah usang.</translation>
 <translation id="5813119285467412249">&amp;Ulangi Penambahan</translation>
@@ -1917,7 +1917,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5920262536204764679">{NUM_COOKIES,plural, =1{1 terpakai}other{# terpakai}}</translation>
 <translation id="592031860219554105">Seluncur es</translation>
 <translation id="5921185718311485855">Aktif</translation>
-<translation id="2687595201721621314">Simpan kartu ke Akun Brave?</translation>
+<translation id="2687595201721621314">Simpan kartu ke Akun Minego?</translation>
 <translation id="5922853866070715753">Hampir selesai</translation>
 <translation id="5923492272538889093">Gunakan fitur buka kunci perangkat dan bukan CVC?</translation>
 <translation id="5924782825030413055">Sumber pembaruan izin terakhir:</translation>
@@ -1945,8 +1945,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="5989320800837274978">Baik proxy server tetap ataupun URL skrip .pac tidak ditentukan.</translation>
 <translation id="5992691462791905444">Lipatan format engineering Z</translation>
 <translation id="5992805036496113940">Lihat info yang digunakan untuk menampilkan iklan kepada Anda</translation>
-<translation id="7409510288691071929">Kelola info, privasi, dan keamanan di Akun Brave Anda</translation>
-<translation id="3494641719937626561">Sandi yang baru saja Anda gunakan terekspos dalam pelanggaran data. Untuk mengamankan akun Anda, Pengelola Sandi Brave merekomendasikan untuk mengubah sandi tersebut sekarang dan memeriksa sandi tersimpan Anda.</translation>
+<translation id="7409510288691071929">Kelola info, privasi, dan keamanan di Akun Minego Anda</translation>
+<translation id="3494641719937626561">Sandi yang baru saja Anda gunakan terekspos dalam pelanggaran data. Untuk mengamankan akun Anda, Pengelola Sandi Minego merekomendasikan untuk mengubah sandi tersebut sekarang dan memeriksa sandi tersimpan Anda.</translation>
 <translation id="6000758707621254961"><ph name="RESULT_COUNT"/> hasil untuk '<ph name="SEARCH_TEXT"/>'</translation>
 <translation id="6005765687956866568">Info yang diisi otomatis telah dihapus dari formulir</translation>
 <translation id="6006365096047131769">3 x 5 inci (7 x 12 cm)</translation>
@@ -1981,7 +1981,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6051221802930200923">Anda tidak dapat membuka <ph name="SITE"/> sekarang karena situs menggunakan penyematan sertifikat. Error jaringan dan serangan biasanya bersifat sementara, sehingga halaman ini mungkin akan berfungsi nanti.</translation>
 <translation id="6051898664905071243">Jumlah halaman:</translation>
 <translation id="6052284303005792909">•</translation>
-<translation id="5814871361966482530">Pelajari lebih lanjut cara Brave melindungi data Anda dalam Kebijakan Privasi kami.</translation>
+<translation id="5814871361966482530">Pelajari lebih lanjut cara Minego melindungi data Anda dalam Kebijakan Privasi kami.</translation>
 <translation id="6055888660316801977">Sheet tidak ada kredensial yang cocok untuk Kredensial pembayaran aman</translation>
 <translation id="6058977677006700226">Gunakan kartu Anda di semua perangkat?</translation>
 <translation id="6059925163896151826">Perangkat USB</translation>
@@ -1999,12 +1999,12 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6105460996796456817">Buat situs</translation>
 <translation id="6106989379647458772">Halaman web di <ph name="PAGE"/> mungkin tidak aktif untuk sementara atau dipindahkan secara permanen ke alamat web baru.</translation>
 <translation id="6107012941649240045">Diterbitkan Untuk</translation>
-<translation id="8233947174119245051">Akun Brave Anda mungkin memiliki bentuk histori penjelajahan lainnya di <ph name="BEGIN_LINK"/>myactivity.google.com<ph name="END_LINK"/></translation>
+<translation id="8233947174119245051">Akun Minego Anda mungkin memiliki bentuk histori penjelajahan lainnya di <ph name="BEGIN_LINK"/>myactivity.google.com<ph name="END_LINK"/></translation>
 <translation id="6116338172782435947">Melihat teks dan gambar yang disalin ke papan klip</translation>
 <translation id="6118782133429281336">Daftar asal kosong.</translation>
 <translation id="6120179357481664955">Ingat ID UPI Anda?</translation>
 <translation id="6122181661879998141">bagian depan kartu Anda</translation>
-<translation id="5972135347314259717">Brave Enterprise Connectors</translation>
+<translation id="5972135347314259717">Minego Enterprise Connectors</translation>
 <translation id="6126565365696310362">Envelope Chinese #2</translation>
 <translation id="6127379762771434464">Item dihapus</translation>
 <translation id="6133984428121856852">Ekstensi file kosong atau salah format.</translation>
@@ -2031,10 +2031,10 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6203231073485539293">Periksa koneksi internet Anda</translation>
 <translation id="6205314730813004066">Privasi iklan</translation>
 <translation id="6212314149070368045">AS Fanfold</translation>
-<translation id="8385639954311581596">Hapus alamat dari Brave?</translation>
+<translation id="8385639954311581596">Hapus alamat dari Minego?</translation>
 <translation id="622039917539443112">Lipatan paralel</translation>
 <translation id="6221345481584921695">Google Safe Browsing baru saja <ph name="BEGIN_LINK"/>mendeteksi software perusak<ph name="END_LINK"/> di <ph name="SITE"/>. Situs web yang biasanya aman terkadang terinfeksi software perusak. Konten berbahaya datang dari <ph name="SUBRESOURCE_HOST"/>, yang dikenal luas sebagai distributor software perusak.</translation>
-<translation id="8997875939727100757"><ph name="MANAGE_CHROME_ACCESSIBILITY_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk mempersonalisasikan alat aksesibilitas Anda di setelan Brave</translation>
+<translation id="8997875939727100757"><ph name="MANAGE_CHROME_ACCESSIBILITY_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk mempersonalisasikan alat aksesibilitas Anda di setelan Minego</translation>
 <translation id="6229649258872345286">Wisata keluarga</translation>
 <translation id="6232271601416750929">Produk kecantikan ramah lingkungan</translation>
 <translation id="6234122620015464377">Trim setelah setiap dokumen tercetak</translation>
@@ -2042,7 +2042,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6240447795304464094">Logo Google Pay</translation>
 <translation id="6241121617266208201">Sembunyikan saran</translation>
 <translation id="624499991300733384">Layanan Penyusun Cetak</translation>
-<translation id="3917320044622606497"><ph name="MANAGE_CHROME_DOWNLOADS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk mengelola file yang telah Anda download di Brave</translation>
+<translation id="3917320044622606497"><ph name="MANAGE_CHROME_DOWNLOADS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk mengelola file yang telah Anda download di Minego</translation>
 <translation id="6254436959401408446">Tidak cukup memori untuk membuka halaman ini</translation>
 <translation id="6259156558325130047">&amp;Ulangi Pengaturan Ulang</translation>
 <translation id="6263376278284652872">Bookmark <ph name="DOMAIN"/></translation>
@@ -2050,14 +2050,14 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6264485186158353794">Kembali agar aman</translation>
 <translation id="6265794661083428563">Salin nilai kebijakan <ph name="POLICY_NAME"/></translation>
 <translation id="6266934640124581640">Hijau Kebiruan Terang</translation>
-<translation id="1300170712564922349">Lanjutkan perjalanan Anda untuk melihat aktivitas yang relevan di histori Brave Anda</translation>
-<translation id="9136010393039243713">Brave Update</translation>
+<translation id="1300170712564922349">Lanjutkan perjalanan Anda untuk melihat aktivitas yang relevan di histori Minego Anda</translation>
+<translation id="9136010393039243713">Minego Update</translation>
 <translation id="6276112860590028508">Halaman dari daftar bacaan Anda muncul di sini</translation>
-<translation id="7954557091400543500">Untuk membayar lebih cepat di pembelian selanjutnya, simpan kartu dan alamat penagihan ke Akun Brave Anda.</translation>
+<translation id="7954557091400543500">Untuk membayar lebih cepat di pembelian selanjutnya, simpan kartu dan alamat penagihan ke Akun Minego Anda.</translation>
 <translation id="6279183038361895380">Tekan |<ph name="ACCELERATOR"/>| untuk menampilkan kursor</translation>
 <translation id="6280223929691119688">Tidak dapat mengirim ke alamat ini. Pilih alamat lain.</translation>
 <translation id="6284292079994426700">26 x 38 inci (66 x 96 cm)</translation>
-<translation id="9069724554626063339">Tombol Kelola download di Brave, tekan Enter untuk mengelola file yang telah Anda download di Brave</translation>
+<translation id="9069724554626063339">Tombol Kelola download di Minego, tekan Enter untuk mengelola file yang telah Anda download di Minego</translation>
 <translation id="6289939620939689042">Warna Halaman</translation>
 <translation id="6290238015253830360">Artikel yang disarankan ditampilkan di sini</translation>
 <translation id="6293309776179964942">JIS B5</translation>
@@ -2074,7 +2074,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6319249456820053699">Kamera &amp; kamera perekam</translation>
 <translation id="6321917430147971392">Periksa setelan DNS Anda</translation>
 <translation id="6322182122604171028">Tidak dapat menggunakan Windows Hello</translation>
-<translation id="7962450223988560278">Setel Brave sebagai browser default sistem di setelan iOS</translation>
+<translation id="7962450223988560278">Setel Minego sebagai browser default sistem di setelan iOS</translation>
 <translation id="6328639280570009161">Coba nonaktifkan prediksi jaringan</translation>
 <translation id="6328784461820205019">"Koneksi Anda tidak bersifat pribadi" atau "&lt;span class="error-code"&gt;NET::ERR_CERT_AUTHORITY_INVALID&lt;/span&gt;" atau "&lt;span class="error-code"&gt;ERR_CERT_COMMON_NAME_INVALID&lt;/span&gt;" atau "&lt;span class="error-code"&gt;NET::ERR_CERT_WEAK_SIGNATURE_ALGORITHM&lt;/span&gt;" atau "&lt;span class="error-code"&gt;ERR_CERT_SYMANTEC_LEGACY&lt;/span&gt;" atau "SSL certificate error"S</translation>
 <translation id="6328786501058569169">Situs ini bersifat menipu</translation>
@@ -2115,7 +2115,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6427730057873428458">Gate fold</translation>
 <translation id="6428450836711225518">Verifikasi nomor telepon Anda</translation>
 <translation id="6429267199680088961">A4 Tab</translation>
-<translation id="7772223497488184427">Ubah sandi Brave</translation>
+<translation id="7772223497488184427">Ubah sandi Minego</translation>
 <translation id="6431119592588449664">Laporan diupload</translation>
 <translation id="6432297414176614592">Selengkapnya tentang topik iklan</translation>
 <translation id="6433490469411711332">Edit info kontak</translation>
@@ -2138,7 +2138,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="646793340882508547">Game petualangan</translation>
 <translation id="6468485451923838994">Font</translation>
 <translation id="647261751007945333">Kebijakan perangkat</translation>
-<translation id="2252963430820803723">Situs yang Anda buka dapat meminta informasi kepada Brave yang membantunya mengukur performa iklan. Brave melindungi privasi Anda dengan membatasi informasi yang dapat dibagikan antar-situs.</translation>
+<translation id="2252963430820803723">Situs yang Anda buka dapat meminta informasi kepada Minego yang membantunya mengukur performa iklan. Minego melindungi privasi Anda dengan membatasi informasi yang dapat dibagikan antar-situs.</translation>
 <translation id="6476284679642588870">Kelola metode pembayaran</translation>
 <translation id="6486200200930923183">Film dokumenter</translation>
 <translation id="6489534406876378309">Mulai mengupload kerusakan</translation>
@@ -2149,7 +2149,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6502626736864595182">Penyedia forum &amp; chat</translation>
 <translation id="6502991525169604759">Tanpa perubahan dari Anda</translation>
 <translation id="6506959208958864820">Envelope</translation>
-<translation id="3960299545138990065">Buka Ulang Brave</translation>
+<translation id="3960299545138990065">Buka Ulang Minego</translation>
 <translation id="6513005815064132016">Dapat meminta untuk melacak posisi kamera Anda</translation>
 <translation id="6517596291481585650">Peringatan: Kebijakan ini tidak digabung sebagai daftar sebagaimana yang ditetapkan oleh kebijakan karena bukan merupakan daftar.</translation>
 <translation id="6518133107902771759">Verifikasi</translation>
@@ -2170,11 +2170,11 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="657902945730878902">Menggambar &amp; mewarnai</translation>
 <translation id="6579630537141957243">Hubungkan perangkat MIDI?</translation>
 <translation id="6579990219486187401">Merah Muda Terang</translation>
-<translation id="5302585261530504168">Brave menemukan sandi yang baru saja Anda gunakan dalam pelanggaran data. Untuk mengamankan akun, sebaiknya ubah sandi sekarang dan periksa sandi tersimpan Anda.</translation>
+<translation id="5302585261530504168">Minego menemukan sandi yang baru saja Anda gunakan dalam pelanggaran data. Untuk mengamankan akun, sebaiknya ubah sandi sekarang dan periksa sandi tersimpan Anda.</translation>
 <translation id="6587893660316489419">Envelope B5</translation>
 <translation id="6587923378399804057">Link yang Anda salin</translation>
 <translation id="6591833882275308647"><ph name="DEVICE_TYPE"/> Anda tidak dikelola</translation>
-<translation id="7150996650768688560">Tombol Kelola setelan situs, tekan Enter untuk mengelola izin dan data yang disimpan di seluruh situs di setelan Brave</translation>
+<translation id="7150996650768688560">Tombol Kelola setelan situs, tekan Enter untuk mengelola izin dan data yang disimpan di seluruh situs di setelan Minego</translation>
 <translation id="6596325263575161958">Opsi enkripsi</translation>
 <translation id="6597665340361269064">90 derajat</translation>
 <translation id="6599642189720630047">Produk yang Dipantau</translation>
@@ -2191,8 +2191,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6643016212128521049">Hapus</translation>
 <translation id="6645291930348198241">Mengakses cookie dan data situs.</translation>
 <translation id="6645478838938543427">Notifikasi diskon akan dikirim ke <ph name="EMAIL_ADDRESS"/></translation>
-<translation id="1375868315964791309">{COUNT,plural, =0{Tidak ada}=1{Dari 1 situs (Anda tidak akan logout dari Akun Brave)}other{Dari # situs (Anda tidak akan logout dari Akun Brave)}}</translation>
-<translation id="6678472970290886941">Administrator dapat mengubah penyiapan browser Anda dari jarak jauh. Aktivitas di perangkat ini juga dapat dikelola di luar Brave.</translation>
+<translation id="1375868315964791309">{COUNT,plural, =0{Tidak ada}=1{Dari 1 situs (Anda tidak akan logout dari Akun Minego)}other{Dari # situs (Anda tidak akan logout dari Akun Minego)}}</translation>
+<translation id="6678472970290886941">Administrator dapat mengubah penyiapan browser Anda dari jarak jauh. Aktivitas di perangkat ini juga dapat dikelola di luar Minego.</translation>
 <translation id="6648524591329069940">Font Serif</translation>
 <translation id="6649510485211003056">195 x 270 mm</translation>
 <translation id="6651270836885078973">Dikelola oleh:</translation>
@@ -2209,8 +2209,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6688743156324860098">Perbarui…</translation>
 <translation id="6688775486821967877">Kartu virtual saat ini tidak tersedia, coba lagi nanti</translation>
 <translation id="6689249931105087298">Relatif dengan kompresi titik hitam</translation>
-<translation id="5406652219015697259">Brave menawarkan untuk menyimpan informasi kartu ke Akun Brave Anda karena Anda sedang login. Anda dapat mengubah perilaku ini di setelan. Nama pemegang kartu berasal dari akun Anda.</translation>
-<translation id="6522914004575214087"><ph name="FIND_MY_PHONE_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan Tab lalu Enter untuk Menemukan perangkat Anda di Akun Brave</translation>
+<translation id="5406652219015697259">Minego menawarkan untuk menyimpan informasi kartu ke Akun Minego Anda karena Anda sedang login. Anda dapat mengubah perilaku ini di setelan. Nama pemegang kartu berasal dari akun Anda.</translation>
+<translation id="6522914004575214087"><ph name="FIND_MY_PHONE_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan Tab lalu Enter untuk Menemukan perangkat Anda di Akun Minego</translation>
 <translation id="6696588630955820014">Tombol Bagikan tab ini, tekan Enter untuk berbagi tab ini dengan membagikan link, membuat kode QR, melakukan transmisi, dan lainnya</translation>
 <translation id="6698381487523150993">Dibuat:</translation>
 <translation id="6702919718839027939">Presentasi</translation>
@@ -2273,11 +2273,11 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6869334554832814367">Pinjaman pribadi</translation>
 <translation id="6873456682041376666">Baki Atas</translation>
 <translation id="6874604403660855544">&amp;Ulangi penambahan</translation>
-<translation id="5856252669085142737">Buat Dokumen Brave baru dengan cepat</translation>
+<translation id="5856252669085142737">Buat Dokumen Minego baru dengan cepat</translation>
 <translation id="6883221904761970440">Sheet autentikasi kredensial pembayaran aman ditutup</translation>
 <translation id="6884662655240309489">Ukuran 1</translation>
 <translation id="6886577214605505410"><ph name="LOCATION_TITLE"/> <ph name="SHORT_URL"/></translation>
-<translation id="7265969755975834932">Brave menyederhanakan halaman ini agar lebih mudah dibaca. Brave mengambil halaman asli melalui koneksi yang tidak aman.</translation>
+<translation id="7265969755975834932">Minego menyederhanakan halaman ini agar lebih mudah dibaca. Minego mengambil halaman asli melalui koneksi yang tidak aman.</translation>
 <translation id="6890443033788248019">Izinkan lokasi?</translation>
 <translation id="6890531741535756070">Anda memilih untuk memverifikasi dengan <ph name="DEVICE_LABEL"/> di situs yang menggunakan <ph name="PROVIDER_ORIGIN"/>. Penyedia ini mungkin telah menyimpan informasi tentang metode pembayaran yang dapat Anda <ph name="BEGIN_LINK"/>minta untuk dihapus<ph name="END_LINK"/>.</translation>
 <translation id="6890956352250146925">Opsi untuk cookie dan data situs</translation>
@@ -2295,7 +2295,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6916954549222464607">Perencanaan &amp; pengelolaan keuangan</translation>
 <translation id="6917795328362592458">Sandi yang baru saja Anda gunakan terekspos dalam pelanggaran data. Untuk mengamankan akun Anda, Pengelola Sandi merekomendasikan untuk memeriksa sandi tersimpan Anda.</translation>
 <translation id="6925267999184670015">Amerika Utara B+</translation>
-<translation id="6722453239914327220">Nama ini dari Akun Brave Anda</translation>
+<translation id="6722453239914327220">Nama ini dari Akun Minego Anda</translation>
 <translation id="6936976777388162184">Ini adalah perangkat yang dipaketkan dan tidak dapat didaftarkan dengan Signage and Kiosk Upgrade.</translation>
 <translation id="6939469646605424232">Drama TV</translation>
 <translation id="6944692733090228304">Anda memasukkan sandi di situs yang tidak dikelola oleh <ph name="BEGIN_BOLD"/><ph name="ORG_NAME"/><ph name="END_BOLD"/>. Untuk melindungi akun, jangan gunakan sandi yang sama di aplikasi dan situs lain.</translation>
@@ -2308,7 +2308,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="695140971690006676">Reset semua</translation>
 <translation id="6954049078461159956">Hoki</translation>
 <translation id="6957887021205513506">Sertifikat server tampaknya palsu.</translation>
-<translation id="774679539085757206">Kelola setelan privasi Brave di Akun Brave Anda</translation>
+<translation id="774679539085757206">Kelola setelan privasi Minego di Akun Minego Anda</translation>
 <translation id="695864015080711809">Pekerjaan &amp; pendidikan</translation>
 <translation id="6961733224437895943">Asuransi rumah</translation>
 <translation id="6961844873822989059">Dapat meminta untuk menggunakan font yang diinstal di perangkat Anda</translation>
@@ -2320,7 +2320,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="6965978654500191972">Perangkat</translation>
 <translation id="696703987787944103">Perseptual</translation>
 <translation id="6968269510885595029">Gunakan Kunci Keamanan</translation>
-<translation id="8485851762575764192">Buat presentasi Brave baru di Slide dengan cepat</translation>
+<translation id="8485851762575764192">Buat presentasi Minego baru di Slide dengan cepat</translation>
 <translation id="6972629891077993081">Perangkat HID</translation>
 <translation id="6973656660372572881">Server proxy tetap dan URL skrip .pac telah ditentukan.</translation>
 <translation id="6973988895180423160">3,5 x 5 inci (8 x 12 cm)</translation>
@@ -2338,12 +2338,12 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7014741021609395734">Tingkat zoom</translation>
 <translation id="7016992613359344582">Tagihan ini bisa hanya satu kali atau berulang, dan mungkin tidak pasti.</translation>
 <translation id="702146556168549005">URL halaman yang Anda buka akan dikirim ke Google Cloud atau pihak ketiga untuk dianalisis. Misalnya, URL mungkin dipindai untuk mendeteksi situs yang tidak aman atau memfilter situs berdasarkan aturan yang ditetapkan oleh administrator.</translation>
-<translation id="8683151724374457021">Situs ini menentukan hal-hal yang Anda sukai, lalu menyarankan iklan ke situs lain. Situs ini juga mendapatkan topik iklan Anda dari Brave untuk menampilkan iklan yang lebih relevan.</translation>
+<translation id="8683151724374457021">Situs ini menentukan hal-hal yang Anda sukai, lalu menyarankan iklan ke situs lain. Situs ini juga mendapatkan topik iklan Anda dari Minego untuk menampilkan iklan yang lebih relevan.</translation>
 <translation id="7023162328967545559">Peringatan admin</translation>
 <translation id="7029809446516969842">Sandi</translation>
 <translation id="7030436163253143341">Sertifikat tidak valid</translation>
 <translation id="7031646650991750659">Aplikasi Google Play yang telah diinstal</translation>
-<translation id="8918349693525256593"><ph name="MANAGE_GOOGLE_PRIVACY_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan Tab lalu Enter untuk mengelola setelan privasi Akun Brave Anda</translation>
+<translation id="8918349693525256593"><ph name="MANAGE_GOOGLE_PRIVACY_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan Tab lalu Enter untuk mengelola setelan privasi Akun Minego Anda</translation>
 <translation id="7048095965575426564">Eropa Fanfold</translation>
 <translation id="7050187094878475250">Anda berusaha menjangkau <ph name="DOMAIN"/>, namun server memberikan sertifikat yang masa berlakunya terlalu lama untuk dapat dipercaya.</translation>
 <translation id="705310974202322020">{NUM_CARDS,plural, =1{Kartu ini tidak dapat disimpan sekarang}other{Kartu-kartu ini tidak dapat disimpan sekarang}}</translation>
@@ -2352,7 +2352,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7058774143982824355">Layanan Parser Sandi CSV</translation>
 <translation id="7061777300866737982">Keamanan &amp; keselamatan rumah</translation>
 <translation id="7062635574500127092">Hijau kebiruan</translation>
-<translation id="5320462991730735481">Tambahkan dan kelola alamat di setelan Brave</translation>
+<translation id="5320462991730735481">Tambahkan dan kelola alamat di setelan Minego</translation>
 <translation id="7064851114919012435">Info kontak</translation>
 <translation id="7067633076996245366">Musik soul &amp; R&amp;B</translation>
 <translation id="7068733155164172741">Masukkan kode <ph name="OTP_LENGTH"/> digit</translation>
@@ -2363,11 +2363,11 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7081308185095828845">Fitur ini tidak tersedia di perangkat Anda</translation>
 <translation id="7083258188081898530">Baki 9</translation>
 <translation id="7086090958708083563">Upload yang diminta oleh pengguna</translation>
-<translation id="1313878436434241688"><ph name="MANAGE_SITE_SETTINGS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola izin dan data yang disimpan di seluruh situs di setelan Brave</translation>
+<translation id="1313878436434241688"><ph name="MANAGE_SITE_SETTINGS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola izin dan data yang disimpan di seluruh situs di setelan Minego</translation>
 <translation id="7096937462164235847">Identitas situs ini tidak terverifikasi.</translation>
 <translation id="7101893872976785596">Film horor</translation>
 <translation id="7102079138917191645">Konstruksi &amp; pemeliharaan</translation>
-<translation id="6793825086874189463">Mainkan game Brave Dino</translation>
+<translation id="6793825086874189463">Mainkan game Minego Dino</translation>
 <translation id="7108338896283013870">Sembunyikan</translation>
 <translation id="7108634116785509031"><ph name="HOST"/> ingin menggunakan kamera Anda</translation>
 <translation id="7108819624672055576">Diizinkan oleh ekstensi</translation>
@@ -2405,7 +2405,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="719464814642662924">Visa</translation>
 <translation id="7199278868241956094">Oficio</translation>
 <translation id="7201591969684833065">Administrator dapat melihat:</translation>
-<translation id="2540471381262404386">Setel Brave sebagai browser default sistem</translation>
+<translation id="2540471381262404386">Setel Minego sebagai browser default sistem</translation>
 <translation id="7210863904660874423"><ph name="HOST_NAME"/> tidak mematuhi standar keamanan.</translation>
 <translation id="7210993021468939304">Aktivitas Linux berada dalam penampung, dan dapat menginstal dan menjalankan aplikasi Linux di dalam penampung</translation>
 <translation id="721197778055552897"><ph name="BEGIN_LINK"/>Selengkapnya<ph name="END_LINK"/> tentang masalah ini.</translation>
@@ -2428,13 +2428,13 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7260504762447901703">Cabut akses</translation>
 <translation id="7275334191706090484">Bookmark Terkelola</translation>
 <translation id="7277998515889183784">Tata rias &amp; kosmetik</translation>
-<translation id="2837210582972105306"><ph name="CHANGE_GOOGLE_PASSWORD_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengubah sandi Akun Brave Anda</translation>
+<translation id="2837210582972105306"><ph name="CHANGE_GOOGLE_PASSWORD_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengubah sandi Akun Minego Anda</translation>
 <translation id="7292031607255951991">Nama penerima</translation>
 <translation id="7298195798382681320">Direkomendasikan</translation>
 <translation id="7299471494012161875">Periferal layar terpasang</translation>
 <translation id="7300012071106347854">Biru Kobalt</translation>
 <translation id="7304030187361489308">Tinggi</translation>
-<translation id="244157907932852817">Kelola setelan privasi Akun Brave</translation>
+<translation id="244157907932852817">Kelola setelan privasi Akun Minego</translation>
 <translation id="7305756307268530424">Mulai lebih lambat</translation>
 <translation id="7308436126008021607">sinkronisasi latar belakang</translation>
 <translation id="7310392214323165548">Perangkat akan segera dimulai ulang</translation>
@@ -2455,15 +2455,15 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7353601530677266744">Baris Perintah</translation>
 <translation id="7354880545102894991">Perjalanan murah &amp; mendadak</translation>
 <translation id="7359588939039777303">Iklan diblokir.</translation>
-<translation id="7308957539693927108">Saat Brave menemukan diskon yang tersedia, diskon tersebut akan ditampilkan saat checkout</translation>
-<translation id="5417725730200908216"><ph name="MANAGE_ADDRESSES_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk menambahkan dan mengelola alamat di setelan Brave</translation>
+<translation id="7308957539693927108">Saat Minego menemukan diskon yang tersedia, diskon tersebut akan ditampilkan saat checkout</translation>
+<translation id="5417725730200908216"><ph name="MANAGE_ADDRESSES_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk menambahkan dan mengelola alamat di setelan Minego</translation>
 <translation id="7365849542400970216">Tahu penggunaan perangkat Anda?</translation>
 <translation id="7366117520888504990">198 x 275 mm</translation>
 <translation id="7366362069757178916">Pengendali pembayaran</translation>
 <translation id="7367985555340314048">Topik yang diminati didasarkan pada histori penjelajahan terbaru Anda dan digunakan oleh situs untuk menampilkan iklan yang dipersonalisasi kepada Anda</translation>
 <translation id="7372973238305370288">hasil penelusuran</translation>
 <translation id="7374461526650987610">Penangan protokol</translation>
-<translation id="3898257577441589237">Masalah ini terjadi karena sertifikat yang diinstal di perangkat oleh Anda atau orang lain. Sertifikat ini diketahui sebagai sertifikat yang digunakan untuk memantau dan melakukan intersepsi jaringan dan tidak dipercaya oleh Brave. Walau terdapat beberapa kasus pemantauan yang sah, seperti pada jaringan sekolah atau perusahaan, Brave ingin memastikan Anda mengetahui adanya pemantauan ini, meskipun Anda tidak dapat menghentikannya. Pemantauan dapat terjadi di browser atau aplikasi yang mengakses web.</translation>
+<translation id="3898257577441589237">Masalah ini terjadi karena sertifikat yang diinstal di perangkat oleh Anda atau orang lain. Sertifikat ini diketahui sebagai sertifikat yang digunakan untuk memantau dan melakukan intersepsi jaringan dan tidak dipercaya oleh Minego. Walau terdapat beberapa kasus pemantauan yang sah, seperti pada jaringan sekolah atau perusahaan, Minego ingin memastikan Anda mengetahui adanya pemantauan ini, meskipun Anda tidak dapat menghentikannya. Pemantauan dapat terjadi di browser atau aplikasi yang mengakses web.</translation>
 <translation id="7375532151824574023">{NUM_COOKIES,plural, =0{Tidak ada situs yang diizinkan}=1{1 situs diizinkan}other{# situs diizinkan}}</translation>
 <translation id="7375818412732305729">File dilampirkan</translation>
 <translation id="7377249249140280793"><ph name="RELATIVE_DATE"/> - <ph name="FULL_DATE"/></translation>
@@ -2490,7 +2490,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
       &lt;li&gt;Pada bagian &lt;strong&gt;Startup type&lt;/strong&gt;, pilih &lt;strong&gt;Disabled&lt;/strong&gt;
       &lt;li&gt;Pada bagian &lt;strong&gt;Service status&lt;/strong&gt;, klik &lt;strong&gt;Stop&lt;/strong&gt;
       &lt;li&gt;Klik &lt;strong&gt;Apply&lt;/strong&gt;, lalu klik &lt;strong&gt;Ok&lt;/strong&gt;
-      &lt;li&gt;Buka &lt;a href="https://support.google.com/chrome/answer/6098869"&gt;Pusat bantuan Brave&lt;/a&gt; untuk mempelajari cara menghapus software tersebut secara permanen dari komputer
+      &lt;li&gt;Buka &lt;a href="https://support.google.com/chrome/answer/6098869"&gt;Pusat bantuan Minego&lt;/a&gt; untuk mempelajari cara menghapus software tersebut secara permanen dari komputer
       &lt;/ol&gt;</translation>
 <translation id="7410471291937727359">Cantik</translation>
 <translation id="741204030948306876">Ya, saya setuju</translation>
@@ -2498,7 +2498,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7418620734632363981">Pemrograman</translation>
 <translation id="7419106976560586862">Jalur Profil</translation>
 <translation id="7421067045979951561">pengendali protokol</translation>
-<translation id="1451399671339759400">Tombol Lihat histori Brave Anda, tekan Enter untuk melihat dan mengelola histori penjelajahan Anda di setelan Brave</translation>
+<translation id="1451399671339759400">Tombol Lihat histori Minego Anda, tekan Enter untuk melihat dan mengelola histori penjelajahan Anda di setelan Minego</translation>
 <translation id="7427366580982928791">Perlindungan internet anak</translation>
 <translation id="7429429656042611765">Eksekutif</translation>
 <translation id="7437289804838430631">Tambahkan Info Kontak</translation>
@@ -2523,10 +2523,10 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="748745328507845862">Konser &amp; festival musik</translation>
 <translation id="7489473601138133813">Referensi &amp; perencanaan karier</translation>
 <translation id="7495528107193238112">Konten ini diblokir. Hubungi pemilik situs untuk memperbaiki masalah.</translation>
-<translation id="7812541223399526596">Tombol Buat dokumen, tekan Enter untuk membuat Dokumen Brave baru dengan cepat</translation>
+<translation id="7812541223399526596">Tombol Buat dokumen, tekan Enter untuk membuat Dokumen Minego baru dengan cepat</translation>
 <translation id="7501663406926337752">Situs yang akan dibuka ditandai oleh organisasi Anda</translation>
 <translation id="7501853161948120656">Referensi edukasi</translation>
-<translation id="2957285558977211818">Brave <ph name="BEGIN_EMPHASIS"/>tidak akan menyimpan<ph name="END_EMPHASIS"/> informasi berikut:
+<translation id="2957285558977211818">Minego <ph name="BEGIN_EMPHASIS"/>tidak akan menyimpan<ph name="END_EMPHASIS"/> informasi berikut:
           <ph name="BEGIN_LIST"/>
             <ph name="LIST_ITEM"/>Histori penjelajahan Anda
             <ph name="LIST_ITEM"/>Cookie dan data situs
@@ -2535,7 +2535,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7507075214339298899">Envelope #9</translation>
 <translation id="7508255263130623398">ID perangkat kebijakan yang dikembalikan kosong atau tidak cocok dengan ID perangkat saat ini</translation>
 <translation id="7508870219247277067">Hijau Avokad</translation>
-<translation id="4881941912089635446"><ph name="BEGIN_BOLD"/>Cara situs menggunakan data ini:<ph name="END_BOLD"/> Situs dapat menyimpan informasi tentang hal-hal yang Anda sukai ke Brave. Misalnya, jika Anda membuka suatu situs tentang latihan maraton, situs tersebut mungkin menyimpulkan bahwa Anda tertarik dengan sepatu lari. Kemudian, jika Anda membuka situs lain, situs tersebut dapat menampilkan iklan sepatu lari yang disarankan oleh situs pertama.</translation>
+<translation id="4881941912089635446"><ph name="BEGIN_BOLD"/>Cara situs menggunakan data ini:<ph name="END_BOLD"/> Situs dapat menyimpan informasi tentang hal-hal yang Anda sukai ke Minego. Misalnya, jika Anda membuka suatu situs tentang latihan maraton, situs tersebut mungkin menyimpulkan bahwa Anda tertarik dengan sepatu lari. Kemudian, jika Anda membuka situs lain, situs tersebut dapat menampilkan iklan sepatu lari yang disarankan oleh situs pertama.</translation>
 <translation id="7510269639068718544">Kucing</translation>
 <translation id="7511955381719512146">Wi-Fi yang digunakan mungkin mewajibkan Anda mengunjungi <ph name="BEGIN_BOLD"/><ph name="LOGIN_URL"/><ph name="END_BOLD"/>.</translation>
 <translation id="7512685745044087310">Kebijakan ini tidak dapat disetel ke "Benar" dan menjadi wajib. Oleh karena itu, kebijakan diubah menjadi direkomendasikan.</translation>
@@ -2555,7 +2555,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7546409722674205727">Memulai <ph name="APP_NAME"/></translation>
 <translation id="7548892272833184391">Memperbaiki error koneksi</translation>
 <translation id="7549584377607005141">Halaman web ini membutuhkan data yang Anda masukkan sebelumnya agar dapat ditampilkan dengan benar. Anda dapat mengirimkan data ini lagi, namun dengan begitu Anda akan mengulangi tindakan apa pun yang sebelumnya dilakukan oleh halaman ini.</translation>
-<translation id="5474381306981932386">Nama pengguna perangkat dan nama pengguna Brave Anda</translation>
+<translation id="5474381306981932386">Nama pengguna perangkat dan nama pengguna Minego Anda</translation>
 <translation id="7551484245293639699">Asuransi perjalanan</translation>
 <translation id="755279583747225797">Uji coba aktif</translation>
 <translation id="7552846755917812628">Coba tips berikut:</translation>
@@ -2565,16 +2565,16 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7559278538486662777">Ukuran aplikasi ini tidak dapat diubah.</translation>
 <translation id="7564680668369175887">Mobil station wagon</translation>
 <translation id="7567204685887185387">Server ini tidak dapat membuktikan bahwa ini adalah <ph name="DOMAIN"/>; sertifikat keamanannya mungkin telah dikeluarkan dengan curang. Hal ini disebabkan oleh kesalahan konfigurasi atau penyerang memotong sambungan Anda.</translation>
-<translation id="8661288256654172117">Brave mencoba mengisi sandi Anda di <ph name="APP_NAME"/>.</translation>
+<translation id="8661288256654172117">Minego mencoba mengisi sandi Anda di <ph name="APP_NAME"/>.</translation>
 <translation id="7569490014721427265">Golf</translation>
 <translation id="7569761772822664555">Tombol Kelola mesin telusur, tekan Enter untuk mengelola mesin telusur dan penelusuran situs default Anda</translation>
 <translation id="7569983096843329377">Hitam</translation>
 <translation id="7575207903026901870">Hapus tombol Saran, tekan Enter untuk menghapus saran ini</translation>
 <translation id="7577900504646297215">Kelola minat</translation>
-<translation id="405970181812690156">Bayar di situs dan aplikasi di semua perangkat dengan cepat menggunakan kartu yang disimpan dengan Brave.</translation>
+<translation id="405970181812690156">Bayar di situs dan aplikasi di semua perangkat dengan cepat menggunakan kartu yang disimpan dengan Minego.</translation>
 <translation id="7579442726219254162">Variabel tidak dikenal "<ph name="VARIABLE"/>" di konfigurasi terkelola "<ph name="APPLICATION_ID"/>".</translation>
 <translation id="7581199239021537589">Perpindahan image Y sisi 2</translation>
-<translation id="4790068920551988473">Buat acara baru di Brave Kalender dengan cepat</translation>
+<translation id="4790068920551988473">Buat acara baru di Minego Kalender dengan cepat</translation>
 <translation id="7583969447617676942">Layanan hukum</translation>
 <translation id="7586676035079382730">Notifikasi tidak diizinkan</translation>
 <translation id="7591288787774558753">Bagikan konten rahasia?</translation>
@@ -2586,8 +2586,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7600965453749440009">Jangan pernah terjemahkan bahasa <ph name="LANGUAGE"/></translation>
 <translation id="7610193165460212391">Nilai di luar jangkauan <ph name="VALUE"/>.</translation>
 <translation id="7613889955535752492">Masa berlaku habis: <ph name="EXPIRATION_MONTH"/>/<ph name="EXPIRATION_YEAR"/></translation>
-<translation id="5704205738724476508"><ph name="MANAGE_PASSWORDS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk melihat dan mengelola sandi di setelan Brave</translation>
-<translation id="8565825862287624454">Administrator Anda telah mengaktifkan Brave Enterprise Connectors di browser Anda. Konektor ini memiliki akses ke beberapa data Anda.</translation>
+<translation id="5704205738724476508"><ph name="MANAGE_PASSWORDS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk melihat dan mengelola sandi di setelan Minego</translation>
+<translation id="8565825862287624454">Administrator Anda telah mengaktifkan Minego Enterprise Connectors di browser Anda. Konektor ini memiliki akses ke beberapa data Anda.</translation>
 <translation id="7617825962482469577">Envelope C7/C6</translation>
 <translation id="7619838219691048931">Lembar akhir</translation>
 <translation id="7625242817712715120">Kebijakan administrator tidak merekomendasikan untuk mencetak konten ini</translation>
@@ -2596,11 +2596,11 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7631444403134069754">Trek &amp; lapangan</translation>
 <translation id="7633909222644580952">Data performa dan laporan kerusakan</translation>
 <translation id="7634280112532283638">Pengurangan spam &amp; penipuan</translation>
-<translation id="6386821459680628976">Hapus kartu kredit dari Brave?</translation>
+<translation id="6386821459680628976">Hapus kartu kredit dari Minego?</translation>
 <translation id="7637586430889951925">{COUNT,plural, =0{Tidak ada}=1{1 sandi di akun Anda (untuk <ph name="DOMAIN_LIST"/>)}other{# sandi di akun Anda (untuk <ph name="DOMAIN_LIST"/>)}}</translation>
 <translation id="7638605456503525968">Port serial</translation>
 <translation id="7639968568612851608">Abu-Abu Tua</translation>
-<translation id="8275603180424408640">Sandi yang baru saja Anda gunakan terekspos dalam pelanggaran data. Pengelola Sandi Brave merekomendasikan untuk mengubah sandi Anda sekarang.</translation>
+<translation id="8275603180424408640">Sandi yang baru saja Anda gunakan terekspos dalam pelanggaran data. Pengelola Sandi Minego merekomendasikan untuk mengubah sandi Anda sekarang.</translation>
 <translation id="7647206758853451655">Kualitas cetakan</translation>
 <translation id="7648992873808071793">Menyimpan file pada perangkat ini</translation>
 <translation id="7653957176542370971">Lembar handler pembayaran tertutup</translation>
@@ -2618,7 +2618,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7673278391011283842">Kotak surat 6</translation>
 <translation id="7675325315208090829">Kelola Metode Pembayaran ...</translation>
 <translation id="7676643023259824263">Telusuri teks papan klip, <ph name="TEXT"/></translation>
-<translation id="4628681623692678085">Lihat dan kelola histori penjelajahan Anda di setelan Brave</translation>
+<translation id="4628681623692678085">Lihat dan kelola histori penjelajahan Anda di setelan Minego</translation>
 <translation id="7679947978757153706">Bisbol</translation>
 <translation id="7681273392938116652">Olahraga fantasi</translation>
 <translation id="7682287625158474539">Pengiriman</translation>
@@ -2643,13 +2643,13 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="772128550427553158">CVC terletak di bagian depan kartu Anda.</translation>
 <translation id="7723047071702270851">Edit Kartu</translation>
 <translation id="7724603315864178912">Potong</translation>
-<translation id="1296098648902562076">Buat formulir baru di Brave Formulir dengan cepat</translation>
+<translation id="1296098648902562076">Buat formulir baru di Minego Formulir dengan cepat</translation>
 <translation id="773466115871691567">Selalu terjemahkan halaman dalam bahasa <ph name="SOURCE_LANGUAGE"/></translation>
 <translation id="7736959720849233795">Salin Alamat Link</translation>
 <translation id="7740996059027112821">Standar</translation>
 <translation id="77424286611022110">Situs ini menampilkan iklan yang mengganggu atau menyesatkan. <ph name="LEARN_MORE_LINK_TEXT"/></translation>
 <translation id="774634243536837715">Konten berbahaya diblokir.</translation>
-<translation id="921286857694606205">Sesuaikan ukuran font dan rupa huruf di Brave</translation>
+<translation id="921286857694606205">Sesuaikan ukuran font dan rupa huruf di Minego</translation>
 <translation id="7752995774971033316">Tidak dikelola</translation>
 <translation id="7755287808199759310">Orang tua dapat berhenti memblokirnya untukmu</translation>
 <translation id="7755624218968747854">Rol Utama</translation>
@@ -2665,20 +2665,20 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7773005668374414287">Urutan yang sama menghadap ke atas</translation>
 <translation id="7785790577395078482">tablet ini</translation>
 <translation id="7786368602962652765">Kolom wajib diisi masih kosong. Isi kolom sebelum menyimpan.</translation>
-<translation id="6865562781710080368">Situs yang Anda buka dapat meminta informasi kepada Brave untuk membantunya mengukur performa iklan. Brave memungkinkan situs mengumpulkan jenis data tertentu, misalnya jam berapa iklan ditampilkan kepada Anda.</translation>
+<translation id="6865562781710080368">Situs yang Anda buka dapat meminta informasi kepada Minego untuk membantunya mengukur performa iklan. Minego memungkinkan situs mengumpulkan jenis data tertentu, misalnya jam berapa iklan ditampilkan kepada Anda.</translation>
 <translation id="7791011319128895129">Belum dirilis</translation>
 <translation id="7791196057686275387">Bale</translation>
 <translation id="7791543448312431591">Tambahkan</translation>
 <translation id="7798389633136518089">Diabaikan karena kebijakan ini tidak ditetapkan oleh sumber cloud.</translation>
 <translation id="7800304661137206267">Sambungan dienkripsi menggunakan <ph name="CIPHER"/>, dengan <ph name="MAC"/> untuk autentikasi pesan dan <ph name="KX"/> sebagai mekanisme pertukaran kunci.</translation>
-<translation id="7022547472659133044">Brave mencatat topik minat berdasarkan histori penjelajahan terbaru Anda. Selain itu, situs yang Anda buka dapat menentukan hal-hal yang Anda sukai. Kemudian, situs dapat meminta informasi ini untuk menampilkan iklan yang dipersonalisasi kepada Anda. Anda dapat memilih topik dan situs yang digunakan untuk menampilkan iklan kepada Anda.</translation>
+<translation id="7022547472659133044">Minego mencatat topik minat berdasarkan histori penjelajahan terbaru Anda. Selain itu, situs yang Anda buka dapat menentukan hal-hal yang Anda sukai. Kemudian, situs dapat meminta informasi ini untuk menampilkan iklan yang dipersonalisasi kepada Anda. Anda dapat memilih topik dan situs yang digunakan untuk menampilkan iklan kepada Anda.</translation>
 <translation id="7802523362929240268">Situs ini sah</translation>
 <translation id="7802989406998618639">Masukkan kode keamanan <ph name="NUMBER_OF_DIGITS"/> digit pada <ph name="SIDE_OF_CARD"/> agar bank dapat memverifikasi diri Anda</translation>
 <translation id="780301667611848630">Lain kali</translation>
 <translation id="7805571567667010077">Dikelola oleh organisasi Anda</translation>
 <translation id="7805768142964895445">Status</translation>
 <translation id="7812922009395017822">Mir</translation>
-<translation id="4670564340385807132">Hapus sebagai saran dari Brave?</translation>
+<translation id="4670564340385807132">Hapus sebagai saran dari Minego?</translation>
 <translation id="781440967107097262">Bagikan papan klip?</translation>
 <translation id="7815407501681723534">Ditemukan <ph name="NUMBER_OF_RESULTS"/> <ph name="SEARCH_RESULTS"/> hasil untuk '<ph name="SEARCH_STRING"/>'</translation>
 <translation id="7822320754433038727">Menembak &amp; berburu</translation>
@@ -2686,11 +2686,11 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7840103971441592723">Screenshot telah dimulai</translation>
 <translation id="7844689747373518809">{COUNT,plural, =0{Tidak ada}=1{1 aplikasi (<ph name="EXAMPLE_APP_1"/>)}=2{2 aplikasi (<ph name="EXAMPLE_APP_1"/>, <ph name="EXAMPLE_APP_2"/>)}other{# aplikasi (<ph name="EXAMPLE_APP_1"/>, <ph name="EXAMPLE_APP_2"/>, <ph name="AND_MORE"/>)}}</translation>
 <translation id="7855695075675558090"><ph name="TOTAL_LABEL"/> <ph name="CURRENCY_CODE"/> <ph name="FORMATTED_TOTAL_AMOUNT"/></translation>
-<translation id="7162988054835087448">Kemudian, situs yang Anda buka dapat meminta topik dari Brave guna mempersonalisasi iklan yang Anda lihat. Brave membagikan maksimal 3 topik sekaligus melindungi histori penjelajahan dan identitas Anda.</translation>
+<translation id="7162988054835087448">Kemudian, situs yang Anda buka dapat meminta topik dari Minego guna mempersonalisasi iklan yang Anda lihat. Minego membagikan maksimal 3 topik sekaligus melindungi histori penjelajahan dan identitas Anda.</translation>
 <translation id="7860345425589240791">Masukkan tanggal habis masa berlaku dan CVC yang baru di <ph name="SIDE_OF_CARD"/></translation>
 <translation id="7862185352068345852">Keluar dari situs?</translation>
 <translation id="7865448901209910068">Paling cepat</translation>
-<translation id="7971990257511863579">Ubah sandi Akun Brave Anda</translation>
+<translation id="7971990257511863579">Ubah sandi Akun Minego Anda</translation>
 <translation id="7877007680666472091">ID konten yang dilindungi</translation>
 <translation id="7878562273885520351">Sandi Anda mungkin disusupi</translation>
 <translation id="7880146494886811634">Simpan Alamat</translation>
@@ -2705,7 +2705,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="793209273132572360">Perbarui alamat?</translation>
 <translation id="7932579305932748336">Lapisan</translation>
 <translation id="79338296614623784">Masukkan nomor telepon yang valid</translation>
-<translation id="8329449853370113380"><ph name="URL"/> ingin memutar konten yang dilindungi. Identitas perangkat Anda akan diverifikasi oleh Brave.</translation>
+<translation id="8329449853370113380"><ph name="URL"/> ingin memutar konten yang dilindungi. Identitas perangkat Anda akan diverifikasi oleh Minego.</translation>
 <translation id="7935318582918952113">Penyaring DOM</translation>
 <translation id="7937554595067888181">Masa berlaku habis pada <ph name="EXPIRATION_DATE_ABBR"/></translation>
 <translation id="7938958445268990899">Sertifikat server belum valid.</translation>
@@ -2717,8 +2717,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7943893128817522649">Dapat meminta untuk otomatis mendownload beberapa file</translation>
 <translation id="7946724693008564269">Bahasa yang Terdeteksi</translation>
 <translation id="7947285636476623132">Periksa tahun kedaluwarsa dan coba lagi</translation>
-<translation id="3227327027957060968"><ph name="SEE_CHROME_TIPS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mempelajari fitur-fitur Brave</translation>
-<translation id="1535074845255182168">Kelola preferensi cookie di setelan Brave</translation>
+<translation id="3227327027957060968"><ph name="SEE_CHROME_TIPS_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mempelajari fitur-fitur Minego</translation>
+<translation id="1535074845255182168">Kelola preferensi cookie di setelan Minego</translation>
 <translation id="7951415247503192394">(32 bit)</translation>
 <translation id="7952192831285741665">Eropa EDP</translation>
 <translation id="7952804540472583406"><ph name="BEGIN_LINK"/>Login<ph name="END_LINK"/> ke jaringan.</translation>
@@ -2734,7 +2734,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="7981129096182302364">Musik dance &amp; elektronik</translation>
 <translation id="798134797138789862">Dapat meminta untuk menggunakan perangkat dan data virtual reality</translation>
 <translation id="7983008347525536475">SUV</translation>
-<translation id="8896585555528145662">Anda tidak dapat mengunjungi <ph name="SITE"/> saat ini karena situs web tersebut mengirim kredensial kacau yang tidak dapat diproses oleh Brave. Kesalahan jaringan dan serangan biasanya bersifat sementara, jadi halaman ini mungkin akan bekerja nanti.</translation>
+<translation id="8896585555528145662">Anda tidak dapat mengunjungi <ph name="SITE"/> saat ini karena situs web tersebut mengirim kredensial kacau yang tidak dapat diproses oleh Minego. Kesalahan jaringan dan serangan biasanya bersifat sementara, jadi halaman ini mungkin akan bekerja nanti.</translation>
 <translation id="7986319120639858961"><ph name="CARD_TITLE"/> <ph name="TIME"/> <ph name="BOOKMARKED"/> <ph name="TITLE"/> <ph name="DOMAIN"/></translation>
 <translation id="799149739215780103">Jilid</translation>
 <translation id="7992044431894087211">Berbagi layar dengan <ph name="APPLICATION_TITLE"/> dilanjutkan</translation>
@@ -2748,12 +2748,12 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8012116502927253373">{NUM_CARDS,plural, =1{Kartu ini dan alamat penagihannya akan disimpan. Anda dapat menggunakannya saat login ke <ph name="USER_EMAIL"/>.}other{Semua kartu ini dan alamat penagihannya akan disimpan. Anda dapat menggunakannya saat login ke <ph name="USER_EMAIL"/>.}}</translation>
 <translation id="8012647001091218357">Orang tua Anda saat ini tidak dapat dihubungi. Coba lagi.</translation>
 <translation id="8019861005170389898"><ph name="TRADITIONAL_TEXT"/> (<ph name="ADDITIONAL_TEXT"/>)</translation>
-<translation id="1625114571336329891"><ph name="SET_CHROME_AS_DEFAULT_BROWSER_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk menyetel Brave sebagai browser default sistem</translation>
+<translation id="1625114571336329891"><ph name="SET_CHROME_AS_DEFAULT_BROWSER_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk menyetel Minego sebagai browser default sistem</translation>
 <translation id="8025119109950072390">Penyerang di situs ini dapat mengelabui Anda agar melakukan hal yang berbahaya seperti memasang software atau mengungkap informasi pribadi Anda (misalnya sandi, nomor telepon, atau kartu kredit).</translation>
-<translation id="2672043041211108969">Brave akan otomatis menghapus topik yang tersimpan lebih dari 4 minggu. Saat Anda menjelajah, suatu topik mungkin muncul kembali di daftar. Atau, Anda dapat memblokir topik yang tidak ingin Anda bagikan dari Brave ke situs.</translation>
+<translation id="2672043041211108969">Minego akan otomatis menghapus topik yang tersimpan lebih dari 4 minggu. Saat Anda menjelajah, suatu topik mungkin muncul kembali di daftar. Atau, Anda dapat memblokir topik yang tidak ingin Anda bagikan dari Minego ke situs.</translation>
 <translation id="8026334261755873520">Hapus data penjelajahan</translation>
 <translation id="8027077570865220386">Baki 15</translation>
-<translation id="814401020562419411"><ph name="CREATE_GOOGLE_FORM_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat formulir baru di Brave Formulir dengan cepat</translation>
+<translation id="814401020562419411"><ph name="CREATE_GOOGLE_FORM_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat formulir baru di Minego Formulir dengan cepat</translation>
 <translation id="8028960012888758725">Trim setelah seluruh tugas tercetak</translation>
 <translation id="8034522405403831421">Halaman ini berbahasa <ph name="SOURCE_LANGUAGE"/>. Terjemahkan ke <ph name="TARGET_LANGUAGE"/>?</translation>
 <translation id="8035152190676905274">Pena</translation>
@@ -2770,9 +2770,9 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8058009102480785916">Produksi makanan</translation>
 <translation id="8058603697124206642">Tidak perlu</translation>
 <translation id="8066225060526005217">Dikelola oleh setelan cookie</translation>
-<translation id="5442778523450464826">Anda baru saja memasukkan sandi ke situs penipuan. Brave dapat membantu. Untuk mengubah sandi dan memberi tahu Brave bahwa akun Anda mungkin berisiko, klik Lindungi Akun.</translation>
+<translation id="5442778523450464826">Anda baru saja memasukkan sandi ke situs penipuan. Minego dapat membantu. Untuk mengubah sandi dan memberi tahu Minego bahwa akun Anda mungkin berisiko, klik Lindungi Akun.</translation>
 <translation id="8070439594494267500">Ikon aplikasi</translation>
-<translation id="7738019368151747786">Buat Spreadsheet Brave baru dengan cepat</translation>
+<translation id="7738019368151747786">Buat Spreadsheet Minego baru dengan cepat</translation>
 <translation id="8075898834294118863">Kelola setelan situs</translation>
 <translation id="8076492880354921740">Tab</translation>
 <translation id="8077669823243888800">Envelope Chinese #8</translation>
@@ -2800,7 +2800,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8116925261070264013">Dinonaktifkan</translation>
 <translation id="8118489163946903409">Metode pembayaran</translation>
 <translation id="8123046743443732598">Komputer desktop</translation>
-<translation id="1930033552459819898">Tombol Sesuaikan Brave, tekan Enter untuk menyesuaikan tampilan browser Anda</translation>
+<translation id="1930033552459819898">Tombol Sesuaikan Minego, tekan Enter untuk menyesuaikan tampilan browser Anda</translation>
 <translation id="8126056688005753476">Wisata petualangan</translation>
 <translation id="8127301229239896662">"<ph name="SOFTWARE_NAME"/>" tidak diinstal dengan benar di komputer atau jaringan Anda. Mintalah administrator IT untuk menyelesaikan masalah ini.</translation>
 <translation id="8131740175452115882">Konfirmasi</translation>
@@ -2809,7 +2809,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8150722005171944719">File pada <ph name="URL"/> tidak dapat dibaca.  File mungkin telah dihapus, dipindahkan, atau izin file mungkin mencegah akses.</translation>
 <translation id="8153865548451212769">{0,plural, =1{Kebijakan administrator tidak merekomendasikan untuk mendownload file ini ke <ph name="DESTINATION_NAME"/>}other{Kebijakan administrator tidak merekomendasikan untuk mendownload file ini ke <ph name="DESTINATION_NAME"/>}}</translation>
 <translation id="8163866351304776260">Empat lubang di kiri</translation>
-<translation id="4351627595884993315">Brave menawarkan untuk menyimpan informasi kartu ke Akun Brave Anda karena Anda sedang login. Anda dapat mengubah perilaku ini di setelan.</translation>
+<translation id="4351627595884993315">Minego menawarkan untuk menyimpan informasi kartu ke Akun Minego Anda karena Anda sedang login. Anda dapat mengubah perilaku ini di setelan.</translation>
 <translation id="8176440868214972690">Administrator perangkat ini telah mengirim beberapa info ke situs berikut, seperti setelan atau kebijakan.</translation>
 <translation id="8184538546369750125">Gunakan default global (Izinkan)</translation>
 <translation id="8186706823560132848">Software</translation>
@@ -2855,11 +2855,11 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8275952078857499577">Jangan tawarkan penerjemahan situs ini</translation>
 <translation id="8277900682056760511">Lembar handler pembayaran terbuka</translation>
 <translation id="827820107214076967">Muat Ulang Log</translation>
-<translation id="2164614088382669062">Notifikasi Brave harus aktif. Anda dapat mengaktifkannya di <ph name="BEGIN_LINK"/><ph name="NOTIFICATION_SETTINGS"/><ph name="END_LINK"/>.</translation>
+<translation id="2164614088382669062">Notifikasi Minego harus aktif. Anda dapat mengaktifkannya di <ph name="BEGIN_LINK"/><ph name="NOTIFICATION_SETTINGS"/><ph name="END_LINK"/>.</translation>
 <translation id="8280630997017109758">Baki 11</translation>
 <translation id="8281886186245836920">Lewati</translation>
 <translation id="8282947398454257691">Mengetahui pengenal perangkat unik Anda</translation>
-<translation id="4596532552309852907">Kelola Safe Browsing dan lainnya di setelan Brave</translation>
+<translation id="4596532552309852907">Kelola Safe Browsing dan lainnya di setelan Minego</translation>
 <translation id="8286036467436129157">Login</translation>
 <translation id="8286799286781881307">Aplikasi yang diizinkan oleh administrator dapat merekam semua layar yang terpasang ke perangkat Anda. Informasi ini dapat diproses secara lokal atau diupload ke server organisasi Anda.</translation>
 <translation id="8288807391153049143">Tampilkan sertifikat</translation>
@@ -2900,7 +2900,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8396522675989118466">Ini adalah kode <ph name="NUMBER_OF_DIGITS"/> digit pada <ph name="SIDE_OF_CARD"/></translation>
 <translation id="8398335999901363925">Metode pembayaran yang tersedia untuk diisi dengan gestur sentuh terbuka sepenuhnya.</translation>
 <translation id="8398790343843005537">Temukan ponsel Anda</translation>
-<translation id="15931837016421186">Kelola info apa saja yang Anda sinkronkan di setelan Brave</translation>
+<translation id="15931837016421186">Kelola info apa saja yang Anda sinkronkan di setelan Minego</translation>
 <translation id="8406071103346257942">berhenti menggunakan kunci layar untuk mengisi sandi</translation>
 <translation id="8409413588194360210">pengendali pembayaran</translation>
 <translation id="8412145213513410671">Ngadat (<ph name="CRASH_COUNT"/>)</translation>
@@ -2910,7 +2910,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8427848540066057481">500 x 750 mm</translation>
 <translation id="8428213095426709021">Setelan</translation>
 <translation id="8428634594422941299">Mengerti</translation>
-<translation id="5808418475906247813"><ph name="MANAGE_COOKIES_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola preferensi cookie di setelan Brave</translation>
+<translation id="5808418475906247813"><ph name="MANAGE_COOKIES_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengelola preferensi cookie di setelan Minego</translation>
 <translation id="8433057134996913067">Tindakan ini akan mengeluarkan Anda dari sebagian besar situs web.</translation>
 <translation id="8434840396568290395">Hewan peliharaan</translation>
 <translation id="8437238597147034694">&amp;Urungkan pemindahan</translation>
@@ -2931,13 +2931,13 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8473863474539038330">Alamat dan lain-lain</translation>
 <translation id="8474910779563686872">Lihat detail developer</translation>
 <translation id="8479754468255770962">Jepretan di kiri bawah</translation>
-<translation id="8714154125294613524">Alamat ini akan dihapus dari Akun Brave Anda, <ph name="ACCOUNT"/></translation>
-<translation id="5142582872611298328">Untuk menggunakan kartu dari Akun Brave Anda, masuk ke Brave</translation>
+<translation id="8714154125294613524">Alamat ini akan dihapus dari Akun Minego Anda, <ph name="ACCOUNT"/></translation>
+<translation id="5142582872611298328">Untuk menggunakan kartu dari Akun Minego Anda, masuk ke Minego</translation>
 <translation id="8488350697529856933">Berlaku untuk</translation>
 <translation id="8490137692873530638">Tempat kertas 10</translation>
 <translation id="8493948351860045254">Kosongkan ruang</translation>
 <translation id="8498891568109133222"><ph name="HOST_NAME"/> membutuhkan terlalu banyak waktu untuk merespons.</translation>
-<translation id="230699814587342492">Sandi Brave</translation>
+<translation id="230699814587342492">Sandi Minego</translation>
 <translation id="8503813439785031346">Nama Pengguna</translation>
 <translation id="8507227106804027148">Command line</translation>
 <translation id="8508648098325802031">Ikon penelusuran</translation>
@@ -2945,13 +2945,13 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="851353418319061866">Pemeriksaan Akurasi</translation>
 <translation id="8513580896341796021">Download dimulai. Untuk melihatnya, tekan |<ph name="ACCELERATOR"/>|.</translation>
 <translation id="8519753333133776369">Perangkat HID yang diizinkan oleh administrator Anda</translation>
-<translation id="1426902392270366682">Brave dapat membantu Anda melindungi Akun Brave dan mengubah sandi Anda.</translation>
-<translation id="1215802963054007211">Hapus histori penjelajahan, cookie, cache, dan lainnya di setelan Brave</translation>
+<translation id="1426902392270366682">Minego dapat membantu Anda melindungi Akun Minego dan mengubah sandi Anda.</translation>
+<translation id="1215802963054007211">Hapus histori penjelajahan, cookie, cache, dan lainnya di setelan Minego</translation>
 <translation id="853332391023689529">Truk pickup</translation>
 <translation id="8533619373899488139">Buka &lt;strong&gt;chrome://policy&lt;/strong&gt; untuk melihat daftar URL yang diblokir dan kebijakan lainnya yang diterapkan oleh administrator sistem Anda.</translation>
 <translation id="8539500321752640291">Berikan 2 izin?</translation>
 <translation id="8541158209346794904">Perangkat Bluetooth</translation>
-<translation id="3275395224965468352">Situs ini mendapatkan topik iklan Anda dari Brave untuk menampilkan iklan yang lebih relevan</translation>
+<translation id="3275395224965468352">Situs ini mendapatkan topik iklan Anda dari Minego untuk menampilkan iklan yang lebih relevan</translation>
 <translation id="8542014550340843547">Tiga jepretan di bawah</translation>
 <translation id="8542617028204211143">SRA0</translation>
 <translation id="8543181531796978784">Anda dapat <ph name="BEGIN_ERROR_LINK"/>melaporkan masalah pendeteksian<ph name="END_ERROR_LINK"/> atau, jika memahami risiko bagi keamanan, Anda dapat <ph name="BEGIN_LINK"/>mengunjungi situs yang tidak aman<ph name="END_LINK"/>.</translation>
@@ -2970,9 +2970,9 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8589998999637048520">Kualitas terbaik</translation>
 <translation id="8600271352425265729">Hanya kali ini</translation>
 <translation id="860043288473659153">Nama pemegang kartu</translation>
-<translation id="5748651208190537252"><ph name="BEGIN_BOLD"/>Data yang digunakan:<ph name="END_BOLD"/> Aktivitas Anda di situs yang dibuka menggunakan Brave di perangkat ini.</translation>
+<translation id="5748651208190537252"><ph name="BEGIN_BOLD"/>Data yang digunakan:<ph name="END_BOLD"/> Aktivitas Anda di situs yang dibuka menggunakan Minego di perangkat ini.</translation>
 <translation id="8606726445206553943">Menggunakan perangkat MIDI Anda</translation>
-<translation id="5017966143250326204">Topik iklan membantu situs menampilkan iklan yang relevan, sambil tetap melindungi histori penjelajahan dan identitas Anda. Brave dapat mencatat topik yang Anda minati berdasarkan histori penjelajahan terbaru Anda. Kemudian, situs yang Anda buka dapat meminta topik yang relevan dari Brave untuk mempersonalisasi iklan yang Anda lihat.</translation>
+<translation id="5017966143250326204">Topik iklan membantu situs menampilkan iklan yang relevan, sambil tetap melindungi histori penjelajahan dan identitas Anda. Minego dapat mencatat topik yang Anda minati berdasarkan histori penjelajahan terbaru Anda. Kemudian, situs yang Anda buka dapat meminta topik yang relevan dari Minego untuk mempersonalisasi iklan yang Anda lihat.</translation>
 <translation id="8617269623452051934">penggunaan perangkat Anda</translation>
 <translation id="861775596732816396">Ukuran 4</translation>
 <translation id="8620276786115098679">Envelope Kaku 7</translation>
@@ -2997,7 +2997,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="868922510921656628">Halaman per set</translation>
 <translation id="869891660844655955">Masa berlaku</translation>
 <translation id="8699041776323235191">Perangkat HID</translation>
-<translation id="4959770473590669345">Tombol Mainkan game Brave Dino, tekan Enter untuk memainkan game Dino Run di Brave</translation>
+<translation id="4959770473590669345">Tombol Mainkan game Minego Dino, tekan Enter untuk memainkan game Dino Run di Minego</translation>
 <translation id="8699985386408839112">Envelope Kaku 1</translation>
 <translation id="8703575177326907206">Sambungan ke <ph name="DOMAIN"/> tidak dienkripsi.</translation>
 <translation id="8705331520020532516">Nomor Seri</translation>
@@ -3015,12 +3015,12 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8726549941689275341">Ukuran halaman:</translation>
 <translation id="8730621377337864115">Selesai</translation>
 <translation id="8731268612289859741">Kode keamanan</translation>
-<translation id="1769647018144434441">Tombol Kelola sandi, tekan Enter untuk melihat dan mengelola sandi di setelan Brave</translation>
-<translation id="2184048523283917559">Anda dapat memblokir topik yang tidak ingin dibagikan ke situs. Brave juga otomatis menghapus topik yang tersimpan lebih dari 4 minggu. Pelajari lebih lanjut</translation>
+<translation id="1769647018144434441">Tombol Kelola sandi, tekan Enter untuk melihat dan mengelola sandi di setelan Minego</translation>
+<translation id="2184048523283917559">Anda dapat memblokir topik yang tidak ingin dibagikan ke situs. Minego juga otomatis menghapus topik yang tersimpan lebih dari 4 minggu. Pelajari lebih lanjut</translation>
 <translation id="8734529307927223492"><ph name="DEVICE_TYPE"/> Anda dikelola oleh <ph name="MANAGER"/></translation>
 <translation id="8736059027199600831">30 x 40 inci (76 x 101 cm)</translation>
 <translation id="8737685506611670901">Membuka link <ph name="PROTOCOL"/> sebagai ganti <ph name="REPLACED_HANDLER_TITLE"/></translation>
-<translation id="6326805297893828864">Untuk membuat sambungan aman, jam perlu disetel dengan benar. Hal ini karena sertifikat yang digunakan situs web untuk mengidentifikasi situs web tersebut hanya valid untuk jangka waktu tertentu. Karena jam perangkat tidak benar, Brave tidak dapat memverifikasi sertifikat ini.</translation>
+<translation id="6326805297893828864">Untuk membuat sambungan aman, jam perlu disetel dengan benar. Hal ini karena sertifikat yang digunakan situs web untuk mengidentifikasi situs web tersebut hanya valid untuk jangka waktu tertentu. Karena jam perangkat tidak benar, Minego tidak dapat memverifikasi sertifikat ini.</translation>
 <translation id="8740359287975076522">&lt;abbr id="dnsDefinition"&gt;Alamat DNS&lt;/abbr&gt; <ph name="HOST_NAME"/> tidak dapat ditemukan. Mendiagnosis masalah.</translation>
 <translation id="8742371904523228557"><ph name="ONE_TIME_CODE"/> adalah kode Anda untuk <ph name="ORIGIN"/></translation>
 <translation id="874918643257405732">Bookmark tab ini</translation>
@@ -3039,9 +3039,9 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="877985182522063539">A4</translation>
 <translation id="8785658048882205566">Sepeda motor</translation>
 <translation id="8790007591277257123">&amp;Ulangi penghapusan</translation>
-<translation id="5304100303568917877">Anda dapat kehilangan akses ke akun <ph name="ORG_NAME"/> atau mengalami pencurian identitas. Brave menyarankan Anda untuk mengubah sandi sekarang.</translation>
+<translation id="5304100303568917877">Anda dapat kehilangan akses ke akun <ph name="ORG_NAME"/> atau mengalami pencurian identitas. Minego menyarankan Anda untuk mengubah sandi sekarang.</translation>
 <translation id="8792626944327216835">mikrofon</translation>
-<translation id="9156291179464624174"><ph name="ENROLLMENT_DOMAIN"/> telah mengaktifkan Brave Enterprise Connectors di browser Anda. Konektor ini memiliki akses ke beberapa data Anda.</translation>
+<translation id="9156291179464624174"><ph name="ENROLLMENT_DOMAIN"/> telah mengaktifkan Minego Enterprise Connectors di browser Anda. Konektor ini memiliki akses ke beberapa data Anda.</translation>
 <translation id="8798099450830957504">Default</translation>
 <translation id="8798739476508189189">Mencari tanda bowser? Buka</translation>
 <translation id="8805819170075074995">Entri daftar "<ph name="LANGUAGE_ID"/>": Entri diabaikan karena entri tersebut juga disertakan dalam kebijakan SpellcheckLanguage.</translation>
@@ -3050,7 +3050,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8809203544698246977">Topik yang diblokir akan muncul di sini</translation>
 <translation id="8813277370772331957">Ingatkan saya nanti</translation>
 <translation id="8814707942599948500">Envelope C8</translation>
-<translation id="7674607358106534914"><ph name="UPDATE_CHROME_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengupdate Brave dari setelan Brave</translation>
+<translation id="7674607358106534914"><ph name="UPDATE_CHROME_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk mengupdate Minego dari setelan Minego</translation>
 <translation id="882338992931677877">Slot Manual</translation>
 <translation id="8830320733681313421">Kartu Pos Hagaki</translation>
 <translation id="883848425547221593">Bookmark Lain</translation>
@@ -3062,8 +3062,8 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8852567725116633427">Microcar &amp; subcompact</translation>
 <translation id="885306012106043620">Tenis</translation>
 <translation id="8855742650226305367">Tarian</translation>
-<translation id="7487066225574140895">Berbagi dengan Brave</translation>
-<translation id="4764754838347156633">Brave menyarankan untuk menyetel ulang sandi <ph name="BEGIN_BOLD"/><ph name="ORG_NAME"/><ph name="END_BOLD"/> jika Anda juga menggunakannya di situs lain.</translation>
+<translation id="7487066225574140895">Berbagi dengan Minego</translation>
+<translation id="4764754838347156633">Minego menyarankan untuk menyetel ulang sandi <ph name="BEGIN_BOLD"/><ph name="ORG_NAME"/><ph name="END_BOLD"/> jika Anda juga menggunakannya di situs lain.</translation>
 <translation id="885906927438988819">Jika ejaan sudah benar, <ph name="BEGIN_LINK"/>coba jalankan Diagnostik Jaringan Windows<ph name="END_LINK"/>.</translation>
 <translation id="8866132857352163524">Soundtrack</translation>
 <translation id="8866481888320382733">Kesalahan saat menguraikan setelan kebijakan</translation>
@@ -3077,7 +3077,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8876033571432926051">Game kasual</translation>
 <translation id="8877780815363510165">Memancing</translation>
 <translation id="8884537526797090108">Tidak dapat merekam konten rahasia</translation>
-<translation id="4563324980030927277">Brave otomatis menghapus topik dan situs yang menyarankan iklan, yang tersimpan lebih dari 4 minggu. Atau, Anda dapat memblokir topik dan situs tertentu yang tidak Anda sukai.</translation>
+<translation id="4563324980030927277">Minego otomatis menghapus topik dan situs yang menyarankan iklan, yang tersimpan lebih dari 4 minggu. Atau, Anda dapat memblokir topik dan situs tertentu yang tidak Anda sukai.</translation>
 <translation id="8891727572606052622">Mode proxy tidak valid.</translation>
 <translation id="8894794286471754040">Tepi panjang lebih dulu</translation>
 <translation id="8897428486789851669">Renang</translation>
@@ -3085,12 +3085,12 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8903921497873541725">Perbesar</translation>
 <translation id="890493561996401738">Hapus tombol Saran, tekan Enter untuk menghapus, <ph name="REMOVE_BUTTON_FOCUSED_FRIENDLY_MATCH_TEXT"/></translation>
 <translation id="8910898109640902752">8 x 10 inci (20 x 25 cm)</translation>
-<translation id="4102271590580840789">Tombol Kelola metode pembayaran, tekan Enter untuk mengelola info pembayaran dan kartu kredit di setelan Brave</translation>
+<translation id="4102271590580840789">Tombol Kelola metode pembayaran, tekan Enter untuk mengelola info pembayaran dan kartu kredit di setelan Minego</translation>
 <translation id="8922013791253848639">Selalu izinkan iklan di situs ini</translation>
 <translation id="892588693504540538">Lubang di kanan atas</translation>
 <translation id="8930098617363288380">Nilai <ph name="SECURE_DNS_SALT"/> tidak relevan, dan tidak akan digunakan kecuali jika kebijakan <ph name="SECURE_DNS_TEMPLATES_WITH_IDENTIFIERS"/> disetel.</translation>
 <translation id="8930330541574156305">Properti real estat</translation>
-<translation id="7757992844965332255">Ingin menyimpan kartu ini ke Akun Brave Anda?</translation>
+<translation id="7757992844965332255">Ingin menyimpan kartu ini ke Akun Minego Anda?</translation>
 <translation id="8932102934695377596">Setelan waktu Anda terlalu lambat</translation>
 <translation id="893332455753468063">Tambahkan Nama</translation>
 <translation id="8942355029279167844">Administrator Anda telah mengizinkan <ph name="APP_NAME"/> untuk mengumpulkan data diagnostik guna menyempurnakan pengalaman produk. Buka <ph name="BEGIN_LINK"/>https://www.parallels.com/pcep<ph name="END_LINK"/> untuk informasi selengkapnya.</translation>
@@ -3106,7 +3106,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8975263830901772334">Nama file yang Anda cetak</translation>
 <translation id="8978053250194585037">Google Safe Browsing baru-baru ini <ph name="BEGIN_LINK"/>mendeteksi phishing<ph name="END_LINK"/> di <ph name="SITE"/>. Situs phishing berpura-pura menjadi situs lain untuk mengelabui Anda.</translation>
 <translation id="8983369100812962543">Anda sekarang dapat mengubah ukuran aplikasi</translation>
-<translation id="447219378802101672"><ph name="VIEW_CHROME_HISTORY_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk melihat histori penjelajahan Anda di Brave</translation>
+<translation id="447219378802101672"><ph name="VIEW_CHROME_HISTORY_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan tab lalu Enter untuk melihat histori penjelajahan Anda di Minego</translation>
 <translation id="8987927404178983737">Bulan</translation>
 <translation id="8989148748219918422"><ph name="ORGANIZATION"/> [<ph name="COUNTRY"/>]</translation>
 <translation id="8992061558343343009">Mencari versi sistem? Buka</translation>
@@ -3134,7 +3134,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="9036306139374661733">Izinkan mikrofon?</translation>
 <translation id="9038649477754266430">Gunakan layanan prediksi agar halaman dimuat dengan lebih cepat</translation>
 <translation id="9039213469156557790">Selain itu, halaman ini berisi sumber daya lainnya yang tidak aman. Sumber daya ini dapat dilihat oleh orang lain saat transit dan dapat dimodifikasi oleh penyerang untuk mengubah perilaku halaman.</translation>
-<translation id="6093455506390049122">Tombol Temukan perangkat saya, tekan Enter untuk membuka fitur temukan perangkat saya di Akun Brave</translation>
+<translation id="6093455506390049122">Tombol Temukan perangkat saya, tekan Enter untuk membuka fitur temukan perangkat saya di Akun Minego</translation>
 <translation id="9042617223719777575">Kapasitas Besar</translation>
 <translation id="9044359186343685026">Gunakan Touch ID</translation>
 <translation id="9045525010788763347"><ph name="RESULT_MODIFIED_DATE"/> - <ph name="RESULT_PRODUCT_SOURCE"/></translation>
@@ -3155,19 +3155,19 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="908796725011587895">Olahraga kampus</translation>
 <translation id="9089260154716455634">Kebijakan Waktu Nonaktif:</translation>
 <translation id="9095388113577226029">Bahasa lainnya...</translation>
-<translation id="7650489975492745604"><ph name="SET_CHROME_AS_DEFAULT_BROWSER_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan Tab lalu Enter untuk menyetel Brave sebagai browser default sistem di setelan iOS</translation>
+<translation id="7650489975492745604"><ph name="SET_CHROME_AS_DEFAULT_BROWSER_FOCUSED_FRIENDLY_MATCH_TEXT"/>, Tekan Tab lalu Enter untuk menyetel Minego sebagai browser default sistem di setelan iOS</translation>
 <translation id="9096679202588811390">Program &amp; acara TV</translation>
 <translation id="9101630580131696064">Baki 1</translation>
 <translation id="9103537084693478942">Software video</translation>
-<translation id="6373940988468425649"><ph name="SITE"/> biasanya menggunakan enkripsi untuk melindungi informasi Anda. Saat Brave mencoba menyambung ke <ph name="SITE"/> kali ini, situs web mengembalikan kredensial yang salah dan tidak biasa. Hal ini dapat terjadi jika ada penyerang yang berpura-pura menjadi <ph name="SITE"/>, atau layar masuk Wi-Fi mengganggu sambungan. Informasi Anda masih aman karena Brave menghentikan sambungan sebelum terjadi pertukaran data apa pun.</translation>
+<translation id="6373940988468425649"><ph name="SITE"/> biasanya menggunakan enkripsi untuk melindungi informasi Anda. Saat Minego mencoba menyambung ke <ph name="SITE"/> kali ini, situs web mengembalikan kredensial yang salah dan tidak biasa. Hal ini dapat terjadi jika ada penyerang yang berpura-pura menjadi <ph name="SITE"/>, atau layar masuk Wi-Fi mengganggu sambungan. Informasi Anda masih aman karena Minego menghentikan sambungan sebelum terjadi pertukaran data apa pun.</translation>
 <translation id="9106062320799175032">Tambahkan Alamat Penagihan</translation>
 <translation id="9107467864910557787">Browser Anda dikelola oleh <ph name="MANAGER"/></translation>
 <translation id="91108059142052966">Kebijakan administrator menonaktifkan berbagi layar dengan <ph name="APPLICATION_TITLE"/> saat konten rahasia terlihat</translation>
 <translation id="9114524666733003316">Mengonfirmasi kartu...</translation>
-<translation id="3582535072753734287">Browser ini tidak dikelola oleh perusahaan atau organisasi lain. Aktivitas di perangkat ini mungkin dikelola di luar Brave. <ph name="BEGIN_LINK"/>Pelajari lebih lanjut<ph name="END_LINK"/></translation>
-<translation id="7839260860373627374">Selengkapnya tentang iklan di Brave</translation>
+<translation id="3582535072753734287">Browser ini tidak dikelola oleh perusahaan atau organisasi lain. Aktivitas di perangkat ini mungkin dikelola di luar Minego. <ph name="BEGIN_LINK"/>Pelajari lebih lanjut<ph name="END_LINK"/></translation>
+<translation id="7839260860373627374">Selengkapnya tentang iklan di Minego</translation>
 <translation id="9117930699067497412">Baru</translation>
-<translation id="2628864952962474930"><ph name="HISTORY_CLUSTERS_SEARCH_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab, lalu Enter untuk melanjutkan penelusuran dan melihat aktivitas yang relevan di histori Brave Anda</translation>
+<translation id="2628864952962474930"><ph name="HISTORY_CLUSTERS_SEARCH_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab, lalu Enter untuk melanjutkan penelusuran dan melihat aktivitas yang relevan di histori Minego Anda</translation>
 <translation id="9119042192571987207">Diupload</translation>
 <translation id="9122954576417194280">Perdagangan komoditas &amp; berjangka</translation>
 <translation id="9128016270925453879">Kebijakan dimuat</translation>
@@ -3176,7 +3176,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="9133985615769429248">Jika Anda berbagi perangkat ini dengan orang lain, Anda dapat menggunakan kunci layar untuk memverifikasi diri Anda setiap kali Anda menggunakan sandi tersimpan</translation>
 <translation id="9136861683332321024">Kendaraan mewah</translation>
 <translation id="9137013805542155359">Perlihatkan halaman asli</translation>
-<translation id="3480834636742786788">Mulai dan login ke Brave sebelum menggunakan aplikasi ini.</translation>
+<translation id="3480834636742786788">Mulai dan login ke Minego sebelum menggunakan aplikasi ini.</translation>
 <translation id="9138037198177304356">Notifikasi diizinkan</translation>
 <translation id="9139318394846604261">Belanja</translation>
 <translation id="9141013498910525015">Kelola alamat</translation>
@@ -3184,7 +3184,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="9148088599418889305">Pilih Metode Pengiriman</translation>
 <translation id="9148507642005240123">&amp;Urungkan pengeditan</translation>
 <translation id="9150045010208374699">Menggunakan kamera Anda</translation>
-<translation id="5874192512642998555">Administrator dapat mengubah penyiapan browser Anda dari jarak jauh. Aktivitas di perangkat ini juga dapat dikelola di luar Brave. <ph name="BEGIN_LINK"/>Pelajari lebih lanjut<ph name="END_LINK"/></translation>
+<translation id="5874192512642998555">Administrator dapat mengubah penyiapan browser Anda dari jarak jauh. Aktivitas di perangkat ini juga dapat dikelola di luar Minego. <ph name="BEGIN_LINK"/>Pelajari lebih lanjut<ph name="END_LINK"/></translation>
 <translation id="9154194610265714752">Diperbarui</translation>
 <translation id="9155211586651734179">Periferal audio yang terpasang</translation>
 <translation id="9157595877708044936">Menyiapkan...</translation>
@@ -3201,9 +3201,9 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="917450738466192189">Sertifikat server tidak valid.</translation>
 <translation id="9174623988242579721">Kendaraan modifikasi &amp; performa tinggi</translation>
 <translation id="9174917557437862841">Tombol beralih tab, tekan Enter untuk beralih ke tab ini</translation>
-<translation id="5129795253416930127">Kelola informasi pembayaran dan kartu kredit Anda di setelan Brave</translation>
+<translation id="5129795253416930127">Kelola informasi pembayaran dan kartu kredit Anda di setelan Minego</translation>
 <translation id="9179907736442194268">Dapatkan peringatan email jika ada diskon di situs mana pun</translation>
-<translation id="9183302530794969518">Brave Dokumen</translation>
+<translation id="9183302530794969518">Minego Dokumen</translation>
 <translation id="9183425211371246419"><ph name="HOST_NAME"/> menggunakan protokol yang tidak didukung.</translation>
 <translation id="918454845714257218">Periksa kode di <ph name="SIDE_OF_CARD"/> dan coba lagi</translation>
 <translation id="9187461866967718678">Olahraga ekstrem</translation>
@@ -3213,18 +3213,18 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="920511547311754821">Tidak dapat menemukan kode? <ph name="IDS_AUTOFILL_CARD_UNMASK_OTP_INPUT_DIALOG_NEW_CODE_MESSAGE"/></translation>
 <translation id="9207861905230894330">Gagal menambahkan artikel.</translation>
 <translation id="9213433120051936369">Sesuaikan tampilan</translation>
-<translation id="2206050430829841793">Aplikasi membuat Brave tidak terhubung dengan aman ke situs ini</translation>
+<translation id="2206050430829841793">Aplikasi membuat Minego tidak terhubung dengan aman ke situs ini</translation>
 <translation id="9219103736887031265">Gambar</translation>
-<translation id="142389341645668510">Sesuaikan Brave</translation>
+<translation id="142389341645668510">Sesuaikan Minego</translation>
 <translation id="933712198907837967">Diners Club</translation>
 <translation id="935608979562296692">HAPUS FORMULIR</translation>
-<translation id="7486559383537872796">Anda dapat kehilangan akses ke Akun Brave Anda. Brave merekomendasikan untuk mengubah sandi Anda sekarang. Anda akan diminta untuk login.</translation>
+<translation id="7486559383537872796">Anda dapat kehilangan akses ke Akun Minego Anda. Minego merekomendasikan untuk mengubah sandi Anda sekarang. Anda akan diminta untuk login.</translation>
 <translation id="937457230470581909">Kebun binatang, akuarium &amp; cagar alam</translation>
-<translation id="1818627928653838301"><ph name="BEGIN_BOLD"/>Data yang digunakan:<ph name="END_BOLD"/> Topik iklan Anda didasarkan pada histori penjelajahan terbaru, yaitu daftar situs yang telah Anda buka menggunakan Brave di perangkat ini.</translation>
+<translation id="1818627928653838301"><ph name="BEGIN_BOLD"/>Data yang digunakan:<ph name="END_BOLD"/> Topik iklan Anda didasarkan pada histori penjelajahan terbaru, yaitu daftar situs yang telah Anda buka menggunakan Minego di perangkat ini.</translation>
 <translation id="939736085109172342">Folder baru</translation>
 <translation id="940053046584497293">Perjalanan &amp; transportasi</translation>
 <translation id="945855313015696284">Periksa info di bawah dan hapus kartu apa pun yang tidak valid</translation>
-<translation id="1283739678317676574"><ph name="CREATE_GOOGLE_SITE_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat situs baru di Brave Sites dengan cepat</translation>
+<translation id="1283739678317676574"><ph name="CREATE_GOOGLE_SITE_FOCUSED_FRIENDLY_MATCH_TEXT"/>, tekan Tab lalu Enter untuk membuat situs baru di Minego Sites dengan cepat</translation>
 <translation id="949314938206378263">Kamu meminta untuk membuka situs ini. Orang tuamu bisa membalas di Family Link.</translation>
 <translation id="950736567201356821">Tiga lubang di atas</translation>
 <translation id="961663415146723894">Jilid bawah</translation>
@@ -3269,9 +3269,9 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="8794378783472961468">Hanya saja, Anda bukannya tidak terlihat. Menjadi privat tidak menyembunyikan perambanan Anda dari atasan, penyedia layanan internet, atau situs web yang Anda kunjungi.</translation>
 <translation id="5673623523506565506">Sekarang Anda dapat menjelajah web secara pribadi, dan profil lain yang menggunakan perangkat ini tidak dapat melihat aktivitas Anda. Namun, unduhan dan bookmark akan disimpan.</translation>
 <translation id="3812568169637430422">Sekarang Anda dapat menjelajah web secara pribadi, dan profil lain yang menggunakan perangkat ini tidak dapat melihat aktivitas Anda. Namun, unduhan, bookmark, dan isi daftar bacaan akan disimpan.</translation>
-<translation id="6085043210649933880">Privat di Brave</translation>
+<translation id="6085043210649933880">Privat di Minego</translation>
 <translation id="3683567996395248272">Yang dilakukan Mode Pribadi</translation>
-<translation id="8817208096236092047">Saat Anda menutup seluruh tab Privat Brave, aktivitas Anda pada tab-tab tersebut akan dihapus dari perangkat
+<translation id="8817208096236092047">Saat Anda menutup seluruh tab Privat Minego, aktivitas Anda pada tab-tab tersebut akan dihapus dari perangkat
           <ph name="BEGIN_LIST"/>
             <ph name="LIST_ITEM"/>Aktivitas perambanan<ph name="END_LIST_ITEM"/>
             <ph name="LIST_ITEM"/>Riwayat pencarian<ph name="END_LIST_ITEM"/>
@@ -3284,7 +3284,7 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
           <ph name="LIST_ITEM"/>Kantor dan sekolah dapat melacak aktivitas perambanan<ph name="END_LIST_ITEM"/>
           <ph name="LIST_ITEM"/>Penyedia layanan internet dapat memantau lalu lintas web<ph name="END_LIST_ITEM"/>
         <ph name="END_LIST"/></translation>
-<translation id="6043883615739972429"><ph name="BEGIN_LINK"/>Pelajari lebih lanjut tentang Privat di Brave<ph name="END_LINK"/></translation>
+<translation id="6043883615739972429"><ph name="BEGIN_LINK"/>Pelajari lebih lanjut tentang Privat di Minego<ph name="END_LINK"/></translation>
 <translation id="9153679102508470540">Blokir cookie pihak ketiga di Privat</translation>
 <translation id="5549245478906381817">Buka jendela Pribadi</translation>
 <translation id="5497977785983089120">Membuka jendela Pribadi baru untuk meramban secara pribadi</translation>
@@ -3302,9 +3302,9 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
 <translation id="1090109565956608696">Tidak diizinkan di Privat</translation>
 <translation id="6934396344327597525">Meninggalkan mode Privat untuk membayar melalui aplikasi eksternal. Lanjutkan?</translation>
 <translation id="7948746210201997548">{NUM_DAYS, plural,
-     =0 {Saat kontrol ini hidup dan statusnya aktif, Brave menentukan kelompok profil besar, atau "kategori," mana yang paling serupa dengan aktivitas perambanan Anda. Pengiklan dapat memilih iklan untuk kelompok ini dan aktivitas perambanan Anda akan dijaga tetap privat pada perangkat Anda. Kelompok Anda diperbarui setiap hari.}
-     =1 {Saat kontrol ini hidup dan statusnya aktif, Brave menentukan kelompok profil besar, atau "kategori," mana yang paling serupa dengan aktivitas perambanan Anda. Pengiklan dapat memilih iklan untuk kelompok ini dan aktivitas perambanan Anda akan dijaga tetap privat pada perangkat Anda. Kelompok Anda diperbarui setiap hari.}
-     other {Saat kontrol ini hidup dan statusnya aktif, Brave menentukan kelompok profil besar, atau "kategori," mana yang paling serupa dengan aktivitas perambanan Anda. Pengiklan dapat memilih iklan untuk kelompok ini dan aktivitas perambanan Anda akan dijaga tetap privat pada perangkat Anda. Kelompok Anda diperbarui setiap {NUM_DAYS} hari.}}</translation>
+     =0 {Saat kontrol ini hidup dan statusnya aktif, Minego menentukan kelompok profil besar, atau "kategori," mana yang paling serupa dengan aktivitas perambanan Anda. Pengiklan dapat memilih iklan untuk kelompok ini dan aktivitas perambanan Anda akan dijaga tetap privat pada perangkat Anda. Kelompok Anda diperbarui setiap hari.}
+     =1 {Saat kontrol ini hidup dan statusnya aktif, Minego menentukan kelompok profil besar, atau "kategori," mana yang paling serupa dengan aktivitas perambanan Anda. Pengiklan dapat memilih iklan untuk kelompok ini dan aktivitas perambanan Anda akan dijaga tetap privat pada perangkat Anda. Kelompok Anda diperbarui setiap hari.}
+     other {Saat kontrol ini hidup dan statusnya aktif, Minego menentukan kelompok profil besar, atau "kategori," mana yang paling serupa dengan aktivitas perambanan Anda. Pengiklan dapat memilih iklan untuk kelompok ini dan aktivitas perambanan Anda akan dijaga tetap privat pada perangkat Anda. Kelompok Anda diperbarui setiap {NUM_DAYS} hari.}}</translation>
 <translation id="2446780203663220049">Profil &amp; masyarakat</translation>
 <translation id="1426112902089905810">&lt;h4&gt;Langkah 1: Masuklah ke dalam portal&lt;/h4&gt;
     &lt;p&gt;Jaringan Wi-Fi di lokasi seperti kafe atau bandara mengharuskan Anda masuk. Untuk mengunjungi halaman masuk, kunjungi halaman yang menggunakan &lt;code&gt;http://&lt;/code&gt;.&lt;/p&gt;
@@ -3314,11 +3314,11 @@ Jika tidak, ini akan diblokir oleh setelan privasi Anda. Ini akan memungkinkan k
     &lt;/ol&gt;
     &lt;h4&gt;Langkah 2: Buka halaman dalam modus Privat (hanya di komputer)&lt;/h4&gt;
     &lt;p&gt;Buka halaman yang pernah Anda kunjungi di jendela Privat.&lt;/p&gt;
-    &lt;p&gt;Jika halamannya terbuka, berarti ekstensi Brave tidak berfungsi dengan benar. Untuk memperbaiki eror ini, matikan ekstensinya.&lt;/p&gt;
+    &lt;p&gt;Jika halamannya terbuka, berarti ekstensi Minego tidak berfungsi dengan benar. Untuk memperbaiki eror ini, matikan ekstensinya.&lt;/p&gt;
     &lt;h4&gt;Langkah 3: Perbarui sistem operasi Anda&lt;/h4&gt;
     &lt;p&gt;Pastikan perangkat Anda terperbarui.&lt;/p&gt;
     &lt;h4&gt;Langkah 4: Matikan sementara antivirus Anda&lt;/h4&gt;
-    &lt;p&gt;Anda akan menjumpai eror ini jika memiliki antivirus yang memberikan "proteksi HTTPS" atau "pemindaian HTTPS". Antivirus tersebut mencegah Brave memberikan keamanan.&lt;/p&gt;
+    &lt;p&gt;Anda akan menjumpai eror ini jika memiliki antivirus yang memberikan "proteksi HTTPS" atau "pemindaian HTTPS". Antivirus tersebut mencegah Minego memberikan keamanan.&lt;/p&gt;
     &lt;p&gt;Untuk mengatasi masalah ini, matikan antivirus Anda. Jika halaman bekerja setelah mematikan antivirus, matikan itu saat menggunakan situs yang aman.&lt;/p&gt;
     &lt;p&gt;Jangan lupa nyalakan kembali antivirus setelah Anda selesai.&lt;/p&gt;
     &lt;h4&gt;Langkah 5: Dapatkan bantuan ekstra&lt;/h4&gt;

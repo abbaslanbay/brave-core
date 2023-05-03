@@ -17,10 +17,8 @@ import {
   StyledUploadIconContainer,
   StyledUploadLabel
 } from '../../../components/default'
-// import braveBackground from './assets/brave-background.png'
 import minegoBackgroundDark from './assets/minego-background-dark.jpg'
 import UploadIcon from './assets/upload-icon'
-// import { Toggle } from '../../../components/toggle'
 
 import { getLocale } from '../../../../common/locale'
 

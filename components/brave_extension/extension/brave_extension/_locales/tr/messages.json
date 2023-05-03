@@ -208,11 +208,11 @@
     "description": "Message inviting the user to learn more about Shields"
   },
   "addToBrave": {
-    "message": "Brave'a ekle",
+    "message": "Minego'ya ekle",
     "description": "Message for adding an extension to Minego"
   },
   "removeFromBrave": {
-    "message": "Brave'dan kaldır",
+    "message": "Minego'dan kaldır",
     "description": "Message for removing an extension from Minego"
   },
   "addToChrome": {

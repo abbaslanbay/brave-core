@@ -51,7 +51,7 @@ int GetProfileMenuCloseButtonTextId(Profile* profile) {
 }  // namespace
 
 void BraveIncognitoMenuView::BuildMenu() {
-  AddTorButton();
+ // AddTorButton();
 
   AddFeatureButton(
       brave_l10n::GetLocalizedResourceUTF16String(

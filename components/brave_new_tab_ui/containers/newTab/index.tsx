@@ -12,7 +12,7 @@ import { brandedWallpaperLogoClicked } from '../../api/wallpaper'
 import {
   BraveTalkWidget as BraveTalk, Clock, EditCards, EditTopSite, OverrideReadabilityColor, RewardsWidget as Rewards, SearchPromotion
 } from '../../components/default'
-import BrandedWallpaperLogo from '../../components/default/brandedWallpaper/logo'
+// import BrandedWallpaperLogo from '../../components/default/brandedWallpaper/logo'
 import  { GetDisplayAdContent } from '../../components/default/braveNews'
 import FooterInfo from '../../components/default/footer/footer'
 import * as Page from '../../components/default/page'
@@ -649,7 +649,7 @@ class NewTabPage extends React.Component<Props, State> {
 
             <Page.Footer>
               <Page.FooterContent>
-                {isShowingBrandedWallpaper && newTabData.brandedWallpaper &&
+                {/* {isShowingBrandedWallpaper && newTabData.brandedWallpaper &&
                   newTabData.brandedWallpaper.logo &&
                   <Page.GridItemBrandedLogo>
                     <BrandedWallpaperLogo
@@ -660,7 +660,7 @@ class NewTabPage extends React.Component<Props, State> {
                       data={newTabData.brandedWallpaper.logo}
                     />
                     {this.renderBrandedWallpaperNotification()}
-                  </Page.GridItemBrandedLogo>}
+                  </Page.GridItemBrandedLogo>} */}
                 <FooterInfo
                   textDirection={newTabData.textDirection}
                   supportsBraveTalk={newTabData.braveTalkSupported}

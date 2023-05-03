@@ -49,7 +49,7 @@
 <if expr="toolkit_views">
   <settings-brave-appearance-sidebar prefs="{{prefs}}"></settings-brave-appearance-sidebar>
 </if>
-<if expr="enable_brave_vpn">
+<!-- <if expr="enable_brave_vpn">
   <template is="dom-if" if="[[showBraveVPNOption_()]]">
     <settings-toggle-button
       pref="{{prefs.brave.brave_vpn.show_button}}"
@@ -58,7 +58,7 @@
       sub-label="$i18n{showBraveVPNButtonSubLabel}">
     </settings-toggle-button>
   </template>
-</if>
+</if> -->
 <settings-toggle-button
   pref="{{prefs.brave.tabs_search_show}}"
   class="cr-row"
