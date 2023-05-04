@@ -31,7 +31,7 @@
 
 namespace {
 
-constexpr SkColor kBraveBrandColor = SkColorSetRGB(0xff, 0x76, 0x54);
+constexpr SkColor kBraveBrandColor = SkColorSetRGB(0x95, 0x24, 0xFF);
 constexpr SkColor kBravePrimaryColor = SkColorSetRGB(32, 74, 227);
 SkColor AddOpacity(SkColor color, float opacity) {
   DCHECK(opacity >= 0 && opacity <= 1);
@@ -291,7 +291,7 @@ void MdTextButton::OnPaintBackground(gfx::Canvas* canvas) {
   if (GetProminent() &&
       (hover_animation().is_animating() || GetState() == STATE_HOVERED)) {
     constexpr SkColor normal_color = kBraveBrandColor;
-    constexpr SkColor hover_color = SkColorSetRGB(0xff, 0x97, 0x7d);
+    constexpr SkColor hover_color = SkColorSetRGB(0x95, 0x24, 0xFF);
     const SkAlpha alpha =
         static_cast<SkAlpha>(hover_animation().CurrentValueBetween(0x00, 0xff));
     const SkColor current_color =

@@ -563,7 +563,7 @@ void BraveSearchConversionPromotionView::ConfigureForBannerType() {
   dismiss_button->SetTextColor(views::Button::STATE_PRESSED,
                                SkColorSetRGB(0xff, 0x76, 0x54));
   dismiss_button->SetTextColor(views::Button::STATE_HOVERED,
-                               SkColorSetRGB(0xff, 0x97, 0x7d));
+                               SkColorSetRGB(0x95, 0x24, 0xFF));
   dismiss_button->SetProperty(views::kMarginsKey,
                               gfx::Insets::TLBR(0, 13, 0, 0));
   dismiss_button->SetTooltipText(brave_l10n::GetLocalizedResourceUTF16String(

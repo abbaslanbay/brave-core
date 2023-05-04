@@ -25,8 +25,8 @@
 namespace {
 
 // Location bar colors
-const SkColor kPrivateLocationBarBgBase = SkColorSetRGB(0x0B, 0x07, 0x24);
-const SkColor kDarkLocationBarBgBase = SkColorSetRGB(0x18, 0x1A, 0x21);
+const SkColor kPrivateLocationBarBgBase = SkColorSetRGB(0x23, 0x25, 0x2F);
+const SkColor kDarkLocationBarBgBase = SkColorSetRGB(0x23, 0x25, 0x2F);
 const SkColor kDarkLocationBarHoverBg = SkColorSetRGB(0x23, 0x25, 0x2F);
 
 // Copied from //chrome/browser/ui/omnibox//omnibox_theme.h
@@ -313,7 +313,7 @@ void AddBraveDarkThemeColorMixer(ui::ColorProvider* provider,
   mixer[kColorSearchConversionBannerTypeDescText] = {
       SkColorSetRGB(0xE2, 0xE3, 0xE7)};
   mixer[kColorSearchConversionBannerTypeBackgroundBorder] = {
-      SkColorSetRGB(0x1F, 0x25, 0x7A)};
+      SkColorSetRGB(0x25, 0x32, 0x68)};
   mixer[kColorSearchConversionBannerTypeBackgroundBorderHovered] = {
       SkColorSetRGB(0x5F, 0x67, 0xD7)};
   mixer[kColorSearchConversionBannerTypeBackgroundGradientFrom] = {

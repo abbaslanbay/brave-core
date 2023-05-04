@@ -33,7 +33,7 @@ void AddBraveUiColorMixer(ColorProvider* provider,
   mixer[kColorButtonBackgroundProminentFocused] = {gfx::kBraveColorBrand};
   // For deprecated kColorId_ButtonBorderColor
   // TODO(simonhong): Add this color to palette.
-  mixer[kColorButtonBorder] = {SkColorSetRGB(0xc3, 0xc4, 0xcf)};
+  mixer[kColorButtonBorder] = {gfx::kBraveColorBrand};
   // For deprecated kColorId_ButtonEnabledColor
   mixer[kColorButtonForeground] = {dark_mode ? SK_ColorWHITE
                                              : gfx::kBraveGrey800};
