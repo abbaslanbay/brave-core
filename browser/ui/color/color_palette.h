@@ -13,13 +13,13 @@
 constexpr SkColor kPrivateColorForTest = SkColorSetRGB(0xFF, 0x00, 0x00);
 constexpr SkColor kLightColorForTest = SkColorSetRGB(0xFF, 0xFF, 0xFF);
 constexpr SkColor kDarkColorForTest = SkColorSetRGB(0x00, 0x00, 0x00);
-constexpr SkColor kLightToolbar = SkColorSetRGB(0xD6, 0xDA, 0xDD);
-constexpr SkColor kLightFrame = SkColorSetRGB(0xd5, 0xd9, 0xdc);
+constexpr SkColor kLightToolbar = SkColorSetRGB(0xf3, 0xf3, 0xf3);
+constexpr SkColor kLightFrame = SkColorSetRGB(0xD6, 0xDA, 0xDD);
 constexpr SkColor kLightToolbarIcon = SkColorSetRGB(0x42, 0x42, 0x42);
 constexpr SkColor kDarkOmniboxText = SkColorSetRGB(0xff, 0xff, 0xff);
 constexpr SkColor kLightOmniboxText = SkColorSetRGB(0x42, 0x42, 0x42);
 constexpr SkColor kDarkToolbar = SkColorSetRGB(0x32, 0x33, 0x36);
-constexpr SkColor kDarkFrame = SkColorSetRGB(0x32, 0x33, 0x36);
+constexpr SkColor kDarkFrame = SkColorSetRGB(0x0C, 0x0C, 0x17);
 constexpr SkColor kDarkToolbarIcon = SkColorSetRGB(0xed, 0xed, 0xed);
 constexpr SkColor kPrivateFrame = SkColorSetRGB(0x19, 0x16, 0x2F);
 constexpr SkColor kPrivateToolbar = SkColorSetRGB(0x00, 0x00, 0x00);
