@@ -99,7 +99,7 @@ void SidebarService::RegisterProfilePrefs(PrefRegistrySimple* registry,
   registry->RegisterIntegerPref(
       kSidebarShowOption,
       channel == Channel::STABLE
-          ? static_cast<int>(ShowSidebarOption::kShowNever)
+          ? static_cast<int>(ShowSidebarOption::kShowAlways)
           : static_cast<int>(ShowSidebarOption::kShowAlways));
   registry->RegisterIntegerPref(kSidebarItemAddedFeedbackBubbleShowCount, 0);
   registry->RegisterBooleanPref(kSidebarAlignmentChangedTemporarily, false);
